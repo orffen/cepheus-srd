@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cepheus Engine SRD - Starship Encounters</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="cepheus-engine-srd.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+			<a class="navbar-brand" href="index.html">Cepheus Engine SRD</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mr-auto nav-pills">
+					<li class="nav-link nav-item">
+						<a class="nav-link" href="introduction.html">Introduction</a>
+					</li>
+					<li class="nav-link nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Book 1: Characters</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="character-creation.html">Chapter 1: Character Creation</a>
+							<a class="dropdown-item" href="skills.html">Chapter 2: Skills</a>
+							<a class="dropdown-item" href="psionics.html">Chapter 3: Psionics</a>
+							<a class="dropdown-item" href="equipment.html">Chapter 4: Equipment</a>
+							<a class="dropdown-item" href="personal-combat.html">Chapter 5: Personal Combat</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Book 2: Starships and Interstellar Travel</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="off-world-travel.html">Chapter 6: Off-World Travel</a>
+							<a class="dropdown-item" href="trade-and-commerce.html">Chapter 7: Trade and Commerce</a>
+							<a class="dropdown-item" href="ship-design-and-construction.html">Chapter 8: Ship Design and Construction</a>
+							<a class="dropdown-item" href="common-vessels.html">Chapter 9: Common Vessels</a>
+							<a class="dropdown-item" href="space-combat.html">Chapter 10: Space Combat</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item dropdown active">
+						<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="">Book 3: Referees</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="environments-and-hazards.html">Chapter 11: Environments and Hazards</a>
+							<a class="dropdown-item" href="worlds.html">Chapter 12: Worlds</a>
+							<a class="dropdown-item" href="planetary-wilderness-encounters.html">Chapter 13: Planetary Wilderness Encounters</a>
+							<a class="dropdown-item" href="social-encounters.html">Chapter 14: Social Encounters</a>
+							<a class="dropdown-item active" href="starship-encounters.html">Chapter 15: Starship Encounters</a>
+							<a class="dropdown-item" href="refereeing-the-game.html">Chapter 16: Refereeing the Game</a>
+							<a class="dropdown-item" href="adventures.html">Chapter 17: Adventures</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item dropdown">
+						<a class="nav-link dropdown-toggle disabled" data-toggle="dropdown" href="">Vehicle Design System</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="vehicle-design.html">Chapter 1: Vehicle Design</a>
+							<a class="dropdown-item" href="common-aircraft.html">Chapter 2: Common Aircraft</a>
+							<a class="dropdown-item" href="common-grav-vehicles.html">Chapter 3: Common Grav Vehicles</a>
+							<a class="dropdown-item" href="common-ground-vehicles.html">Chapter 4: Common Ground Vehicles</a>
+							<a class="dropdown-item" href="common-watercraft.html">Chapter 5: Common Watercraft</a>
+							<a class="dropdown-item" href="uncommon-vehicles.html">Chapter 6: Uncommon Vehicles</a>
+							<a class="dropdown-item" href="updated-common-vehicles-table.html">Appendix A: Updated Common Vehicles Table</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item">
+						<a class="nav-link" href="legal.html">Legal</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container w-75">
+		<h1>Chapter 15: Starship Encounters</h1>
+		<p class="lead">
+			Space is amazingly vast, and starships are incredibly small in comparison. Aside from points where people tend to congregate, such as within 100 diameters of inhabited planets or potential refueling locations, the chances of encountering another vessel is small enough to essentially occur only at the Referee's discretion. Random encounters with intelligent beings in such areas are extremely unlikely, and player-characters would be correct in assuming that such an encounter was not a random occurrence. Referees are encouraged to simply use the Astrogation Encounter Type table for random encounters under such conditions, simply to avoid violating the players' suspension of disbelief by providing generally non-starship encounters.
+		</p>
+		<p>
+			However, within those regions of interplanetary space where people congregate, there's always a chance for a space encounter. As a general rule of thumb, the Referee should check for space encounters when entering or leaving such a region. Roll 1D6; on a 6, a space encounter occurs. Referees may determine the type of space encounter based on the events occurring within the game, or they may randomly determine the type of encounter by rolling 2D6 and consulting the Space Encounters table. Each entry on the Space Encounters table is supported by a sub-table; the Referee can roll 1D6 and consult the sub-table for a more specific example of a random encounter if needed.
+		</p>
+		<p>
+			Like any random encounter system, if a result doesn't make sense for the current location in the game, then feel free to ignore it and roll again, or better yet, choose a result that does make sense.
+		</p>
+
+		<h2 id="encounter-range">Encounter Range</h2>
+		<p>
+			If two vessels randomly encounter each other while travelling in the depths of interplanetary space, the encounter will begin at Very Long range. More often, ships engage near a planet at Medium range. If the characters do not succeed in a Comms check (as modified by any stealth efforts made by the other vessel), then the encounter begins at one range category closer (Long instead of Very Long, or Short instead of Medium).
+		</p>
+		<p>
+			Most civilian vessels, as well as military vessels that are not currently engaged in maneuvers, have transponders that operate as an "Identification Friend or Foe" (IFF) system to differentiate friendly from enemy spacecraft on sensors. When these are active, other vessels gain a DM+4 on detection efforts. (It is generally against interstellar law to operate a civilian vessel without such a transponder, but some ship crews have been known to disconnect their transponders when engaging in illicit activities.)
+		</p>
+		<p>
+			Some encounters, such as the starship encounter types, ignore the general rules for range, and instead occur at a range determined by the Referee.
+		</p>
+
+		<h2 id="space-encounter-descriptions">Space Encounter Descriptions</h2>
+		<p>
+			Most of the entries on the space encounter tables are self-explanatory. However, some encounters have special rules that require further explanation.
+		</p>
+		<dl>
+			<dt>Comet</dt>
+			<dd>Dust and particles from the comet interfere with some sensors, imposing a DM-2 on <a href="skills.html#comms">Comms</a> skill checks while in the comet's tail. An unusual object or vessel may be found at the heart of a comet, but such occurrences are very rare and reaching such sites imposes a risk of impact with space debris.</dd>
+			<dt>Debris from collision or attack, Lost equipment or garbage, and Micrometeorite storm</dt>
+			<dd>The vessel is in danger of being impacted by small objects with great force. The vessel suffers 1D6 damage for every point of the vessel's Thrust rating, unless the pilot succeeds in a <a href="skills.html#piloting">Piloting</a> skill check to avoid the debris.</dd>
+			<dt>Interplanetary dust cloud</dt>
+			<dd>Dust clouds interfere with some sensors, imposing a -2 on <a href="skills.html#comms">Comms</a> skill checks while in the cloud. The Referee may impose a second space encounter within the cloud, or simply impose a risk of impact with space debris.</dd>
+			<dt>Jettisoned cargo pod</dt>
+			<dd>For some reason, another vessel has jettisoned its cargo into space, generally to protect the safety of its crew from physical threats or legal actions. The contents of the pod can be determined randomly as per the trade goods rules in <a href="trade-and-commerce.html">Chapter 7: Trade and Commerce</a>, and often come with complications related to who dropped it and why.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Starship Encounters</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>2D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>2</th>
+				<td>Alien Vessel</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Derelict</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>Space Habitat</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>Astrogation</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Space Junk</td>
+			</tr>
+			<tr>
+				<th>7</th>
+				<td>Merchant Vessel</td>
+			</tr>
+			<tr>
+				<th>8</th>
+				<td>Personal Vessel</td>
+			</tr>
+			<tr>
+				<th>9</th>
+				<td>Hostile Vessel</td>
+			</tr>
+			<tr>
+				<th>10</th>
+				<td>Military Vessel</td>
+			</tr>
+			<tr>
+				<th>11</th>
+				<td>Spacecraft</td>
+			</tr>
+			<tr>
+				<th>12</th>
+				<td>Referee's Choice</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Alien Vessel Encounter Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>1D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>Alien courier</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>Alien frontier trader</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Alien merchant freighter</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>Alien military vessel</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>Alien raider</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Alien research vessel</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Astrogation Encounter Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>1D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>Asteroid (inhabited)</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>Asteroid (uninhabited)</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Comet</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>Interplanetary dust cloud</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>Micrometeorite storm</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Solar flares</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Derelict Encounter Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>1D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>Escape pod or life boat</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>Merchant vessel</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Military vessel</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>Personal vessel</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>Research vessel</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Space habitat</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Hostile Vessel Encounter Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>1D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>Captured merchant vessel</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>Captured military vessel</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Enemy military vessel</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>Raider</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>Ship in distress (false)</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Ship in distress (true)</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Merchant Vessel Encounter Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>1D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>Frontier trader</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>Frontier trader</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Merchant freighter</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>Merchant liner</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>Merchant trader</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Merchant trader</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Military Vessel Encounter Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>1D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>Corvette</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>Destroyer</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Patrol frigate</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>System defense boat</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>System monitor</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Warship (1: Dreadnought; 2-3: Heavy cruiser; 4-6: Light cruiser)</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Personal Vessel Encounter Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>1D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>Asteroid miner</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>Courier</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Research vessel</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>Survey vessel</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>Unusual ship</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Yacht</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Spacecraft Encounter Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>1D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>Cutter</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>Launch or life boat</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Fighter</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>Pinnace</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>Ship's boat</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Shuttle</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Space Habitat Encounter Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>1D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>Medical facility</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>Military facility</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Orbital factory</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>Orbital habitat</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>Refueling station or spaceport</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Research facility</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Space Junk Encounter Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>1D6</th>
+					<th>Encounter Type</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>Astrogational buoy or beacon</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>Communications satellite</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>Debris from collision or attack</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>Defense satellite</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>Jettisoned cargo pod</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>Lost or abandoned equipment or garbage</td>
+			</tr>
+		</table>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted">Cepheus Engine System Reference Document, Copyright © 2016 Samardan Press; Author Jason "Flynn" Kemp</span>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

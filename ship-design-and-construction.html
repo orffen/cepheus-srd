@@ -1,0 +1,3266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cepheus Engine SRD - Ship Design and Construction</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="cepheus-engine-srd.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+			<a class="navbar-brand" href="index.html">Cepheus Engine SRD</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mr-auto nav-pills">
+					<li class="nav-link nav-item">
+						<a class="nav-link" href="introduction.html">Introduction</a>
+					</li>
+					<li class="nav-link nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Book 1: Characters</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="character-creation.html">Chapter 1: Character Creation</a>
+							<a class="dropdown-item" href="skills.html">Chapter 2: Skills</a>
+							<a class="dropdown-item" href="psionics.html">Chapter 3: Psionics</a>
+							<a class="dropdown-item" href="equipment.html">Chapter 4: Equipment</a>
+							<a class="dropdown-item" href="personal-combat.html">Chapter 5: Personal Combat</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item dropdown active">
+						<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="">Book 2: Starships and Interstellar Travel</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="off-world-travel.html">Chapter 6: Off-World Travel</a>
+							<a class="dropdown-item" href="trade-and-commerce.html">Chapter 7: Trade and Commerce</a>
+							<a class="dropdown-item active" href="ship-design-and-construction.html">Chapter 8: Ship Design and Construction</a>
+							<a class="dropdown-item" href="common-vessels.html">Chapter 9: Common Vessels</a>
+							<a class="dropdown-item" href="space-combat.html">Chapter 10: Space Combat</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Book 3: Referees</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="environments-and-hazards.html">Chapter 11: Environments and Hazards</a>
+							<a class="dropdown-item" href="worlds.html">Chapter 12: Worlds</a>
+							<a class="dropdown-item" href="planetary-wilderness-encounters.html">Chapter 13: Planetary Wilderness Encounters</a>
+							<a class="dropdown-item" href="social-encounters.html">Chapter 14: Social Encounters</a>
+							<a class="dropdown-item" href="starship-encounters.html">Chapter 15: Starship Encounters</a>
+							<a class="dropdown-item" href="refereeing-the-game.html">Chapter 16: Refereeing the Game</a>
+							<a class="dropdown-item" href="adventures.html">Chapter 17: Adventures</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item dropdown">
+						<a class="nav-link dropdown-toggle disabled" data-toggle="dropdown" href="">Vehicle Design System</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="vehicle-design.html">Chapter 1: Vehicle Design</a>
+							<a class="dropdown-item" href="common-aircraft.html">Chapter 2: Common Aircraft</a>
+							<a class="dropdown-item" href="common-grav-vehicles.html">Chapter 3: Common Grav Vehicles</a>
+							<a class="dropdown-item" href="common-ground-vehicles.html">Chapter 4: Common Ground Vehicles</a>
+							<a class="dropdown-item" href="common-watercraft.html">Chapter 5: Common Watercraft</a>
+							<a class="dropdown-item" href="uncommon-vehicles.html">Chapter 6: Uncommon Vehicles</a>
+							<a class="dropdown-item" href="updated-common-vehicles-table.html">Appendix A: Updated Common Vehicles Table</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item">
+						<a class="nav-link" href="legal.html">Legal</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container w-75">
+		<h1>Chapter 8: Ship Design and Construction</h1>
+		<p class="lead">
+			Space ships are the backbone of any starfaring campaign. This chapter provides rules for the design and construction of such vessels for use in Cepheus Engine campaigns. Any class A starport has a shipyard which can build any kind of ship, including a starship with Jump drives; any class B starport can build small craft and ships which do not have Jump drives.
+		</p>
+
+		<h2>Standard Designs vs. New Designs</h2>
+		<p>
+			An interstellar economy provides an excellent opportunity for the use of standardized and modular designs. Components can be crafted on different worlds, taking advantage of available resources, and then put together to create a final product. Shipyards take advantage of modular components and standardized designs to reduce costs in production, which leads to a 10% discount on vessels constructed using common designs, such as those described in <a href="common-vessels.html">Chapter 9: Common Vessels</a>. The Referee may designate other ship designs as standard designs, as befits their universe. Fuel and weapon ammunition are not covered by the standard design discount.
+		</p>
+		<p>
+			New and unique ship designs cannot take advantage of standardized and modular design. These ships must be designed by a naval architect, who creates detailed design plans based on a set of specifications provided by their client. Such plans take a month to create, and costs approximately 1% of the final cost of the vessel.
+		</p>
+
+		<h2 id="ship-design-checklist">Ship Design Checklist</h2>
+		<ol>
+			<li>
+				<a href="#ship-hull">Choose a Ship Hull</a>
+				<ol type="a">
+					<li><a href="#ship-configuration">Determine hull configuration</a></li>
+					<li><a href="#ship-armor">Install armor (optional)</a></li>
+				</ol>
+			</li>
+			<li><a href="#ship-drives">Choose maneuver drive (optional, but highly recommended)</a></li>
+			<li><a href="#ship-drives">Choose jump drive (optional)</a></li>
+			<li><a href="#ship-drives">Choose power plant</a></li>
+			<li><a href="#fuel">Determine fuel requirements</a></li>
+			<li><a href="#bridge">Determine bridge</a></li>
+			<li>
+				<a href="#ship-computer">Choose ship's computer</a>
+				<ol type="a">
+					<li><a href="#ship-software">Choose computer software</a></li>
+				</ol>
+			</li>
+			<li><a href="#ship-electronics">Choose ship's electronics</a></li>
+			<li>
+				<a href="#ship-crew">Determine number of required crew</a>
+				<ol type="a">
+					<li>Choose <a href="#staterooms">staterooms</a> and <a href="#low-passage-berths">low berths</a></li>
+				</ol>
+			</li>
+			<li><a href="#additional-ship-components">Determine additional features (optional)</a></li>
+			<li>
+				<a href="#armaments">Determine turrets, bays or screens (optional)</a>
+				<ol type="a">
+					<li><a href="#armaments">Determine weapons (optional)</a></li>
+				</ol>
+			</li>
+			<li>Allocate remaining space to cargo</li>
+			<li>
+				Calculate final cost and construction time
+				<ol type="a">
+					<li>Apply standard design discount of 10% (optional)</li>
+				</ol>
+			</li>
+		</ol>
+
+		<h2 id="note-on-system-redundancy">A Note on System Redundancy</h2>
+		<p>
+			Ship systems take damage for a variety of reasons, becoming disabled or destroyed as damage accumulates. To counter the loss of vital ship systems, some ship designers install multiple versions of certain components. These redundant systems remain inactive until the original system is disabled, with the exception of ship weaponry. When all redundant systems have been disabled, any further damage begins to destroy them, beginning with the primary system.
+		</p>
+
+		<h2 id="displacement-tons">Displacement Tons</h2>
+		<p>
+			Hulls and other ship components are designated by their displacement volume. Displacement volume is measured  in the volume of space that is displaced by one metric ton of hydrogen, referred to in this design sequence as displacement tons or simply tons.
+		</p>
+		<p>
+			A metric ton of hydrogen measures approximately 13.5 cubic meters, which is rounded to 14 cubic meters for ease of calculations. When drawing floor plans or maps of ships, each square measuring 1.5 meters by 1.5 meters, to a height of 3m up from the floor, represents half a ton.
+		</p>
+
+		<h2 id="ship-hull">Ship Hull</h2>
+		<p>
+			The ship's hull is the shell in which all other components are placed. A ship's construction time is based on its hull size, as outlined on the Ship Hull table.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Ship Hull by Displacement</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Hull</th>
+					<th>Hull Code</th>
+					<th>Price (MCr)</th>
+					<th>Construction Time (weeks)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>100 tons</th>
+				<td>1</td>
+				<td>2</td>
+				<td>36</td>
+			</tr>
+			<tr>
+				<th>200 tons</th>
+				<td>2</td>
+				<td>8</td>
+				<td>44</td>
+			</tr>
+			<tr>
+				<th>300 tons</th>
+				<td>3</td>
+				<td>12</td>
+				<td>52</td>
+			</tr>
+			<tr>
+				<th>400 tons</th>
+				<td>4</td>
+				<td>16</td>
+				<td>60</td>
+			</tr>
+			<tr>
+				<th>500 tons</th>
+				<td>5</td>
+				<td>32</td>
+				<td>68</td>
+			</tr>
+			<tr>
+				<th>600 tons</th>
+				<td>6</td>
+				<td>48</td>
+				<td>76</td>
+			</tr>
+			<tr>
+				<th>700 tons</th>
+				<td>7</td>
+				<td>64</td>
+				<td>84</td>
+			</tr>
+			<tr>
+				<th>800 tons</th>
+				<td>8</td>
+				<td>80</td>
+				<td>92</td>
+			</tr>
+			<tr>
+				<th>900 tons</th>
+				<td>9</td>
+				<td>90</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<th>1,000 tons</th>
+				<td>A</td>
+				<td>100</td>
+				<td>108</td>
+			</tr>
+			<tr>
+				<th>1,200 tons</th>
+				<td>C</td>
+				<td>120</td>
+				<td>124</td>
+			</tr>
+			<tr>
+				<th>1,400 tons</th>
+				<td>E</td>
+				<td>140</td>
+				<td>140</td>
+			</tr>
+			<tr>
+				<th>1,600 tons</th>
+				<td>G</td>
+				<td>160</td>
+				<td>156</td>
+			</tr>
+			<tr>
+				<th>1,800 tons</th>
+				<td>J</td>
+				<td>180</td>
+				<td>172</td>
+			</tr>
+			<tr>
+				<th>2,000 tons</th>
+				<td>L</td>
+				<td>200</td>
+				<td>188</td>
+			</tr>
+			<tr>
+				<th>3,000 tons</th>
+				<td>M</td>
+				<td>300</td>
+				<td>268</td>
+			</tr>
+			<tr>
+				<th>4,000 tons</th>
+				<td>N</td>
+				<td>400</td>
+				<td>348</td>
+			</tr>
+			<tr>
+				<th>5,000 tons</th>
+				<td>P</td>
+				<td>500</td>
+				<td>428</td>
+			</tr>
+		</table>
+
+		<h3 id="ship-configuration">Ship Configuration </h3>
+		<p>
+			A ship may have any of three configurations – standard (a wedge, cone, sphere or cylinder), streamlined (a wing, disc or other lifting body allowing it to enter the atmosphere easily) or distributed (made up of several sections, and incapable of entering an atmosphere or maintaining its shape under gravity).
+		</p>
+		<dl>
+			<dt>Standard</dt>
+			<dd>A standard-hull ship may still enter atmosphere but is very ungainly and ponderous, capable only of making a controlled glide to the surface. Getting it back into space requires an elaborate launch setup and considerable expense. A standard-hull ship may have scoops for gathering fuel from a gas giant but the process will be much more difficult and less efficient. Larger ships of this type will often carry a specialized sub-craft to perform the actual atmospheric skimming. </dd>
+			<dt>Streamlined</dt>
+			<dd>Streamlining a ship increases the cost of the hull by 10%. This streamlining includes fuel scoops which allow the skimming of unrefined fuel from gas giants or the gathering of water from open lakes or oceans. Streamlining may not be retrofitted; it must be included at the time of construction.</dd>
+			<dt>Distributed</dt>
+			<dd>A distributed ship reduces the cost of its hull by 10%. It is completely non-aerodynamic and if it enters an atmosphere or strong gravity it will fall to the surface of the planet. It cannot mount fuel scoops.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Ship Configuration</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Configuration</th>
+					<th>Hull Cost Modifier</th>
+					<th>Notes</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Distributed</th>
+				<td>x0.9</td>
+				<td>Cannot mount fuel scoops. Atmospheric operations suffer -4 DM (failed checks inflict 2D6 damage).</td>
+			</tr>
+			<tr>
+				<th>Standard</th>
+				<td>x1</td>
+				<td>Atmospheric operations suffer a -2 DM.</td>
+			</tr>
+			<tr>
+				<th>Streamlined</th>
+				<td>x1.1</td>
+				<td>Includes fuel scoops.</td>
+			</tr>
+		</table>
+
+		<h3 id="ship-armor">Ship Armor</h3>
+		<p>
+			Armor is added in 5% increments of the ship's tonnage. An armored ship decreases radiation exposure from space phenomena by 400 rads. (This does not apply to meson attacks and nuclear missiles, which bypass the armor or breach the hull to deliver their radiation hits.)
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Ship Armor by Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Armor Type</th>
+					<th>TL</th>
+					<th>Protection</th>
+					<th>Cost</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Titanium Steel</th>
+				<td>7</td>
+				<td>2 per 5%, minimum 1 ton</td>
+				<td>5% of base hull</td>
+			</tr>
+			<tr>
+				<th>Crystaliron</th>
+				<td>10</td>
+				<td>4 per 5%, minimum 1 ton</td>
+				<td>20% of base hull </td>
+			</tr>
+			<tr>
+				<th>Bonded Superdense</th>
+				<td>14</td>
+				<td>6 per 5%, minimum 1 ton</td>
+				<td>50% of base hull</td>
+			</tr>
+		</table>
+
+		<h3 id="ship-armor-options">Ship Armor Options</h3>
+		<p>
+			The following are options that can be added to a ship's armor.
+		</p>
+		<dl>
+			<dt>Reflec (TL 10)</dt>
+			<dd>Reflec coating on the hull increases the ship's armor against lasers by 3. Adding Reflec costs MCr0.1 per ton of hull and can only be added once.</dd>
+			<dt>Self-Sealing (TL 9)</dt>
+			<dd>A self-sealing hull automatically repairs minor breaches such as micrometeoroid impacts, and prevents hull hits from leading to explosive decompression. It costs MCr0.01 per ton of hull.</dd>
+			<dt>Stealth (TL 11)</dt>
+			<dd>A stealth coating absorbs radar and lidar beams, and also disguises heat emissions. This gives a –4 DM on any Comms rolls to detect or lock onto the ship. Adding Stealth costs MCr0.1 per ton of hull, and can only be added once.</dd>
+		</dl>
+
+		<h3 id="hull-and-structure">Hull and Structure</h3>
+		<p>
+			Initial damage is applied to the Hull; once the Hull is breached, further damage goes to the Structure. When all Structure Points have been lost, the ship has been smashed to pieces. A ship has one Hull Point per 50 tons of displacement (rounded down) and one Structure Point per 50 tons of displacement (rounded up).
+		</p>
+
+		<h2 id="ship-sections">Ship Sections</h2>
+		<p>
+			Most vessels are divided into two primary sections.
+		</p>
+
+		<h3>The Engineering Section</h3>
+		<p>
+			The Engineering section contains the drives and power plant necessary for proper operation and movement.
+		</p>
+
+		<h3>The Main Compartment</h3>
+		<p>
+			The ship's main compartment contains all non-drive features of the ship, including the bridge, ship's computer, the staterooms, the low passage berths, the cargo hold and other items.
+		</p>
+
+		<h2 id="ship-drives">Ship Drives</h2>
+		<p>
+			A non-starship must have a maneuver drive (M-Drive) and a power plant (P-Plant). A starship must have a Jump drive (J-Drive) and a power plant; a maneuver drive may also be installed, but is not required.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Drive Costs</caption>
+			<thead class="thead-light">
+				<tr>
+					<th></th>
+					<th colspan="2" class="text-center">J-Drive</th>
+					<th colspan="2" class="text-center">M-Drive</th>
+					<th colspan="2" class="text-center">P-Plant</th>
+				</tr>
+				<tr>
+					<th>Drive Code</th>
+					<th>Tons</th>
+					<th>MCr</th>
+					<th>Tons</th>
+					<th>MCr</th>
+					<th>Tons</th>
+					<th>MCr</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>10</td>
+				<td>10</td>
+				<td>2</td>
+				<td>4</td>
+				<td>4</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>15</td>
+				<td>20</td>
+				<td>3</td>
+				<td>8</td>
+				<td>7</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>20</td>
+				<td>30</td>
+				<td>5</td>
+				<td>12</td>
+				<td>10</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<th>D</th>	
+				<td>25</td>
+				<td>40</td>
+				<td>7</td>
+				<td>16</td>
+				<td>13</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<th>E</th>	
+				<td>30</td>
+				<td>50</td>
+				<td>9</td>
+				<td>20</td>
+				<td>16</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<th>F</th>	
+				<td>35</td>
+				<td>60</td>
+				<td>11</td>
+				<td>24</td>
+				<td>19</td>
+				<td>48</td>
+			</tr>
+			<tr>
+				<th>G</th>	
+				<td>40</td>
+				<td>70</td>
+				<td>13</td>
+				<td>28</td>
+				<td>22</td>
+				<td>56</td>
+			</tr>
+			<tr>
+				<th>H</th>	
+				<td>45</td>
+				<td>80</td>
+				<td>15</td>
+				<td>32</td>
+				<td>25</td>
+				<td>64</td>
+			</tr>
+			<tr>
+				<th>J</th>	
+				<td>50</td>
+				<td>90</td>
+				<td>17</td>
+				<td>36</td>
+				<td>28</td>
+				<td>72</td>
+			</tr>
+			<tr>
+				<th>K</th>	
+				<td>55</td>
+				<td>100</td>
+				<td>19</td>
+				<td>40</td>
+				<td>31</td>
+				<td>80</td>
+			</tr>
+			<tr>
+				<th>L</th>	
+				<td>60</td>
+				<td>110</td>
+				<td>21</td>
+				<td>44</td>
+				<td>34</td>
+				<td>88</td>
+			</tr>
+			<tr>
+				<th>M</th>	
+				<td>65</td>
+				<td>120</td>
+				<td>23</td>
+				<td>48</td>
+				<td>37</td>
+				<td>96</td>
+			</tr>
+			<tr>
+				<th>N</th>	
+				<td>70</td>
+				<td>130</td>
+				<td>25</td>
+				<td>52</td>
+				<td>40</td>
+				<td>104</td>
+			</tr>
+			<tr>
+				<th>P</th>	
+				<td>75</td>
+				<td>140</td>
+				<td>27</td>
+				<td>56</td>
+				<td>43</td>
+				<td>112</td>
+			</tr>
+			<tr>
+				<th>Q</th>	
+				<td>80</td>
+				<td>150</td>
+				<td>29</td>
+				<td>60</td>
+				<td>46</td>
+				<td>120</td>
+			</tr>
+			<tr>
+				<th>R</th>	
+				<td>85</td>
+				<td>160</td>
+				<td>31</td>
+				<td>64</td>
+				<td>49</td>
+				<td>128</td>
+			</tr>
+			<tr>
+				<th>S</th>	
+				<td>90</td>
+				<td>170</td>
+				<td>33</td>
+				<td>68</td>
+				<td>52</td>
+				<td>136</td>
+			</tr>
+			<tr>
+				<th>T</th>	
+				<td>95</td>
+				<td>180</td>
+				<td>35</td>
+				<td>72</td>
+				<td>55</td>
+				<td>144</td>
+			</tr>
+			<tr>
+				<th>U</th>	
+				<td>100</td>
+				<td>190</td>
+				<td>37</td>
+				<td>76</td>
+				<td>58</td>
+				<td>152</td>
+			</tr>
+			<tr>
+				<th>V</th>	
+				<td>105</td>
+				<td>200</td>
+				<td>39</td>
+				<td>80</td>
+				<td>61</td>
+				<td>160</td>
+			</tr>
+			<tr>
+				<th>W</th>	
+				<td>110</td>
+				<td>210</td>
+				<td>41</td>
+				<td>84</td>
+				<td>64</td>
+				<td>168</td>
+			</tr>
+			<tr>
+				<th>X</th>	
+				<td>115</td>
+				<td>220</td>
+				<td>43</td>
+				<td>88</td>
+				<td>67</td>
+				<td>176</td>
+			</tr>
+			<tr>
+				<th>Y</th>	
+				<td>120</td>
+				<td>230</td>
+				<td>45</td>
+				<td>92</td>
+				<td>70</td>
+				<td>182</td>
+			</tr>
+			<tr>
+				<th>Z</th>	
+				<td>125</td>
+				<td>240</td>
+				<td>47</td>
+				<td>96</td>
+				<td>73</td>
+				<td>192</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Drive Performance by Hull Volume, Smaller Hulls</caption>
+			<thead class="thead-light">
+				<tr>
+					<th></th>
+					<th>100</th>
+					<th>200</th>
+					<th>300</th>
+					<th>400</th>
+					<th>500</th>
+					<th>600</th>
+					<th>700</th>
+					<th>800</th>
+					<th>900</th>
+					<th>1000</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>2</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>4</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>6</td>
+				<td>3</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>–</td>
+				<td>4</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>–</td>
+				<td>5</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>–</td>
+				<td>6</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>–</td>
+				<td>–</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>–</td>
+				<td>–</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Drive Performance by Hull Volume, Larger Hulls</caption>
+			<thead class="thead-light">
+				<tr>
+					<th></th>
+					<th>1200</th>
+					<th>1400</th>
+					<th>1600</th>
+					<th>1800</th>
+					<th>2000</th>
+					<th>3000</th>
+					<th>4000</th>
+					<th>5000</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>1</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>–</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>1</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>2</td>
+				<td>–</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>2</td>
+				<td>1</td>
+				<td>–</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+		</table>
+		<p>
+			For maneuver drives, the potential is the Thrust number (Tn), which is the number of Gs acceleration available. For Jump drives, the potential is the Jump number (Jn), or Jump range in parsecs. The power plant rating (A-Z) must be at least equal to either the maneuver drive or Jump drive rating, whichever is higher.
+		</p>
+
+		<h3 id="fuel">Fuel</h3>
+		<p>
+			Fuel needed for a Jump depends on the size of the ship and the length of the Jump and is calculated as 0.1 x Hull tonnage x Jump distance. A single Jump of that distance consumes that much fuel.
+		</p>
+		<p>
+			The amount of fuel required by the power plant depends on the tonnage of the power plant itself, and is calculated as one-third of the power plant tonnage per week, rounded down to the nearest ton. Space-faring vessels require a minimum of two weeks' worth of fuel for the power plant. Deep space vessels may store four, six or even eight weeks of power plant fuel. For your convenience, the Power Plant Fuel Requirements table provides calculated values for both the fuel per week and minimum fuel volume by Drive Code.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Power Plant Fuel Requirements</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Drive Code</th>
+					<th>P-Plant (tons)</th>
+					<th>Fuel/Wk (tons)</th>
+					<th>Min. Fuel Volume</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>4</td>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>7</td>
+				<td>2</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>10</td>
+				<td>3</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>13</td>
+				<td>4</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>16</td>
+				<td>5</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>19</td>
+				<td>6</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>22</td>
+				<td>7</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>25</td>
+				<td>8</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>28</td>
+				<td>9</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>31</td>
+				<td>10</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>34</td>
+				<td>11</td>
+				<td>22</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>37</td>
+				<td>12</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>40</td>
+				<td>13</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>43</td>
+				<td>14</td>
+				<td>28</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>46</td>
+				<td>15</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>49</td>
+				<td>16</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>52</td>
+				<td>17</td>
+				<td>34</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>55</td>
+				<td>18</td>
+				<td>36</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>58</td>
+				<td>19</td>
+				<td>38</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>61</td>
+				<td>20</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>64</td>
+				<td>21</td>
+				<td>42</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>67</td>
+				<td>22</td>
+				<td>44</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>70</td>
+				<td>23</td>
+				<td>46</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>73</td>
+				<td>24</td>
+				<td>48</td>
+			</tr>
+		</table>
+
+		<h2 id="bridge">Bridge</h2>
+		<p>
+			The size of the bridge varies depending on the size of the ship. The cost for the ship's bridge is MCr0.5 per 100 tons of ship.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Bridge Size</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Ship Size</th>
+					<th>Bridge Size</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>200 tons or less</th>
+				<td>10 tons</td>
+			</tr>
+			<tr>
+				<th>300 tons – 1000 tons</th>
+				<td>20 tons</td>
+			</tr>
+			<tr>
+				<th>1,100 – 2000 tons</th>
+				<td>40 tons</td>
+			</tr>
+			<tr>
+				<th>More than 2,000 tons</th>
+				<td>60 tons</td>
+			</tr>
+		</table>
+
+		<h2 id="ship-computer">Ship Computer</h2>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Ship Computer Models</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Computer</th>
+					<th>TL</th>
+					<th>Rating</th>
+					<th>Cost</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Model 1</th>
+				<td>7</td>
+				<td>5</td>
+				<td>Cr30,000</td>
+			</tr>
+			<tr>
+				<th>Model 2</th>
+				<td>9</td>
+				<td>10</td>
+				<td>Cr160,000</td>
+			</tr>
+			<tr>
+				<th>Model 3</th>
+				<td>11</td>
+				<td>15</td>
+				<td>MCr2</td>
+			</tr>
+			<tr>
+				<th>Model 4</th>
+				<td>12</td>
+				<td>20</td>
+				<td>MCr5</td>
+			</tr>
+			<tr>
+				<th>Model 5</th>
+				<td>13</td>
+				<td>25</td>
+				<td>MCr10</td>
+			</tr>
+			<tr>
+				<th>Model 6</th>
+				<td>14</td>
+				<td>30</td>
+				<td>MCr20</td>
+			</tr>
+			<tr>
+				<th>Model 7</th>
+				<td>15</td>
+				<td>35</td>
+				<td>MCr30</td>
+			</tr>
+		</table>
+
+		<h3 id="ship-computer-options">Ship Computer Options</h3>
+		<p>
+			The following options are available for ship's computers.
+		</p>
+		<dl>
+			<dt>Jump Control Specialization (bis)</dt>
+			<dd>A computer's rating can be increased by 5 for the purposes of running Jump Control programs only. This increases the computer's cost by 50%.</dd>
+			<dt>Hardened Systems (fib)</dt>
+			<dd>A computer and its connections can be hardened against attack by electromagnetic pulse weapons. A hardened system is immune to EMP, but costs 50% more.</dd>
+		</dl>
+		<p>
+			Both options can be applied to the same computer by doubling its cost (+100%).
+		</p>
+
+		<h3 id="ship-software">Ship Software</h3>
+		<p>
+			Ship computers run highly specialized software packages designed to support numerous functions, such as managing the Jump drive, evading incoming fire, controlling ship's weapons and executing automatic repairs. Ship's computers automatically provide the means for basic control of the vessel, as well as extensive library data on numerous topics and a basic level of security (Security/0).
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Ship Software</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Program</th>
+					<th>TL</th>
+					<th>Rating</th>
+					<th>Cost (MCr)</th>
+					<th>Notes</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Auto-Repair</th>
+				<td>10+</td>
+				<td>10 per repair attempt</td>
+				<td>5 per repair attempt</td>
+				<td>Computer may attempt one repair per turn, or give a DM+1 to an attempt; at TL 12, can purchase an additional repair attempt (or DM+1) for twice the Rating and Cost.</td>
+			</tr>
+			<tr>
+				<th>Evade</th>
+				<td>9+</td>
+				<td>5 + 5 per DM-1</td>
+				<td>1 per DM-1</td>
+				<td>Imposes DM-1 on incoming fire; every two TLs higher, can purchase an addition DM-1, to a maximum of DM-3 at TL 13.</td>
+			</tr>
+			<tr>
+				<th>Fire Control</th>
+				<td>9+</td>
+				<td>5 per weapon</td>
+				<td>2 per weapon</td>
+				<td>Ship's computer may fire one weapon; for each additional weapon, TL is increased by 1 (the ship can fire up to 2 weapons at TL 10, 3 at TL 11, and so on). The ship's computer may also sacrifice controlling a weapon to give a DM+1 from computer targeting on another attack, whether that weapon is controlled by the ship's computer or by an actual gunner. Maximum of five weapons may be controlled by this program.</td>
+			</tr>
+			<tr>
+				<th>Jump Control</th>
+				<td>9+</td>
+				<td>5 per Jn</td>
+				<td>0.1xJn</td>
+				<td>Governs Jump drives up to a given Jump number (Jn); TL is the same as the TL required for a given Jump number.</td>
+			</tr>
+			<tr>
+				<th>Jump Course Tape</th>
+				<td>9+</td>
+				<td>1 per Jn</td>
+				<td>0.001xJn</td>
+				<td>Provides jump plot from one specific world to a specific destination system. Price based on number of parsecs between worlds; TL is the same as the TL required for a given Jump number needed to cover that Jump.</td>
+			</tr>
+		</table>
+
+		<h2 id="ship-electronics">Ship Electronics</h2>
+		<p>
+			A ship comes with a basic communications, sensor and emissions-control electronics suite, but more advanced systems can be installed. The Dice Modifier applies to jamming and counter-jamming attempts.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Ship Electronics</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>System</th>
+					<th>TL</th>
+					<th>DM</th>
+					<th>Includes</th>
+					<th>Tons</th>
+					<th>Cost</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Standard</th>
+				<td>8</td>
+				<td>–4</td>
+				<td>Radar, Lidar</td>
+				<td>Included in bridge</td>
+				<td>Included in bridge</td>
+			</tr>
+			<tr>
+				<th>Basic Civilian</th>
+				<td>9</td>
+				<td>–2</td>
+				<td>Radar, Lidar</td>
+				<td>1</td>
+				<td>Cr50,000</td>
+			</tr>
+			<tr>
+				<th>Basic Military</th>
+				<td>10</td>
+				<td>+0</td>
+				<td>Radar, Lidar, Jammers</td>
+				<td>2</td>
+				<td>MCr1</td>
+			</tr>
+			<tr>
+				<th>Advanced</th>
+				<td>11</td>
+				<td>+1</td>
+				<td>Radar, Lidar, Densitometer, Jammers</td>
+				<td>3</td>
+				<td>MCr2</td>
+			</tr>
+			<tr>
+				<th>Very Advanced</th>
+				<td>12</td>
+				<td>+2</td>
+				<td>Radar, Lidar, Densitometer, Jammers, Neural Activity Sensor</td>
+				<td>5</td>
+				<td>MCr4</td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Radar/Lidar</dt>
+			<dd>detects physical objects. It can be active or passive. If a ship is using active sensors, it is easier to detect (+2 DM to Comms checks) but detects more about its surroundings.</dd>
+			<dt>Jammers</dt>
+			<dd>can jam or counter-jam radio communications and sensor locks.</dd>
+			<dt>Densitometers</dt>
+			<dd>can determine the internal structure and makeup of an object.</dd>
+			<dt>Neural Activity Sensor</dt>
+			<dd>detects neural activity and intelligence.</dd>
+		</dl>
+
+		<h2 id="ship-crew">Ship Crew</h2>
+		<p>
+			All vessels require a crew to operate and maintain the ship. Small independently-owned vessels tend to operate with a minimum of crew, while corporate and military vessels maintain a full complement.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Ship Crew Requirements</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Position</th>
+					<th>Minimum</th>
+					<th>Full Complement</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Command</th>
+				<td>None</td>
+				<td>One commanding officer or Captain, one executive officer, three administrative personnel (for ships over 1,000 tons)</td>
+			</tr>
+			<tr>
+				<th>Pilot</th>
+				<td>One</td>
+				<td>Three (one per 8-hour shift)</td>
+			</tr>
+			<tr>
+				<th>Navigator</th>
+				<td>One (optional with computer software)</td>
+				<td>One</td>
+			</tr>
+			<tr>
+				<th>Engineer</th>
+				<td>One</td>
+				<td>One per 35 tons of drives and power plant</td>
+			</tr>
+			<tr>
+				<th>Sensors Operator</th>
+				<td>None</td>
+				<td>One</td>
+			</tr>
+			<tr>
+				<th>Medic</th>
+				<td>None</td>
+				<td>One per 120 passengers and crew</td>
+			</tr>
+			<tr>
+				<th>Steward</th>
+				<td>None</td>
+				<td>One per four high passengers or ten middle passengers (assumes Steward-1)</td>
+			</tr>
+			<tr>
+				<th>Turret Gunner</th>
+				<td>One per turret weapon</td>
+				<td>One per turret weapon</td>
+			</tr>
+			<tr>
+				<th>Bay Gunner</th>
+				<td>One per bay weapon</td>
+				<td>Two per bay weapon</td>
+			</tr>
+			<tr>
+				<th>Screen Operator</th>
+				<td>One per screen device</td>
+				<td>Four per screen device</td>
+			</tr>
+			<tr>
+				<th>Chief Security Officer</th>
+				<td>None</td>
+				<td>One (optional)</td>
+			</tr>
+			<tr>
+				<th>Flight Crew</th>
+				<td>None</td>
+				<td>One per smallcraft or vehicle carried in hangars or launch tubes, plus one support crew per three vehicles or vessels</td>
+			</tr>
+			<tr>
+				<th>Marine</th>
+				<td>None</td>
+				<td>On ships over 1,000 tons, may have up to 30 per 1,000 tons</td>
+			</tr>
+			<tr>
+				<th>Other</th>
+				<td>None</td>
+				<td>As needed (i.e. medical staff, scientists, surveyors, etc.)</td>
+			</tr>
+		</table>
+
+		<h3 id="staterooms">Staterooms</h3>
+		<p>
+			Each stateroom is sufficient for one person, displaces 4 tons, and costs Cr500,000. No stateroom can contain more than two persons, such as for middle passengers, as it would strain the ship's life support equipment. The tonnage and cost of the staterooms includes the life support systems needed to keep the crew alive.
+		</p>
+
+		<h3 id="low-passage-berths">Low Passage Berths</h3>
+		<p>
+			One low passage berth carries one low passenger, costs Cr50,000, and displaces one-half ton.
+		</p>
+		<p>
+			Emergency low berths are also available; they will not carry passengers, but can be used for survival. Each costs Cr100,000 and displaces one ton. Each holds four persons.
+		</p>
+
+		<h3 id="barracks">Barracks</h3>
+		<p>
+			A barracks takes up 2 tons per marine, and costs MCr0.1 per marine. Barracks can only be used to accommodate troops intended for boarding or assault operations. Troops accommodated in barracks cannot be used to reduce the number of service crew embarked.
+		</p>
+
+		<h2 id="additional-ship-components">Additional Ship Components</h2>
+		<p>
+			The following are examples of additional ship components that might prove useful for certain ship designs.
+		</p>
+
+		<h3 id="armory">Armory</h3>
+		<p>
+			Ships carrying a large number of marines or soldiers can benefit from an armory, a specialized weapons store. An armory can only be accessed by those with the correct codes (usually the ship's senior officers and security team) and contains a wide variety of weapons. In game terms, an armory has enough snub pistols for the crew, enough accelerator or gauss rifles for any marines, and a selection of other military equipment like grenades, combat drug packs, combat armor and communications equipment. A general armory for a spacecraft costs MCr0.5 and takes up 2 tons of space.
+		</p>
+		<p>
+			Where military vessels are concerned, the number of armories built into the ship's design is based on crew size. One armory is installed for either every 50 crew members, or every 10 marines, in order to provide adequate storage for equipment, weapons and ammunition.
+		</p>
+
+		<h3 id="briefing-room">Briefing Room</h3>
+		<p>
+			A specialized briefing room is useful on mercenary cruisers and other adventuring ships, where teams can discuss plans or meet with clients privately. A briefing room gives a +1 DM to Tactics checks made when planning missions on board ship. Ships with command bridges and fighter squadrons require additional briefing rooms and facilities. Capital ships must therefore have one briefing room per ship section, and one briefing room for every 20 fighter or bomber crew.
+		</p>
+
+		<h3 id="cargo-hold">Cargo Hold</h3>
+		<p>
+			The design plan must indicate cargo capacity. There is no cost but cargo carried may not exceed cargo capacity. Any space left over after all systems have been installed may be allocated to cargo space.
+		</p>
+
+		<h3 id="detention-cells">Detention Cells</h3>
+		<p>
+			Found primarily on military and government vessels, a detention cell is used to keep prisoners. A detention cell displaces 2 tons and costs MCr0.25.
+		</p>
+
+		<h3 id="fuel-scoops">Fuel Scoops</h3>
+		<p>
+			Fuel scoops allow an unstreamlined ship to gather unrefined fuel from a gas giant. Streamlined ships have fuel scoops built in. Adding scoops costs MCr1 and requires no tonnage.
+		</p>
+
+		<h3 id="fuel-processors">Fuel Processors</h3>
+		<p>
+			Fuel processors convert unrefined fuel into refined fuel. One ton of fuel processors can convert 20 tons of unrefined hydrogen into refined fuel per day. A ton of fuel processing equipment costs Cr50,000.
+		</p>
+
+		<h3 id="laboratory">Laboratory</h3>
+		<p>
+			Space allocated to laboratories can be used for research and experimentation. Each four tons of lab space allows for one scientist to perform research on board ship. The cost for research equipment varies depending on the type of research undertaken, but is generally around MCr1.0 per 4 tons.
+		</p>
+
+		<h3 id="launch-tubes">Launch Tubes</h3>
+		<p>
+			Launching and recovering small craft from a larger vessel is usually an activity taking 30 minutes to launch or recovery one craft. Launch tubes allow small craft to be launched and recovered rapidly from a ship. The size of a launch tube is twenty–five times the tonnage of the largest craft that will be deployed in this manner, and they cost MCr0.5 per ton. With a launch tube, up to ten small craft can be launched per round. Multiple launch tubes can be installed.
+		</p>
+
+		<h3 id="library">Library</h3>
+		<p>
+			A library room contains computer files as well as lecterns, display screens, holotanks and even hard copies of books. A good library is useful for both research and passing time in jump space. Having a library on board a ship gives one extra week of training time for new skills per week spent in jump space. A library for a spacecraft costs MCr4 and takes up 4 tons of space.
+		</p>
+
+		<h3 id="luxuries">Luxuries</h3>
+		<p>
+			Luxuries cost Cr100,000 per ton, and make life on board ship more pleasant. Each ton of luxuries counts as one level of the Steward skill for the purposes of carrying passengers, and therefore allows a ship to carry middle and high passage passengers without carrying a trained steward on board.
+		</p>
+
+		<h3 id="ships-locker">Ship's Locker</h3>
+		<p>
+			Every ship has a ship's locker. Typical equipment carried aboard will include protective clothing, vacc suits, weapons such as shotguns or pistols, ammunition, compasses and survival aids, and portable shelters. The contents of the locker are defined only when they need to be but always contains vacc suits and other useful items. The ship's locker is usually protected by a biometric lock keyed to the ship's officers.
+		</p>
+
+		<h3 id="vault">Vault</h3>
+		<p>
+			A vault is a special armored chamber in the heart of a spacecraft, designed to survive attacks that would annihilate the rest of the ship. A vault has another four Hull and Structure points that only come into play when the ship housing the vault is destroyed. A vault can contain cargo, staterooms or any other internal components equivalent up to 6 tons. A vault requires 12 tons of space and costs MCr6.
+		</p>
+
+		<h3 id="vehicle-and-drone-hangar">Vehicle and Drone Hangar</h3>
+		<p>
+			The tonnage and cost outlined in the Hangar Cost and Tonnage for Vehicles and Drones table covers full-scale hangar space, which allows for repairs and maintenance of small craft when they are back on the ship. The hangar includes spare parts and specialized testing and repair equipment for the stored craft. It does not include the cost of the vehicles or drones. A custom hangar takes up tonnage equal to the tonnage of the vehicle to be stored, plus 30% and costs MCr0.2 per ton.
+		</p>
+		<dl>
+			<dt>Air/Raft, ATV</dt>
+			<dd>These are vehicles, stored in or on the ship. </dd>
+			<dt>Escape Pods</dt>
+			<dd>This covers the installation of rescue bubbles and other escape pods for the entire crew. </dd>
+			<dt>Life Boat, Ship's Boat, Shuttle, Pinnace, Cutter</dt>
+			<dd>These are all small craft, hangered either in or on the ship's hull.</dd>
+			<dt>Mining Drones</dt>
+			<dd>Mining drones allow a ship to mine asteroids. Each set of mining drones takes up ten tons, and allows the ship to process 1D6x10 tons of asteroid per working day. The tonnage allocated includes ore handling machinery, allowing the ship to take on ore and transfer it to the cargo bay.</dd>
+			<dt>Probe Drones</dt>
+			<dd>Probe drones are for surveying planetary surfaces. Each ton of probe drones contains five drones. Probe drones can be dropped from orbit in disposable entry shells but must be recovered manually. Probe drones are also capable of surveying orbiting satellites, derelicts and other space debris. They can also be used as communications relays.</dd>
+			<dt>Repair Drones</dt>
+			<dd>Carrying repair drones allows a ship to make battlefield repairs with the AutoRepair software or when managed by a character with Mechanic or Engineer skills. Repair drones have the same statistics as repair robots only without an Intellect program. For more information on repair robots, see <a href="equipment.html#robots-and-drones">Robots and Drones</a> in <a href="equipment.html">Chapter 4: Equipment</a>.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Hangar Cost and Tonnage for Vehicles and Drones</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Vehicle or Drone</th>
+					<th>Tons</th>
+					<th>Installation Cost (MCr)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>ATV</th>
+				<td>13</td>
+				<td>2.6</td>
+			</tr>
+			<tr>
+				<th>Air/Raft</th>
+				<td>5</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>Cutter</th>
+				<td>65</td>
+				<td>13</td>
+			</tr>
+			<tr>
+				<th>Escape Pods</th>
+				<td>0.5 per passenger</td>
+				<td>0.1 per passenger</td>
+			</tr>
+			<tr>
+				<th>Life Boat</th>
+				<td>26</td>
+				<td>5.2</td>
+			</tr>
+			<tr>
+				<th>Mining Drones</th>
+				<td>10</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Pinnace</th>
+				<td>52</td>
+				<td>10.4</td>
+			</tr>
+			<tr>
+				<th>Probe Drones (5)</th>
+				<td>1</td>
+				<td>0.2</td>
+			</tr>
+			<tr>
+				<th>Repair Drones</th>
+				<td>1% of ship's hull</td>
+				<td>0.2 per ton</td>
+			</tr>
+			<tr>
+				<th>Ship's Boat</th>
+				<td>39</td>
+				<td>7.8</td>
+			</tr>
+			<tr>
+				<th>Shuttle</th>
+				<td>122.5</td>
+				<td>24.5</td>
+			</tr>
+		</table>
+
+		<h2 id="armaments">Armaments</h2>
+		<p>
+			A ship has one hardpoint per 100 tons of ship and each weapon system takes up one hardpoint. A weapon system may include multiple weapons – for example, a triple turret contains three lasers, missile launchers, sandcasters or some combination of three weapons.
+		</p>
+
+		<h3 id="turrets">Turrets</h3>
+		<p>
+			One turret may be attached to each hardpoint on the ship. If a turret is installed, then one ton of space must be allocated to fire control systems:
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Turret Displacement and Cost</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Weapon</th>
+					<th>TL</th>
+					<th>Tons</th>
+					<th>Cost (MCr)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Single Turret</th>
+				<td>7</td>
+				<td>1</td>
+				<td>0.2</td>
+			</tr>
+			<tr>
+				<th>Double Turret</th>
+				<td>8</td>
+				<td>1</td>
+				<td>0.5</td>
+			</tr>
+			<tr>
+				<th>Triple Turret</th>
+				<td>9</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>Pop-up Turret</th>
+				<td>10</td>
+				<td>2</td>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<th>Fixed Mounting</th>
+				<td>-</td>
+				<td>0</td>
+				<td>x0.5</td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Single, Double and Triple turrets</dt>
+			<dd>can hold one, two or three weapons.</dd>
+			<dt>Pop-Up</dt>
+			<dd>is a quality that can be applied to any type of turret – the turret is concealed in a pod or recess on the hull, and is detectable only when deployed. A ship with all its weapons in pop-up turrets looks unarmed to a casual sensor scan.</dd>
+			<dt>Fixed Mounting</dt>
+			<dd>weapons cannot move, are limited to firing in one direction (normally straight ahead), and are found mainly on fighters. A fixed mounting costs half as much as a turret of the same type, so a single fixed mounting costs MCr0.1, a double fixed mounting costs MCr0.25, and a triple fixed mounting costs MCr0.5.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Turret Weapons</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Weapon</th>
+					<th>TL</th>
+					<th>Optimum Range</th>
+					<th>Damage</th>
+					<th>Cost (MCr)</th>
+					<th>Notes</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Missile Rack</th>
+				<td>6</td>
+				<td>Special</td>
+				<td>Depends on missile</td>
+				<td>0.75</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Pulse Laser</th>
+				<td>7</td>
+				<td>Short</td>
+				<td>2D6</td>
+				<td>0.5</td>
+				<td>Suffers DM-2 to attac</td>
+			</tr>
+			<tr>
+				<th>Sandcaster</th>
+				<td>7</td>
+				<td>Special</td>
+				<td>Special</td>
+				<td>0.25</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Particle Beam</th>
+				<td>8</td>
+				<td>Long</td>
+				<td>3D6 + radiation hit</td>
+				<td>4</td>
+				<td></td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Missile racks</dt>
+			<dd>launch self-propelled weapons designed to explode on impact.</dd>
+			<dt>Pulse lasers</dt>
+			<dd>fire short, rapid bursts of intense energy. Pulse lasers are notoriously inaccurate and suffer a DM -2 on all attack rolls.</dd>
+			<dt>Sandcasters</dt>
+			<dd>reduces the damage from a beam weapon by 1D6. Sandcasters require ammunition. Twenty sandcaster barrels take up one ton of space, can be manufactured at TL5, and cost Cr10,000. </dd>
+			<dt>Particle beams</dt>
+			<dd>fire a high-energy beam of subatomic particles. The beam's impact disrupts the molecular structure of the target, causing a radiation crew hit in addition to normal damage.</dd>
+			<dt>Beam lasers</dt>
+			<dd>fire a continuous stream of intense energy.</dd>
+		</dl>
+		<p>
+			No launcher includes ammunition in its purchase cost. Missiles, torpedoes and so forth must be purchased separately.
+		</p>
+
+		<h3 id="missiles">Missiles</h3>
+		<p>
+			Missiles are weapons that are self-propelled or directed by remote control, carrying a conventional or nuclear explosive. They may be fired from missile racks mounted in turrets or from bay-mounted missile banks. Twelve missiles take up one ton of space. Missiles are capable of Thrust 10, but have a limited endurance of 60 minutes (roughly 4 turns) before running out of fuel. There are three common types of missiles: Standard, Smart and Nuclear.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Missile Types</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Missile Type</th>
+					<th>TL</th>
+					<th>Damage</th>
+					<th>Cost per Missile</th>
+					<th>Notes</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Nuclear</th>
+				<td>6</td>
+				<td>2D6+ 1 radiation hit</td>
+				<td>Cr3,750</td>
+				<td>Radiation hit suffers a –DM equal to the ship's armor</td>
+			</tr>
+			<tr>
+				<th>Standard</th>
+				<td>6</td>
+				<td>1D6</td>
+				<td>Cr1,250</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Smart</th>
+				<td>8</td>
+				<td>1D6</td>
+				<td>Cr2,500</td>
+				<td>Attack roll is always 8+, and may attack every turn if they miss until they are destroyed, jammed or run out of fuel</td>
+			</tr>
+		</table>
+
+		<h3 id="bays">Bays</h3>
+		<p>
+			Bay weapons are much larger than turrets, and take up 50 tons of space and one hard point, as well as one ton of space for fire control.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Bay Weapons</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Weapon</th>
+					<th>TL</th>
+					<th>Range</th>
+					<th>Damage</th>
+					<th>Cost (MCr)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Missile Bank</th>
+				<td>6</td>
+				<td>Special</td>
+				<td>Launches a flight of twelve missiles</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<th>Particle Beam</th>
+				<td>8</td>
+				<td>Long</td>
+				<td>6D6 + 1 radiation hit</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<th>Meson Gun</th>
+				<td>11</td>
+				<td>Long</td>
+				<td>5D6 + 1 radation hit</td>
+				<td>50</td>
+			</tr>
+			<tr>
+				<th>Fusion Gun</th>
+				<td>12</td>
+				<td>Medium</td>
+				<td>5D6</td>
+				<td>8</td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Missile banks</dt>
+			<dd>fire flights of twelve missiles at a time.</dd>
+			<dt>Particle beam bays</dt>
+			<dd>fire a larger and more powerful beam of subatomic particles than particle beam turret weapons.</dd>
+			<dt>Meson weapons</dt>
+			<dd>are unaffected by armor, as the blast only becomes harmful after it has already passed through the hull. Meson guns also inflict an automatic radiation hit on the crew of any target struck.</dd>
+			<dt>Fusing weapons</dt>
+			<dd>fire a stream of hydrogen particles that are undergoing a fusion reaction.</dd>
+		</dl>
+
+		<h3 id="screens">Screens</h3>
+		<p>
+			Screens are defensive systems that protect against specific attacks.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Screens</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Screen</th>
+					<th>TL</th>
+					<th>Effect </th>
+					<th>Tons</th>
+					<th>Cost (MCr)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Meson Screen</th>
+				<td>12</td>
+				<td>Protects against meson weapon damage, reducing damage by 2D6. Meson screens reduce radiation damage from meson guns and meson flicker weapons. Radiation hits from these weapons suffer a –DM equal to twice the active number of screens.</td>
+				<td>50</td>
+				<td>60</td>
+			</tr>
+			<tr>
+				<th>Nuclear Damper</th>
+				<td>12</td>
+				<td>Reduces fusion gun damage and nuclear missile damage by 2D6, removes automatic radiation hit from nuclear missile attacks</td>
+				<td>50</td>
+				<td>50</td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Meson screens</dt>
+			<dd>block attacks from meson weapons by preventing meson decay.</dd>
+			<dt>Nuclear dampers</dt>
+			<dd>inhibit fusion reactions, reducing the damage from fusion weapons and nuclear missiles by 2D6 when affected.</dd>
+		</dl>
+
+		<h2 id="universal-ship-description-format">Universal Ship Description Format</h2>
+		<p>
+			After a ship design has been created, it must be presented in a format that allows players to use the information within the game. The Cepheus Engine describes ship designs using a universal ship description format, which is essentially a paragraph of text laid out in the following manner. Examples can be found in <a href="common-vessels.html">Chapter 9: Common Vessels</a>.
+		</p>
+		<p>
+			<span class="text-info">[Ship's Tech Level]</span> <span class="text-info">[Ship Descriptive Name]</span><br>
+			Using a <span class="text-info">[Ship Hull Displacement]</span>-ton hull (<span class="text-info">[Hull Damage Value]</span> Hull, <span class="text-info">[Structure Damage Value]</span> Structure,), the <span class="text-info">[Ship Descriptive Name]</span> is <span class="text-info">[General Description of Ship's Function]</span>. It mounts jump drive <span class="text-info">[Jump Drive Code]</span>, maneuver drive <span class="text-info">[Maneuver Drive Code]</span>, and power plant <span class="text-info">[Power Plant Code]</span>, giving a performance of Jump-<span class="text-info">[Jump Number]</span> and <span class="text-info">[Thrust Number]</span>-G acceleration. Fuel tankage of <span class="text-info">[Fuel Tonnage]</span> tons supports the power plant for <span class="text-info">[Weeks of Power]</span> and <span class="text-info">[Number of Jumps]</span> jump-<span class="text-info">[Jump Number]</span>. <span class="text-info">[Any additional fuel usage notes.]</span> Adjacent to the bridge is a computer Model <span class="text-info">[Computer Number, followed by a slash and bis or fib options noted, if purchased]</span>. The ship is equipped with <span class="text-info">[Sensors Type]</span> sensors (<span class="text-info">[Sensors DM]</span>.) There are <span class="text-info">[Number of Staterooms]</span> staterooms and <span class="text-info">[Number of Low Berths]</span> low berths. The ship has <span class="text-info">[Number of Hardpoints]</span> hardpoints and <span class="text-info">[Fire Control Tonnage]</span> tons allocated for fire control. Installed on the hardpoints are <span class="text-info">[Describe number and type of turrets, and any weapon systems that have been installed, if any. Also note any ammunition carried for missiles and sandcasters.]</span> This ship has <span class="text-info">[Number of Screens Installed]</span> screens: <span class="text-info">[Describe number and type of screens]</span>. There are <span class="text-info">[Number of Small Craft Hangers]</span> small craft hangars, <span class="text-info">[Describe number and contents of each hangar]</span>. Cargo capacity is <span class="text-info">[Cargo Tonnage]</span> tons. The hull is <span class="text-info">[Hull Configuration]</span>, and is armored with <span class="text-info">[Armor Type]</span> (<span class="text-info">[Armor Rating]</span> points.) <span class="text-info">[Note any Ship's Armor options that have been installed.]</span> Special features include <span class="text-info">[List additional components here, included fuel processors and fuel scoops]</span>. The ship requires a crew of <span class="text-info">[Crew Total]</span>: <span class="text-info">[List crew positions]</span>. The ship can carry up to <span class="text-info">[Double the Number of Non-Crew Staterooms]</span> additional passengers at double occupancy and <span class="text-info">[Number of Low Berths]</span> low passengers. The ship costs MCr<span class="text-info">[Cost of Ship]</span> (including discounts and fees) and takes <span class="text-info">[Construction Time]</span> weeks to build.
+		</p>
+
+		<h2 id="alternative-star-drives">Alternative Star Drives</h2>
+		<p>
+			In classic era science-fiction games such as the Cepheus Engine, the only form of faster-than-light movement is typically the Jump drive, which always takes one week to travel a number of parsecs equal to its Jump rating and consumes a vast amount of fuel. If the Referee wishes to model other science fiction settings with their own forms of "star drive", the classic Jump drive rules may not be entirely appropriate. The alternative drives below use all the same rules as the Jump drive (mass, fuel, power consumption, range) unless otherwise stated.
+		</p>
+		<p>
+			Some of these drives consume much less fuel or allow much faster travel than the Jump drive, so introducing these drives will vastly impact the carrying capacity of a starship, the profitability of trade, the speed of communication and so forth.
+		</p>
+
+		<h3 id="warp-drive">Warp Drive</h3>
+		<p>
+			The ship warps space around it, allowing it to move faster-than-light while staying in our universe. A warp drive does not have a maximum range – instead, the ship's drive rating indicates the number of parsecs crossed per week of travel. Warp travel consumes fuel at twice the normal rate for the ship's power plant rather than needing a single massive expenditure in the manner of a Jump drive.
+		</p>
+
+		<h3 id="teleport-drive">Teleport Drive</h3>
+		<p>
+			The ship instantaneously jumps from one point to another. This works just like the standard Jump drive without the week-long wait in hyperspace. Instead, no time whatsoever elapses during the transition from one place to another. A teleport consumes no extra fuel but jumping is a strain on the ship's systems and multiple successive jumps can damage the drive.
+		</p>
+
+		<h3 id="hyperspace-drive">Hyperspace Drive</h3>
+		<p>
+			The portal drive functions by opening up a gateway into hyperspace, through which the ship can pass. When in hyperspace, the ship uses its conventional engines to travel, then opens up a second gateway back to the normal universe, effectively taking a short cut through a higher dimension. A hyperspace drive is limited by the size of the spacecraft that can pass through the portal – see the Hyperspace Portal Size table. A hyperspace drive consumes no extra fuel, but takes up twice as much space as a jump drive. While in hyperspace, the spacecraft moves at a rate of one parsec per day per maneuver drive rating.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Hyperspace Portal Size</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Rating</th>
+					<th>Size</th>
+					<th>Rating</th>
+					<th>Size</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>200</td>
+				<th>N</th>
+				<td>2800</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>400</td>
+				<th>P</th>
+				<td>3000</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>800</td>
+				<th>Q</th>
+				<td>3200</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>1000</td>
+				<th>R</th>
+				<td>3400</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>1200</td>
+				<th>S</th>
+				<td>3600</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>1400</td>
+				<th>T</th>
+				<td>3800</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>1600</td>
+				<th>U</th>
+				<td>4000</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>1800</td>
+				<th>V</th>
+				<td>4200</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>2000</td>
+				<th>W</th>
+				<td>4400</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>2200</td>
+				<th>X</th>
+				<td>4600</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>2400</td>
+				<th>Y</th>
+				<td>4800</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>2600</td>
+				<th>Z</th>
+				<td>5000</td>
+			</tr>
+		</table>
+
+		<h2 id="alternative-power-plants">Alternative Power Plants</h2>
+		<p>
+			The Cepheus Engine system posits the development of highly efficient fusion power plants, but other settings may use different sources of power. Unless otherwise noted, these power plants use all the same rules as the standard fusion power plants.
+		</p>
+
+		<h3 id="fission-plants">Fission Plants</h3>
+		<p>
+			A fission plant requires radioactive elements as fuel. Fission drives only produce the same amount power as a fusion drive of the same type. However, they are twice the size and price of a fusion power plant. Fission plant fuel costs Cr1,000,000 per ton. Fission plants use the same amount of fuel in a year that standard fusion power plants require for two weeks.
+		</p>
+
+		<h3 id="antimatter-power-plants">Antimatter Power Plants</h3>
+		<p>
+			Antimatter power plants work by annihilating small amounts of hydrogen and anti-hydrogen. No tonnage needs to be allocated to fuel, but the plant must be refueled once per month, at a cost of Cr5,000 per ton of drive.
+		</p>
+
+		<h2 id="small-craft-design">Small Craft Design</h2>
+		<p>
+			Small craft design follows the rules for standard ship design, with the following changes.
+		</p>
+
+		<h3 id="small-craft-ship-hull">Small Craft Ship Hull</h3>
+		<p>
+			Small craft use the Small Craft Ship Hull by Displacement table below. The cost of streamlining and distributed configurations are calculated as per standard ship design rules.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Ship Hull by Displacement</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Hull</th>
+					<th>Hull Code</th>
+					<th>Price (MCr)</th>
+					<th>Construction Time (weeks)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>10 tons</th>
+				<td>s1</td>
+				<td>1.1</td>
+				<td>28</td>
+			</tr>
+			<tr>
+				<th>15 tons</th>
+				<td>s2</td>
+				<td>1.15</td>
+				<td>29</td>
+			</tr>
+			<tr>
+				<th>20 tons</th>
+				<td>s3</td>
+				<td>1.2</td>
+				<td>29</td>
+			</tr>
+			<tr>
+				<th>25 tons</th>
+				<td>s4</td>
+				<td>1.25</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<th>30 tons</th>
+				<td>s5</td>
+				<td>1.3</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<th>35 tons</th>
+				<td>s6</td>
+				<td>1.35</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<th>40 tons</th>
+				<td>s7</td>
+				<td>1.4</td>
+				<td>31</td>
+			</tr>
+			<tr>
+				<th>45 tons</th>
+				<td>s8</td>
+				<td>1.45</td>
+				<td>31</td>
+			</tr>
+			<tr>
+				<th>50 tons</th>
+				<td>s9</td>
+				<td>1.5</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<th>55 tons</th>
+				<td>sA</td>
+				<td>1.55</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<th>60 tons</th>
+				<td>sB</td>
+				<td>1.6</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<th>65 tons</th>
+				<td>sC</td>
+				<td>1.65</td>
+				<td>33</td>
+			</tr>
+			<tr>
+				<th>70 tons</th>
+				<td>sD</td>
+				<td>1.7</td>
+				<td>33</td>
+			</tr>
+			<tr>
+				<th>75 tons</th>
+				<td>sE</td>
+				<td>1.75</td>
+				<td>34</td>
+			</tr>
+			<tr>
+				<th>80 tons</th>
+				<td>sF</td>
+				<td>1.8</td>
+				<td>34</td>
+			</tr>
+			<tr>
+				<th>85 tons</th>
+				<td>sG</td>
+				<td>1.85</td>
+				<td>34</td>
+			</tr>
+			<tr>
+				<th>90 tons</th>
+				<td>sH</td>
+				<td>1.9</td>
+				<td>35</td>
+			</tr>
+			<tr>
+				<th>95 tons</th>
+				<td>sJ</td>
+				<td>1.95</td>
+				<td>35</td>
+			</tr>
+		</table>
+
+		<h3 id="small-craft-armor">Small Craft Armor</h3>
+		<p>
+			Small craft armor is purchased in the same manner as standard ship armor. However, small craft have a maximum armor value, based on type. Armor options may be purchased as per the standard ship design rules.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Maximum Small Craft Armor by Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Armor Type</th>
+					<th>Maximum Armor Value</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Titanium Steel</th>
+				<td>TL or 9, whichever is less</td>
+			</tr>
+			<tr>
+				<th>Crystaliron</th>
+				<td>TL or 13, whichever is less</td>
+			</tr>
+			<tr>
+				<th>Bonded Superdense</th>
+				<td>TL</td>
+			</tr>
+		</table>
+
+		<h3 id="small-craft-drives">Small Craft Drives</h3>
+		<p>
+			A small craft must have a maneuver drive (M-Drive) and a power plant (P-Plant). The costs for each are captured in the Small Craft Drive Costs table. The performance of small craft drives are found in the Small Craft Drive Performance by Hull Volume table.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Small Craft Drive Costs</caption>
+			<thead class="thead-light">
+				<tr>
+					<th></th>
+					<th colspan="2" class="text-center">M-Drive</th>
+					<th colspan="2" class="text-center">P-Plant</th>
+				</tr>
+				<tr>
+					<th>Drive Code</th>
+					<th>Tonnage</th>
+					<th>MCr</th>
+					<th>Tonnage</th>
+					<th>MCr</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>sA</th>
+				<td>0.5</td>
+				<td>1</td>
+				<td>1.2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>sB</th>
+				<td>1</td>
+				<td>2</td>
+				<td>1.5</td>
+				<td>3.5</td>
+			</tr>
+			<tr>
+				<th>sC</th>
+				<td>1.5</td>
+				<td>3</td>
+				<td>1.8</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>sD</th>
+				<td>2</td>
+				<td>3.5</td>
+				<td>2.1</td>
+				<td>4.5</td>
+			</tr>
+			<tr>
+				<th>sE</th>
+				<td>2.5</td>
+				<td>4</td>
+				<td>2.4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>sF</th>
+				<td>3</td>
+				<td>6</td>
+				<td>2.7</td>
+				<td>5.5</td>
+			</tr>
+			<tr>
+				<th>sG</th>
+				<td>3.5</td>
+				<td>8</td>
+				<td>3</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>sH</th>
+				<td>4</td>
+				<td>9</td>
+				<td>3.3</td>
+				<td>6.5</td>
+			</tr>
+			<tr>
+				<th>sJ</th>
+				<td>4.5</td>
+				<td>10</td>
+				<td>3.6</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<th>sK</th>
+				<td>5</td>
+				<td>11</td>
+				<td>3.9</td>
+				<td>7.5</td>
+			</tr>
+			<tr>
+				<th>sL</th>
+				<td>6</td>
+				<td>12</td>
+				<td>4.5</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<th>sM</th>
+				<td>7</td>
+				<td>14</td>
+				<td>5.1</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<th>sN</th>
+				<td>8</td>
+				<td>16</td>
+				<td>5.7</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<th>sP</th>
+				<td>9</td>
+				<td>18</td>
+				<td>6.3</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<th>sQ</th>
+				<td>10</td>
+				<td>20</td>
+				<td>6.9</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<th>sR</th>
+				<td>11</td>
+				<td>22</td>
+				<td>7.5</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<th>sS</th>
+				<td>12</td>
+				<td>24</td>
+				<td>8.1</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<th>sT</th>
+				<td>13</td>
+				<td>26</td>
+				<td>8.7</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<th>sU</th>
+				<td>14</td>
+				<td>28</td>
+				<td>9.3</td>
+				<td>22</td>
+			</tr>
+			<tr>
+				<th>sV</th>
+				<td>15</td>
+				<td>30</td>
+				<td>9.9</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<th>sW</th>
+				<td>16</td>
+				<td>32</td>
+				<td>10.5</td>
+				<td>26</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Small Craft Drive Performance by Hull Volume</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Drive Code</th>
+					<th>10</th>
+					<th>15</th>
+					<th>20</th>
+					<th>25</th>
+					<th>30</th>
+					<th>35</th>
+					<th>40</th>
+					<th>45</th>
+					<th>50</th>
+					<th>55</th>
+					<th>60</th>
+					<th>65</th>
+					<th>70</th>
+					<th>75</th>
+					<th>80</th>
+					<th>85</th>
+					<th>90</th>
+					<th>95</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>sA</th>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>sB</th>
+				<td>4</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>sC</th>
+				<td>6</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>sD</th>
+				<td>&mdash;</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>sE</th>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>sF</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>sG</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>sH</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>sJ</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>sK</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>sL</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>sM</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>sN</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>sP</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>sQ</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>sR</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>sS</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>sT</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>sU</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>sV</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>sW</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+			</tr>
+		</table>
+
+		<h3 id="small-craft-fuel">Small Craft Fuel</h3>
+		<p>
+			The fuel requirements for a small craft's power plant follow the standard ship design rules, except the values are rounded down to the nearest 0.1 of a ton, rather than the nearest ton. In addition, the minimum fuel volume for a small craft is one week rather than two weeks. For your convenience, the Small Craft Power Plant Fuel Requirements table provides calculated values for fuel per week by Drive Code.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Small Craft Power Plant Fuel Requirements</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Drive Code</th>
+					<th>P-Plant (tons)</th>
+					<th>Fuel/Wk (tons)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>sA</th>
+				<td>1.2</td>
+				<td>0.4</td>
+			</tr>
+			<tr>
+				<th>sB</th>
+				<td>1.5</td>
+				<td>0.5</td>
+			</tr>
+			<tr>
+				<th>sC</th>
+				<td>1.8</td>
+				<td>0.6</td>
+			</tr>
+			<tr>
+				<th>sD</th>
+				<td>2.1</td>
+				<td>0.7</td>
+			</tr>
+			<tr>
+				<th>sE</th>
+				<td>2.4</td>
+				<td>0.8</td>
+			</tr>
+			<tr>
+				<th>sF</th>
+				<td>2.7</td>
+				<td>0.9</td>
+			</tr>
+			<tr>
+				<th>sG</th>
+				<td>3</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>sH</th>
+				<td>3.3</td>
+				<td>1.1</td>
+			</tr>
+			<tr>
+				<th>sJ</th>
+				<td>3.6</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<th>sK</th>
+				<td>3.9</td>
+				<td>1.3</td>
+			</tr>
+			<tr>
+				<th>sL</th>
+				<td>4.5</td>
+				<td>1.5</td>
+			</tr>
+			<tr>
+				<th>sM</th>
+				<td>5.1</td>
+				<td>1.7</td>
+			</tr>
+			<tr>
+				<th>sN</th>
+				<td>5.7</td>
+				<td>1.9</td>
+			</tr>
+			<tr>
+				<th>sP</th>
+				<td>6.3</td>
+				<td>2.1</td>
+			</tr>
+			<tr>
+				<th>sQ</th>
+				<td>6.9</td>
+				<td>2.3</td>
+			</tr>
+			<tr>
+				<th>sR</th>
+				<td>7.5</td>
+				<td>2.5</td>
+			</tr>
+			<tr>
+				<th>sS</th>
+				<td>8.1</td>
+				<td>2.7</td>
+			</tr>
+			<tr>
+				<th>sT</th>
+				<td>8.7</td>
+				<td>2.9</td>
+			</tr>
+			<tr>
+				<th>sU</th>
+				<td>9.3</td>
+				<td>3.1</td>
+			</tr>
+			<tr>
+				<th>sV</th>
+				<td>9.9</td>
+				<td>3.3</td>
+			</tr>
+			<tr>
+				<th>sW</th>
+				<td>10.5</td>
+				<td>3.5</td>
+			</tr>
+			<tr>
+				<th>sX</th>
+				<td>11.1</td>
+				<td>3.7</td>
+			</tr>
+			<tr>
+				<th>sY</th>
+				<td>11.7</td>
+				<td>3.9</td>
+			</tr>
+			<tr>
+				<th>sZ</th>
+				<td>12.3</td>
+				<td>4.1</td>
+			</tr>
+		</table>
+
+		<h3 id="small-craft-cockpits-and-control-cabins">Small Craft Cockpits and Control Cabins</h3>
+		<p>
+			Small craft do not have bridges. Instead, a cockpit or control cabin serves the same function. A cockpit is more cramped, but takes up less tonnage. The cost for a cabin or cockpit is the same – MCr 0.1 per 20 tons of ship. Additional cabin space costs MCr 0.05 per ton. Cockpits and control cabins come equipped with a basic communications, sensor and emissions-control electronics suite. More advanced systems can be installed per the standard ship design rules.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Small Craft Cockpits and Control Cabins</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Small Craft Size</th>
+					<th>Size (tons)</th>
+					<th>Crew</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1-Man Cockpit</th>
+				<td>1.5</td>
+				<td>1 crew</td>
+			</tr>
+			<tr>
+				<th>2-Man Cockpit</th>
+				<td>3</td>
+				<td>2 crew</td>
+			</tr>
+			<tr>
+				<th>1-Man Control Cabin</th>
+				<td>3</td>
+				<td>1 crew</td>
+			</tr>
+			<tr>
+				<th>2-Man Control Cabin</th>
+				<td>6</td>
+				<td>2 crew, 1 passenger</td>
+			</tr>
+			<tr>
+				<th>More Cabin Space</th>
+				<td>1.5 tons per passenger</td>
+				<td>1 additional passenger</td>
+			</tr>
+		</table>
+
+		<h3 id="airlock">Airlock</h3>
+		<p>
+			Unlike larger vessels, a small craft does not have an airlock by default. Airlocks take up one ton each and cost MCr0.2. If a craft does not have an airlock, then the crew cannot leave the craft except when it is landed or in a pressurized landing bay without opening the ship up to vacuum.
+		</p>
+
+		<h3 id="small-craft-crew">Small Craft Crew</h3>
+		<p>
+			All small craft of 50 tons or under require a minimum crew of one to operate and maintain the ship. Small craft larger than 50 tons require a minimum crew of two.
+		</p>
+
+		<h3 id="small-craft-armaments">Small Craft Armaments</h3>
+		<p>
+			A small craft has one hardpoint, despite being less than 100 tons. Small craft follow the standard ship design rules regarding armaments, with some exceptions.
+		</p>
+		<p>
+			Meson, particle beam and fusion bays cannot be fitted.
+		</p>
+		<p>
+			The armaments allowed to a small craft are restricted by its power plant type. It may only equip up to the number of lasers and particle weapons allowed by the vessel's power plant, as shown in the Maximum Energy Weapons by Power Plant table. The number of missile launchers or projectile weapons is not limited by the power plant letter.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Maximum Energy Weapons by Power Plant</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Drive Code</th>
+					<th>Maximum Number</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>sA–sF</th>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>sG–sK</th>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>sL–sR</th>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>sS–sZ</th>
+				<td>3</td>
+			</tr>
+		</table>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted">Cepheus Engine System Reference Document, Copyright © 2016 Samardan Press; Author Jason "Flynn" Kemp</span>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
