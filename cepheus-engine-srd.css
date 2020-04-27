@@ -21,6 +21,10 @@ body {
   background-color: #007bff;
   color: #ffffff;
 }
+#output {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size:1em;
+}
 
 
 /* Custom page CSS
