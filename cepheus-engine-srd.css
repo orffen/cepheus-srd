@@ -28,7 +28,7 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 60px 15px 0;
+  padding: 85px 15px 0;
 }
 
 .footer > .container {
@@ -39,20 +39,20 @@ body > .container {
 
 /* Fixes
 -------------------------------------------------- */
-h2::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -60px; 
-  height: 60px; 
-  visibility: hidden; 
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
   pointer-events: none;
 }
 
-h3::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -60px; 
-  height: 60px; 
-  visibility: hidden; 
+h3::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
   pointer-events: none;
 }
