@@ -211,6 +211,7 @@ function generateWorld() {
         case 'A':
             navalBase = roll() >= 8 ? true : false;
             scoutBase = roll() - 3 >= 7 ? true : false;
+            break;
         case 'B':
             navalBase = roll() >= 8 ? true : false;
             scoutBase = roll() - 2 >= 7 ? true : false;
