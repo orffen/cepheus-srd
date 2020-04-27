@@ -54,7 +54,7 @@
 					<li class="nav-link nav-item dropdown active">
 						<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="">Vehicle Design System</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item active" href="vehicle-introduction.html">Introduction</a>
+							<a class="dropdown-item active" href="vds-introduction.html">Introduction</a>
 							<a class="dropdown-item" href="vehicle-design.html">Chapter 1: Vehicle Design</a>
 							<a class="dropdown-item" href="common-aircraft.html">Chapter 2: Common Aircraft</a>
 							<a class="dropdown-item" href="common-grav-vehicles.html">Chapter 3: Common Grav Vehicles</a>
@@ -85,7 +85,7 @@
 		</p>
 
 		<p class="lead">
-			The system is inspired by the design system outlined in <a href="ship-design-and-construction.html">Chapter 8: Ship Design and Construction</a> from the <b><i>Cepheus Engine Core Rules</i></b>. Hopefully, Referees and players alike will find familiarity with one system helps with creating vessels in the other system.
+			The system is inspired by the design system outlined in <a href="ship-design-and-construction.html">Chapter 8: Ship Design and Construction</a> from the Cepheus Engine Core Rules. Hopefully, Referees and players alike will find familiarity with one system helps with creating vessels in the other system.
 		</p>
 
 		<h2>On Creating a Playable Level of Detail</h2>
@@ -118,13 +118,36 @@
 			<dd>A measure of volume displacement equivalent to the volume that is displaced by one metric ton of liquid hydrogen, or roughly 14 cubic meters. Tons are commonly used in both <a href="ship-design-and-construction.html">Ship Design</a> and <a href="trade-and-commerce.html">Trade & Commerce</a>.</dd>
 			<dt>Drive</dt>
 			<dd>General term to describe engines, power plants and propulsion systems.</dd>
-			<!--TODO-->
+			<dt>Fusion Gun</dt>
+			<dd>A very high powered plasma weapon which actually attains fusion of hydrogen in its beam.</dd>
+			<dt>Howitzer</dt>
+			<dd>A type of artillery piece characterized by a relatively short barrel and the use of comparatively small propellant charges to propel projectiles over relatively high trajectories, with a steep angle of descent.</dd>
+			<dt>Machine Gun</dt>
+			<dd>A fully automatic mounted firearm designed to fire ammunition at a high rate of fire over a sustained period of operation.</dd>
+			<dt>Mass Driver</dt>
+			<dd>A high velocity slug thrower that relies on electromagnetic or gravitic forces to impart a very high kinetic energy to clusters of dense matter.</dd>
+			<dt>Meson Accelerator</dt>
+			<dd>A particle accelerator that projects a stream of mesons, calculated to decay while within the target, therefore remaining unaffected by traditional armor.</dd>
+			<dt>Mortar</dt>
+			<dd>An indirect fire explosive thrower that fires projectiles at low velocities and short ranges. Mortars must be used from a world's surface.</dd>
+			<dt>Plasma Gun</dt>
+			<dd>An energy weapon that fires a high-energy beam of subatomic particles, disrupting the molecular structure of the target on impact.</dd>
+			<dt>Railgun</dt>
+			<dd>A smaller variant of a Mass Driver designed for smaller, more maneuverable vehicles.</dd>
+			<dt>Rocket Artillery</dt>
+			<dd>A type of artillery equipped with rocket launchers for firing self-propelled munitions.</dd>
+			<dt>Space</dt>
+			<dd>Within the vehicle design system, a space is a measure of volume displacement that is approximately equal to 1.167 cubic meters or 1.167 kiloliters. For the sake of simplicity, the vehicle design system assumes that there are 12 spaces to a displacement ton. The rest of the tonnage is used for miscellaneous things, such as wires, ducts, rope, support beams, and other items as appropriate to the tech level and purpose of the vehicle.</dd>
+			<dt>Vehicle</dt>
+			<dd>General term for a vessel that displaces 20 tons or less, and generally restricted to operation on a single world. The design system in this supplement is intended to create vessels that meet this description.</dd>
+			<dt>Vessel</dt>
+			<dd>General term used to starships, small craft, or vehicles as a general inclusive group. Most commonly, it refers to any vehicle or ship capable of interplanetary or interstellar travel.</dd>
 		</dl>
 
 
 		<h2>New Skill</h2>
 		<p>
-			The <b><i>Cepheus Engine VDS</i></b> introduces a new skill, Airship, which is considered part of the Aircraft cascade skill.
+			The Cepheus Engine VDS introduces a new skill, Airship, which is considered part of the Aircraft cascade skill.
 		</p>
 
 		<h3>Airship</h3>
@@ -136,7 +159,219 @@
 		<p>
 			Some vehicle-mounted weapons use the <a href="personal-combat.html#range">range classifications</a> outlined in the Cepheus Engine core rules. However, many do not. The following table combines the standard weapon ranges and the weapon ranges used by the new weapons outlined in the Cepheus Engine Vehicle Design System. The following abbreviations are used to make the table easier to read:
 		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Task Difficulty Abbreviations</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Task Difficulty</th>
+					<th>Abbreviation</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Average</th>
+				<td class="table-success">Avg</td>
+			</tr>
+			<tr>
+				<th>Difficult</th>
+				<td class="table-warning">Diff</td>
+			</tr>
+			<tr>
+				<th>Very Difficult</th>
+				<td class="bg-warning">VDiff</td>
+			</tr>
+			<tr>
+				<th>Formidable</th>
+				<td class="bg-danger">Form</td>
+			</tr>
+		</table>
 
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Attack Difficulties by Weapon Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Weapon</th>
+					<th>Personal</th>
+					<th>Close</th>
+					<th>Short</th>
+					<th>Medium</th>
+					<th>Long</th>
+					<th>Very Long</th>
+					<th>Distant</th>
+					<th>Very Distant</th>
+					<th>Extreme</th>
+					<th>Continental</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Close Quarters</th>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Extended Reach</th>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Thrown</th>
+				<td>&mdash;</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="table-warning">Diff</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Pistol</th>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="bg-warning">VDiff</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Rifle</th>
+				<td class="bg-warning">VDiff</td>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td class="table-success">Avg</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="bg-warning">VDiff</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Shotgun</th>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="table-warning">Diff</td>
+				<td class="bg-warning">VDiff</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Assault Weapon</th>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td class="table-success">Avg</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="bg-warning">VDiff</td>
+				<td class="bg-danger">Form</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Rocket</th>
+				<td class="bg-warning">VDiff</td>
+				<td class="table-warning">Diff</td>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="bg-warning">VDiff</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Very Long</th>
+				<td>&mdash;</td>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="bg-warning">VDiff</td>
+				<td class="bg-danger">Form</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Distant</th>
+				<td>&mdash;</td>
+				<td class="bg-warning">VDiff</td>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="bg-warning">VDiff</td>
+				<td class="bg-danger">Form</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Very Distant</th>
+				<td>&mdash;</td>
+				<td class="bg-warning">VDiff</td>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="bg-warning">VDiff</td>
+				<td class="bg-danger">Form</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Extreme</th>
+				<td>&mdash;</td>
+				<td class="bg-danger">Form</td>
+				<td class="bg-warning">VDiff</td>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="bg-warning">VDiff</td>
+				<td class="bg-danger">Form</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Continental</th>
+				<td>&mdash;</td>
+				<td class="bg-danger">Form</td>
+				<td class="bg-warning">VDiff</td>
+				<td class="table-warning">Diff</td>
+				<td class="table-success">Avg</td>
+				<td class="table-success">Avg</td>
+				<td class="table-success">Avg</td>
+				<td class="table-warning">Diff</td>
+				<td class="bg-warning">VDiff</td>
+				<td class="bg-danger">Form</td>
+			</tr>
+		</table>
 	</main>
 
 	<footer class="footer fixed-bottom">
