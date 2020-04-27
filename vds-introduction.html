@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cepheus Engine SRD</title>
+	<title>Cepheus Engine SRD - Vehicle Design System Introduction</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="cepheus-engine-srd.css" rel="stylesheet">
 </head>
@@ -51,10 +51,10 @@
 							<a class="dropdown-item" href="adventures.html">Chapter 17: Adventures</a>
 						</div>
 					</li>
-					<li class="nav-link nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Vehicle Design System</a>
+					<li class="nav-link nav-item dropdown active">
+						<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="">Vehicle Design System</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="vds-introduction.html">Introduction</a>
+							<a class="dropdown-item active" href="vehicle-introduction.html">Introduction</a>
 							<a class="dropdown-item" href="vehicle-design.html">Chapter 1: Vehicle Design</a>
 							<a class="dropdown-item" href="common-aircraft.html">Chapter 2: Common Aircraft</a>
 							<a class="dropdown-item" href="common-grav-vehicles.html">Chapter 3: Common Grav Vehicles</a>
@@ -79,46 +79,64 @@
 	</header>
 
 	<main class="container w-75">
-		<h1>Cepheus Engine SRD</h1>
+		<h1>Introduction</h1>
 		<p class="lead">
-			Welcome to the <b><i>Cepheus Engine System Reference Document</i></b>, which outlines the core rules used by a Classic Era Science Fiction 2D6-Based Open Gaming System.
+			Welcome to the <b><i>Cepheus Engine Vehicle Design System (VDS)</i></b>, which outlines the core vehicle design rules for the <b><i>Cepheus Engine</i></b>, a Classic Era Science Fiction 2D6-Based Open Gaming Sytem. The first chapter shows you how to create vehicles for your own exciting science fiction adventures, and later chapters provide a series of common vehicles for use in your Cepheus Engine games.
 		</p>
 
 		<p class="lead">
-			You can get the Cepheus Engine SRD and Vehicle Design System documents in PDF and modifiable DOCX format from <a href="https://www.drivethrurpg.com/browse/pub/3066/Samardan-Press/subcategory/5350_5360/Cepheus-Engine" target="_blank">DriveThruRPG.com</a>. If you'd like a print copy, <a href="https://www.drivethrurpg.com/browse/pub/5791/Moon-Toad-Publishing" target="_blank">Moon Toad Publishing</a> offer <a href="https://www.drivethrurpg.com/product/237247/Cepheus-Engine-RPG" target="_blank">the rulebook print-on-demand</a>. The source code for this HTML version is <a href="https://www.github.com/orffen/cepheus-srd">available on GitHub</a>.
-		</p>
-		<p>
-			Cepheus Engine and Samardan Press are trademarks of Jason "Flynn" Kemp
+			The system is inspired by the design system outlined in <a href="ship-design-and-construction.html">Chapter 8: Ship Design and Construction</a> from the <b><i>Cepheus Engine Core Rules</i></b>. Hopefully, Referees and players alike will find familiarity with one system helps with creating vessels in the other system.
 		</p>
 
-		<h2>Credits</h2>
+		<h2>On Creating a Playable Level of Detail</h2>
 		<p>
-			<b>SRD Proofreading:</b> Jeff Hopper
+			While no vehicle design system can successfully duplicate every possible Real World™ example, the Cepheus Engine Vehicle Design System (VDS) does make an effort to accommodate as many designs as possible. At the end of the day, however, that the goal of this design system is to create playable game statistics for vehicles, not recreate modern vehicles down to the nuts and bolts of muzzle velocities and surface areas, etc.
 		</p>
 		<p>
-			<b>Vehicle Design System Proofreading & Playtesting:</b> Richard Hazlewood, Omer G. Joel, Michael Johnson, Donavan Lambertus, Ian Stead
+			As such, some generalizations have to be assumed, as this design system aims to create a playable level of detail while still empowering Referees and players to create interesting vehicles. Weapons are not broken down by caliber or bore size. Instead, armament options for light and heavy weapons allow for designing weapons of differing power levels compared to one another. Drive options for fuel efficiency and agility are other tools to help create differences in similar vehicles from a comparison perspective.
 		</p>
 		<p>
-			<b>Conversion to HTML format:</b> Steve Simenic
+			Remember that ultimately, this design system is yours to do with as you will. If you can’t build what you want with it as is, feel free to change it or extend it to meet your own personal needs. If you are a player, however, please be sure to get your Referee’s approval first.
 		</p>
 
-		<h2>Designation of Open Game Content</h2>
+		<h2 id="important terms">Important Terms</h2>
 		<p>
-			All of the text in this document is designated as Open Gaming Content, except for the titles of products published by Samardan Press, and the trademarks “Cepheus Engine” and “Samardan Press”.
+			The Cepheus Engine Vehicle Design System uses certain words and abbreviations throughout the rules system. In order properly understand the Cepheus Engine Vehicle Design System rules, both players and Referees should become familiar with these terms. The following words, phrases and abbreviations are commonly used in this supplement:
 		</p>
+		<dl>
+			<dt>Artillery Gun</dt>
+			<dd>A high velocity explosive thrower firing chemically propelled rounds (CPR).</dd>
+			<dt>Autocannon</dt>
+			<dd>A high velocity slug thrower with a high rate of fire.</dd>
+			<dt>Chassis</dt>
+			<dd>The chassis is the shell in which all of the other components of the vehicle design process are placed.</dd>
+			<dt>Credit (Cr)</dt>
+			<dd>The primary unit of currency used in the Cepheus Engine. For very large amounts of money, the kilocredit (KCr) represents one thousand credits and the megacredit (MCr) represents one million credits.</dd>
+			<dt>Disintegrator</dt>
+			<dd>A weapon that disrupts the strong molecular attraction that holds matter together, causing the target area to disintegrate on a subatomic level.</dd>
+			<dt>Displacement Ton (or Ton)</dt>
+			<dd>A measure of volume displacement equivalent to the volume that is displaced by one metric ton of liquid hydrogen, or roughly 14 cubic meters. Tons are commonly used in both <a href="ship-design-and-construction.html">Ship Design</a> and <a href="trade-and-commerce.html">Trade & Commerce</a>.</dd>
+			<dt>Drive</dt>
+			<dd>General term to describe engines, power plants and propulsion systems.</dd>
+			<!--TODO-->
+		</dl>
 
-		<h2>Designation of Product Identity</h2>
+
+		<h2>New Skill</h2>
 		<p>
-			Any title of a product published by Samardan Press is designated as Product Identity.
+			The <b><i>Cepheus Engine VDS</i></b> introduces a new skill, Airship, which is considered part of the Aircraft cascade skill.
 		</p>
 
+		<h3>Airship</h3>
 		<p>
-			<b>Please Note:</b> This Product is derived from the Traveller System Reference Document and other Open Gaming Content made available by the Open Gaming License, and does not contain closed content from products published by either Mongoose Publishing or Far Future Enterprises. This Product is not affiliated with either Mongoose Publishing or Far Future Enterprises, and it makes no claim to or challenge to any trademarks held by either entity. The use of the Traveller System Reference Document does not convey the endorsement of this Product by either Mongoose Publishing or Far Future Enterprises as a product of either of their product lines.
+			This skill grants the ability to properly maneuver and perform basic, routine maintenance on balloons and airships of any sort. Such vehicles attain lift from a body of gas that is lighter than the surrounding atmosphere.
 		</p>
 
+		<h2>Vehicle-Mounted Weapon Ranges</h2>
+		<p>
+			Some vehicle-mounted weapons use the <a href="personal-combat.html#range">range classifications</a> outlined in the Cepheus Engine core rules. However, many do not. The following table combines the standard weapon ranges and the weapon ranges used by the new weapons outlined in the Cepheus Engine Vehicle Design System. The following abbreviations are used to make the table easier to read:
+		</p>
 
-
-		<!-- TODO: Finish -->
 	</main>
 
 	<footer class="footer fixed-bottom">
