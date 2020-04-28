@@ -82,16 +82,21 @@
 		<p class="lead">
 			This tool will generate a Cepheus Engine sector according to the rules found in <a href="../worlds.html">Chapter 12: Worlds</a>. The output is in <a href="https://travellermap.com/doc/fileformats#legacy-sec-format" target="_blank">SEC format</a> and can be copy/pasted into the <a href="https://travellermap.com/doc/custom" target="_blank">Traveller Map custom data tools</a>.
 		</p>
-		<p>
-			Please refresh the page or select a new sector type to re-run the sector generator.
-		</p>
 
-		<select class="browser-default custom-select" id="sectorType" onchange="init()">
-			<option value="4" selected>Standard Subsector</option>
-			<option value="6">Rift Subsector</option>
-			<option value="5">Sparse Subsector</option>
-			<option value="3">Dense Subsector</option>
-		</select>
+		<div class="btn-group btn-group-toggle btn-block" data-toggle="buttons">
+			<label class="btn btn-secondary active">
+				<input type="radio" name="sectorType" value="4" checked onclick="init()">Standard Subsector
+			</label>
+			<label class="btn btn-secondary">
+				<input type="radio" name="sectorType" value="6" onclick="init()">Rift Subsector
+			</label>
+			<label class="btn btn-secondary">
+				<input type="radio" name="sectorType" value="5" onclick="init()">Sparse Subsector
+			</label>
+			<label class="btn btn-secondary">
+				<input type="radio" name="sectorType" value="3" onclick="init()">Dense Subsector
+			</label>
+		</div>
 		<textarea class="form-control" id="output" rows="12"></textarea>
 
 		<script src="pseudohex.js"></script>
@@ -100,7 +105,7 @@
 		<script src="world.js"></script>
 		<script>
 			function init() {
-				document.getElementById("output").textContent = generateSector();
+				document.getElementById("output").textContent = generateSector(document.querySelector('input[name="sectorType"]:checked').value);
 			}
 			init();
 			//TODO: Would be nice to get a map image using the API (https://travellermap.com/doc/api#poster-render-a-sector-quadrant-or-subsector) and display it under the textarea

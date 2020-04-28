@@ -1,4 +1,4 @@
-function generateSector() {
+function generateSector(target = 4) {
     // Names from http://www.nameexoworlds.iau.org/final-results, plus a few extras
     var names = [
         "Arber", "Tassili", "Madriu", "Naqaya", "Bocaprins", "Yanyan", "Sissi", "Ganja", "Tondra", "Eburonia", "Drukyul", "Yvaga", "Naron", "Guarani", "Mastika", "Bendida",
@@ -25,7 +25,7 @@ function generateSector() {
         "....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8\n\n";
     for (let i = 1; i <= 8; ++i) {
         for (let j = 1; j <= 10; ++j) {
-            if (roll(1) >= document.getElementById("sectorType").value) {
+            if (roll(1) >= target) {
                 let worldName = names.splice(Math.floor(Math.random() * names.length), 1).toString();
                 r += worldName.padEnd(13, " ") + " ";
                 r += i.toString().padStart(2, 0) + j.toString().padStart(2, 0) + " ";
