@@ -1,13 +1,15 @@
 class World {
-    constructor(name, uwp, bases, remarks, travelZone, pbg) {
-        this.name = name;
-        this.uwp = uwp;
-        this.bases = bases;
-        this.remarks = remarks;
-        this.travelZone = travelZone;
-        this.pbg = pbg;
+    constructor(name, uwp, bases, remarks, travelZone, pbg, stellarData) {
+        this.name = name ? name : "WorldName";
+        this.uwp = uwp ? uwp : generateUwp();
+        this.bases = bases ? bases: generateBases(this.uwp);
+        this.remarks = remarks ? remarks : generateTradeCodes(this.uwp);
+        this.travelZone = travelZone ? travelZone : generateTravelZone(this.uwp);
+        this.pbg = pbg ? pbg : generatePbg(this.uwp);
+        this.stellarData = stellarData ? stellarData : '';
     }
     print() {
+        // Currently this does not print out stellar data!
         return `${this.uwp} ${this.bases} ${this.remarks.padEnd(16, " ")} ${this.travelZone}  ${this.pbg}`;
     }
 }
@@ -23,11 +25,12 @@ function* worldGenerator() {
         "Trimobe", "Baiduri", "Ggantija", "Cuptor", "Xolotl", "Bambaruush", "Isli", "Hairu", "Bagan", "Laligurans", "Nachtwacht", "Kereru", "Xolotlan", "Equiano", "Albmi",
         "Perwana", "Jebus", "Pollera", "Tumearandu", "Sumajmajta", "Haik", "Leklsullun", "Pirx", "Viriato", "Aumatex", "Negoiu", "Teberda", "Dopere", "Vlasina", "Viculus",
         "Kralomoc", "Iztok", "Krotoa", "Halla", "Riosar", "Samagiya", "Isagel", "Eiger", "Ugarit", "Tanzanite", "Maeping", "Agouto", "Ramajay", "Khomsa", "Gokturk", "Tryzub",
-        "Barajeel", "Cruinlagh", "Mulchatna", "Ibirapita", "Madalitso", "Erehwemos", "Lacipyt"
+        "Barajeel", "Cruinlagh", "Mulchatna", "Ibirapita", "Madalitso", "Erehwemos", "Lacipyt", "Victoria", "Albert", "Diavlo", "Grizel", "Indeep", "Pynchan", "Ranther",
+        "Sainte Foy", "Sharmun", "Taldor", "Vendetierre"
     ];
     while (names.length > 0) {
-        let w = generateWorld(true);
-        w.name = names.splice(Math.floor(Math.random() * names.length), 1).toString(); // Take one and remove it from the list
+        let name = names.splice(Math.floor(Math.random() * names.length), 1).toString(); // Take one and remove it from the list
+        let w = generateWorld(name, true);
         yield w;
     }
     return w;
@@ -187,6 +190,41 @@ function generateUwp() {
     return `${starport}${pseudoHex(size)}${pseudoHex(atmosphere)}${pseudoHex(hydrographics)}${pseudoHex(population)}${pseudoHex(government)}${pseudoHex(lawLevel)}-${pseudoHex(technologyLevel)}`;
 }
 
+function generateBases(uwp) {
+    let starport = uwp[0];
+    let navalBase = false;
+    let scoutBase = false;
+    let pirateBase = false;
+    let bases = " ";
+    switch (starport) {
+        case 'A':
+            navalBase = roll() >= 8 ? true : false;
+            scoutBase = roll() - 3 >= 7 ? true : false;
+            break;
+        case 'B':
+            navalBase = roll() >= 8 ? true : false;
+            scoutBase = roll() - 2 >= 7 ? true : false;
+            break;
+        case 'C':
+            scoutBase = roll() - 1 >= 7 ? true : false;
+            break;
+    }
+    if (!navalBase && starport != 'A')
+        pirateBase = roll() == 12 ? true : false;
+    if (navalBase && scoutBase)
+        bases = 'A';
+    else if (scoutBase && pirateBase)
+        bases = 'G';
+    else if (navalBase)
+        bases = 'N';
+    else if (pirateBase)
+        bases = 'P';
+    else if (scoutBase)
+        bases = 'S';
+
+    return bases;
+}
+
 function generateTradeCodes(uwp) {
     // let starport = pseudoHex(uwp[0]);
     let size = pseudoHex(uwp[1]);
@@ -236,12 +274,13 @@ function generateTradeCodes(uwp) {
         tradeCodes.push("Wa");
     if (atmosphere == 0)
         tradeCodes.push("Va");
+
     return tradeCodes.join(", ");
 }
 
 function generatePbg(uwp) {
     let size = pseudoHex(uwp[1]);
-    let population = uwp[4];
+    let population = pseudoHex(uwp[4]);
 
     // Population Modifier
     let populationModifier = 0;
@@ -259,41 +298,6 @@ function generatePbg(uwp) {
     return `${pseudoHex(populationModifier)}${pseudoHex(planetoidBelts)}${pseudoHex(gasGiants)}`;
 }
 
-function generateBases(uwp) {
-    let starport = uwp[0];
-    let navalBase = false;
-    let scoutBase = false;
-    let pirateBase = false;
-    let bases = " ";
-    switch (starport) {
-        case 'A':
-            navalBase = roll() >= 8 ? true : false;
-            scoutBase = roll() - 3 >= 7 ? true : false;
-            break;
-        case 'B':
-            navalBase = roll() >= 8 ? true : false;
-            scoutBase = roll() - 2 >= 7 ? true : false;
-            break;
-        case 'C':
-            scoutBase = roll() - 1 >= 7 ? true : false;
-            break;
-    }
-    if (!navalBase && starport != 'A')
-        pirateBase = roll() == 12 ? true : false;
-    if (navalBase && scoutBase)
-        bases = 'A';
-    else if (scoutBase && pirateBase)
-        bases = 'G';
-    else if (navalBase)
-        bases = 'N';
-    else if (pirateBase)
-        bases = 'P';
-    else if (scoutBase)
-        bases = 'S';
-
-    return bases;
-}
-
 function generateTravelZone(uwp) {
     let atmosphere = pseudoHex(uwp[2]);
     let government = pseudoHex(uwp[5]);
@@ -301,25 +305,19 @@ function generateTravelZone(uwp) {
     let travelZone = ' ';
     if (atmosphere >= 10 || government == 0 || government == 7 || government == 10 || lawLevel == 0 || lawLevel >= 9)
         travelZone = 'A';
+
     return travelZone;
 }
 
-function generateWorld(outputAsObject = false) {
-    w = new World();
-    if (!outputAsObject) {
-        w.name = "WorldName";
+function generateWorld(name, outputAsObject = false) {
+    let worlds = {
+        "Victoria": new World("Victoria", "X697770-4", ' ', undefined, 'R', "112", "K6 V"),
+    }; // :)
+    if ((name == "Victoria" && roll() == 12) || worlds[name])
+        w = worlds[name];
+    else {
+        w = new World(name);
     }
-
-    w.uwp = generateUwp();
-
-    w.remarks = generateTradeCodes(w.uwp);
-
-    w.pbg = generatePbg(w.uwp);
-
-    w.bases = generateBases(w.uwp);
-
-    w.travelZone = generateTravelZone(w.uwp);
-
     if (!outputAsObject)
         return w.print();
     else
