@@ -33,23 +33,18 @@ function* worldGenerator() {
     return w;
 }
 
-function generateWorld(outputAsObject = false) {
-    w = new World();
-    if (!outputAsObject) {
-        w.name = "WorldName";
-    }
-
+function generateUwp() {
     // World Size
-    var size = roll() - 2;
+    let size = roll() - 2;
 
     // Atmosphere
-    var atmosphere = 0;
+    let atmosphere = 0;
     if (size != 0) {
         atmosphere = Math.max(0, Math.min(roll() - 7 + size, 15));
     }
 
     // Hydrographics
-    var hydrographics = 0;
+    let hydrographics = 0;
     if (size >= 1) {
         hydrographics = roll() - 7 + size;
         if (atmosphere <= 1 || (atmosphere >= 10 && atmosphere <= 12)) {
@@ -61,7 +56,7 @@ function generateWorld(outputAsObject = false) {
     hydrographics = Math.max(0, Math.min(hydrographics, 10));
 
     // World Population
-    var population = roll() - 2;
+    let population = roll() - 2;
     if (size <= 2)
         --population;
     if (atmosphere >= 10)
@@ -74,13 +69,8 @@ function generateWorld(outputAsObject = false) {
         population -= 2;
     population = Math.max(0, Math.min(population, 10));
 
-    // Population Modifier
-    var populationModifier = 0;
-    if (population > 0)
-        populationModifier = Math.max(1, Math.min(roll() - 3)); // CE actually is -2, however all other Traveller versions are at maximum 9; this is also needed for usage with Traveller Map
-
     // Primary Starport
-    var starport = roll() - 7 + population;
+    let starport = roll() - 7 + population;
     if (starport <= 2)
         starport = 'X';
     else if (starport >= 11)
@@ -107,17 +97,17 @@ function generateWorld(outputAsObject = false) {
     }
 
     // World Government
-    var government = 0;
+    let government = 0;
     if (population != 0)
         government = Math.max(0, Math.min(roll() - 7 + population, 15));
 
     // Law Level
-    var lawLevel = 0;
+    let lawLevel = 0;
     if (government != 0)
         lawLevel = Math.max(0, roll() - 7 + government);
 
     // Technology Level
-    var technologyLevel = 0;
+    let technologyLevel = 0;
     switch (starport) {
         case 'A':
             technologyLevel += 6;
@@ -194,7 +184,19 @@ function generateWorld(outputAsObject = false) {
         technologyLevel = Math.max(7, technologyLevel);
     technologyLevel = Math.max(technologyLevel, 0);
 
-    w.uwp = `${starport}${pseudoHex(size)}${pseudoHex(atmosphere)}${pseudoHex(hydrographics)}${pseudoHex(population)}${pseudoHex(government)}${pseudoHex(lawLevel)}-${pseudoHex(technologyLevel)}`;
+    return `${starport}${pseudoHex(size)}${pseudoHex(atmosphere)}${pseudoHex(hydrographics)}${pseudoHex(population)}${pseudoHex(government)}${pseudoHex(lawLevel)}-${pseudoHex(technologyLevel)}`;
+}
+
+function generateTradeCodes(uwp) {
+    // let starport = pseudoHex(uwp[0]);
+    let size = pseudoHex(uwp[1]);
+    let atmosphere = pseudoHex(uwp[2]);
+    let hydrographics = pseudoHex(uwp[3]);
+    let population = pseudoHex(uwp[4]);
+    let government = pseudoHex(uwp[5]);
+    let lawLevel = pseudoHex(uwp[6]);
+    // uwp[7] is "-"
+    let technologyLevel = pseudoHex(uwp[8]);
 
     // Trade Codes
     let tradeCodes = [];
@@ -234,7 +236,17 @@ function generateWorld(outputAsObject = false) {
         tradeCodes.push("Wa");
     if (atmosphere == 0)
         tradeCodes.push("Va");
-    w.remarks = tradeCodes.join(", ");
+    return tradeCodes.join(", ");
+}
+
+function generatePbg(uwp) {
+    let size = pseudoHex(uwp[1]);
+    let population = uwp[4];
+
+    // Population Modifier
+    let populationModifier = 0;
+    if (population > 0)
+        populationModifier = Math.max(1, Math.min(roll() - 3)); // CE actually is -2, however all other Traveller versions are at maximum 9; this is also needed for usage with Traveller Map
 
     // Planetoid Belt Presence
     let planetoidBelts = roll() >= 4 ? Math.max(1, roll(1) - 3) : 0;
@@ -244,13 +256,15 @@ function generateWorld(outputAsObject = false) {
     // Gas Giant Presence
     let gasGiants = roll() >= 5 ? Math.max(1, roll(1) - 2) : 0;
 
-    w.pbg = `${populationModifier}${pseudoHex(planetoidBelts)}${pseudoHex(gasGiants)}`;
+    return `${pseudoHex(populationModifier)}${pseudoHex(planetoidBelts)}${pseudoHex(gasGiants)}`;
+}
 
-    // Bases
+function generateBases(uwp) {
+    let starport = uwp[0];
     let navalBase = false;
     let scoutBase = false;
     let pirateBase = false;
-    w.bases = " ";
+    let bases = " ";
     switch (starport) {
         case 'A':
             navalBase = roll() >= 8 ? true : false;
@@ -267,20 +281,44 @@ function generateWorld(outputAsObject = false) {
     if (!navalBase && starport != 'A')
         pirateBase = roll() == 12 ? true : false;
     if (navalBase && scoutBase)
-        w.bases = 'A';
+        bases = 'A';
     else if (scoutBase && pirateBase)
-        w.bases = 'G';
+        bases = 'G';
     else if (navalBase)
-        w.bases = 'N';
+        bases = 'N';
     else if (pirateBase)
-        w.bases = 'P';
+        bases = 'P';
     else if (scoutBase)
-        w.bases = 'S';
+        bases = 'S';
 
-    // Travel Zones
-    w.travelZone = " ";
+    return bases;
+}
+
+function generateTravelZone(uwp) {
+    let atmosphere = pseudoHex(uwp[2]);
+    let government = pseudoHex(uwp[5]);
+    let lawLevel = pseudoHex(uwp[6]);
+    let travelZone = ' ';
     if (atmosphere >= 10 || government == 0 || government == 7 || government == 10 || lawLevel == 0 || lawLevel >= 9)
-        w.travelZone = 'A';
+        travelZone = 'A';
+    return travelZone;
+}
+
+function generateWorld(outputAsObject = false) {
+    w = new World();
+    if (!outputAsObject) {
+        w.name = "WorldName";
+    }
+
+    w.uwp = generateUwp();
+
+    w.remarks = generateTradeCodes(w.uwp);
+
+    w.pbg = generatePbg(w.uwp);
+
+    w.bases = generateBases(w.uwp);
+
+    w.travelZone = generateTravelZone(w.uwp);
 
     if (!outputAsObject)
         return w.print();
