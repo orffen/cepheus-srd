@@ -1,16 +1,16 @@
 class World {
-    constructor(name, uwp, bases, remarks, travelZone, pbg, stellarData) {
+    constructor(name, uwp, bases, remarks, travelZone, pbg, allegiance, stellarData) {
         this.name = name ? name : "WorldName";
         this.uwp = uwp ? uwp : generateUwp();
-        this.bases = bases ? bases: generateBases(this.uwp);
+        this.bases = bases ? bases : generateBases(this.uwp);
         this.remarks = remarks ? remarks : generateTradeCodes(this.uwp);
         this.travelZone = travelZone ? travelZone : generateTravelZone(this.uwp);
         this.pbg = pbg ? pbg : generatePbg(this.uwp);
+        this.allegiance = allegiance ? allegiance : "Na";
         this.stellarData = stellarData ? stellarData : '';
     }
     print() {
-        // Currently this does not print out stellar data!
-        return `${this.uwp} ${this.bases} ${this.remarks.padEnd(16, " ")} ${this.travelZone}  ${this.pbg}`;
+        return `${this.uwp} ${this.bases} ${this.remarks.padEnd(16, " ")} ${this.travelZone}  ${this.pbg} ${this.allegiance} ${this.stellarData}`;
     }
 }
 
@@ -312,12 +312,21 @@ function generateTravelZone(uwp) {
 function generateWorld(name, outputAsObject = false) {
     let worlds = {
         "Victoria": new World("Victoria", "X697770-4", ' ', undefined, 'R', "112", "K6 V"),
+        "Diavlo": new World("Diavlo", "A962946–D", undefined, undefined, undefined, `${Math.max(1, Math.min(roll() - 3))}01`, "F5 V"),
+        "Grizel": new World("Grizel", "C768400-6"),
+        "Indeep": new World("Indeep", "AAF2527-9"),
+        "Pynchan": new World("Pynchan", "C656795-9", undefined, undefined, 'A', undefined, "Z0 V"),
+        "Ranther": new World("Ranther", "D539598-5", undefined, undefined, undefined, `${Math.max(1, Math.min(roll() - 3))}00`, "Z0 V"),
+        "Sainte Foy": new World("Sainte Foy", "B756733–7", undefined, undefined, 'A'),
+        "Sharmun": new World("Sharmun", "X86787A–5", undefined, undefined, 'R'),
+        "Taldor": new World("Taldor", "C866413-8"),
+        "Vendetierre": new World("Vendetierre", "C759685-8")
     }; // :)
-    if ((name == "Victoria" && roll() == 12) || worlds[name])
+    if (worlds[name] && roll() == 12)
         w = worlds[name];
-    else {
+    else
         w = new World(name);
-    }
+
     if (!outputAsObject)
         return w.print();
     else
