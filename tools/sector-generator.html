@@ -98,6 +98,7 @@
 			</label>
 		</div>
 		<textarea class="form-control" id="output" rows="12"></textarea>
+		<div id="sectorPopulation"></div>
 
 		<script src="pseudohex.js"></script>
 		<script src="roll.js"></script>
@@ -106,6 +107,7 @@
 		<script>
 			function init() {
 				document.getElementById("output").textContent = generateSector(document.querySelector('input[name="sectorType"]:checked').value);
+				document.getElementById("sectorPopulation").textContent = calculatePopulation(document.getElementById("output").value);
 			}
 			init();
 			//TODO: Would be nice to get a map image using the API (https://travellermap.com/doc/api#poster-render-a-sector-quadrant-or-subsector) and display it under the textarea

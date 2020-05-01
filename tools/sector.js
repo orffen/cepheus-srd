@@ -23,3 +23,18 @@ function generateSector(target = 4) {
     }
     return r;
 }
+
+function calculatePopulation(sec) {
+    if (sec === undefined) {
+        console.error("Error! No SEC data provided.");
+    }
+    var total = 0;
+    var lines = sec.split("\n");
+    lines.forEach(line => {
+        let data = line.split(/\s+/);
+        if (data.length >= 5) { // sector data headers should all be fewer than 5 elements
+            total += pseudoHex(data[data.length - 2][0]) * Math.pow(10, pseudoHex(data[2][4]));
+        }
+    });
+    return `Sector Population: ${total.toLocaleString('en')}`;
+}
