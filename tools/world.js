@@ -311,7 +311,7 @@ function generateTravelZone(uwp) {
 
 function generateWorld(name, outputAsObject = false) {
     let worlds = {
-        "Victoria": new World("Victoria", "X697770-4", ' ', undefined, 'R', "112", "K6 V"),
+        "Victoria": new World("Victoria", "X697770-4", ' ', undefined, 'R', "112", undefined, "K6 V"),
         "Sharmun": new World("Sharmun", "X86787A–5", undefined, undefined, 'R'),
         "Taldor": new World("Taldor", "C866413-8"),
         "Ranther": new World("Ranther", "D539598-5"),
