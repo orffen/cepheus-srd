@@ -12,6 +12,7 @@ function generateSector(target = 4) {
         "56-57: Allegiance\n" +
         "59-74: Stellar Data\n\n" +
         "....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8\n\n";
+    //TODO: expand to allow generating a complete sector
     for (let i = 1; i <= 8; ++i) {
         for (let j = 1; j <= 10; ++j) {
             if (roll(1) >= target) {
@@ -24,17 +25,15 @@ function generateSector(target = 4) {
 }
 
 function calculatePopulation(sec) {
-    if (sec === undefined) {
+    if (sec === undefined)
         console.error("Error! No SEC data provided.");
-    }
     var total = 0;
     var lines = sec.split("\n");
     lines.forEach(line => {
         let uwp = line.match(/[ABCDEX][0-9A-Z]{6}-[0-9A-Z]/);
         let pbg = line.match(/\s\s(\d[0-9A-F][0-9A-F])\s/);
-        if (uwp && pbg) {
+        if (uwp && pbg)
             total += pseudoHex(pbg[1][0]) * Math.pow(10, pseudoHex(uwp[0][4]));
-        }
     });
     return `Subsector Population: ${total.toLocaleString('en')}`;
 }
