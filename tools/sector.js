@@ -36,5 +36,5 @@ function calculatePopulation(sec) {
             total += pseudoHex(pbg[1][0]) * Math.pow(10, pseudoHex(uwp[0][4]));
         }
     });
-    return `Sector Population: ${total.toLocaleString('en')}`;
+    return `Subsector Population: ${total.toLocaleString('en')}`;
 }
