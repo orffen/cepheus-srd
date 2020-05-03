@@ -79,42 +79,2386 @@
 	</header>
 
 	<main class="container w-75">
-		<h1>Introduction</h1>
+		<h1>Chapter 1: Vehicle Design</h1>
 		<p class="lead">
-			Welcome to the <b><i>Cepheus Engine System Reference Document</i></b>, which outlines the core rules used by a Classic Era Science Fiction 2D6-Based Open Gaming System.
+			This section describes some of the watercraft that can be commonly encountered in Cepheus Engine campaigns. These are not the only types of vessels that exist, and creative Referees are encouraged to integrate vehicles of their own creation or from other sources as they see fit.
 		</p>
 
-		<p class="lead">
-			You can get the Cepheus Engine SRD and Vehicle Design System documents in PDF and modifiable DOCX format from <a href="https://www.drivethrurpg.com/browse/pub/3066/Samardan-Press/subcategory/5350_5360/Cepheus-Engine" target="_blank">DriveThruRPG.com</a>. If you'd like a print copy, <a href="https://www.drivethrurpg.com/browse/pub/5791/Moon-Toad-Publishing" target="_blank">Moon Toad Publishing</a> offer <a href="https://www.drivethrurpg.com/product/237247/Cepheus-Engine-RPG" target="_blank">the rulebook print-on-demand</a>. The source code for this HTML version is <a href="https://www.github.com/orffen/cepheus-srd">available on GitHub</a>.
+		<h2>Standard Designs vs. New Designs</h2>
+		<p>
+			An interstellar economy provides an excellent opportunity for the use of standardized and modular vehicle designs, as well as a wide range of markets. Components can be crafted on different worlds, taking advantage of available resources, and then put together to create a final product. Manufacturers take advantage of modular components and standardized designs to reduce costs in production, leading to a 10% discount on vehicles constructed using common designs, such as those described in the other chapters of this supplement. The Referee may designate other vehicle designs as standard designs, as befits their universe. Fuel and weapon ammunition are not covered by the Std Design Discount.
 		</p>
 		<p>
-			Cepheus Engine and Samardan Press are trademarks of Jason "Flynn" Kemp
+			New and unique vehicle designs cannot take advantage of standardized and modular design. These vehicles must be designed by a vehicular design specialist, who creates detailed design plans based on a set of specifications provided by their client. Such plans take a month to create, and costs approximately 1% of the final price of the vehicle, to a minimum of Cr100.
 		</p>
 
-		<h2>Credits</h2>
+		<h2>Displacement Tons and Spaces</h2>
 		<p>
-			<b>SRD Proofreading:</b> Jeff Hopper
+			Chassis and other vehicle components are measured by their displacement volume. For ships and small craft, displacement volume is measured in the volume of space that is displaced by one metric ton of hydrogen, referred to in this design sequence as displacement tons or simply tons.
 		</p>
 		<p>
-			<b>Vehicle Design System Proofreading & Playtesting:</b> Richard Hazlewood, Omer G. Joel, Michael Johnson, Donavan Lambertus, Ian Stead
-		</p>
-		<p>
-			<b>Conversion to HTML format:</b> Steve Simenic
+			Because the components for vehicles are often fractions of a ton, the Cepheus Engine Vehicle Design System (VDS) uses an artificial measure of volume to make things a little easier. A space in this design system is equal to one-twelfth of a displacement ton; i.e. there are 12 spaces in one ton.
 		</p>
 
-		<h2>Designation of Open Game Content</h2>
+		<h2>Design Considerations</h2>
 		<p>
-			All of the text in this document is designated as Open Gaming Content, except for the titles of products published by Samardan Press, and the trademarks “Cepheus Engine” and “Samardan Press”.
+			When designing a vehicle, it is important to consider two things: the vehicle’s purpose, and the Tech Level at which it will be produced. The design process flows more smoothly when you keep these two factors in mind
 		</p>
 
-		<h2>Designation of Product Identity</h2>
+		<h2>The Price Impact of Modifications</h2>
 		<p>
-			Any title of a product published by Samardan Press is designated as Product Identity.
+			Some modifications to a vehicle component, often classified under Options that can be applied to that component, modify the original price of that component. Modifications that decrease the price of a vehicle component cannot lower it below 25% of the original price.
 		</p>
 
+		<h2>Vehicle Design Checklist</h2>
 		<p>
-			<b>Please Note:</b> This Product is derived from the Traveller System Reference Document and other Open Gaming Content made available by the Open Gaming License, and does not contain closed content from products published by either Mongoose Publishing or Far Future Enterprises. This Product is not affiliated with either Mongoose Publishing or Far Future Enterprises, and it makes no claim to or challenge to any trademarks held by either entity. The use of the Traveller System Reference Document does not convey the endorsement of this Product by either Mongoose Publishing or Far Future Enterprises as a product of either of their product lines.
+			The Cepheus Engine Vehicle Design System (VDS) follows a very methodical process.
 		</p>
+		<ol>
+			<li><a href="#vehicle-chassis">Choose Vehicle Chassis</a></li>
+			<ol type="a">
+				<li><a href="#vehicle-configuration">Determine open or closed chassis</a></li>
+				<li><a href="#vehicle-configuration-options">Determine chassis configuration</a></li>
+				<li><a href="#vehicle-armor">Install armor (optional)</a></li>
+			</ol>
+			<li><a href="#vehicle-drives">Choose locomotion/propulsion</a></li>
+			<li>Choose power supply</li>
+			<li><a href="#vehicle-fuel">Determine fuel requirements</a></li>
+			<li><a href="#vehicle-controls">Choose vehicle’s controls</a></li>
+			<li><a href="#vehicle-communication-systems">Choose vehicle’s communications system (optional)</a></li>
+			<li><a href="#vehicle-sensors">Choose vehicle’s sensor package (optional)</a></li>
+			<li><a href="#vehicle-computer">Choose vehicle’s computer system (optional)</a></li>
+			<ol type="a">
+				<li>Choose computer software</li>
+			</ol>
+			<li><a href="#vehicle-crew-and-passengers">Determine number of required crew</a></li>
+			<ol type="a">
+				<li>Choose accommodations (cockpit, cabin, extended accommodations)</li>
+			</ol>
+			<li><a href="#additional-vehicle-components">Determine additional components (optional)</a></li>
+			<li><a href="#vehicle-armaments">Determine turrets, fixed mounts, etc. (optional)</a></li>
+			<ol type="a">
+				<li>Determine weapons (optional)</li>
+			</ol>
+			<li>Allocate remaining space to cargo</li>
+			<li>Calculate final price and constructiont time</li>
+			<ol type="a">
+				<li>Apply Std Design Discount of 10% (optional)</li>
+			</ol>
+		</ol>
+
+		<h2 id="vehicle-chassis">Vehicle Chassis</h2>
+		<p>
+			The vessel’s chassis is the shell in which all other components are placed. An unarmored vehicle’s construction time is based on its chassis size, as outlined on the <a href="#vehicle-chassis-by-displacement">Vehicle Chassis by Displacement table</a>. To find the construction time for armored vehicles, simply multiply the vehicle’s base construction time by the amount of <b><i>additional</i></b> armor the vehicle will possess. For example, a 10-ton Armored Fighting Vehicle (AFV) with a total of 12 Armor would take (base of 90 hours, times 12, equals) 1080 hours, or 45 days, assuming round-the-clock construction.
+		</p>
+		<p>
+			<b>Custom-Made Vehicles:</b> The construction time listed is for mass production of a standard design. A custommade vehicle takes approximately ten times as long to construct.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-chassis-by-displacement">
+			<caption>Table: Vehicle Chassis by Displacement</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Chassis Code</th>
+					<th>Tons</th>
+					<th>Spaces</th>
+					<th>Price (Cr)</th>
+					<th>Construction Time (hours)</th>
+					<th>Size</th>
+					<th>Example</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>0.1</td>
+				<td>1</td>
+				<td>1,450</td>
+				<td>1</td>
+				<td></td>
+				<td>8 Standard Moving Boxes</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>0.25</td>
+				<td>3</td>
+				<td>1,600</td>
+				<td>2</td>
+				<td></td>
+				<td>Motorcycle</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>0.5</td>
+				<td>6</td>
+				<td>1,850</td>
+				<td>5</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>0.75</td>
+				<td>9</td>
+				<td>2,100</td>
+				<td>7</td>
+				<td></td>
+				<td>Compact Car</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>1</td>
+				<td>12</td>
+				<td>2,400</td>
+				<td>9</td>
+				<td></td>
+				<td>Mid-Size Car</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>2</td>
+				<td>24</td>
+				<td>3,550</td>
+				<td>18</td>
+				<td></td>
+				<td>Passenger Van</td>
+			</tr>
+			<tr>
+				<th>7</th>
+				<td>3</td>
+				<td>36</td>
+				<td>4,850</td>
+				<td>27</td>
+				<td>20-ft</td>
+				<td>Standard Freight Shipping Container (1CC)</td>
+			</tr>
+			<tr>
+				<th>8</th>
+				<td>4</td>
+				<td>48</td>
+				<td>6,250</td>
+				<td>36</td>
+				<td></td>
+				<td>Air/Raft</td>
+			</tr>
+			<tr>
+				<th>9</th>
+				<td>5</td>
+				<td>60</td>
+				<td>7,800</td>
+				<td>45</td>
+				<td></td>
+				<td>Military Tank</td>
+			</tr>
+			<tr>
+				<th>A</th>
+				<td>6</td>
+				<td>72</td>
+				<td>9,550</td>
+				<td>54</td>
+				<td></td>
+				<td>Speeder</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>7</td>
+				<td>84</td>
+				<td>11,350</td>
+				<td>63</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>8</td>
+				<td>96</td>
+				<td>13,350</td>
+				<td>72</td>
+				<td></td>
+				<td>Semi Trailer</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>9</td>
+				<td>108</td>
+				<td>15,450</td>
+				<td>81</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>10</td>
+				<td>120</td>
+				<td>17,750</td>
+				<td>90</td>
+				<td></td>
+				<td>ATV</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>11</td>
+				<td>132</td>
+				<td>20,150</td>
+				<td>99</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>12</td>
+				<td>144</td>
+				<td>22,650</td>
+				<td>108</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>13</td>
+				<td>156</td>
+				<td>23,350</td>
+				<td>117</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>14</td>
+				<td>168</td>
+				<td>28,150</td>
+				<td>126</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>15</td>
+				<td>180</td>
+				<td>31,100</td>
+				<td>135</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>16</td>
+				<td>192</td>
+				<td>34,200</td>
+				<td>144</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>17</td>
+				<td>204</td>
+				<td>37,400</td>
+				<td>153</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>18</td>
+				<td>216</td>
+				<td>40,750</td>
+				<td>162</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>19</td>
+				<td>228</td>
+				<td>44,250</td>
+				<td>171</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>20</td>
+				<td>240</td>
+				<td>47,900</td>
+				<td>180</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+
+		<h3 id="vehicle-configuration">Vehicle Configuration</h3>
+		<p>
+			A vehicle may have one of two configurations – Closed or Open.
+		</p>
+		<dl>
+			<dt>Closed Vehicles:</dt>
+			<dd>
+				<p>
+					Closed vehicles grant cover to the occupants – unless the description mentions otherwise civilian vehicles grant ½ soft cover and military vehicles full hard cover. Only a few people in a closed vehicle can shoot out, depending on the number of windows or other firing ports and the internal space available. Unless the description mentions otherwise, up to two people can fire into each arc from a civilian vehicle and one person in each arc in a military one.
+				</p>
+				<p>
+					Note that closed vehicles are not sealed or airtight. They are just enclosed, offering some basic protection to the occupants within the vehicle. In order to provide complete atmospheric protection, the appropriate Environmental Protection System(s) must be installed, as provided in under Vehicle Configuration Options.
+				</p>
+			</dd>
+			<dt>Open Vehicles:</dt>
+			<dd>Open vehicles possess an open passenger area, which reduces the final price by 10% of the Base Price. Airplanes, jets and hypersonics cannot have an Open configuration. Open vehicles grant no cover to the passengers. Any passenger in an open vehicle can shoot (or otherwise attack) in any direction.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicle Configuration</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Configuration</th>
+					<th>Chassis Price Modifier</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Closed</th>
+				<td>x1</td>
+			</tr>
+			<tr>
+				<th>Open</th>
+				<td>x0.9</td>
+			</tr>
+		</table>
+
+		<h3 id="vehicle-configuration-options">Vehicle Configuration Options</h3>
+		<p>
+			The following are options that can be added to a vehicle’s configuration.
+		</p>
+		<dl>
+			<dt>Corrosive Environmental Protection System (TL 9)</dt>
+			<dd>The Corrosive Environmental Protection System can be installed in any vehicles with a closed chassis to safeguard the vehicle and its crew in corrosive environments. Corrosive Environmental Protection protects against corrosive environments, very hot or very cold environments, radiation, poisons and bacteriological threats. This system takes up 6 spaces and costs Cr10,000 per Space of chassis. This system requires the purchase of Life Support.</dd>
+			<dt>Hostile Environmental Protection System (TL 7)</dt>
+			<dd>The Hostile Environmental Protection System can be installed in any vehicles with a closed chassis to safeguard the vehicle and its crew in hostile environments. Hostile Environmental Protection protects against very hot or very cold environments, radiation, poisons and bacteriological threats. This system takes up 3 spaces and costs Cr5,000 per Space of chassis. This system does not require Basic Life Support, although it can prove highly useful.</dd>
+			<dt>Hydrofoils</dt>
+			<dd>Hydrofoils may be applied to any aquatic surface vessel. Hydrofoils increase the chassis price by 300%, and multiply the base speed of the vehicle by 3.</dd>
+			<dt>Insidious Environmental Protection System (TL 9)</dt>
+			<dd>The Insidious Environmental Protection System can be installed in any vehicles with a closed chassis to safeguard the vehicle and its crew in insidious environments. Insidious Environmental Protection protects the vehicle and crew from insidious atmospheres for 5 days, before Hull/Structure integrity begins to fail at one point per day, as well as providing protection against very hot or very cold environments, radiation, poisons and bacteriological threats. This system takes up 6 spaces and costs Cr50,000 per Space of chassis. This system requires the purchase of Life Support.</dd>
+			<dt>Open Cargo Bed</dt>
+			<dd>Reduces the chassis price by 20%. Airplanes, jets and hypersonics cannot have Open Cargo Beds. Open configuration vehicles with an Open Cargo Bed combined reduce the chassis price by 25%.</dd>
+			<dt>Open Frame</dt>
+			<dd>Reduces the chassis price by 20%. Airplanes, jets and hypersonics cannot have Open Cargo Beds. Open configuration vehicles with an Open Cargo Bed combined reduce the chassis price by 25%.</dd>
+			<dt>Self-Sealing (TL 9)</dt>
+			<dd>A self-sealing chassis automatically repairs minor breaches, and prevents chassis hits from leading to explosive decompression in vacuum environments (if the Vacuum Environmental Protection System is installed). It costs Cr10,000 per ton of chassis.</dd>
+			<dt>Streamlined</dt>
+			<dd>Streamlining a thrust-based vehicle increases the chassis price by 300%. Streamlining multiplies the Base Speed of the vehicle by 5. Streamlining can be applied to any thrust-based vehicle with a closed configuration. Streamlining may not be retrofitted; it must be included at the time of construction.</dd>
+			<dt>Submersible</dt>
+			<dd>
+				<p>
+					Submersible may be applied to any aquatic vessel, allowing it to submerge below the ocean’s surface. The Submersible configuration option increase the chassis price by 500%. Base Speed for a submersible reflects the vessel’s speed underwater. The vehicle’s Base Speed is halved when the vehicle is travelling on the ocean’s surface in good weather conditions.
+				</p>
+				<p>
+					Submersibles are rated by their Safe Dive Depth and Crush Depth, as determined by the vessel’s Tech Level. These values are calculated for a Size 8 world. For every point of world size difference, up or down, add or subtract (respectively) 10% from the Safe Dive and Crush Depth values.
+				</p>
+				<p>
+					When increasing Safe Dive/Crush Depth for a submersible, for every doubling of the Safe Dive and Crush Depth, the vehicle loses half of its remains spaces (rounded off) to ballast to bring the vehicle lower into the ocean. Each doubling costs of 100% of the chassis price of the submersible.
+				</p>
+				<p>
+					An open chassis submersible, such as a dive sled, does not protect its drivers or passengers from the pressures of the depths of the ocean.
+				</p>
+				<p>
+					All submersibles get Basic Life Support and Hostile Environment Protection for free.
+				</p>
+			</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Submersible Safe Dive Depth and Crush Depth by Tech Level</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Tech Level</th>
+					<th>Safe Dive Depth (m)</th>
+					<th>Crush Depth (m)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>4-5</th>
+				<td>50</td>
+				<td>150</td>
+			</tr>
+			<tr>
+				<th>6-8</th>
+				<td>200</td>
+				<td>600</td>
+			</tr>
+			<tr>
+				<th>9-11</th>
+				<td>600</td>
+				<td>1,800</td>
+			</tr>
+			<tr>
+				<th>12-14</th>
+				<td>2,000</td>
+				<td>6,000</td>
+			</tr>
+			<tr>
+				<th>15-16</th>
+				<td>4,000</td>
+				<td>12,000</td>
+			</tr>
+			<tr>
+				<th>17+</th>
+				<td>8,000</td>
+				<td>24,000</td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Vacuum Environmental Protection System (TL 6)</dt>
+			<dd>The Vacuum Environmental Protection System can be installed in any vehicles with a closed chassis to safeguard the vehicle and its crew under vacuum conditions. Vacuum Environmental Protection protects against vacuum conditions, very hot or very cold environments, radiation, poisons and bacteriological threats. This system takes up 3 spaces and costs Cr10,000 per Space of chassis. This system requires the purchase of Life Support.</dd>
+			<dt>Wave-Piercing Hull</dt>
+			<dd>The Wave-piercing Hull puts the payload of a watercraft on streamlined pillars above the water that connect to power/fuel modules that run underwater. Interface friction is much reduced, allowing the Wave-piercing Hull to be much more efficient and stable. This increases its Base Speed by 10%. The Wavepiercing Hull uses 5% of a vehicle’s Spaces (round up) and costs 200% of the chassis price.</dd>
+		</dl>
+
+		<h2 id="vehicle-armor">Vehicle Armor</h2>
+		<p>
+			All vehicles start with a base amount of armor, depending on their construction materials, as outlined in the Vehicle Armor by Type table. All additional vehicle armor, regardless of armor type, is added in 5% increments of the vehicle’s volume, in Spaces. A vehicle’s armor decreases ambient radiation exposure by 10 rads per point of armor. (This does not apply to meson attacks and nuclear missiles, which bypass the armor or breach the chassis to deliver their radiation hits.) Note that these armor values are measured on the Personal Combat scale. The maximum armor a vehicle can carry is 20% of the chassis.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicle Armor by Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Armor Type</th>
+					<th>TL</th>
+					<th>Base</th>
+					<th>Additional Protection</th>
+					<th>Price</th>
+					<th>Max Armor</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Wood</th>
+				<td>1</td>
+				<td>1</td>
+				<td>1 per 5% chassis, min. 1 space</td>
+				<td>10% of base chassis</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>Iron</th>
+				<td>4</td>
+				<td>2</td>
+				<td>2 per 5% chassis, min. 1 space</td>
+				<td>10% of base chassis</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<th>Titanium Steel</th>
+				<td>7</td>
+				<td>3</td>
+				<td>3 per 5% chassis, min. 1 space</td>
+				<td>10% of base chassis</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Crystaliron</th>
+				<td>10</td>
+				<td>4</td>
+				<td>4 per 5% chassis, min. 1 space</td>
+				<td>20% of base chassis</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<th>Superdense</th>
+				<td>12</td>
+				<td>5</td>
+				<td>5 per 5% chassis, min. 1 space</td>
+				<td>20% of base chassis</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th>Bonded Superdense</th>
+				<td>14</td>
+				<td>6</td>
+				<td>6 per 5% chassis, min. 1 space</td>
+				<td>50% of base chassis</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<th>Coherent Superdense</th>
+				<td>17</td>
+				<td>8</td>
+				<td>8 per 5% chassis, min. 1 space</td>
+				<td>50% of base chassis</td>
+				<td>40</td>
+			</tr>
+		</table>
+		<p>
+			For example, a heavily armored TL14 grav tank might take Bonded Superdense armor twice. This would take up 10% of the chassis volume (in spaces, minimum 2 spaces) and cost 100% of the base price of the chassis, but give 12 additional points of armor.
+		</p>
+
+		<h3>Vehicle Armor Options</h3>
+		<p>
+			The following are options that can be added to a vehicle's armor.
+		</p>
+		<dl>
+			<dt>Electrostatic Armor (TL 9)</dt>
+			<dd>This armor can be set to generate an electrostatic field that, when triggered by a person or creature, inflicts 6D6 damage. The armor may discharge twice before needing to recharge, and completely recharges after six seconds without a discharge. Electrostatic Armor requires one Space for the supporting capacitor and associated electronics, and costs Cr10,000.</dd>
+			<dt>Reflec (TL 10)</dt>
+			<dd>Reflec coating on the chassis increases the vehicle’s armor against lasers by 3. Adding Reflec costs Cr100,000 per ton of chassis and can only be added once.</dd>
+			<dt>Reinforced Hull</dt>
+			<dd>A vehicle’s Hull can be reinforced through enhanced structural engineering, increasing its Hull rating in Personal Combat by +1. This costs 20% of the vehicle’s chassis price. This can be selected twice for a total of +2 to the vehicle’s Hull.</dd>
+			<dt>Reinforced Structure</dt>
+			<dd>A vehicle’s Structure can be reinforced through enhanced engineering designs, increasing its Structure rating in Personal Combat by +1. This costs 20% of the vehicle’s chassis price. This modification can be selected twice for a total of +2 to the vehicle’s Structure.</dd>
+			<dt>Stealth (TL 11)</dt>
+			<dd>A stealth coating absorbs radar and lidar beams, and also disguises heat emissions. This imposes a –4 DM on any Comms rolls to detect or lock onto the vehicle. Adding Stealth costs Cr100,000 per ton of chassis, and can only be added once.</dd>
+		</dl>
+
+		<h3>Vehicle Hull and Structure</h3>
+		<p>
+			Initial damage is applied to the Hull value of the chassis; once the chassis has been breached (i.e. the Hull value of the vehicle has reached zero), further damage goes to the Structure. When all Structure Points have been lost, the vehicle has been smashed to pieces. On the Space Combat scale, every vehicle has 0 Hull Points and 1 Structure Point. On the Personal Combat scale, a vehicle has one Hull Point per 5 tons of displacement (rounded down) and one Structure Point per 5 tons of displacement (rounded up). This is summarized in the Vehicle Hull and Structure, Personal Combat Scale table.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicle Hull and Structure, Personal Combat Scale</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Tons</th>
+					<th>Hull</th>
+					<th>Structure</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>0.1-4</th>
+				<td>0</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>6-9</th>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>10</th>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>11-14</th>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>15</th>
+				<td>3</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>16-19</th>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>20</th>
+				<td>4</td>
+				<td>4</td>
+			</tr>
+		</table>
+
+		<h2 id="vehicle-drives">Vehicle Drives</h2>
+		<p>
+			All vehicles are generally built with at least one source of power (commonly referred to as the engine or power plant) and one source of propulsion or locomotion to provide movement for the vehicle. Propulsion is defined as either contact-based (requiring contact with the ground to provide motion) or thrust-based. Within the Cepheus Engine VDS, all engines, power plants and propulsion systems are categorized as drives.
+		</p>
+		<dl>
+			<dt>Power Plants</dt>
+			<dd>Within this design system, the values of the <a href="#vehicle-drive-costs">Vehicle Drive Costs</a> tables make certain assumptions. Power plant values represent the fusion engine. The <a href="#vehicle-power-plant-types">Vehicle Power Plant Types</a> table offer adjustments to represent the impact of alternate power sources.</dd>
+			<dt>Propulsion Systems</dt>
+			<dd>The contact-based propulsion system values represent the transmission and suspension of wheeled vehicles. The thrust-based propulsion system values represent the suspension of grav vehicles. The Vehicle Propulsion Types table offers adjustments to represent alternate propulsion systems.</dd>
+			<dt>Base Speed</dt>
+			<dd>
+				<p>
+					The base speed of a vehicle is determined by its propulsion drive performance and its propulsion type, as outlined in the <a href="#vehicle-base-speed-by-drive-performance">Vehicle Base Speed by Drive Performance</a> table. Base speed is measured in kilometers per hour (kph), unless otherwise specified.
+				</p>
+				<p>
+					A vehicle with a propulsion system must have a power source with a drive code equal to or greater than that of the vehicle’s propulsion. When determining the drive performance of a power plant or a contact-based propulsion system using the <a href="#drive-performance-by-chassis-volume">Drive Performance by Chassis Volume</a> tables, treat a zero (0) entry as a ‘&mdash;’ entry. For a thrust-based propulsion system, a zero (0) means that the thrust from the propulsion system is capable of supporting the vehicle itself in position, hovering in place, but cannot perform any actual propulsion. This allows vehicle designers to create vehicles that only move down or remain stationary, but can’t move up or forward at any significant speed. This is primarily used for robots and drones that need to remain stationary in turbulent circumstances.
+				</p>
+			</dd>
+			<dt>Animal-Powered or Wind-Powered Vehicles</dt>
+			<dd>Vehicles that possess no internal power plant or engine, such as those propelled by wind or pulled by living creatures, do not require a power plant as defined in this section, since their power comes from an external source. In this case, the vehicle must possess a drive capable of achieving a drive performance of at least 1. For more details on wind-powered or animal-powered vehicles, see <a href="#non-powered-vehicles">Non-Powered Vehicles</a> in the <a href="#special-rules">Special Rules</a> section of this chapter.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-power-plant-types">
+			<caption>Table: Vehicle Power Plant Types</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Power Plant Type</th>
+					<th>TL</th>
+					<th>Space Mod</th>
+					<th>Price Mod</th>
+					<th>Fuel</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>External Combustion</th>
+				<td>3</td>
+				<td>x15</td>
+				<td>x0.20</td>
+				<td>Coal or Wood</td>
+			</tr>
+			<tr>
+				<th>Internal Combustion</th>
+				<td>5</td>
+				<td>x6</td>
+				<td>x0.05</td>
+				<td>Hydrocarbons</td>
+			</tr>
+			<tr>
+				<th>Fission</th>
+				<td>6</td>
+				<td>x2</td>
+				<td>x2</td>
+				<td>Radioactives</td>
+			</tr>
+			<tr>
+				<th>Fuel Cell (Closed)</th>
+				<td>7</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Hydrogen</td>
+			</tr>
+			<tr>
+				<th>Fuel Cell (Open)</th>
+				<td>7</td>
+				<td>x2</td>
+				<td>x0.25</td>
+				<td>Hydrogen</td>
+			</tr>
+			<tr>
+				<th>Gas Turbine</th>
+				<td>7</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Hydrocarbons</td>
+			</tr>
+			<tr>
+				<th>Early Fusion</th>
+				<td>9</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Hydrogen</td>
+			</tr>
+			<tr>
+				<th>Fusion</th>
+				<td>12</td>
+				<td>x0.75</td>
+				<td>x1</td>
+				<td>Hydrogen</td>
+			</tr>
+			<tr>
+				<th>Advanced Fusion</th>
+				<td>15</td>
+				<td>x0.5</td>
+				<td>x2</td>
+				<td>Hydrogen</td>
+			</tr>
+			<tr>
+				<th>Antimatter</th>
+				<td>17</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Hydrogen</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-propulsion-types">
+			<caption>Table: Vehicle Propulsion Types</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Propulsion Type</th>
+					<th>TL</th>
+					<th>Type</th>
+					<th>Space Mod</th>
+					<th>Price Mod</th>
+					<th>Examples</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Sails, Non-Powered</th>
+				<td>1</td>
+				<td>Thrust</td>
+				<td>x1</td>
+				<td>x0.2</td>
+				<td>Sailing Ship</td>
+			</tr>
+			<tr>
+				<th>Wheels, Non-Powered</th>
+				<td>1</td>
+				<td>Contact</td>
+				<td>x1</td>
+				<td>x0.5</td>
+				<td>Stagecoach</td>
+			</tr>
+			<tr>
+				<th>Rails</th>
+				<td>3</td>
+				<td>Contact</td>
+				<td>x2</td>
+				<td>x1</td>
+				<td>Train</td>
+			</tr>
+			<tr>
+				<th>Screw Propeller</th>
+				<td>3</td>
+				<td>Thrust</td>
+				<td>x1</td>
+				<td>x0.1</td>
+				<td>Motor Boat, Steamship</td>
+			</tr>
+			<tr>
+				<th>Airship</th>
+				<td>4</td>
+				<td>Thrust</td>
+				<td>x1</td>
+				<td>x0.5</td>
+				<td>Dirigible</td>
+			</tr>
+			<tr>
+				<th>Rotor</th>
+				<td>4</td>
+				<td>Thrust</td>
+				<td>x2</td>
+				<td>x0.5</td>
+				<td>Biplane, Helicopter</td>
+			</tr>
+			<tr>
+				<th>Tracks</th>
+				<td>4</td>
+				<td>Contact</td>
+				<td>x1</td>
+				<td>x2</td>
+				<td>Tank</td>
+			</tr>
+			<tr>
+				<th>Wheels</th>
+				<td>4</td>
+				<td>Contact</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Ground Car</td>
+			</tr>
+			<tr>
+				<th>Jet</th>
+				<td>5</td>
+				<td>Thrust</td>
+				<td>x2</td>
+				<td>x2</td>
+				<td>Twin-Engine Jet</td>
+			</tr>
+			<tr>
+				<th>Mole</th>
+				<td>5</td>
+				<td>Contact</td>
+				<td>x2</td>
+				<td>x8</td>
+				<td>Mole</td>
+			</tr>
+			<tr>
+				<th>Air Cushion</th>
+				<td>7</td>
+				<td>Thrust</td>
+				<td>x1</td>
+				<td>x0.5</td>
+				<td>Hovercraft</td>
+			</tr>
+			<tr>
+				<th>Hypersonic</th>
+				<td>8</td>
+				<td>Thrust</td>
+				<td>x1.5</td>
+				<td>x4</td>
+				<td>Passenger Air Liner</td>
+			</tr>
+			<tr>
+				<th>Legs</th>
+				<td>8</td>
+				<td>Contact</td>
+				<td>x2</td>
+				<td>x4</td>
+				<td>Walker</td>
+			</tr>
+			<tr>
+				<th>Grav</th>
+				<td>9</td>
+				<td>Thrust</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Air/Raft, Speeder</td>
+			</tr>
+			<tr>
+				<th>Advanced Grav</th>
+				<td>12</td>
+				<td>Thrust</td>
+				<td>x0.75</td>
+				<td>x2</td>
+				<td>Grav Bike</td>
+			</tr>
+			<tr>
+				<th>Extreme Grav</th>
+				<td>15</td>
+				<td>Thrust</td>
+				<td>x0.5</td>
+				<td>x4</td>
+				<td>G/Carrier</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-drive-costs">
+			<caption>Table: Vehicle Drive Costs</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Drive Code</th>
+					<th colspan="2">Power Plant</th>
+					<th colspan="2">Contact-Based</th>
+					<th colspan="2">Thrust-Based</th>
+				</tr>
+				<tr>
+					<th></th>
+					<th>Spaces</th>
+					<th>Price (Cr)</th>
+					<th>Contact-Based</th>
+					<th>Price (Cr)</th>
+					<th>Thrust-Based</th>
+					<th>Price (Cr)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>0.11</td>
+				<td>125</td>
+				<td>0.15</td>
+				<td>150</td>
+				<td>0.12</td>
+				<td>6,000</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>0.26</td>
+				<td>300</td>
+				<td>0.4</td>
+				<td>400</td>
+				<td>0.3</td>
+				<td>15,000</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>0.4</td>
+				<td>450</td>
+				<td>0.55</td>
+				<td>550</td>
+				<td>0.5</td>
+				<td>25,000</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>0.4</td>
+				<td>450</td>
+				<td>0.55</td>
+				<td>550</td>
+				<td>0.5</td>
+				<td>25,000</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>1.25</td>
+				<td>1,425</td>
+				<td>1.6</td>
+				<td>1,575</td>
+				<td>1.4</td>
+				<td>70,000</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>1.75</td>
+				<td>1,975</td>
+				<td>2.3</td>
+				<td>2,250</td>
+				<td>2</td>
+				<td>100,000</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>2.25</td>
+				<td>2,550</td>
+				<td>3</td>
+				<td>2,925</td>
+				<td>2.5</td>
+				<td>125,000</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>2.75</td>
+				<td>3,100</td>
+				<td>3.5</td>
+				<td>3,425</td>
+				<td>3</td>
+				<td>150,000</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>3.5</td>
+				<td>3,950</td>
+				<td>4.5</td>
+				<td>4,400</td>
+				<td>4</td>
+				<td>200,000</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>4</td>
+				<td>4,500</td>
+				<td>5.25</td>
+				<td>5,125</td>
+				<td>4.5</td>
+				<td>225,000</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>4.5</td>
+				<td>5,075</td>
+				<td>6</td>
+				<td>5,850</td>
+				<td>5.25</td>
+				<td>262,500</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>5.25</td>
+				<td>5,925</td>
+				<td>7</td>
+				<td>6,825</td>
+				<td>6.25</td>
+				<td>312,500</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>6.75</td>
+				<td>7,600</td>
+				<td>9</td>
+				<td>8,775</td>
+				<td>8</td>
+				<td>400,000</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>7.5</td>
+				<td>8,450</td>
+				<td>10</td>
+				<td>9,750</td>
+				<td>8.5</td>
+				<td>425,000</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>8.5</td>
+				<td>9,575</td>
+				<td>11</td>
+				<td>10,725</td>
+				<td>10</td>
+				<td>500,000</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>9.5</td>
+				<td>10,700</td>
+				<td>13</td>
+				<td>12,675</td>
+				<td>11.5</td>
+				<td>575,000</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>10.5</td>
+				<td>11,825</td>
+				<td>14</td>
+				<td>13,650</td>
+				<td>12</td>
+				<td>600,000</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>12</td>
+				<td>13,500</td>
+				<td>16</td>
+				<td>15,600</td>
+				<td>13.5</td>
+				<td>675,000</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>13.5</td>
+				<td>15,200</td>
+				<td>18</td>
+				<td>17,550</td>
+				<td>16</td>
+				<td>800,000</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>15.5</td>
+				<td>17,450</td>
+				<td>21</td>
+				<td>20,475</td>
+				<td>18</td>
+				<td>900,000</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>18.5</td>
+				<td>20,825</td>
+				<td>25</td>
+				<td>24,375</td>
+				<td>22</td>
+				<td>1,100,000</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>21.5</td>
+				<td>24,200</td>
+				<td>29</td>
+				<td>28,275</td>
+				<td>26</td>
+				<td>1,300,000</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>25.5</td>
+				<td>28,700</td>
+				<td>34</td>
+				<td>33,150</td>
+				<td>30</td>
+				<td>1,500,000</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>31</td>
+				<td>34,875</td>
+				<td>41</td>
+				<td>39,975</td>
+				<td>36</td>
+				<td>1,800,000</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Drive Performance by Chassis Code, Smaller Chassis</caption>
+			<thead class="thead-light">
+				<th>Drive/Chassis</th>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+				<th>7</th>
+				<th>8</th>
+				<th>9</th>
+				<th>A</th>
+				<th>B</th>
+				<th>C</th>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>4</td>
+				 <td>1</td>
+				 <td>0</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>&mdash;</td>
+				 <td>4</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>0</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>&mdash;</td>
+				 <td>6</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>0</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>5</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>4</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>0</td>
+				 <td>0</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>4</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>5</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>4</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>1</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>5</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>1</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>5</td>
+				 <td>4</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>5</td>
+				 <td>4</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>5</td>
+				 <td>4</td>
+				 <td>3</td>
+				 <td>3</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>5</td>
+				 <td>4</td>
+				 <td>4</td>
+				 <td>3</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>5</td>
+				 <td>4</td>
+				 <td>4</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>5</td>
+				 <td>4</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>5</td>
+				 <td>5</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>5</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Drive Performance by Chassis Code, Larger Chassis</caption>
+			<thead class="thead-light">
+				<th>Drive/Chassis</th>
+				<th>D</th>
+				<th>E</th>
+				<th>F</th>
+				<th>G</th>
+				<th>H</th>
+				<th>J</th>
+				<th>K</th>
+				<th>L</th>
+				<th>M</th>
+				<th>N</th>
+				<th>P</th>
+				<th>Q</th>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>1</td>
+				 <td>1</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>0</td>
+				 <td>0</td>
+				 <td>0</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>2</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>3</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+				 <td>1</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>4</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>1</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>4</td>
+				 <td>4</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>5</td>
+				 <td>4</td>
+				 <td>4</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>5</td>
+				 <td>5</td>
+				 <td>4</td>
+				 <td>4</td>
+				 <td>4</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>2</td>
+				 <td>2</td>
+				 <td>2</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>6</td>
+				 <td>6</td>
+				 <td>5</td>
+				 <td>5</td>
+				 <td>4</td>
+				 <td>4</td>
+				 <td>4</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>3</td>
+				 <td>3</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>6</td>
+				 <td>5</td>
+				 <td>5</td>
+				 <td>4</td>
+				 <td>4</td>
+				 <td>4</td>
+				 <td>4</td>
+				 <td>3</td>
+				 <td>3</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>6</td>
+				 <td>5</td>
+				 <td>5</td>
+				 <td>5</td>
+				 <td>4</td>
+				 <td>4</td>
+				 <td>4</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>6</td>
+				 <td>5</td>
+				 <td>5</td>
+				 <td>5</td>
+				 <td>5</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>&mdash;</td>
+				 <td>6</td>
+				 <td>6</td>
+				 <td>6</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-base-speed-by-drive-performance">
+			<caption>Table: Vehicle Base Speed by Drive Performance</caption>
+			<thead class="thead-light">
+				<th>Propulsion Type</th>
+				<th>TL</th>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+			</thead>
+			<tr>
+				<th>Rails</th>
+				<td>3</td>
+				<td>40</td>
+				<td>80</td>
+				<td>120</td>
+				<td>160</td>
+				<td>200</td>
+				<td>240</td>
+			</tr>
+			<tr>
+				<th>Screw Propeller</th>
+				<td>3</td>
+				<td>20</td>
+				<td>40</td>
+				<td>60</td>
+				<td>80</td>
+				<td>100</td>
+				<td>120</td>
+			</tr>
+			<tr>
+				<th>Airship</th>
+				<td>4</td>
+				<td>30</td>
+				<td>60</td>
+				<td>90</td>
+				<td>120</td>
+				<td>150</td>
+				<td>180</td>
+			</tr>
+			<tr>
+				<th>Rotor (Horizontally Mounted)</th>
+				<td>4</td>
+				<td>100</td>
+				<td>200</td>
+				<td>300</td>
+				<td>400</td>
+				<td>500</td>
+				<td>600</td>
+			</tr>
+			<tr>
+				<th>Rotor (Vertically Mounted)</th>
+				<td>4</td>
+				<td>50</td>
+				<td>100</td>
+				<td>150</td>
+				<td>200</td>
+				<td>250</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<th>Tracks</th>
+				<td>4</td>
+				<td>25</td>
+				<td>50</td>
+				<td>75</td>
+				<td>100</td>
+				<td>125</td>
+				<td>150</td>
+			</tr>
+			<tr>
+				<th>Wheels</th>
+				<td>4</td>
+				<td>50</td>
+				<td>100</td>
+				<td>150</td>
+				<td>200</td>
+				<td>250</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<th>Jet</th>
+				<td>5</td>
+				<td>150</td>
+				<td>300</td>
+				<td>450</td>
+				<td>600</td>
+				<td>750</td>
+				<td>900</td>
+			</tr>
+			<tr>
+				<th>Mole (*measured in meters/hour)</th>
+				<td>5</td>
+				<td>50*</td>
+				<td>100*</td>
+				<td>150*</td>
+				<td>200*</td>
+				<td>250*</td>
+				<td>300*</td>
+			</tr>
+			<tr>
+				<th>Air Cushion</th>
+				<td>7</td>
+				<td>50</td>
+				<td>100</td>
+				<td>150</td>
+				<td>200</td>
+				<td>250</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<th>Hypersonic</th>
+				<td>8</td>
+				<td>300</td>
+				<td>600</td>
+				<td>900</td>
+				<td>1200</td>
+				<td>1500</td>
+				<td>1800</td>
+			</tr>
+			<tr>
+				<th>Legs</th>
+				<td>8</td>
+				<td>50</td>
+				<td>100</td>
+				<td>150</td>
+				<td>200</td>
+				<td>250</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<th>Grav</th>
+				<td>9</td>
+				<td>100</td>
+				<td>200</td>
+				<td>300</td>
+				<td>400</td>
+				<td>500</td>
+				<td>600</td>
+			</tr>
+			<tr>
+				<th>Advanced Grav</th>
+				<td>12</td>
+				<td>200</td>
+				<td>400</td>
+				<td>600</td>
+				<td>800</td>
+				<td>1000</td>
+				<td>1200</td>
+			</tr>
+			<tr>
+				<th>Extreme Grav</th>
+				<td>15</td>
+				<td>400</td>
+				<td>800</td>
+				<td>1200</td>
+				<td>1600</td>
+				<td>2000</td>
+				<td>2400</td>
+			</tr>
+		</table>
+
+		<h2 id="vehicle-fuel">Vehicle Fuel</h2>
+		<p>
+			Every vehicle carries fuel, unless it derives its power from an external source. All fuel calculations are calculated based on the power plant’s Drive Code and Power Plant Type, as well as the expected period of operation without refueling. The power plant fuel requirements for early fusion engines are outlined in the <a href="#power-plant-fuel-requirements">Vehicle Power Plant Fuel Requirements</a> table. Fuel consumption for other power plant types is detailed in the <a href="#vehicle-fuel-consumption-by-power-plant">Vehicle Fuel Consumption by Power Plant Type</a> table.
+		</p>
+		<p>
+			The amount of fuel required by the power plant depends on the volume of the power plant itself, and is calculated as one-third of the power plant tonnage per week. Vehicles are designed to operate for a variety of durations, ranging from a few hours to days or even weeks. For your convenience, the <a href="#power-plant-fuel-requirements">Vehicle Power Plant Fuel Requirements</a> table provides calculated values for the fuel per week, per day and per hour, by Drive Code. For purposes of describing fuel volume in a vehicle’s description, assume that the number of spaces of fuel is equivalent to the kiloliters of volume it occupies. Divide calculated fuel space by 12 to determine fuel volume in tons.
+		</p>
+		<p>
+			<b>Range and Cruising Speed:</b> The amount of fuel a vehicle carries determines its Range at its maximum speed. The cruising speed of a vehicle is assumed to be 75% of the vehicle’s maximum speed and if the vehicle maintains this rate of movement, its Range will increase by 50% due to fuel efficiency.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="power-plant-fuel-requirements">
+			<caption>Table: Power Plant Fuel Requirements</caption>
+			<thead class="thead-light">
+				<th>Drive Code</th>
+				<th>Spaces</th>
+				<th>Fuel/Wk (Spaces)</th>
+				<th>Fuel/Dy (Spaces)</th>
+				<th>Fuel/Hr (Spaces)</th>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>0.11</td>
+				<td>0.03</td>
+				<td>0.0043</td>
+				<td>0.00018</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>0.26</td>
+				<td>0.09</td>
+				<td>0.012</td>
+				<td>0.00052</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>0.4</td>
+				<td>0.13</td>
+				<td>0.019</td>
+				<td>0.00077</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>0.75</td>
+				<td>0.25</td>
+				<td>0.036</td>
+				<td>0.0015</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>1.25</td>
+				<td>0.41</td>
+				<td>0.059</td>
+				<td>0.0024</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>1.75</td>
+				<td>0.58</td>
+				<td>0.083</td>
+				<td>0.0035</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>2.25</td>
+				<td>0.75</td>
+				<td>0.11</td>
+				<td>0.0047</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>2.75</td>
+				<td>0.91</td>
+				<td>0.13</td>
+				<td>0.0054</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>3.5</td>
+				<td>1.16</td>
+				<td>0.17</td>
+				<td>0.0069</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>4</td>
+				<td>1.33</td>
+				<td>0.19</td>
+				<td>0.0079</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>4.5</td>
+				<td>1.50</td>
+				<td>0.21</td>
+				<td>0.0089</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>5.25</td>
+				<td>1.75</td>
+				<td>0.25</td>
+				<td>0.010</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>6.75</td>
+				<td>2.25</td>
+				<td>0.32</td>
+				<td>0.013</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>7.5</td>
+				<td>2.50</td>
+				<td>0.36</td>
+				<td>0.015</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>8.5</td>
+				<td>2.83</td>
+				<td>0.40</td>
+				<td>0.017</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>9.5</td>
+				<td>3.16</td>
+				<td>0.45</td>
+				<td>0.019</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>10.5</td>
+				<td>3.50</td>
+				<td>0.50</td>
+				<td>0.021</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>12</td>
+				<td>4.00</td>
+				<td>0.57</td>
+				<td>0.024</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>13.5</td>
+				<td>4.50</td>
+				<td>0.64</td>
+				<td>0.027</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>15.5</td>
+				<td>5.16</td>
+				<td>0.73</td>
+				<td>0.031</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>18.5</td>
+				<td>6.16</td>
+				<td>0.88</td>
+				<td>0.037</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>21.5</td>
+				<td>7.16</td>
+				<td>1.02</td>
+				<td>0.043</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>25.5</td>
+				<td>8.50</td>
+				<td>1.21</td>
+				<td>0.051</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>31</td>
+				<td>10.33</td>
+				<td>1.48</td>
+				<td>0.061</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-fuel-consumption-by-power-plant">
+			<caption>Table: Vehicle Fuel Consumption by Power Plant Type</caption>
+			<thead class="thead-light">
+				<th>Power Plant Type</th>
+				<th>TL</th>
+				<th>Fuel Mod</th>
+				<th>Price/Space (Cr)</th>
+				<th>Notes</th>
+			</thead>
+			<tr>
+				<th>External Combustion</th>
+				<td>3</td>
+				<td>x9 (wood) or x5 (coal)</td>
+				<td>540</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Internal Combustion</th>
+				<td>5</td>
+				<td>x3</td>
+				<td>830</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Fission</th>
+				<td>6</td>
+				<td>x0.04</td>
+				<td>8,300</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Fuel Cell (Closed)</th>
+				<td>7</td>
+				<td>x20</td>
+				<td>40</td>
+				<td>Does not require an external source of oxygen</td>
+			</tr>
+			<tr>
+				<th>Fuel Cell (Open)</th>
+				<td>7</td>
+				<td>x2</td>
+				<td>40</td>
+				<td>Requires an external source of oxygen</td>
+			</tr>
+			<tr>
+				<th>Gas Turbine</th>
+				<td>7</td>
+				<td>x3</td>
+				<td>830</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Early Fusion</th>
+				<td>9</td>
+				<td>x1</td>
+				<td>40</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Fusion</th>
+				<td>12</td>
+				<td>x0.75</td>
+				<td>40</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Advanced Fusion</th>
+				<td>15</td>
+				<td>x0.5</td>
+				<td>40</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Antimatter</th>
+				<td>17</td>
+				<td>x0</td>
+				<td>Special</td>
+				<td>Must be refueled once a month, at a cost of Cr40 per Space of Antimatter power plant.</td>
+			</tr>
+		</table>
+
+		<h2 id="vehicle-drive-options">Vehicle Drive Options</h2>
+		<p>
+			The following options are available as modifications on Vehicle Drives.
+		</p>
+		<dl>
+			<dt>Additional Drive Systems</dt>
+			<dd>A secondary drive system can be installed in a vehicle by purchasing a second propulsion drive. The secondary drive system’s performance is limited to one less than that of the primary drive system. The vehicle’s Agility suffers a–1 penalty due to design accommodations required to support the additional drive system.</dd>
+			<dt>Decreased Agility</dt>
+			<dd>Vehicles can be built with lowered Agility, normally done for reasons of cost. Each reduction of –1 Agility reduces the final price of the vehicle by 25% of its chassis price. The maximum decrease to a vehicle’s Agility is -2.</dd>
+			<dt>Decreased Fuel Efficiency</dt>
+			<dd>Vehicles can be built with decreased fuel efficiency, relying on cheaper parts or less efficient engines to cut costs. Fuel inefficient vehicles multiply the Fuel Mod on the Vehicle Fuel Consumption by Power Plant Type by 1.25 (increasing the fuel consumed by 25%). This reduces the final price of the vehicle by 10% of its chassis price.</dd>
+			<dt>Extra Leg(s)</dt>
+			<dd>Walkers are typically assumed to have two legs. Additional legs can also be added to improve mobility in rough and uneven terrain. Each additional legs costs 25% of the vehicle’s Contact-Based Drive Price and takes up an additional 5% of the vehicle’s Contact-Based Drive Space. Every pair of additional legs reduces any terrain-based maneuver penalties by 1. This cannot be used to provide a bonus, only to negate a penalty. In addition, any walker with four or more legs gains a DM+1 on attack rolls made with the vehicle’s weapons.</dd>
+			<dt>Extra Pair of Wheels</dt>
+			<dd>Wheeled vehicles are typically assumed to have four wheels (except for small vehicles of 0.5 tons or less in size, which may have two wheels at the designer’s discretion.) Additional wheels can be added to improve cross-country mobility. Each additional pair of wheels costs 25% of the vehicle’s Contact-Based Drive Price, takes up 25% of the vehicle’s Contact-Based Drive Space, and reduces any terrain-based Agility penalties by 1. This cannot be used to provide a bonus, only to negate a penalty.</dd>
+			<dt>Increased Agility</dt>
+			<dd>Each +1 to Agility costs 50% of the chassis price. The maximum increase to a vehicle’s Agility is +3.</dd>
+			<dt>Increased Fuel Efficiency</dt>
+			<dd>Vehicles can be built with increased fuel efficiency. Fuel efficient vehicles multiply the Fuel Mod on the Vehicle Fuel Consumption by Power Plant Type by 0.9 (reducing the fuel consumed by 10%). This costs 20% of the chassis price.</dd>
+			<dt>Jump Jets</dt>
+			<dd>Any ground vehicle or hovercraft can be built with Jump Jets. These vehicles use jump jets primarily for crossing obstacles, but jump jets can also be used to allow the vehicle to fly, albeit inefficiently and no higher than 100 meters off the surface. To determine the size and cost of the Jump Jets unit, select a Thrust-based Drive that provides a minimum Drive Performance of 1 from the <a href="#vehicle-drive-costs">Vehicle Drive Costs</a> table, and multiply both Spaces and Price by 0.75. When flying through the use of jump jets, the vehicles moves at one-quarter of the Base Speed for the Jump Jets unit, and consumes fuel five times faster than normal</dd>
+			<dt>Off-Road Capability</dt>
+			<dd>Any ground vehicle can be purposefully designed for off-road use. This modification costs 50% of the vehicle’s Contact-Based Drive Price, and the vehicle’s Base Speed is lowered by 10%. A vehicle that is off-road capable does not suffer the –2 DM to Agility for moving off-road, and its Speed is not reduced. In addition, it can cross rough terrain with a –2 DM to Agility.</dd>
+			<dt>Tilt Rotors/Jets</dt>
+			<dd>Aircraft equipped with tilt rotors gain the ability to takeoff vertically and hover like a helicopter. Once the rotors or jets rotate forward, the aircraft flies normally. Adding this component triples the Price of the Thrust-based drive.</dd>
+		</dl>
+
+		<h2 id="vehicle-agility">Vehicle Agility</h2>
+		<p>
+			Some vehicles are easier to drive than others. A vehicle’s Agility rating reflects how easy the vehicle is to drive, and is expressed as a DM to the pilot’s skill check. A vehicle’s base Agility is determined by a number of factors, including the size of the vehicle’s chassis and its primary propulsion type. To determine a vehicle’s Agility rating, consult the Vehicle Agility Modifiers table, and sum up all appropriate modifiers.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-agility-modifiers">
+			<caption>Table: Vehicle Agility Modifiers</caption>
+			<thead class="thead-light">
+				<th>Agility Factor</th>
+				<th>Modifier</th>
+			</thead>
+			<tr>
+				<th>Vehicle Type</th>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Airplane</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Airship</th>
+				<td>-4</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Grav Vehicle</th>
+				<td>+0</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Helicopter</th>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Hovercraft</th>
+				<td>+0</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Hypersonic</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Jet</th>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Mole</th>
+				<td>-4</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Motorboat</th>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Ocean Ship</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Sailing Ship</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Submarine</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Tracked Ground Vehicle</th>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Train</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Walker</th>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Wheeled Ground Vehicle</th>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<th>Size and Power Factors</th>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Animal-Powered</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Wind-Powered</th>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Small (2- tons)</th>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Large (10+ tons)</th>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Huge (20+ tons)</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Gargantuan (100+ tons)</th>
+				<td>-3</td>
+			</tr>
+		</table>
 
 
 
