@@ -2460,9 +2460,970 @@
 			</tr>
 		</table>
 
+		<h2 id="vehicle-controls">Vehicle Controls</h2>
+		<p>
+			Unlike starships, vehicles do not have bridges. Instead, vehicles require a control system to allow crewmembers to control the vehicle. More advanced systems can be installed. Unmanned vehicles use drone controller systems to allow for remote operation of the vehicle.
+		</p>
+		<dl>
+			<dt>Primitive Controls (TL 2)</dt>
+			<dd>Primitive controls reflect the crudest of methods used to direct the motion of a vehicle.</dd>
+			<dt>Basic Controls (TL 4)</dt>
+			<dd>This is the default control set-up, usually some form of basic steering mechanism and a throttle for controlling speed.</dd>
+			<dt>Advanced Controls (TL 8)</dt>
+			<dd>This is usually advanced drive-by-wire systems with heads-up displays.</dd>
+			<dt>Exo-skeleton Linkage (TL 10)</dt>
+			<dd>The exo-link is a system for translating body movements into vehicle actions. No additional special equipment or cybernetic modifications are required.</dd>
+			<dt>Neural Link (TL 12)</dt>
+			<dd>The neural link is a true mind-machine linkage and allows an operator to control the vehicle with their mind alone. No additional special equipment or cybernetic modifications are required.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-control-systems">
+			<caption>Table: Vehicle Control Systems</caption>
+			<thead class="thead-light">
+				<th>Interface </th>
+				<th>TL </th>
+				<th>Spaces </th>
+				<th>Price (Cr)</th>
+				<th>Agility</th>
+				<th>Initiative</th>
+				<th>Notes</th>
+			</thead>
+			<tr>
+				<th>Primitive</th>
+				<td>1</td>
+				<td>0.5</td>
+				<td>-20% Chassis price</td>
+				<td>-1</td>
+				<td>0</td>
+				<td>DM-2 at speeds over 50 kph.</td>
+			</tr>
+			<tr>
+				<th>Basic</th>
+				<td>4</td>
+				<td>1</td>
+				<td>&mdash;</td>
+				<td>0</td>
+				<td>0</td>
+				<td>Included in Chassis price.</td>
+			</tr>
+			<tr>
+				<th>Advanced</th>
+				<td>8</td>
+				<td>2</td>
+				<td>Cr10,000</td>
+				<td>+1</td>
+				<td>0</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Exo-Skeleton Linkage</th>
+				<td>10</td>
+				<td>3</td>
+				<td>Cr100,000</td>
+				<td>+1</td>
+				<td>+1</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Neural-linked</th>
+				<td>12</td>
+				<td>4</td>
+				<td>Cr200,000</td>
+				<td>+2</td>
+				<td>+2</td>
+				<td></td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-drone-controllers-by-interface">
+			<caption>Table: Vehicle Drone Controllers, By Interface</caption>
+			<thead class="thead-light">
+				<th>Interface</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Control DM</th>
+				<th>Range</th>
+			</thead>
+			<tr>
+				<th>Primitive</th>
+				<td>5</td>
+				<td>0.5</td>
+				<td>Cr10,000</td>
+				<td>-3</td>
+				<td>Long</td>
+			</tr>
+			<tr>
+				<th>Basic</th>
+				<td>7</td>
+				<td>1</td>
+				<td>Cr50,000</td>
+				<td>-2</td>
+				<td>Very Long</td>
+			</tr>
+			<tr>
+				<th>Advanced</th>
+				<td>9</td>
+				<td>2</td>
+				<td>Cr100,000</td>
+				<td>-1</td>
+				<td>Distant</td>
+			</tr>
+			<tr>
+				<th>Exo-Skeleton Linkage</th>
+				<td>11</td>
+				<td>3</td>
+				<td>Cr200,000</td>
+				<td>0</td>
+				<td>Very Distant</td>
+			</tr>
+			<tr>
+				<th>Neural-linked</th>
+				<td>13</td>
+				<td>4</td>
+				<td>Cr500,000</td>
+				<td>+1</td>
+				<td>Regional</td>
+			</tr>
+		</table>
+
+		<h3 id="robot-brains">Robot Brains</h3>
+		<p>
+			Robot Brains can be added to any vehicle with Advanced Controls or better.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Robot Brains</caption>
+			<thead class="thead-light">
+				<th>CPU</th>
+				<th>Spaces</th>
+				<th>TL</th>
+				<th>Computer Equivalent</th>
+				<th>Max Skill Level</th>
+				<th>Price</th>
+			</thead>
+			<tr>
+				<th>Linear</th>
+				<td>3</td>
+				<td>8</td>
+				<td>Model 1</td>
+				<td>1</td>
+				<td>Cr22,500</td>
+			</tr>
+			<tr>
+				<th>Parallel</th>
+				<td>2</td>
+				<td>10</td>
+				<td>Model 2</td>
+				<td>2</td>
+				<td>Cr40,000</td>
+			</tr>
+			<tr>
+				<th>Synaptic</th>
+				<td>1</td>
+				<td>12</td>
+				<td>Model 3</td>
+				<td>3</td>
+				<td>Cr90,000</td>
+			</tr>
+		</table>
+
+		<h3 id="cyborg-controls">Cyborg Controls</h3>
+		<p>
+			The use of human (or sometimes animal) brains to control a vehicle is possible at TL12 and higher. The organic brain and its support systems take up one Space in the vehicle, and require Neural-linked Controls. The use of an organic core grants a +1 DM to all skill checks performed by the cyborg vehicle, in addition to the benefits of the neural link. An organic brain costs Cr250,000 and otherwise operates as an independent entity. It includes basic life support for the organic components for a period of one month.
+		</p>
+		<dl>
+			<dt>Organic Core Extended Life Support</dt>
+			<dd>An Organic Core Extended Life Support provides a year’s worth of nutrients and filtration for the organic brain and its biological support systems. It is available at TL 13, takes up 5 Spaces, and costs Cr250,000.</dd>
+		</dl>
+
+		<h3 id="vehicle-control-options">Vehicle Control Options</h3>
+		<p>
+			The following option is available as a modification on Vehicle Controls.
+		</p>
+		<dl>
+			<dt>Autopilot</dt>
+			<dd>Autopilots are available for aircraft and sea vessels starting at TL 5 and ground vehicles at TL 9. Autopilot systems are at skill level 0 at their Tech Level of introduction and increase their skill level by 1 for every two Tech Levels thereafter, to a maximum of 3. Autopilots cost Cr2,000 + Cr5,000 per skill level.</dd>
+		</dl>
+
+		<h2 id="vehicle-communication-systems">Vehicle Communication Systems</h2>
+		<p>
+			Installing a communication system allows the crew to interact with others. The following systems are assumed to use radio for communications. Alternate approaches to communication are covered in the <a href="#alternative-communicator-types">Alternative Communicator Types</a> table. Vehicle communication systems are optional, but often highly recommended, particularly for military vehicles.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicle Communication Systems</caption>
+			<thead class="thead-light">
+				<th>Communication System</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Range</th>
+			</thead>
+			<tr>
+				<th>Class I</th>
+				<td>5</td>
+				<td>0.01</td>
+				<td>Cr500</td>
+				<td>Distant (5 km)</td>
+			</tr>
+			<tr>
+				<th>Class II</th>
+				<td>5</td>
+				<td>0.02</td>
+				<td>Cr1,000</td>
+				<td>Very Distant (50 km)</td>
+			</tr>
+			<tr>
+				<th>Class III</th>
+				<td>6</td>
+				<td>0.05</td>
+				<td>Cr2,000</td>
+				<td>Regional (500 km)</td>
+			</tr>
+			<tr>
+				<th>Class IV</th>
+				<td>8</td>
+				<td>0.10</td>
+				<td>Cr4,000</td>
+				<td>Continental (5000 km)</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="alternative-communicator-types">
+			<caption>Table: Alternative Communicator Types</caption>
+			<thead class="thead-light">
+				<th>Type</th>
+				<th>TL</th>
+				<th>Space</th>
+				<th>Mod Price</th>
+				<th>Mod Notes</th>
+			</thead>
+			<tr>
+				<th>Laser</th>
+				<td>8</td>
+				<td>x2</td>
+				<td>x3</td>
+				<td>Requires clear line of sight between communicators</td>
+			</tr>
+			<tr>
+				<th>Maser</th>
+				<td>10</td>
+				<td>x4</td>
+				<td>x6</td>
+				<td>Works like lasers, but can cut through smoke and aerosols</td>
+			</tr>
+			<tr>
+				<th>Meson</th>
+				<td>11</td>
+				<td>x10</td>
+				<td>x50</td>
+				<td>Cannot be jammed or blocked, but cannot be used while moving</td>
+			</tr>
+		</table>
+
+		<h2 id="vehicle-sensors">Vehicle Sensors</h2>
+		<p>
+			Vehicle sensors allow the crew to identify, track and jam other vehicles. These sensor systems operate similarly to those installed on a starship or small craft. The type of sensor package installed can impose a DM on Comms skill checks when using the system to perform sensor-related tasks. Vehicle sensor systems are optional, but often highly recommended, particularly for military vehicles.
+		</p>
+		<dl>
+			<dt>Underwater Sensors</dt>
+			<dd>Sensor packages intended for use underwater must be purchased separately. Surface sensors cannot be used underwater, and vice versa. Underwater sensors cost the same as standard vehicle sensors, but require an additional 12 Spaces, and the Max Range drops by one category, to a minimum of Very Long (500m).</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="standard-vehicle-sensors">
+			<caption>Table: Standard Vehicle Sensors</caption>
+			<thead class="thead-light">
+				<th>Sensors</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Comms DM</th>
+				<th>Max Range</th>
+				<th>Includes</th>
+			</thead>
+			<tr>
+				<th>Standard</th>
+				<td>8</td>
+				<td>3</td>
+				<td>Cr5,000</td>
+				<td>-4</td>
+				<td>Very Long (500 km)</td>
+				<td>Radar, Lidar</td>
+			</tr>
+			<tr>
+				<th>Basic Civilian</th>
+				<td>9</td>
+				<td>6</td>
+				<td>Cr10,000</td>
+				<td>-2</td>
+				<td>Distant (5 km)</td>
+				<td>Radar, Lidar</td>
+			</tr>
+			<tr>
+				<th>Basic Military</th>
+				<td>10</td>
+				<td>12</td>
+				<td>Cr20,000</td>
+				<td>+0</td>
+				<td>Very Distant (50 km)</td>
+				<td>Radar, Lidar, Jammers</td>
+			</tr>
+			<tr>
+				<th>Advanced</th>
+				<td>11</td>
+				<td>18</td>
+				<td>Cr50,000</td>
+				<td>+1</td>
+				<td>Regional (500 km)</td>
+				<td>Radar, Lidar, Densitometer, Jammers</td>
+			</tr>
+			<tr>
+				<th>Very Advanced</th>
+				<td>12</td>
+				<td>30</td>
+				<td>Cr100,000</td>
+				<td>+2</td>
+				<td>Continental (5000 km)</td>
+				<td>Radar, Lidar, Densitometer, Jammers, Neural Activity Sensor</td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Radar/Lidar</dt>
+			<dd>detects physical objects. It can be active or passive. If a ship is using active sensors, it is easier to detect (+2 DM to Comms checks) but detects more about its surroundings.</dd>
+			<dt>Jammers</dt>
+			<dd>can jam or counter-jam radio communications and sensor locks.</dd>
+			<dt>Densitometers</dt>
+			<dd>can determine the internal structure and makeup of an object.</dd>
+			<dt>Neural Activity Sensor</dt>
+			<dd>detects neural activity and intelligence.</dd>
+		</dl>
+
+		<h2 id="vehicle-computer">Vehicle Computer</h2>
+		<p>
+			The vehicle computer is identified by its model number; the <a href="#vehicle-computer-models">Vehicle Computer Models</a> table indicates details of price, rating, and tech level available. The Model number is the computer rating, which determines the power of a computer. Rating measures the complexity of the programs a computer can run. (Storage space is effectively unlimited at TL 9 and above.) Programs are rated by the computer rating they require. A system can run a number of programs up to its rating, minimum of one (for Model 0 computers). Vehicle computers are optional, but often highly recommended at higher tech levels.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-computer-models">
+			<caption>Table: Vehicle Computer Models</caption>
+			<thead class="thead-light">
+				<th>Computer</th>
+				<th>TL</th>
+				<th>Space</th>
+				<th>Price (Cr)</th>
+			</thead>
+			<tr>
+				<th>Model 0</th>
+				<td>7</td>
+				<td>0.02</td>
+				<td>Cr100</td>
+			</tr>
+			<tr>
+				<th>Model 1</th>
+				<td>8</td>
+				<td>0.01</td>
+				<td>Cr500</td>
+			</tr>
+			<tr>
+				<th>Model 2</th>
+				<td>10</td>
+				<td>0</td>
+				<td>Cr1,000</td>
+			</tr>
+			<tr>
+				<th>Model 3</th>
+				<td>12</td>
+				<td>0</td>
+				<td>Cr2,000</td>
+			</tr>
+			<tr>
+				<th>Model 4</th>
+				<td>13</td>
+				<td>0</td>
+				<td>Cr3,000</td>
+			</tr>
+			<tr>
+				<th>Model 5</th>
+				<td>14</td>
+				<td>0</td>
+				<td>Cr10,000</td>
+			</tr>
+		</table>
+
+		<h3 id="vehicle-computer-options">Vehicle Computer Options</h3>
+		<p>
+			The following option is available for vehicle computers.
+		</p>
+		<dl>
+			<dt>Hardened Systems (fib)</dt>
+			<dd>A computer and its connections can be hardened against attack by electromagnetic pulse weapons. A hardened system is immune to EMP, but costs 50% more.</dd>
+		</dl>
+
+		<h2 id="vehicle-crew-and-passengers">Vehicle Crew and Passengers</h2>
+		<p>
+			All vehicles require a crew to operate and maintain the vehicle. For civilian vehicles, that is typically one operator or driver. Military vehicles also require one gunner per weapon and one commander if three or more crew members are required. Every vehicle requires at least a basic cockpit or a basic control cabin to interface with the vehicle’s control, communication and sensor systems.
+		</p>
+		<p>
+			For vehicles intended for only a few waking hours, short-term accommodations are suggested for crew and passengers. If a vehicle is intended for use over several days or longer, long-term accommodations would be a better design implementation.
+		</p>
+		<dl>
+			<dt>Sailing Vessels</dt>
+			<dd>Sailing vessels calculate vehicle crew differently. Subtract the Tech Level of the sailboat from 10 (minimum 1) to determine the number of crew needed to work the sails for every four tons of sailing vessel or portion thereof. Sailing vessels of two tons or less require half this amount.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-accommodations">
+			<caption>Table: Vehicle Accommodations</caption>
+			<thead class="thead-light">
+				<th>Accommodation</th>
+				<th>Duration</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Notes</th>
+			</thead>
+			<tr>
+				<th>Bunk, Military</th>
+				<td>Long</td>
+				<td>24</td>
+				<td>Cr100,000</td>
+				<td>Supports one non-crew cramped (military only)</td>
+			</tr>
+			<tr>
+				<th>Control Cabin, Basic</th>
+				<td>Long</td>
+				<td>36</td>
+				<td>Cr10,000</td>
+				<td>Supports one crew</td>
+			</tr>
+			<tr>
+				<th>Control Cabin, Extended</th>
+				<td>Long</td>
+				<td>18</td>
+				<td>Cr5,000</td>
+				<td>Supports one additional person</td>
+			</tr>
+			<tr>
+				<th>Control Cabin, Standard</th>
+				<td>Long</td>
+				<td>72</td>
+				<td>Cr20,000</td>
+				<td>Supports two crew plus one additional person</td>
+			</tr>
+			<tr>
+				<th>Low Berth</th>
+				<td>Long</td>
+				<td>6</td>
+				<td>Cr50,000</td>
+				<td>Holds one person</td>
+			</tr>
+			<tr>
+				<th>Stateroom, Economy</th>
+				<td>Long</td>
+				<td>24</td>
+				<td>Cr250,000</td>
+				<td>Supports one person cramped</td>
+			</tr>
+			<tr>
+				<th>Stateroom, Elite</th>
+				<td>Long</td>
+				<td>72</td>
+				<td>Cr750,000</td>
+				<td>Supports two people comfortably</td>
+			</tr>
+			<tr>
+				<th>Stateroom, Standard</th>
+				<td>Long</td>
+				<td>48</td>
+				<td>Cr500,000</td>
+				<td>Supports two people cramped, one comfortably</td>
+			</tr>
+			<tr>
+				<th>Cockpit, Basic</th>
+				<td>Short</td>
+				<td>2</td>
+				<td>Cr1,000</td>
+				<td>Supports one crew</td>
+			</tr>
+			<tr>
+				<th>Cockpit, Extended</th>
+				<td>Short</td>
+				<td>4</td>
+				<td>Cr2,000</td>
+				<td>Supports two crew</td>
+			</tr>
+			<tr>
+				<th>Seat, Cramped</th>
+				<td>Short</td>
+				<td>4</td>
+				<td>Cr2,000</td>
+				<td>Supports three people cramped</td>
+			</tr>
+			<tr>
+				<th>Seat, Standard</th>
+				<td>Short</td>
+				<td>2</td>
+				<td>Cr1,000</td>
+				<td>Supports one person</td>
+			</tr>
+		</table>
+
+		<h3 id="life-support">Life Support</h3>
+		<p>
+			Some vehicles provide differing levels of life support. Basic life support is free for submersibles and vehicles with Hostile Environmental Protection.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Life Support</caption>
+			<thead class="thead-light">
+				<th>Life Support Type</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price/Space (Cr) </th>
+				<th>Notes</th>
+			</thead>
+			<tr>
+				<th>Basic</th>
+				<td>4</td>
+				<td>3 per 20 people</td>
+				<td>Cr3,500</td>
+				<td>Good for 10 days</td>
+			</tr>
+			<tr>
+				<th>Extended</th>
+				<td>7</td>
+				<td>3 per 5 people</td>
+				<td>Cr17,500</td>
+				<td>Good for 90 days</td>
+			</tr>
+		</table>
+
+		<h2 id="additional-vehicle-components">Additional Vehicle Components</h2>
+		<p>
+			The following are examples of additional vehicle components that might prove useful for certain vehicle designs.
+		</p>
+		<dl>
+			<dt>Airlock (TL 6)</dt>
+			<dd>Airlocks take up 12 Spaces each and cost Cr200,000. If a craft does not have an airlock, then the crew cannot leave the craft without opening the vehicle up to the outside environment, which can be dangerous in a vacuum or underwater.</dd>
+			<dt>Autodoc (TL 12)</dt>
+			<dd>The Autodoc is a whole-body automated treatment system that is detailed in the <a href="#robots-and-drones">Cepheus Engine core rules</a>. The Autodoc takes up 6 Spaces and costs Cr40,000.</dd>
+			<dt>Cargo Arm (TL 8)</dt>
+			<dd>This is a heavy-duty manipulator arm used for lifting cargo in confined spaces. Cargo Arms have a base Strength score of 30 and a Dexterity of 0, occupy 1 space and cost Cr50,000.</dd>
+			<dt>Cargo Hold (TL 1)</dt>
+			<dd>The design plan must indicate cargo capacity. There is no price but cargo carried may not exceed cargo capacity. Any Spaces left over after all systems have been installed may be allocated to cargo space. Divide the remaining Spaces by 12 to determine the volume of the cargo hold in displacement tons.</dd>
+			<dt>Cargo Trailer (TL 1)</dt>
+			<dd>
+				<p>
+					Ground vehicles can be equipped to tow a cargo trailer. Vehicles pulling a cargo trailer suffer a -1 penalty to Agility; vehicles of two displacement tons or smaller suffer an additional -1 penalty to Agility. The <a href="#cargo-trailer-by-size">Cargo Trailer by Size</a> table describes the price and capacity (in Spaces) for each trailer type. A vehicle’s Towing Speed is equal to their Base Speed without the trailer attached, multiplied by the ratio of the vehicle’s chassis (in Spaces) divided by the sum of the vehicle’s chassis and the cargo trailer’s capacity (both in Spaces). Towing Speeds are rounded down to the nearest multiple of 10kph.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md" id="cargo-trailer-by-size">
+					<caption>Table: Cargo Trailer by Size</caption>
+					<thead class="thead-light">
+						<th>Trailer Size</th>
+						<th>Price (Cr)</th>
+						<th>Capacity (Spaces)</th>
+						<th>Description</th>
+					</thead>
+					<tr>
+						<th>0.25-Ton</th>
+						<td>1,450</td>
+						<td>3</td>
+						<td>Light</td>
+					</tr>
+					<tr>
+						<th>0.5-Ton</th>
+						<td>1,700</td>
+						<td>6</td>
+						<td>Moving, Standard</td>
+					</tr>
+					<tr>
+						<th>1-Ton</th>
+						<td>2,200</td>
+						<td>12</td>
+						<td>Moving, Large</td>
+					</tr>
+					<tr>
+						<th>2-Ton</th>
+						<td>3,200</td>
+						<td>24</td>
+						<td>Light Duty, Standard</td>
+					</tr>
+					<tr>
+						<th>4-Ton</th>
+						<td>5,700</td>
+						<td>48</td>
+						<td>Light Duty, Large</td>
+					</tr>
+					<tr>
+						<th>8-Ton</th>
+						<td>12,000</td>
+						<td>96</td>
+						<td>Commercial, Standard</td>
+					</tr>
+				</table>
+			</dd>
+			<dt>Crane (TL 4)</dt>
+			<dd>
+				<p>
+					Cranes are machines generally equipped with a hoist rope, wire ropes or chains, and sheaves, that can be used both to lift and lower materials and to move them horizontally.
+				</p>
+				<dl>
+					<dt>Light Crane</dt>
+					<dd>Light Cranes can lift up to 400 kg and can be used as rescue equipment. Light cranes cost Cr2,500 and take up 3 Spaces.</dd>
+					<dt>Medium Crane</dt>
+					<dd>Medium Cranes can lift up to 2,000 kg. They cost Cr40,000, and take up 12 Spaces.</dd>
+					<dt>Heavy Crane</dt>
+					<dd>Heavy Cranes can lift up to 10,000 kg. They cost Cr100,000 and take up 24 Spaces.</dd>
+				</dl>
+			</dd>
+			<dt>Cutting Equipment (TL 5)</dt>
+			<dd>Cutting equipment includes external heavy duty saws, water knives or plasma cutters, depending on Tech Level. The equipment costs Cr10,000 and takes up 15 Spaces.</dd>
+			<dt>Detention Cells (TL 3)</dt>
+			<dd>Found primarily on military and government vessels, a detention cell is used to keep prisoners. A detention cell holds one prisoner in extremely cramped conditions, displaces 12 Spaces and costs Cr125,000.</dd>
+			<dt>Digging Equipment (TL 5)</dt>
+			<dd>Digging equipment includes external digging and scooping equipment. This equipment costs Cr25,000 and takes up 30 Spaces.</dd>
+			<dt>Ejection Seat (TL 5)</dt>
+			<dd>The ejection seat takes up 2 Spaces and is designed to blast the occupant clear of the moving vehicle. At lower Tech Level this means a suitable height to open a parachute but at higher Tech Levels it is merely sufficient to get clear of the vehicle until a grav chute can deploy. An ejection seat costs Cr5,000.</dd>
+			<dt>Emergency Low Berth (TL 12)</dt>
+			<dd>A conventional Low Berth takes several minutes to induce hibernation and lower core temperature. The Emergency Low Berth can do a ‘crash’ induction, plunging a person into deep hibernation in a fraction of the time. It can hold people, takes up 12 Spaces, and costs Cr100,000.</dd>
+			<dt>Entertainment System (TL 5)</dt>
+			<dd>Supporting both audio and visual entertainment, this system takes up no Space, and costs at least Cr200. Players intending to impress may want to spend more. Much more.</dd>
+			<dt>Fire Extinguishers (TL 4)</dt>
+			<dd>Fire Extinguishers are designed to put out fires internal to the vehicle. They take up no Space and cost Cr500. Starting at TL8, worlds with a Law Level of 6 or higher may require that these be installed on every civilian vehicle.</dd>
+			<dt>Floats/Pontoons (TL 3)</dt>
+			<dd>This allows the aircraft the ability to land and take-off from water. This is a removable component and can be added at any time. It costs Cr250 and one Space per 12 Spaces (one displacement ton) of the aircraft’s chassis, reduces Base Speed by 10% and reduces Agility by 1.</dd>
+			<dt>Folding Wings/Rotors (TL 3)</dt>
+			<dd>Aircraft can be designed with folding wings and/or rotors to allow them to be stored more efficiently. It costs Cr600 per 12 Spaces (one displacement ton) of the aircraft’s chassis, and reduces the size of the aircraft by 25% when storing the vessel.</dd>
+			<dt>Fresher (TL 7)</dt>
+			<dd>A Fresher, complete with toilet, sink and shower, takes up 6 Spaces and costs Cr1,500. Freshers are automatically included as part of any stateroom.</dd>
+			<dt>Galley (TL 3)</dt>
+			<dd>A Mini-galley takes up 6 Spaces, serves up to five people and costs Cr1,000. A Full Galley take up 18 Spaces, plus 3 Spaces per 10 people served. It costs Cr2,000 plus Cr500 per person served.</dd>
+			<dt>General Purpose Lab (TL 7)</dt>
+			<dd>A General Purpose Lab provides no bonuses but allows tasks to be performed with no penalty for missing tools/equipment. General Purpose Lab units consume 6 Spaces per researcher using the lab and cost Cr10,000 per lab unit.</dd>
+			<dt>Holding Tank (TL 8)</dt>
+			<dd>Holding tanks can be built to any size, at the price of Cr1,500 per Space. Holding tanks can be designed to carry liquids or gases, which is determined at the time of installation.</dd>
+			<dt>Holo-Suite (TL10)</dt>
+			<dd>This is advanced holographic projection suite. Often used on exploration vehicles as a large display unit, it has other, less wholesome, uses. It takes up 3 Spaces and costs Cr15,000.</dd>
+			<dt>Hot Tub/Pool (TL 6)</dt>
+			<dd>This takes up a minimum of one Space per person capacity and costs Cr3,000 per Space.</dd>
+			<dt>Liquid Cannon (TL 4)</dt>
+			<dd>Liquid Cannons are used for fire suppression, riot control and dispersal of chemicals. A liquid cannon costs Cr2,000, takes up 3 Spaces and requires 3 Spaces per minute’s firing duration of liquid carried. A liquid cannon has a maximum range of Medium.</dd>
+			<dt>Manipulator Arms (TL 5)</dt>
+			<dd>
+				<p>
+					Manipulator Arms are remote appendages with claws or hands. Manipulator arms vary in Strength and Dexterity. Arms have a Strength of 2 and a Dexterity of 1, with a price of Cr10,000. Increasing Strength or Dexterity costs Cr5,000 per point, to the maximum indicated in the table below. Manipulator arms do not take up space in the chassis.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Manipulator Arm Maximums, By Tech Level</caption>
+					<thead class="thead-light">
+						<th>TL</th>
+						<th>Max Str</th>
+						<th>Max Dex</th>
+					</thead>
+					<tr>
+						<th>5</th>
+						<td>6</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th>8</th>
+						<td>12</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<th>11</th>
+						<td>18</td>
+						<td>12</td>
+					</tr>
+					<tr>
+						<th>14</th>
+						<td>24</td>
+						<td>16</td>
+					</tr>
+			</dd>
+			<dt>Nuclear Damper (TL 12)</dt>
+			<dd>The nuclear damper projects a wave that modifies the strong nuclear force and can thus either prevent nuclear weapons from operating or else detonate them prematurely. They cannot detonate weapons stored in damper boxes, however. It takes up 12 Spaces and costs Cr500,000.</dd>
+			<dt>Operating Theater (TL 5)</dt>
+			<dd>An Operating Theater is a room equipped for use as an emergency medical clinic. Until TL 10, the vehicle must remain stationary in order for the Operating Theatre to be used. After that, the theatre can be built on a stabilized bed that allows it to be used while the vehicle is in motion. An operating theater consumes 12 Spaces plus 9 Spaces per patient. It costs Cr1,500 per Space used. An operating theater can serve as a mobile sickbay or hospital for surgery and medical care, as detailed under Medical Treatment in <a href="personal-combat.html">Chapter 5: Personal Combat</a> in the Cepheus Engine SRD.</dd>
+			<dt>Refrigeration (TL 5)</dt>
+			<dd>Refrigeration units take up one Space for every 10 Spaces that are to be refrigerated. This costs Cr250 per Space. This is typically applied to Cargo Holds or Cargo Trailers, when needed.</dd>
+			<dt>Refueling Station (TL 9)</dt>
+			<dd>The refueling station is designed to turn water into hydrogen fuel, using the sun as a power source. It requires a significant amount of space, and access to both water and sun. At TL 9, it requires one hour per 3 Spaces of the vehicle’s chassis to crack sufficient fuel to completely refuel the vehicle (assuming it uses hydrogen). At TL 12 this is reduced to one hour per 12 Spaces of the vehicle’s chassis. Refueling stations require 12 Spaces plus 1 Space per 50 tons of vessel to be refueled. They cost Cr15,000 per space.</dd>
+			<dt>Research Lab Space (TL 9)</dt>
+			<dd>Lab Space includes analytic equipment, computer workstations and equipment appropriate to the discipline it is focused on, defined during construction. Lab Space grants a skill DM equal to +1, +2 or +3 and take up 3 Spaces per bonus per researcher using it. A +3 DM lab, used by 3 researchers, would take up 27 Spaces. Price is Cr10,000 per 3 Spaces used. Types of lab include: Physics, chemistry, biology, psychology, structures and materials. Other types are possible.</dd>
+			<dt>Survey Sampling Equipment (TL 5)</dt>
+			<dd>
+				<p>
+					This covers several different types of equipment that act to sample atmosphere, ground and any water or other fluids.
+				</p>
+				<dl>
+					<dt>Atmosphere Sampler</dt>
+					<dd>A system of collectors, pipes and filters for atmosphere sampling, including any particulates, taints and organic matter. It takes up 9 Spaces and costs Cr10,000.</dd>
+					<dt>Geology Sampler</dt>
+					<dd>An array of scooping devices for shallow ground testing along with a hollow-core drills capable of drilling down one kilometer. It takes up 45 Spaces and costs Cr100,000. Geology Samplers add a +1 DM to all geology-based checks at TL 10 and a +2 DM at TL 14.</dd>
+					<dt>Hydrology Sampler</dt>
+					<dd>This is a set of liquid sampling equipment, holding tanks and testing equipment. It costs Cr10,000, and takes up 15 Spaces. Hydrology Samplers add a +1 DM to all hydology-based checks at TL 10 and a +2 DM at TL 14.</dd>
+				</dl>
+			</dd>
+			<dt>Wet Bar (TL 2)</dt>
+			<dd>A basic wet bar, usually species-specific. It takes up 1.5 Spaces and costs Cr2,000.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="additional-vehicle-components">
+			<caption>Table: Additional Vehicle Components</caption>
+			<thead class="thead-light">
+				<th>Component</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+			</thead>
+			<tr>
+				<th>Cargo Hold</th>
+				<td>1</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Cargo Trailer</th>
+				<td>1</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Wet Bar</th>
+				<td>2</td>
+				<td>1</td>
+				<td>5 Cr2,000</td>
+			</tr>
+			<tr>
+				<th>Detention Cells</th>
+				<td>3</td>
+				<td>12</td>
+				<td>Cr125,000</td>
+			</tr>
+			<tr>
+				<th>Floats/Pontoons</th>
+				<td>3</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Galley</th>
+				<td>3</td>
+				<td>6</td>
+				<td>Cr1,000</td>
+			</tr>
+			<tr>
+				<th>Galley, Full</th>
+				<td>3</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Crane, Heavy</th>
+				<td>4</td>
+				<td>24</td>
+				<td>Cr100,000</td>
+			</tr>
+			<tr>
+				<th>Crane, Light</th>
+				<td>4</td>
+				<td>3</td>
+				<td>Cr2,500</td>
+			</tr>
+			<tr>
+				<th>Crane, Medium</th>
+				<td>4</td>
+				<td>12</td>
+				<td>Cr40,000</td>
+			</tr>
+			<tr>
+				<th>Fire Extinguishers</th>
+				<td>4</td>
+				<td>0</td>
+				<td>Cr500</td>
+			</tr>
+			<tr>
+				<th>Liquid Cannon</th>
+				<td>4</td>
+				<td>3</td>
+				<td>Cr2,000</td>
+			</tr>
+			<tr>
+				<th>Cutting Equipment</th>
+				<td>5</td>
+				<td>15</td>
+				<td>Cr10,000</td>
+			</tr>
+			<tr>
+				<th>Digging Equipment</th>
+				<td>5</td>
+				<td>30</td>
+				<td>Cr25,000</td>
+			</tr>
+			<tr>
+				<th>Ejection Seat</th>
+				<td>5</td>
+				<td>2</td>
+				<td>Cr5,000</td>
+			</tr>
+			<tr>
+				<th>Entertainment System</th>
+				<td>5</td>
+				<td>0</td>
+				<td>Cr200</td>
+			</tr>
+			<tr>
+				<th>Manipulator Arms</th>
+				<td>5</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Operating Theater</th>
+				<td>5</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Refrigeration</th>
+				<td>5</td>
+				<td>1 per 10 Spaces refrigerated</td>
+				<td>Cr250 per Space</td>
+			</tr>
+			<tr>
+				<th>Survey Sampling Equipment, Atmosphere Sampler</th>
+				<td>5</td>
+				<td>9</td>
+				<td>Cr10,000</td>
+			</tr>
+			<tr>
+				<th>Survey Sampling Equipment, Geology Sampler</th>
+				<td>5</td>
+				<td>45</td>
+				<td>Cr100,000</td>
+			</tr>
+			<tr>
+				<th>Survey Sampling Equipment, Hydrology Sampler</th>
+				<td>5</td>
+				<td>15</td>
+				<td>Cr10,000</td>
+			</tr>
+			<tr>
+				<th>Airlock</th>
+				<td>6</td>
+				<td>12</td>
+				<td>Cr200,000</td>
+			</tr>
+			<tr>
+				<th>Hot Tub/Pool</th>
+				<td>6</td>
+				<td>1 per person</td>
+				<td>Cr3,000 per Space</td>
+			</tr>
+			<tr>
+				<th>Fresher</th>
+				<td>7</td>
+				<td>6</td>
+				<td>Cr1,500</td>
+			</tr>
+			<tr>
+				<th>General Purpose Lab</th>
+				<td>7</td>
+				<td>6</td>
+				<td>Cr10,000</td>
+			</tr>
+			<tr>
+				<th>Cargo Arm</th>
+				<td>8</td>
+				<td>1</td>
+				<td>Cr50,000</td>
+			</tr>
+			<tr>
+				<th>Holding Tank</th>
+				<td>8</td>
+				<td>By size</td>
+				<td>Cr1,500 per Space</td>
+			</tr>
+			<tr>
+				<th>Refueling Station</th>
+				<td>9</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Research Lab Space</th>
+				<td>9</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Holo-Suite</th>
+				<td>10</td>
+				<td>3</td>
+				<td>Cr15,000</td>
+			</tr>
+			<tr>
+				<th>Autodoc</th>
+				<td>12</td>
+				<td>6</td>
+				<td>Cr40,000</td>
+			</tr>
+			<tr>
+				<th>Emergency Low Berth</th>
+				<td>12</td>
+				<td>12</td>
+				<td>Cr100,000</td>
+			</tr>
+			<tr>
+				<th>Nuclear Damper</th>
+				<td>12</td>
+				<td>12</td>
+				<td>Cr500,000</td>
+			</tr>
+		</table>
+
+
+
+
+
+
 
 
 		<!-- TODO: Finish -->
+
+
+
+
+
+
+		<h2 id="vehicles-over-20-tons">Vehicles Over 20 Tons</h2>
+		<p>
+			Some vehicles, such as ocean liners and other large watercraft, exceed the usual 20 tons limit defined by the Vehicle Design System. When designing vehicles of such size, the process remains much the same, with the following exceptions:
+		</p>
+		<ol>
+			<li><b>Chassis:</b> Select a hull of the appropriate size, based on tonnage, from the <a href="ship-design-and-construction.html">Smallcraft or Ship Design systems in the Cepheus Engine Core Rules</a>. Because the hull does not have to be spaceworthy, divide the hull price by 25 to get an appropriate price for the chassis. Multiply the tonnage of the chassis by 12 to get the number of Spaces available. Construction time remains the same as the original hull.</li>
+			<li>
+				<p>
+					<b>Power Plant:</b> Select an appropriate power plant and maneuver drive from the Smallcraft or Ship Design system to represent the vehicle’s power plant. The differences in power plant construction for vehicles as opposed to space ships lead to a few changes in volume and price. Modify these values as needed based on Power Plant Type.
+				</p>
+				<ul class="list-unstyled pl-5">
+					<li>Vehicle Power Plant Spaces = Ship/Smallcraft Power Plant Drive tonnage x 0.90 x 12</li>
+					<li>Vehicle Power Plant Price = Power Plant Drive price x 0.006</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+					<b>Propulsion:</b> Select an appropriate maneuver drive from the Smallcraft or Ship Design system to represent the vehicle’s propulsion system. The differences in propulsion systems for vehicles as opposed to space ships lead to a few changes in volume and price. Use the Performance number given in the <a href="ship-design-and-construction.html">Smallcraft or Ship Design system</a> to determine the craft’s base speed. Modify these values as needed based on Propulsion Type.
+				</p>
+				<ul class="list-unstyled pl-5">
+					<li>Vehicle Contact-Based Propulsion System Spaces = Ship/Smallcraft Maneuver Drive tonnage x 12</li>
+					<li>Vehicle Contact-Based Propulsion System Price = Ship/Smallcraft Maneuver Drive price x 0.0055</li>
+					<li>Vehicle Thrust-Based Propulsion System Spaces = Ship/Smallcraft Maneuver Drive tonnage x 0.90 x 12</li>
+					<li>Vehicle Thrust-Based Propulsion System Price = Ship/Smallcraft Maneuver Drive price x 0.25</li>
+				</ul>
+			</li>
+			<li><b>Crew:</b> Determine crew using the standard Ship Design rules in <a href="ship-design-and-construction.html">Chapter 8: Ship Design and Construction</a> of the core rules. Commercial and private vehicles tend to use the Minimum column of the Ship Crew Requirements table, while military vehicles tend to use the Full Complement column.</li>
+			<li><b>Additional Vehicle Components:</b> In addition to Vehicle Components, large vehicles can purchase an airlock or other ship design components. Multiply the tonnage of the component by 12 to get the number of Spaces it takes up.</li>
+			<li><b>Armaments:</b> Large vehicles have one hardpoint per 100 tons of displacement, minimum of one hardpoint, and can install ship weapons as per the ship design process, in addition to vehicle weapons.</li>
+		</ol>
+
+		<h2 id="universal-vehicle-description-format">Universal Vehicle Description Format</h2>
+		<p>
+			After a vehicle design has been created, it must be presented in a format that allows players to use the information within the game. The Cepheus Engine VDS describes vehicle designs using a universal vehicle description format, which is essentially a paragraph of text laid out in the following manner. Examples can be found in <a href="common-aircraft.html">Chapter 2: Common Aircraft</a> through <a href="uncommon-vehicles.html">Chapter 6: Uncommon Vehicles</a>.
+		</p>
+		<p>
+			<span class="text-info">[Vehicle's Tech Level]</span> <span class="text-info">[Vehicle Descriptive Name]</span><br>
+			Using a/an <span class="text-info">[Vehicle Configuration]</span> <span class="text-info">[Vehicle Chassis Displacement]</span>-ton chassis (<span class="text-info">[Chassis Damage Value]</span> Hull, <span class="text-info">[Structure Damage Value]</span> Structure,), the <span class="text-info">[Vehicle Descriptive Name]</span> is <span class="text-info">[General Description of Vehicle's Function]</span>. <span class="text-info">[List any vehicle configuration options, if any.]</span>. It carries a <span class="text-info">[Vehicle Power Plant Type]</span>, power plant/engine, Code <span class="text-info">[Power Plant Drive Code]</span>, and a/an <span class="text-info">[Vehicle Propulsion Type]</span> propulsion system, Code <span class="text-info">[Propulsion System Drive Code]</span> giving a top speed of <span class="text-info">[Vehicle Base Speed]</span>, a cruising speed of <span class="text-info">[Cruising Speed]</span> and an Agility DM of <span class="text-info">[Agility DM]</span>. <span class="text-info">[List any vehicle drive options, if any.]</span> <span class="text-info">[Fuel Volume]</span> kiloliters of <span class="text-info">[Fuel Type]</span> support the power plant for <span class="text-info">[Duration of Vehicle Use]</span>. <span class="text-info">[Any additional fuel usage notes.]</span> This vehicle is equipped with <span class="text-info">[Vehicle Control System Interface]</span> controls, <span class="text-info">[Vehicle Communication System]</span> communication (<span class="text-info">[Communication System Range]</span>), <span class="text-info">[Sensors Type]</span> sensors (<span class="text-info">[Sensors Comms DM]</span>), and a Model <span class="text-info">[Computer Model]</span>computer. <span class="text-info">[Include any additional notes on the vehicles Control Systems, Communications Systems, Sensors or Computer.]</span> There are <span class="text-info">[list accommodations individually by type and number]</span>. The vehicle has <span class="text-info">[Number of Weapon Points]</span> weapon points. <span class="text-info">[Describe any vehicle armaments that have been installed, if any. Also note any ammunition carried.]</span> tons allocated for fire control. Installed on the hardpoints are <span class="text-info">[Describe number and type of turrets, and any weapon systems that have been installed, if any. Also note any ammunition carried for missiles and sandcasters.]</span> This ship has <span class="text-info">[Number of Screens Installed]</span> screens: <span class="text-info">[Describe number and type of screens]</span>. There are <span class="text-info">[Number of Small Craft Hangers]</span> small craft hangars, <span class="text-info">[Describe number and contents of each hangar]</span>. <span class="text-info">[List any additional vehicle components here]</span>. Cargo capacity is <span class="text-info">[Cargo Tonnage]</span> tons (or <span class="text-info">[Cargo Spaces]</span> kiloliters). The chassis is additionally armored with <span class="text-info">[Armor Type]</span> (x<span class="text-info">[Level of Additional Armor]</span>.) <span class="text-info">[Note any Vehicle's Armor options that have been installed.]</span> The vehicle requires a crew of <span class="text-info">[Crew Total]</span>: <span class="text-info">[List crew positions]</span>. The vehicle can carry up to <span class="text-info">[list additional passenger count individually by number and type of accommodation]</span>. The vehicle costs KCr<span class="text-info">[Price of Vehicle]</span> (including discounts and fees) and takes <span class="text-info">[Construction Time]</span> hours to build.
+		</p>
 	</main>
 
 	<footer class="footer fixed-bottom">
