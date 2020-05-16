@@ -84,7 +84,7 @@
 			This section describes some of the watercraft that can be commonly encountered in Cepheus Engine campaigns. These are not the only types of vessels that exist, and creative Referees are encouraged to integrate vehicles of their own creation or from other sources as they see fit.
 		</p>
 
-		<h2>Standard Designs vs. New Designs</h2>
+		<h2 id="standard-designs-vs-new-designs">Standard Designs vs. New Designs</h2>
 		<p>
 			An interstellar economy provides an excellent opportunity for the use of standardized and modular vehicle designs, as well as a wide range of markets. Components can be crafted on different worlds, taking advantage of available resources, and then put together to create a final product. Manufacturers take advantage of modular components and standardized designs to reduce costs in production, leading to a 10% discount on vehicles constructed using common designs, such as those described in the other chapters of this supplement. The Referee may designate other vehicle designs as standard designs, as befits their universe. Fuel and weapon ammunition are not covered by the Std Design Discount.
 		</p>
@@ -92,7 +92,7 @@
 			New and unique vehicle designs cannot take advantage of standardized and modular design. These vehicles must be designed by a vehicular design specialist, who creates detailed design plans based on a set of specifications provided by their client. Such plans take a month to create, and costs approximately 1% of the final price of the vehicle, to a minimum of Cr100.
 		</p>
 
-		<h2>Displacement Tons and Spaces</h2>
+		<h2 id="displacement-tons-and-spaces">Displacement Tons and Spaces</h2>
 		<p>
 			Chassis and other vehicle components are measured by their displacement volume. For ships and small craft, displacement volume is measured in the volume of space that is displaced by one metric ton of hydrogen, referred to in this design sequence as displacement tons or simply tons.
 		</p>
@@ -100,17 +100,17 @@
 			Because the components for vehicles are often fractions of a ton, the Cepheus Engine Vehicle Design System (VDS) uses an artificial measure of volume to make things a little easier. A space in this design system is equal to one-twelfth of a displacement ton; i.e. there are 12 spaces in one ton.
 		</p>
 
-		<h2>Design Considerations</h2>
+		<h2 id="design-considerations">Design Considerations</h2>
 		<p>
 			When designing a vehicle, it is important to consider two things: the vehicle’s purpose, and the Tech Level at which it will be produced. The design process flows more smoothly when you keep these two factors in mind
 		</p>
 
-		<h2>The Price Impact of Modifications</h2>
+		<h2 id="price-impact-of-modifications">The Price Impact of Modifications</h2>
 		<p>
 			Some modifications to a vehicle component, often classified under Options that can be applied to that component, modify the original price of that component. Modifications that decrease the price of a vehicle component cannot lower it below 25% of the original price.
 		</p>
 
-		<h2>Vehicle Design Checklist</h2>
+		<h2 id="vehicle-design-checklist">Vehicle Design Checklist</h2>
 		<p>
 			The Cepheus Engine Vehicle Design System (VDS) follows a very methodical process.
 		</p>
@@ -584,7 +584,7 @@
 			For example, a heavily armored TL14 grav tank might take Bonded Superdense armor twice. This would take up 10% of the chassis volume (in spaces, minimum 2 spaces) and cost 100% of the base price of the chassis, but give 12 additional points of armor.
 		</p>
 
-		<h3>Vehicle Armor Options</h3>
+		<h3 id="vehicle-armor-options">Vehicle Armor Options</h3>
 		<p>
 			The following are options that can be added to a vehicle's armor.
 		</p>
@@ -601,7 +601,7 @@
 			<dd>A stealth coating absorbs radar and lidar beams, and also disguises heat emissions. This imposes a –4 DM on any Comms rolls to detect or lock onto the vehicle. Adding Stealth costs Cr100,000 per ton of chassis, and can only be added once.</dd>
 		</dl>
 
-		<h3>Vehicle Hull and Structure</h3>
+		<h3 id="vehicle-hull-and-structure">Vehicle Hull and Structure</h3>
 		<p>
 			Initial damage is applied to the Hull value of the chassis; once the chassis has been breached (i.e. the Hull value of the vehicle has reached zero), further damage goes to the Structure. When all Structure Points have been lost, the vehicle has been smashed to pieces. On the Space Combat scale, every vehicle has 0 Hull Points and 1 Structure Point. On the Personal Combat scale, a vehicle has one Hull Point per 5 tons of displacement (rounded down) and one Structure Point per 5 tons of displacement (rounded up). This is summarized in the Vehicle Hull and Structure, Personal Combat Scale table.
 		</p>
@@ -3376,7 +3376,7 @@
 			Military vehicles, as well as civilian vehicles in certain star systems, often carry weapons. Vehicles carry weapons in one of four ways: gun ports, weapon mounts, vehicular turrets, and ordinance bays.
 		</p>
 
-		<h3>Gun Ports</h3>
+		<h3 id="gun-ports">Gun Ports</h3>
 		<p>
 			Gun ports are mounts for small arms. Gun ports cost Cr250 each, and require no Spaces. Gun Ports are used at Personal Weapon Ranges only, and do not benefit from stabilization or fire control. Gun Ports do not require a vehicle weapon point (see Weapon Mount, below). A gun port allows the gunner to benefit from the vehicle's armor, except when the attacker is adjacent to the gun port itself.
 		</p>
@@ -3813,9 +3813,1007 @@ any target struck.</dd>
 			<dt>Pulse Weapons</dt>
 			<dd>Energy weapons, such as lasers, with the pulse designation fire short, rapid bursts of intense energy. Pulse weapons are notoriously inaccurate and suffer a DM -2 on all attack rolls.</dd>
 		</dl>
-		<!-- TODO: Vehicular Turret Weapons table -->
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicular Turret Weapons</caption>
+			<thead class="thead-light">
+				<th>Weapon</th>
+				<th>TL</th>
+				<th>Price (Cr)</th>
+				<th>Spaces</th>
+				<th>RoF</th>
+				<th>Range</th>
+				<th>Dmg</th>
+				<th>Radius</th>
+				<th>Recoil</th>
+				<th>LL</th>
+			</thead>
+			<tr>
+				<th>Ballista/Catapult-TL 1</th>
+				<td>1</td>
+				<td>Cr1,500</td>
+				<td>6</td>
+				<td>1</td>
+				<td>ranged (very long)</td>
+				<td>3D6</td>
+				<td>&mdash;</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 2</th>
+				<td>2</td>
+				<td>Cr6,000</td>
+				<td>6</td>
+				<td>1</td>
+				<td>ranged (distant)</td>
+				<td>3D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 2</th>
+				<td>2</td>
+				<td>Cr4,000</td>
+				<td>15</td>
+				<td>1</td>
+				<td>ranged (v long)</td>
+				<td>2D6</td>
+				<td>5m (3 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 3</th>
+				<td>3</td>
+				<td>Cr120,000</td>
+				<td>24</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>7D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 3</th>
+				<td>3</td>
+				<td>Cr60,000</td>
+				<td>12</td>
+				<td>1</td>
+				<td>ranged (distant)</td>
+				<td>5D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 4</th>
+				<td>4</td>
+				<td>Cr160,000</td>
+				<td>24</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>8D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 4</th>
+				<td>4</td>
+				<td>Cr80,000</td>
+				<td>12</td>
+				<td>1</td>
+				<td>ranged (distant)</td>
+				<td>6D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Machine Gun-TL 5</th>
+				<td>5</td>
+				<td>Cr6,000</td>
+				<td>3</td>
+				<td>0/20</td>
+				<td>ranged (rifle)</td>
+				<td>4D6</td>
+				<td>&mdash;</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 5</th>
+				<td>5</td>
+				<td>Cr8,000</td>
+				<td>6</td>
+				<td>1</td>
+				<td>ranged (distant)</td>
+				<td>4D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 5</th>
+				<td>5</td>
+				<td>Cr6,000</td>
+				<td>15</td>
+				<td>1/3</td>
+				<td>ranged (distant)</td>
+				<td>3D6</td>
+				<td>5m (3 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Autocannon-TL 6</th>
+				<td>6</td>
+				<td>Cr200,000</td>
+				<td>24</td>
+				<td>1/4</td>
+				<td>ranged (distant)</td>
+				<td>6D6</td>
+				<td>1.5m (1 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Missile Rack</th>
+				<td>6</td>
+				<td>Cr48,000</td>
+				<td>12</td>
+				<td>1/3</td>
+				<td>By missile</td>
+				<td>Special</td>
+				<td>Special</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 7</th>
+				<td>7</td>
+				<td>Cr240,000</td>
+				<td>24</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>10D6</td>
+				<td>20m (13 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 7</th>
+				<td>7</td>
+				<td>Cr120,000</td>
+				<td>12</td>
+				<td>1</td>
+				<td>ranged (distant)</td>
+				<td>8D6</td>
+				<td>20m (13 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 7</th>
+				<td>7</td>
+				<td>Cr12,000</td>
+				<td>6</td>
+				<td>1/2</td>
+				<td>ranged (distant)</td>
+				<td>6D6</td>
+				<td>20m (13 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Pulse Laser-TL 7</th>
+				<td>7</td>
+				<td>Cr80,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>6D6</td>
+				<td>10m (7 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 7</th>
+				<td>7</td>
+				<td>Cr10,000</td>
+				<td>15</td>
+				<td>1/6</td>
+				<td>ranged (distant)</td>
+				<td>5D6</td>
+				<td>10m (7 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Autocannon-TL 8</th>
+				<td>8</td>
+				<td>Cr300,000</td>
+				<td>24</td>
+				<td>1/6</td>
+				<td>ranged (distant)</td>
+				<td>8D6</td>
+				<td>3m (2 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Machine Gun-TL 8</th>
+				<td>8</td>
+				<td>Cr9,000</td>
+				<td>3</td>
+				<td>0/100</td>
+				<td>ranged (rifle)</td>
+				<td>6D6</td>
+				<td>&mdash;</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mass Driver-TL 8</th>
+				<td>8</td>
+				<td>Cr250,000</td>
+				<td>180</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>10D6</td>
+				<td>3m (2 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Railgun-TL 8</th>
+				<td>8</td>
+				<td>Cr150,000</td>
+				<td>18</td>
+				<td>1/3</td>
+				<td>ranged (v distant)</td>
+				<td>6D6</td>
+				<td>3m (2 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Beam Laser-TL 9</th>
+				<td>9</td>
+				<td>Cr100,000</td>
+				<td>3</td>
+				<td>1/3</td>
+				<td>ranged (v distant)</td>
+				<td>6D6</td>
+				<td>10m (7 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 10</th>
+				<td>10</td>
+				<td>Cr280,000</td>
+				<td>24</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>11D6</td>
+				<td>30m (20 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Autocannon-TL 10</th>
+				<td>10</td>
+				<td>Cr350,000</td>
+				<td>24</td>
+				<td>1/6</td>
+				<td>ranged (distant)</td>
+				<td>9D6</td>
+				<td>4.5m (3 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 10</th>
+				<td>10</td>
+				<td>Cr140,000</td>
+				<td>12</td>
+				<td>1/2</td>
+				<td>ranged (distant)</td>
+				<td>9D6</td>
+				<td>30m (20 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mass Driver-TL 10</th>
+				<td>10</td>
+				<td>Cr275,000</td>
+				<td>180</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>11D6</td>
+				<td>4.5m (3 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 10</th>
+				<td>10</td>
+				<td>Cr14,000</td>
+				<td>6</td>
+				<td>1/3</td>
+				<td>ranged (distant)</td>
+				<td>7D6</td>
+				<td>30m (20 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Plasma Gun-TL 10</th>
+				<td>10</td>
+				<td>Cr70,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>9D6</td>
+				<td>15m (10 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Pulse Laser-TL 10</th>
+				<td>10</td>
+				<td>Cr90,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>7D6</td>
+				<td>15m (10 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Railgun-TL 10</th>
+				<td>10</td>
+				<td>Cr175,000</td>
+				<td>18</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>7D6</td>
+				<td>4.5m (3 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 10</th>
+				<td>10</td>
+				<td>Cr12,000</td>
+				<td>15</td>
+				<td>1/12</td>
+				<td>ranged (distant)</td>
+				<td>6D6</td>
+				<td>15m (10 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Beam Laser-TL 11</th>
+				<td>11</td>
+				<td>Cr120,000</td>
+				<td>3</td>
+				<td>1/3</td>
+				<td>ranged (v distant)</td>
+				<td>7D6</td>
+				<td>15m (10 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Meson Accelerator-TL 11</th>
+				<td>11</td>
+				<td>Cr180,000</td>
+				<td>12</td>
+				<td>1/6</td>
+				<td>ranged (distant)</td>
+				<td>11D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 12</th>
+				<td>12</td>
+				<td>Cr360,000</td>
+				<td>24</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>13D6</td>
+				<td>40m (27 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Fusion Gun-TL 12</th>
+				<td>12</td>
+				<td>Cr180,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>13D6</td>
+				<td>40m (27 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Gauss Cannon-TL 12</th>
+				<td>12</td>
+				<td>Cr450,000</td>
+				<td>24</td>
+				<td>1/10</td>
+				<td>ranged (distant)</td>
+				<td>11D6</td>
+				<td>6m (4 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 12</th>
+				<td>12</td>
+				<td>Cr180,000</td>
+				<td>12</td>
+				<td>1/2</td>
+				<td>ranged (distant)</td>
+				<td>11D6</td>
+				<td>40m (27 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 12</th>
+				<td>12</td>
+				<td>Cr18,000</td>
+				<td>6</td>
+				<td>1/3</td>
+				<td>ranged (distant)</td>
+				<td>9D6</td>
+				<td>40m (27 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Plasma Gun-TL 12</th>
+				<td>12</td>
+				<td>Cr90,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>11D6</td>
+				<td>20m (13 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Plasma Gun-TL 12</th>
+				<td>12</td>
+				<td>Cr90,000</td>
+				<td>3</td>
+				<td>1/12</td>
+				<td>ranged (v distant)</td>
+				<td>11D6</td>
+				<td>20m (13 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 12</th>
+				<td>12</td>
+				<td>Cr16,000</td>
+				<td>15</td>
+				<td>1/12</td>
+				<td>ranged (distant)</td>
+				<td>8D6</td>
+				<td>20m (13 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Beam Laser-TL 13</th>
+				<td>13</td>
+				<td>Cr160,000</td>
+				<td>3</td>
+				<td>1/3</td>
+				<td>ranged (extreme)</td>
+				<td>9D6</td>
+				<td>20m (13 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Mass Driver-TL 13</th>
+				<td>13</td>
+				<td>Cr325,000</td>
+				<td>180</td>
+				<td>1</td>
+				<td>ranged (extreme)</td>
+				<td>13D6</td>
+				<td>6m (4 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Meson Accelerator-TL 13</th>
+				<td>13</td>
+				<td>Cr180,000</td>
+				<td>12</td>
+				<td>1/6</td>
+				<td>ranged (distant)</td>
+				<td>13D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Pulse Laser-TL 13</th>
+				<td>13</td>
+				<td>Cr110,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (extreme)</td>
+				<td>9D6</td>
+				<td>20m (13 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Railgun-TL 13</th>
+				<td>13</td>
+				<td>Cr225,000</td>
+				<td>18</td>
+				<td>1/8</td>
+				<td>ranged (extreme)</td>
+				<td>9D6</td>
+				<td>6m (4 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Fusion Gun-TL 14</th>
+				<td>14</td>
+				<td>Cr360,000</td>
+				<td>3</td>
+				<td>1/12</td>
+				<td>ranged (v distant)</td>
+				<td>13D6</td>
+				<td>40m (27 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 15</th>
+				<td>15</td>
+				<td>Cr400,000</td>
+				<td>24</td>
+				<td>1/2</td>
+				<td>ranged (v distant)</td>
+				<td>14D6</td>
+				<td>50m (33 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Fusion Gun-TL 15</th>
+				<td>15</td>
+				<td>Cr200,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>14D6</td>
+				<td>50m (33 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Gauss Cannon-TL 15</th>
+				<td>15</td>
+				<td>Cr500,000</td>
+				<td>24</td>
+				<td>1/15</td>
+				<td>ranged (distant)</td>
+				<td>12D6</td>
+				<td>7.5m (5 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 15</th>
+				<td>15</td>
+				<td>Cr200,000</td>
+				<td>12</td>
+				<td>1/3</td>
+				<td>ranged (distant)</td>
+				<td>12D6</td>
+				<td>50m (33 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Meson Accelerator-TL 15</th>
+				<td>15</td>
+				<td>Cr200,000</td>
+				<td>12</td>
+				<td>1/12</td>
+				<td>ranged (distant)</td>
+				<td>14D6</td>
+				<td>15m (10 sq.)</td>
+				<td>Yes</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 15</th>
+				<td>15</td>
+				<td>Cr20,000</td>
+				<td>6</td>
+				<td>1/4</td>
+				<td>ranged (distant)</td>
+				<td>10D6</td>
+				<td>50m (33 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Plasma Gun-TL 15</th>
+				<td>15</td>
+				<td>Cr100,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>12D6</td>
+				<td>25m (17 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Pulse Laser-TL 15</th>
+				<td>15</td>
+				<td>Cr120,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (extreme)</td>
+				<td>10D6</td>
+				<td>25m (17 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Plasma Gun-TL 15</th>
+				<td>15</td>
+				<td>Cr100,000</td>
+				<td>3</td>
+				<td>1/15</td>
+				<td>ranged (v distant)</td>
+				<td>12D6</td>
+				<td>25m (17 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 15</th>
+				<td>15</td>
+				<td>Cr18,000</td>
+				<td>15</td>
+				<td>1/12</td>
+				<td>ranged (distant)</td>
+				<td>9D6</td>
+				<td>25m (17 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Beam Laser-TL 16</th>
+				<td>16</td>
+				<td>Cr180,000</td>
+				<td>3</td>
+				<td>1/3</td>
+				<td>ranged (extreme)</td>
+				<td>10D6</td>
+				<td>25m (17 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Mass Driver-TL 16</th>
+				<td>16</td>
+				<td>Cr350,000</td>
+				<td>180</td>
+				<td>1</td>
+				<td>ranged (extreme)</td>
+				<td>14D6</td>
+				<td>7.5m (5 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Railgun-TL 16</th>
+				<td>16</td>
+				<td>Cr250,000</td>
+				<td>18</td>
+				<td>1/12</td>
+				<td>ranged (extreme)</td>
+				<td>10D6</td>
+				<td>7.5m (5 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Fusion Gun-TL 16</th>
+				<td>16</td>
+				<td>Cr400,000</td>
+				<td>3</td>
+				<td>1/15</td>
+				<td>ranged (v distant)</td>
+				<td>14D6</td>
+				<td>50m (33 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 17</th>
+				<td>17</td>
+				<td>Cr800,000</td>
+				<td>24</td>
+				<td>1/2</td>
+				<td>ranged (extreme)</td>
+				<td>17D6</td>
+				<td>60m (40 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Fusion Gun-TL 17</th>
+				<td>17</td>
+				<td>Cr260,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>17D6</td>
+				<td>60m (40 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Gauss Cannon-TL 17</th>
+				<td>17</td>
+				<td>Cr1,000,000</td>
+				<td>24</td>
+				<td>1/15</td>
+				<td>ranged (v distant)</td>
+				<td>15D6</td>
+				<td>9m (6 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 17</th>
+				<td>17</td>
+				<td>Cr400,000</td>
+				<td>12</td>
+				<td>1/3</td>
+				<td>ranged (v distant)</td>
+				<td>15D6</td>
+				<td>60m (40 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 17</th>
+				<td>17</td>
+				<td>Cr40,000</td>
+				<td>6</td>
+				<td>1/4</td>
+				<td>ranged (distant)</td>
+				<td>13D6</td>
+				<td>60m (40 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Plasma Gun-TL 17</th>
+				<td>17</td>
+				<td>Cr130,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>15D6</td>
+				<td>30m (20 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Pulse Laser-TL 17</th>
+				<td>17</td>
+				<td>Cr150,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (extreme)</td>
+				<td>13D6</td>
+				<td>30m (20 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Plasma Gun-TL 17</th>
+				<td>17</td>
+				<td>Cr130,000</td>
+				<td>3</td>
+				<td>1/24</td>
+				<td>ranged (v distant)</td>
+				<td>15D6</td>
+				<td>30m (20 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 17</th>
+				<td>17</td>
+				<td>Cr24,000</td>
+				<td>15</td>
+				<td>1/12</td>
+				<td>ranged (v distant)</td>
+				<td>12D6</td>
+				<td>30m (20 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Beam Laser-TL 18</th>
+				<td>18</td>
+				<td>Cr240,000</td>
+				<td>3</td>
+				<td>1/3</td>
+				<td>ranged (extreme)</td>
+				<td>13D6</td>
+				<td>30m (20 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Disintegrator-TL 18</th>
+				<td>18</td>
+				<td>Cr5,000,000</td>
+				<td>24</td>
+				<td>1/3</td>
+				<td>ranged (v distant)</td>
+				<td>17D6</td>
+				<td>9m (6 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Mass Driver-TL 18</th>
+				<td>18</td>
+				<td>Cr600,000</td>
+				<td>180</td>
+				<td>1</td>
+				<td>ranged (extreme)</td>
+				<td>17D6</td>
+				<td>9m (6 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Meson Accelerator-TL 18</th>
+				<td>18</td>
+				<td>Cr250,000</td>
+				<td>12</td>
+				<td>1/12</td>
+				<td>ranged (v distant)</td>
+				<td>17D6</td>
+				<td>15m (10 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Railgun-TL 18</th>
+				<td>18</td>
+				<td>Cr500,000</td>
+				<td>18</td>
+				<td>1/15</td>
+				<td>ranged (extreme)</td>
+				<td>13D6</td>
+				<td>9m (6 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Fusion Gun-TL 18</th>
+				<td>18</td>
+				<td>Cr520,000</td>
+				<td>3</td>
+				<td>1/24</td>
+				<td>ranged (v distant)</td>
+				<td>17D6</td>
+				<td>60m (40 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+		</table>
 
-
+		<h3 id="vehicular-weapon-ammunition">Vehicular Weapon Ammunition</h3>
+		<p>
+			The Vehicular Weapon Ammunition table describes the price of ammunitions for certain vehicular weapons.  (Weapons not included in the table are self-contained munitions that are larger than one Space, or are powered from the energy generated by the vehicle's power plant.) Each column is described as follows:
+		</p>
+		<dl>
+			<dt>Price/Space</dt>
+			<dd>The price of a full Space (or kiloliter) of standard ammunition for the weapon.</dd>
+			<dt>Rounds/Space</dt>
+			<dd>The number of rounds in a full Space (or kiloliter) of standard ammunition for the weapon.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicular Weapon Ammunition</caption>
+			<thead class="thead-light">
+				<th>Weapon</th>
+				<th>Price/Space (Cr)</th>
+				<th>Rounds/Space</th>
+			</thead>
+			<tr>
+				<th>Artillery Gun</th>
+				<td>4,000</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th>Autocannon</th>
+				<td>4,000</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th>Ballista/Catapult</th>
+				<td>100</td>
+				<td>50</td>
+			</tr>
+			<tr>
+				<th>Gauss Cannon</th>
+				<td>25,000</td>
+				<td>18,000</td>
+			</tr>
+			<tr>
+				<th>Howitzer</th>
+				<td>2,000</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th>Machine Gun</th>
+				<td>5,000</td>
+				<td>10,000</td>
+			</tr>
+			<tr>
+				<th>Mass Driver</th>
+				<td>9,000</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Missile Rack</th>
+				<td>By Missile</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>Mortar</th>
+				<td>900</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Railgun</th>
+				<td>900</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery</th>
+				<td>5,000</td>
+				<td>3</td>
+			</tr>
+		</table>
 
 
 
@@ -3843,10 +4841,225 @@ any target struck.</dd>
 		<p>
 			All non-explosive weapons inflict only 1 point of damage to the envelope for each hit. Automatic weapons inflict damage equal to their Auto Rating. Once the lift envelope has taken an amount of Structure damage equal to one point per 60 Spaces of lift envelope size, it loses integrity.
 		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Lift Envelope Size by Atmosphere Density</caption>
+			<thead class="thead-light">
+				<th>Atmosphere Density</th>
+				<th>Envelope Size, Hydrogen or Helium</th>
+				<th>Envelope Size, Hot-Air</th>
+			</thead>
+			<tr>
+				<th>Very Thin </th>
+				<td>UWP Size Code x Chassis (spaces) x 100</td>
+				<td>UWP Size Code x Chassis (spaces) x 200</td>
+			</tr>
+			<tr>
+				<th>Thin </th>
+				<td>UWP Size Code x Chassis (spaces) x 25</td>
+				<td>UWP Size Code x Chassis (spaces) x 50</td>
+			</tr>
+			<tr>
+				<th>Standard </th>
+				<td>UWP Size Code x Chassis (spaces) x 10</td>
+				<td>UWP Size Code x Chassis (spaces) x 20</td>
+			</tr>
+			<tr>
+				<th>Dense </th>
+				<td>UWP Size Code x Chassis (spaces) x 5</td>
+				<td>UWP Size Code x Chassis (spaces) x 10</td>
+			</tr>
+		</table>
 
+		<h3 id="atmospheres-and-aircraft">Atmospheres and Aircraft</h3>
+		<p>
+			All aircraft can only work properly for world size and atmosphere type UWP codes within 1 of their homeworld.  Aircraft operating outside of their design codes suffer a -1 to Agility if they are within 1 of their home UWP codes for atmosphere and/or size, and cannot fly at all if they are operating beyond this, unless they are designed with a wider operation range. In any case, all aircraft require a minimum atmosphere code of 1 in order to function. Aircraft descriptions should include the world size and atmosphere codes.
+		</p>
+		<dl>
+			<dt>Extended Operational Environment Range</dt>
+			<dd>Aircraft can be designed with a wider operational environment range. This costs 100% of the Base Price of the aircraft but allows it to be used within two digits of the UPP size and atmosphere values instead of just one. These aircraft also suffer a -1 to Agility in all environments.</dd>
+		</dl>
 
-		<!--TODO-->
+		<h3 id="missile-and-torpedo-attacks">Missile and Torpedo Attacks</h3>
+		<p>
+			Unlike beam weapons, which travel at the speed of light and so hit the enemy vessel almost instantly, missile and torpedo weapons take time to travel to their target. For the sake of simplicity, they can be assumed to strike after a number of turns dependent on launch range, as shown in the Missile/Torpedo Time to Impact table.  Missiles and Torpedoes cannot be used at Personal or Close range.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Missile/Torpedo Time to Impact</caption>
+			<thead class="thead-light">
+				<th>Range</th>
+				<th>Time to Impact</th>
+			</thead>
+			<tr>
+				<th>Personal</th>
+				<td>-</td>
+			</tr>
+			<th>Close</th>
+			<td>-</td>
+			</tr>
+			<th>Short</th>
+			<td>0</td>
+			</tr>
+			<th>Medium</th>
+			<td>0</td>
+			</tr>
+			<th>Long</th>
+			<td>0</td>
+			</tr>
+			<th>Very Long</th>
+			<td>0</td>
+			</tr>
+			<th>Distant</th>
+			<td>1</td>
+			</tr>
+			<th>Very Distant</th>
+			<td>4</td>
+			</tr>
+			<th>Extreme</th>
+			<td>8</td>
+			</tr>
+		</table>
+		<p>
+			When the missile or torpedo is launched, the gunner must make a Turret Weapons or Bay Weapons skill check to determine the accuracy of the launch. The effect of the skill check determines the chance that the missile or torpedo will strike its target when it hits. A target may react to incoming missiles or torpedoes by dodging or point defense. This reaction does not take place until the turn the missiles arrive at their destination, so any target response must wait until then.
+		</p>
+		<dl>
+			<dt>Smart Missiles</dt>
+			<dd> The missile to-hit roll for smart missiles is always 8+ and if they miss they make another attack every turn until they are destroyed with point defense, jammed with ECM, run out of fuel or otherwise dissuaded.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Missile To-Hit By Skill Check Effect</caption>
+			<thead class="thead-light">
+				<th>Turret Weapons/Bay Weapons check</th>
+				<th>Missile to-hit roll</th>
+			</thead>
+			<tr>
+				<th>Failed With Effect -6 or less</th>
+				<td>11+</td>
+			</tr>
+			<tr>
+				<th>Failed With Effect -1 to -5</th>
+				<td>10+</td>
+			</tr>
+			<tr>
+				<th>Succeeded With Effect 0</th>
+				<td>8+</td>
+			</tr>
+			<tr>
+				<th>Succeeded With Effect 1-5</th>
+				<td>7+</td>
+			</tr>
+			<tr>
+				<th>Succeeded With Effect 6+</th>
+				<td>6+</td>
+			</tr>
+		</table>
 
+		<h3 id="non-powered-vehicles">Non-Powered Vehicles</h3>
+		<p>
+			Some vehicles do not have a power plant or a powered propulsion system. These rely on two forms of external force to provide movement: animals or the wind.
+		</p>
+		<dl>
+			<dt>Animal-Powered Vehicles</dt>
+			<dd>Some vehicles, particularly at very low Tech Levels, are powered by living creatures.  An animal-powered vehicle requires one point of Strength (Str) per Space of chassis to move at the animal's base walking speed. (Ground vehicles that run on rails halve the required Strength for movement.) For every five points of Strength less than what is required, Speed and Range decrease by 10%. There is no lower limit and Speed can be reduced to 0 so the vehicle cannot move at all.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Speed and Range Modifiers by Animal Gait</caption>
+			<thead class="thead-light">
+				<th>Gait</th>
+				<th>Speed Modifier</th>
+				<th>Range</th>
+			</thead>
+			<tr>
+				<th>Walk</th>
+				<td>Walk x 1</td>
+				<td>Endurance x 30 minutes</td>
+			</tr>
+			<tr>
+				<th>Trot</th>
+				<td>Walk x 2</td>
+				<td>Endurance x 15 minutes</td>
+			</tr>
+			<tr>
+				<th>Canter</th>
+				<td>Walk x 3</td>
+				<td>Endurance x 2 minutes</td>
+			</tr>
+			<tr>
+				<th>Run</th>
+				<td>Walk x 4</td>
+				<td>Endurance x 1 minutes</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Sample Terran Animals Used to Power Vessels</caption>
+			<thead class="thead-light">
+				<th>Animal</th>
+				<th>Str</th>
+				<th>Speed Walk/Run (km/h)</th>
+				<th>End</th>
+			</thead>
+			<tr>
+				<th>Elephant</th>
+				<td>24</td>
+				<td>6/24</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Horse</th>
+				<td>10</td>
+				<td>7/28</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<th>Human</th>
+				<td>7</td>
+				<td>6/24</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<th>Mule</th>
+				<td>11</td>
+				<td>6/24</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<th>Ox</th>
+				<td>18</td>
+				<td>5/20</td>
+				<td>18</td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Wind-Powered Vehicles</dt>
+			<dd>Often called sailing vessels, wind-powered vehicles depend on the wind and weather to provide the force necessary to move. The Sailing Speeds table captures the base speeds of different types of vehicles, as a percentage of wind speed. In the table, water-based also refers to water or similar fluids, depending on the world for which the vessel is designed.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Sailing Speeds</caption>
+			<thead class="thead-light">
+				<th>Vehicle Type</th>
+				<th>Speed (Vehicles under 10 tons)</th>
+				<th>Speed (Vehicles 10+ tons)</th>
+			</thead>
+			<tr>
+				<th>Air-based</th>
+				<td>35% of wind</td>
+				<td>40% of wind</td>
+			</tr>
+			<tr>
+				<th>Ground-based</th>
+				<td>20% of wind</td>
+				<td>15% of wind</td>
+			</tr>
+			<tr>
+				<th>Water-based</th>
+				<td>20% of wind</td>
+				<td>30% of wind</td>
+			</tr>
+		</table>
+
+		<h3 id="off-road-movement-for-ground-vehicles">Off-Road Movement for Ground Vehicles</h3>
+		<p>
+			The listed movement rate for any ground vehicle is its on-road movement. If a ground vehicle goes off-road, it suffers a -2 DM to Agility, Movement rate is reduced to 25% of normal and rough terrain cannot be crossed. A vehicle that is off-road capable does not suffer the -2 DM to Agility, and the Movement rate is not reduced. It can cross rough terrain with a -2 DM to Agility.
+		</p>
 
 		<h2 id="vehicles-over-20-tons">Vehicles Over 20 Tons</h2>
 		<p>
