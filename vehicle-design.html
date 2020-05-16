@@ -4815,12 +4815,360 @@ any target struck.</dd>
 			</tr>
 		</table>
 
+		<h3 id="ordinance-bays">Ordinance Bays</h3>
+		<p>
+			Dedicated ordinance bays that carry just one type of weapon cost Cr5,000 per Space of weapon that they are designed to hold. Rate-of-fire is equal to the number of weapons in the bay, and bays can be reloaded.  General purpose ordinance bays able to hold different types of weapons cost Cr10,000 per Space of weapon they are designed to hold. They can launch one missile or torpedo per round, or drop up to half their Space capacity in bombs.
+		</p>
+		<p>
+			Note that an ordinance bay takes up one weapon point per 60 Spaces in size, or fraction thereof, of the bay itself, minimum of one. For example, a Heavy Nuclear Bomb ordinance bay housing four such bombs occupies 24 Spaces, which takes up one weapon point. An ordinance bay housing 15 Heavy High Explosive Bombs occupies 90 spaces, and takes up two weapon points
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Ordinance Bay Weapons</caption>
+			<thead class="thead-light">
+				<th>Ordinance Type</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Range</th>
+				<th>Damage</th>
+				<th>Notes</th>
+			</thead>
+			<tr>
+				<th>Bomb, High Explosive, Standard</th>
+				<td>4</td>
+				<td>3</td>
+				<td>Cr1,200</td>
+				<td>ranged (v distant) </td>
+				<td>12D6</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Torpedo, High Explosive, Standard</th>
+				<td>4</td>
+				<td>12</td>
+				<td>Cr2,400</td>
+				<td>ranged (v distant) </td>
+				<td>12D6</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+			<tr>
+				<th>Bomb, High Explosive, Heavy</th>
+				<td>5</td>
+				<td>6</td>
+				<td>Cr4,000</td>
+				<td>ranged (v distant) </td>
+				<td>14D6</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Torpedo, High Explosive, Heavy</th>
+				<td>5</td>
+				<td>24</td>
+				<td>Cr8,000</td>
+				<td>ranged (v distant) </td>
+				<td>14D6</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+			<tr>
+				<th>Bomb, Nuclear, Heavy</th>
+				<td>6</td>
+				<td>6</td>
+				<td>Cr8,000</td>
+				<td>ranged (v distant) </td>
+				<td>28D6 + 2D6x10 rads</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Bomb, Nuclear, Standard</th>
+				<td>6</td>
+				<td>3</td>
+				<td>Cr2,400</td>
+				<td>ranged (v distant)</td>
+				<td>24D6 + 2D6x10 rads</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Torpedo, Nuclear, Heavy</th>
+				<td>6</td>
+				<td>24</td>
+				<td>Cr16,000</td>
+				<td>ranged (v </td>
+				<td>28D6 + 2D6x10</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+			<tr>
+				<th>Torpedo, Nuclear, Standard</th>
+				<td>6</td>
+				<td>12</td>
+				<td>Cr4,800</td>
+				<td>ranged (v distant) </td>
+				<td>24D6 + 2D6x10 rads</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+			<tr>
+				<th>Bomb, Antimatter, Heavy</th>
+				<td>17</td>
+				<td>6</td>
+				<td>Cr24,000</td>
+				<td>ranged (extreme) </td>
+				<td>42D6 + 4D6x10 rads</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Bomb, Antimatter, Standard</th>
+				<td>17</td>
+				<td>3</td>
+				<td>Cr7,200</td>
+				<td>ranged (extreme) </td>
+				<td>36D6 + 4D6x10 rads</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Torpedo, Antimatter, Heavy</th>
+				<td>17</td>
+				<td>24</td>
+				<td>Cr48,000</td>
+				<td>ranged (extreme) </td>
+				<td>42D6 + 4D6x10 rads</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+			<tr>
+				<th>Torpedo, Antimatter, Standard</th>
+				<td>17</td>
+				<td>12</td>
+				<td>Cr14,400</td>
+				<td>ranged (extreme) </td>
+				<td>36D6 + 4D6x10 rads</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+		</table>
 
+		<h3 id="missiles">Missiles</h3>
+		<p>
+			A number of vehicular weapons determine range and damage by the type of tactical missiles they fire. Common missiles are listed in the Vehicular Missiles table. Standard HE refers to Standard High Explosive warheads.
+		</p>
+		<dl>
+			<dt>Smart</dt>
+			<dd>The attack roll for smart missiles is always 8+, and they may attack every combat round if they miss until they are destroyed, jammed or run out of fuel.</dd>
+			<dt>Radiation Hit</dt>
+			<dd>In addition to standard damage, both nuclear and antimatter missiles automatically inflict one radiation hit, rolling on the Radiation Damage column of the Crew Hit location.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicular Missiles</caption>
+			<thead class="thead-light">
+				<th>Missile Type</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Range</th>
+				<th>Dmg</th>
+			</thead>
+			<tr>
+				<th>Standard HE, Unguided</th>
+				<td>3</td>
+				<td>1</td>
+				<td>Cr750</td>
+				<td>ranged (very long)</td>
+				<td>5D6</td>
+			</tr>
+			<tr>
+				<th>Standard HE, Remote-Guided</th>
+				<td>3</td>
+				<td>1</td>
+				<td>Cr750</td>
+				<td>ranged (very long)</td>
+				<td>5D6</td>
+			</tr>
+			<tr>
+				<th>Standard HE, Heat-Seeking</th>
+				<td>4</td>
+				<td>1</td>
+				<td>Cr1,000</td>
+				<td>ranged (very long)</td>
+				<td>6D6</td>
+			</tr>
+			<tr>
+				<th>Nuclear, Radar-Guided</th>
+				<td>6</td>
+				<td>1</td>
+				<td>Cr3,750</td>
+				<td>ranged (very long)</td>
+				<td>12D6 + 1 radiation hit</td>
+			</tr>
+			<tr>
+				<th>Standard HE, Radar-Guided</th>
+				<td>6</td>
+				<td>1</td>
+				<td>Cr1,250</td>
+				<td>ranged (distant)</td>
+				<td>6D6</td>
+			</tr>
+			<tr>
+				<th>Nuclear, Smart (Computer-Guided)</th>
+				<td>7</td>
+				<td>1</td>
+				<td>Cr5,000</td>
+				<td>ranged (distant)</td>
+				<td>16D6 + 1 radiation hit</td>
+			</tr>
+			<tr>
+				<th>Standard HE, Smart (ComputerGuided)</th>
+				<td>7</td>
+				<td>1</td>
+				<td>Cr2,500</td>
+				<td>ranged (very distant)</td>
+				<td>8D6</td>
+			</tr>
+			<tr>
+				<th>Nuclear, NAS-Guided</th>
+				<td>12</td>
+				<td>1</td>
+				<td>Cr2,500</td>
+				<td>ranged (very long)</td>
+				<td>13D6</td>
+			</tr>
+			<tr>
+				<th>Standard HE, NAS-Guided</th>
+				<td>12</td>
+				<td>1</td>
+				<td>Cr2,500</td>
+				<td>ranged (distant)</td>
+				<td>11D6</td>
+			</tr>
+			<tr>
+				<th>Antimatter, Smart (AI-Guided)</th>
+				<td>17</td>
+				<td>1</td>
+				<td>Cr10,000</td>
+				<td>ranged (extreme)</td>
+				<td>20D6 + 1 radiation hit</td>
+			</tr>
+		</table>
 
-		<!-- TODO: Finish -->
+		<h3 id="anti-missile-systems">Anti-Missile Systems</h3>
+		<p>
+			Systems of this type will typically negate an incoming missile, rocket, launched grenade or mortar round on the roll of 8+. Some systems have Target DMs that modify this, and every system will suffer a -1 DM for every additional target it is forced to engage in each round. The Anti-Missile System Details table describes each system.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Anti-Missile System Details</caption>
+			<thead class="thead-light">
+				<th>Type</th>
+				<th>TL</th>
+				<th>Effect</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Minimum Effective Range</th>
+				<th>Uses</th>
+				<th>Reload Price (Cr)</th>
+			</thead>
+			<tr>
+				<th>Smoke Dischargers</th>
+				<td>3</td>
+				<td>DM+2 vs visual attacks (remote-guided missiles)</td>
+				<td>1.5</td>
+				<td>Cr1,000</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>Cr100
+			</tr>
+			<tr>
+				<th>Chaff Dispensers</th>
+				<td>4</td>
+				<td>DM+2 vs thermal-guided attacks (heat-seeking missiles)</td>
+				<td>1.5</td>
+				<td>Cr1,200</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>Cr150
+			</tr>
+			<tr>
+				<th>Flares</th>
+				<td>6</td>
+				<td>DM+2 vs radar-guided attacks (homing missiles)</td>
+				<td>1.5</td>
+				<td>Cr2,000</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>Cr200
+			</tr>
+			<tr>
+				<th>Decoys</th>
+				<td>7</td>
+				<td>DM+2 vs smart missile attacks (radar-guided missiles)</td>
+				<td>1.5</td>
+				<td>Cr8,000</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>Cr1,000
+			</tr>
+			<tr>
+				<th>Explosive Belt</th>
+				<td>8</td>
+				<td>Target DM +0</td>
+				<td>&mdash;</td>
+				<td>Cr15,000</td>
+				<td>Short</td>
+				<td>10</td>
+				<td>Cr800
+			</tr>
+			<tr>
+				<th>Minigun</th>
+				<td>8</td>
+				<td>Target DM +0</td>
+				<td>9</td>
+				<td>Cr200,000</td>
+				<td>Medium</td>
+				<td>10</td>
+				<td>Cr7,000
+			</tr>
+			<tr>
+				<th>Prismatic Aerosols</th>
+				<td>9</td>
+				<td>DM+2 vs laser-guided attacks; Lasers -2D6 damage</td>
+				<td>1.5</td>
+				<td>Cr4,000</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>Cr500
+			</tr>
+			<tr>
+				<th>Laser</th>
+				<td>10</td>
+				<td>Target DM +1</td>
+				<td>12</td>
+				<td>Cr250,000</td>
+				<td>Medium</td>
+				<td>&mdash;</td>
+				<td>&mdash;
+			</tr>
+			<tr>
+				<th>VRF Gauss</th>
+				<td>11</td>
+				<td>Target DM +0</td>
+				<td>9</td>
+				<td>Cr200,000</td>
+				<td>Medium</td>
+				<td>15</td>
+				<td>Cr20,000
+			</tr>
+		</table>
 
-
-
+		<h3 id="vehicle-armament-options">Vehicle Armament Options</h3>
+		<p>
+			The following options are available as modifications on Vehicle Armaments.
+		</p>
+		<dl>
+			<dt>Heavy Turret Weapon (TL3)</dt>
+			<dd>Any vehicular armament that can be mounted in a turret can be purchased in a heavier version. Multiply the weapon's price by 1.5, multiply the weapon's ROF by 0.5, and increase the weapon's damage by 1D6. This cannot be stacked with Light Turret Weapon.</dd>
+			<dt>Laser Guidance (TL8)</dt>
+			<dd>All vehicles with mortars, howitzers, artillery guns, and autocannons can be equipped with laser guidance. This costs Cr1,000, takes up 1 space, and grants a DM +1 on these weapon's attack rolls against a stationary target.</dd>
+			<dt>Light Turret Weapon (TL3)</dt>
+			<dd>Any vehicular armament that can be mounted in a turret can be purchased in a lighter version. Multiply the weapon's price by 0.75, increase the weapon's range by one range band, and decrease the weapon's damage by 1D6. This cannot be stacked with Heavy Turret Weapon.</dd>
+			<dt>Missile Guidance System (TL5)</dt>
+			<dd>All vehicles equipped with missiles can use an installed missile guidance system to better aim missile strikes. This costs Cr10,000, takes up 6 spaces, and grants a DM +1 on missile-based attack rolls against a moving target.</dd>
+			<dt>Rotary Turret Weapon (TL5)</dt>
+			<dd>Any machine gun mounted on a vehicle can be purchased in a rotary version.  Double the weapon's price and ROF, and decrease the weapon's damage by 1D6.</dd>
+		</dl>
 
 		<h2 id="special-rules-for-vehicles">Special Rules for Vehicles</h2>
 		<p>
