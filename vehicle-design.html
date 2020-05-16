@@ -1,0 +1,5463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cepheus Engine SRD - Vehicle Design</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="cepheus-engine-srd.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-custom bg-dark navbar-dark fixed-top">
+			<a class="navbar-brand" href="index.html">Cepheus Engine SRD</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mr-auto nav-pills">
+					<li class="nav-link nav-item">
+						<a class="nav-link" href="introduction.html">Introduction</a>
+					</li>
+					<li class="nav-link nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Book 1: Characters</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="character-creation.html">Chapter 1: Character Creation</a>
+							<a class="dropdown-item" href="skills.html">Chapter 2: Skills</a>
+							<a class="dropdown-item" href="psionics.html">Chapter 3: Psionics</a>
+							<a class="dropdown-item" href="equipment.html">Chapter 4: Equipment</a>
+							<a class="dropdown-item" href="personal-combat.html">Chapter 5: Personal Combat</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Book 2: Starships and Interstellar Travel</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="off-world-travel.html">Chapter 6: Off-World Travel</a>
+							<a class="dropdown-item" href="trade-and-commerce.html">Chapter 7: Trade and Commerce</a>
+							<a class="dropdown-item" href="ship-design-and-construction.html">Chapter 8: Ship Design and Construction</a>
+							<a class="dropdown-item" href="common-vessels.html">Chapter 9: Common Vessels</a>
+							<a class="dropdown-item" href="space-combat.html">Chapter 10: Space Combat</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Book 3: Referees</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="environments-and-hazards.html">Chapter 11: Environments and Hazards</a>
+							<a class="dropdown-item" href="worlds.html">Chapter 12: Worlds</a>
+							<a class="dropdown-item" href="planetary-wilderness-encounters.html">Chapter 13: Planetary Wilderness Encounters</a>
+							<a class="dropdown-item" href="social-encounters.html">Chapter 14: Social Encounters</a>
+							<a class="dropdown-item" href="starship-encounters.html">Chapter 15: Starship Encounters</a>
+							<a class="dropdown-item" href="refereeing-the-game.html">Chapter 16: Refereeing the Game</a>
+							<a class="dropdown-item" href="adventures.html">Chapter 17: Adventures</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item dropdown active">
+						<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="">Vehicle Design System</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="vds-introduction.html">Introduction</a>
+							<a class="dropdown-item active" href="vehicle-design.html">Chapter 1: Vehicle Design</a>
+							<a class="dropdown-item" href="common-aircraft.html">Chapter 2: Common Aircraft</a>
+							<a class="dropdown-item" href="common-grav-vehicles.html">Chapter 3: Common Grav Vehicles</a>
+							<a class="dropdown-item" href="common-ground-vehicles.html">Chapter 4: Common Ground Vehicles</a>
+							<a class="dropdown-item" href="common-watercraft.html">Chapter 5: Common Watercraft</a>
+							<a class="dropdown-item" href="uncommon-vehicles.html">Chapter 6: Uncommon Vehicles</a>
+							<a class="dropdown-item" href="updated-common-vehicles-table.html">Appendix A: Updated Common Vehicles Table</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Tools</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="tools/sector-generator.html">Sector Generator</a>
+						</div>
+					</li>
+					<li class="nav-link nav-item">
+						<a class="nav-link" href="legal.html">Legal</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container w-75">
+		<h1>Chapter 1: Vehicle Design</h1>
+		<p class="lead">
+			This section describes some of the watercraft that can be commonly encountered in Cepheus Engine campaigns. These are not the only types of vessels that exist, and creative Referees are encouraged to integrate vehicles of their own creation or from other sources as they see fit.
+		</p>
+
+		<h2 id="standard-designs-vs-new-designs">Standard Designs vs. New Designs</h2>
+		<p>
+			An interstellar economy provides an excellent opportunity for the use of standardized and modular vehicle designs, as well as a wide range of markets. Components can be crafted on different worlds, taking advantage of available resources, and then put together to create a final product. Manufacturers take advantage of modular components and standardized designs to reduce costs in production, leading to a 10% discount on vehicles constructed using common designs, such as those described in the other chapters of this supplement. The Referee may designate other vehicle designs as standard designs, as befits their universe. Fuel and weapon ammunition are not covered by the Std Design Discount.
+		</p>
+		<p>
+			New and unique vehicle designs cannot take advantage of standardized and modular design. These vehicles must be designed by a vehicular design specialist, who creates detailed design plans based on a set of specifications provided by their client. Such plans take a month to create, and costs approximately 1% of the final price of the vehicle, to a minimum of Cr100.
+		</p>
+
+		<h2 id="displacement-tons-and-spaces">Displacement Tons and Spaces</h2>
+		<p>
+			Chassis and other vehicle components are measured by their displacement volume. For ships and small craft, displacement volume is measured in the volume of space that is displaced by one metric ton of hydrogen, referred to in this design sequence as displacement tons or simply tons.
+		</p>
+		<p>
+			Because the components for vehicles are often fractions of a ton, the Cepheus Engine Vehicle Design System (VDS) uses an artificial measure of volume to make things a little easier. A space in this design system is equal to one-twelfth of a displacement ton; i.e. there are 12 spaces in one ton.
+		</p>
+
+		<h2 id="design-considerations">Design Considerations</h2>
+		<p>
+			When designing a vehicle, it is important to consider two things: the vehicle’s purpose, and the Tech Level at which it will be produced. The design process flows more smoothly when you keep these two factors in mind
+		</p>
+
+		<h2 id="price-impact-of-modifications">The Price Impact of Modifications</h2>
+		<p>
+			Some modifications to a vehicle component, often classified under Options that can be applied to that component, modify the original price of that component. Modifications that decrease the price of a vehicle component cannot lower it below 25% of the original price.
+		</p>
+
+		<h2 id="vehicle-design-checklist">Vehicle Design Checklist</h2>
+		<p>
+			The Cepheus Engine Vehicle Design System (VDS) follows a very methodical process.
+		</p>
+		<ol>
+			<li><a href="#vehicle-chassis">Choose Vehicle Chassis</a></li>
+			<ol type="a">
+				<li><a href="#vehicle-configuration">Determine open or closed chassis</a></li>
+				<li><a href="#vehicle-configuration-options">Determine chassis configuration</a></li>
+				<li><a href="#vehicle-armor">Install armor (optional)</a></li>
+			</ol>
+			<li><a href="#vehicle-drives">Choose locomotion/propulsion</a></li>
+			<li>Choose power supply</li>
+			<li><a href="#vehicle-fuel">Determine fuel requirements</a></li>
+			<li><a href="#vehicle-controls">Choose vehicle’s controls</a></li>
+			<li><a href="#vehicle-communication-systems">Choose vehicle’s communications system (optional)</a></li>
+			<li><a href="#vehicle-sensors">Choose vehicle’s sensor package (optional)</a></li>
+			<li><a href="#vehicle-computer">Choose vehicle’s computer system (optional)</a></li>
+			<ol type="a">
+				<li>Choose computer software</li>
+			</ol>
+			<li><a href="#vehicle-crew-and-passengers">Determine number of required crew</a></li>
+			<ol type="a">
+				<li>Choose accommodations (cockpit, cabin, extended accommodations)</li>
+			</ol>
+			<li><a href="#additional-vehicle-components">Determine additional components (optional)</a></li>
+			<li><a href="#vehicle-armaments">Determine turrets, fixed mounts, etc. (optional)</a></li>
+			<ol type="a">
+				<li>Determine weapons (optional)</li>
+			</ol>
+			<li>Allocate remaining space to cargo</li>
+			<li>Calculate final price and constructiont time</li>
+			<ol type="a">
+				<li>Apply Std Design Discount of 10% (optional)</li>
+			</ol>
+		</ol>
+
+		<h2 id="vehicle-chassis">Vehicle Chassis</h2>
+		<p>
+			The vessel’s chassis is the shell in which all other components are placed. An unarmored vehicle’s construction time is based on its chassis size, as outlined on the <a href="#vehicle-chassis-by-displacement">Vehicle Chassis by Displacement table</a>. To find the construction time for armored vehicles, simply multiply the vehicle’s base construction time by the amount of <b><i>additional</i></b> armor the vehicle will possess. For example, a 10-ton Armored Fighting Vehicle (AFV) with a total of 12 Armor would take (base of 90 hours, times 12, equals) 1080 hours, or 45 days, assuming round-the-clock construction.
+		</p>
+		<p>
+			<b>Custom-Made Vehicles:</b> The construction time listed is for mass production of a standard design. A custommade vehicle takes approximately ten times as long to construct.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-chassis-by-displacement">
+			<caption>Table: Vehicle Chassis by Displacement</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Chassis Code</th>
+					<th>Tons</th>
+					<th>Spaces</th>
+					<th>Price (Cr)</th>
+					<th>Construction Time (hours)</th>
+					<th>Size</th>
+					<th>Example</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>1</th>
+				<td>0.1</td>
+				<td>1</td>
+				<td>1,450</td>
+				<td>1</td>
+				<td></td>
+				<td>8 Standard Moving Boxes</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>0.25</td>
+				<td>3</td>
+				<td>1,600</td>
+				<td>2</td>
+				<td></td>
+				<td>Motorcycle</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>0.5</td>
+				<td>6</td>
+				<td>1,850</td>
+				<td>5</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>0.75</td>
+				<td>9</td>
+				<td>2,100</td>
+				<td>7</td>
+				<td></td>
+				<td>Compact Car</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>1</td>
+				<td>12</td>
+				<td>2,400</td>
+				<td>9</td>
+				<td></td>
+				<td>Mid-Size Car</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>2</td>
+				<td>24</td>
+				<td>3,550</td>
+				<td>18</td>
+				<td></td>
+				<td>Passenger Van</td>
+			</tr>
+			<tr>
+				<th>7</th>
+				<td>3</td>
+				<td>36</td>
+				<td>4,850</td>
+				<td>27</td>
+				<td>20-ft</td>
+				<td>Standard Freight Shipping Container (1CC)</td>
+			</tr>
+			<tr>
+				<th>8</th>
+				<td>4</td>
+				<td>48</td>
+				<td>6,250</td>
+				<td>36</td>
+				<td></td>
+				<td>Air/Raft</td>
+			</tr>
+			<tr>
+				<th>9</th>
+				<td>5</td>
+				<td>60</td>
+				<td>7,800</td>
+				<td>45</td>
+				<td></td>
+				<td>Military Tank</td>
+			</tr>
+			<tr>
+				<th>A</th>
+				<td>6</td>
+				<td>72</td>
+				<td>9,550</td>
+				<td>54</td>
+				<td></td>
+				<td>Speeder</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>7</td>
+				<td>84</td>
+				<td>11,350</td>
+				<td>63</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>8</td>
+				<td>96</td>
+				<td>13,350</td>
+				<td>72</td>
+				<td></td>
+				<td>Semi Trailer</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>9</td>
+				<td>108</td>
+				<td>15,450</td>
+				<td>81</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>10</td>
+				<td>120</td>
+				<td>17,750</td>
+				<td>90</td>
+				<td></td>
+				<td>ATV</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>11</td>
+				<td>132</td>
+				<td>20,150</td>
+				<td>99</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>12</td>
+				<td>144</td>
+				<td>22,650</td>
+				<td>108</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>13</td>
+				<td>156</td>
+				<td>23,350</td>
+				<td>117</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>14</td>
+				<td>168</td>
+				<td>28,150</td>
+				<td>126</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>15</td>
+				<td>180</td>
+				<td>31,100</td>
+				<td>135</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>16</td>
+				<td>192</td>
+				<td>34,200</td>
+				<td>144</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>17</td>
+				<td>204</td>
+				<td>37,400</td>
+				<td>153</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>18</td>
+				<td>216</td>
+				<td>40,750</td>
+				<td>162</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>19</td>
+				<td>228</td>
+				<td>44,250</td>
+				<td>171</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>20</td>
+				<td>240</td>
+				<td>47,900</td>
+				<td>180</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+
+		<h3 id="vehicle-configuration">Vehicle Configuration</h3>
+		<p>
+			A vehicle may have one of two configurations – Closed or Open.
+		</p>
+		<dl>
+			<dt>Closed Vehicles:</dt>
+			<dd>
+				<p>
+					Closed vehicles grant cover to the occupants – unless the description mentions otherwise civilian vehicles grant ½ soft cover and military vehicles full hard cover. Only a few people in a closed vehicle can shoot out, depending on the number of windows or other firing ports and the internal space available. Unless the description mentions otherwise, up to two people can fire into each arc from a civilian vehicle and one person in each arc in a military one.
+				</p>
+				<p>
+					Note that closed vehicles are not sealed or airtight. They are just enclosed, offering some basic protection to the occupants within the vehicle. In order to provide complete atmospheric protection, the appropriate Environmental Protection System(s) must be installed, as provided in under Vehicle Configuration Options.
+				</p>
+			</dd>
+			<dt>Open Vehicles:</dt>
+			<dd>Open vehicles possess an open passenger area, which reduces the final price by 10% of the Base Price. Airplanes, jets and hypersonics cannot have an Open configuration. Open vehicles grant no cover to the passengers. Any passenger in an open vehicle can shoot (or otherwise attack) in any direction.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicle Configuration</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Configuration</th>
+					<th>Chassis Price Modifier</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Closed</th>
+				<td>x1</td>
+			</tr>
+			<tr>
+				<th>Open</th>
+				<td>x0.9</td>
+			</tr>
+		</table>
+
+		<h3 id="vehicle-configuration-options">Vehicle Configuration Options</h3>
+		<p>
+			The following are options that can be added to a vehicle’s configuration.
+		</p>
+		<dl>
+			<dt>Corrosive Environmental Protection System (TL 9)</dt>
+			<dd>The Corrosive Environmental Protection System can be installed in any vehicles with a closed chassis to safeguard the vehicle and its crew in corrosive environments. Corrosive Environmental Protection protects against corrosive environments, very hot or very cold environments, radiation, poisons and bacteriological threats. This system takes up 6 spaces and costs Cr10,000 per Space of chassis. This system requires the purchase of Life Support.</dd>
+			<dt>Hostile Environmental Protection System (TL 7)</dt>
+			<dd>The Hostile Environmental Protection System can be installed in any vehicles with a closed chassis to safeguard the vehicle and its crew in hostile environments. Hostile Environmental Protection protects against very hot or very cold environments, radiation, poisons and bacteriological threats. This system takes up 3 spaces and costs Cr5,000 per Space of chassis. This system does not require Basic Life Support, although it can prove highly useful.</dd>
+			<dt>Hydrofoils</dt>
+			<dd>Hydrofoils may be applied to any aquatic surface vessel. Hydrofoils increase the chassis price by 300%, and multiply the base speed of the vehicle by 3.</dd>
+			<dt>Insidious Environmental Protection System (TL 9)</dt>
+			<dd>The Insidious Environmental Protection System can be installed in any vehicles with a closed chassis to safeguard the vehicle and its crew in insidious environments. Insidious Environmental Protection protects the vehicle and crew from insidious atmospheres for 5 days, before Hull/Structure integrity begins to fail at one point per day, as well as providing protection against very hot or very cold environments, radiation, poisons and bacteriological threats. This system takes up 6 spaces and costs Cr50,000 per Space of chassis. This system requires the purchase of Life Support.</dd>
+			<dt>Open Cargo Bed</dt>
+			<dd>Reduces the chassis price by 20%. Airplanes, jets and hypersonics cannot have Open Cargo Beds. Open configuration vehicles with an Open Cargo Bed combined reduce the chassis price by 25%.</dd>
+			<dt>Open Frame</dt>
+			<dd>Reduces the chassis price by 20%. Airplanes, jets and hypersonics cannot have Open Cargo Beds. Open configuration vehicles with an Open Cargo Bed combined reduce the chassis price by 25%.</dd>
+			<dt>Self-Sealing (TL 9)</dt>
+			<dd>A self-sealing chassis automatically repairs minor breaches, and prevents chassis hits from leading to explosive decompression in vacuum environments (if the Vacuum Environmental Protection System is installed). It costs Cr10,000 per ton of chassis.</dd>
+			<dt>Streamlined</dt>
+			<dd>Streamlining a thrust-based vehicle increases the chassis price by 300%. Streamlining multiplies the Base Speed of the vehicle by 5. Streamlining can be applied to any thrust-based vehicle with a closed configuration. Streamlining may not be retrofitted; it must be included at the time of construction.</dd>
+			<dt>Submersible</dt>
+			<dd>
+				<p>
+					Submersible may be applied to any aquatic vessel, allowing it to submerge below the ocean’s surface. The Submersible configuration option increase the chassis price by 500%. Base Speed for a submersible reflects the vessel’s speed underwater. The vehicle’s Base Speed is halved when the vehicle is travelling on the ocean’s surface in good weather conditions.
+				</p>
+				<p>
+					Submersibles are rated by their Safe Dive Depth and Crush Depth, as determined by the vessel’s Tech Level. These values are calculated for a Size 8 world. For every point of world size difference, up or down, add or subtract (respectively) 10% from the Safe Dive and Crush Depth values.
+				</p>
+				<p>
+					When increasing Safe Dive/Crush Depth for a submersible, for every doubling of the Safe Dive and Crush Depth, the vehicle loses half of its remains spaces (rounded off) to ballast to bring the vehicle lower into the ocean. Each doubling costs of 100% of the chassis price of the submersible.
+				</p>
+				<p>
+					An open chassis submersible, such as a dive sled, does not protect its drivers or passengers from the pressures of the depths of the ocean.
+				</p>
+				<p>
+					All submersibles get Basic Life Support and Hostile Environment Protection for free.
+				</p>
+			</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Submersible Safe Dive Depth and Crush Depth by Tech Level</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Tech Level</th>
+					<th>Safe Dive Depth (m)</th>
+					<th>Crush Depth (m)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>4-5</th>
+				<td>50</td>
+				<td>150</td>
+			</tr>
+			<tr>
+				<th>6-8</th>
+				<td>200</td>
+				<td>600</td>
+			</tr>
+			<tr>
+				<th>9-11</th>
+				<td>600</td>
+				<td>1,800</td>
+			</tr>
+			<tr>
+				<th>12-14</th>
+				<td>2,000</td>
+				<td>6,000</td>
+			</tr>
+			<tr>
+				<th>15-16</th>
+				<td>4,000</td>
+				<td>12,000</td>
+			</tr>
+			<tr>
+				<th>17+</th>
+				<td>8,000</td>
+				<td>24,000</td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Vacuum Environmental Protection System (TL 6)</dt>
+			<dd>The Vacuum Environmental Protection System can be installed in any vehicles with a closed chassis to safeguard the vehicle and its crew under vacuum conditions. Vacuum Environmental Protection protects against vacuum conditions, very hot or very cold environments, radiation, poisons and bacteriological threats. This system takes up 3 spaces and costs Cr10,000 per Space of chassis. This system requires the purchase of Life Support.</dd>
+			<dt>Wave-Piercing Hull</dt>
+			<dd>The Wave-piercing Hull puts the payload of a watercraft on streamlined pillars above the water that connect to power/fuel modules that run underwater. Interface friction is much reduced, allowing the Wave-piercing Hull to be much more efficient and stable. This increases its Base Speed by 10%. The Wavepiercing Hull uses 5% of a vehicle’s Spaces (round up) and costs 200% of the chassis price.</dd>
+		</dl>
+
+		<h2 id="vehicle-armor">Vehicle Armor</h2>
+		<p>
+			All vehicles start with a base amount of armor, depending on their construction materials, as outlined in the Vehicle Armor by Type table. All additional vehicle armor, regardless of armor type, is added in 5% increments of the vehicle’s volume, in Spaces. A vehicle’s armor decreases ambient radiation exposure by 10 rads per point of armor. (This does not apply to meson attacks and nuclear missiles, which bypass the armor or breach the chassis to deliver their radiation hits.) Note that these armor values are measured on the Personal Combat scale. The maximum armor a vehicle can carry is 20% of the chassis.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicle Armor by Type</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Armor Type</th>
+					<th>TL</th>
+					<th>Base</th>
+					<th>Additional Protection</th>
+					<th>Price</th>
+					<th>Max Armor</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Wood</th>
+				<td>1</td>
+				<td>1</td>
+				<td>1 per 5% chassis, min. 1 space</td>
+				<td>10% of base chassis</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>Iron</th>
+				<td>4</td>
+				<td>2</td>
+				<td>2 per 5% chassis, min. 1 space</td>
+				<td>10% of base chassis</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<th>Titanium Steel</th>
+				<td>7</td>
+				<td>3</td>
+				<td>3 per 5% chassis, min. 1 space</td>
+				<td>10% of base chassis</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Crystaliron</th>
+				<td>10</td>
+				<td>4</td>
+				<td>4 per 5% chassis, min. 1 space</td>
+				<td>20% of base chassis</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<th>Superdense</th>
+				<td>12</td>
+				<td>5</td>
+				<td>5 per 5% chassis, min. 1 space</td>
+				<td>20% of base chassis</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th>Bonded Superdense</th>
+				<td>14</td>
+				<td>6</td>
+				<td>6 per 5% chassis, min. 1 space</td>
+				<td>50% of base chassis</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<th>Coherent Superdense</th>
+				<td>17</td>
+				<td>8</td>
+				<td>8 per 5% chassis, min. 1 space</td>
+				<td>50% of base chassis</td>
+				<td>40</td>
+			</tr>
+		</table>
+		<p>
+			For example, a heavily armored TL14 grav tank might take Bonded Superdense armor twice. This would take up 10% of the chassis volume (in spaces, minimum 2 spaces) and cost 100% of the base price of the chassis, but give 12 additional points of armor.
+		</p>
+
+		<h3 id="vehicle-armor-options">Vehicle Armor Options</h3>
+		<p>
+			The following are options that can be added to a vehicle's armor.
+		</p>
+		<dl>
+			<dt>Electrostatic Armor (TL 9)</dt>
+			<dd>This armor can be set to generate an electrostatic field that, when triggered by a person or creature, inflicts 6D6 damage. The armor may discharge twice before needing to recharge, and completely recharges after six seconds without a discharge. Electrostatic Armor requires one Space for the supporting capacitor and associated electronics, and costs Cr10,000.</dd>
+			<dt>Reflec (TL 10)</dt>
+			<dd>Reflec coating on the chassis increases the vehicle’s armor against lasers by 3. Adding Reflec costs Cr100,000 per ton of chassis and can only be added once.</dd>
+			<dt>Reinforced Hull</dt>
+			<dd>A vehicle’s Hull can be reinforced through enhanced structural engineering, increasing its Hull rating in Personal Combat by +1. This costs 20% of the vehicle’s chassis price. This can be selected twice for a total of +2 to the vehicle’s Hull.</dd>
+			<dt>Reinforced Structure</dt>
+			<dd>A vehicle’s Structure can be reinforced through enhanced engineering designs, increasing its Structure rating in Personal Combat by +1. This costs 20% of the vehicle’s chassis price. This modification can be selected twice for a total of +2 to the vehicle’s Structure.</dd>
+			<dt>Stealth (TL 11)</dt>
+			<dd>A stealth coating absorbs radar and lidar beams, and also disguises heat emissions. This imposes a –4 DM on any Comms rolls to detect or lock onto the vehicle. Adding Stealth costs Cr100,000 per ton of chassis, and can only be added once.</dd>
+		</dl>
+
+		<h3 id="vehicle-hull-and-structure">Vehicle Hull and Structure</h3>
+		<p>
+			Initial damage is applied to the Hull value of the chassis; once the chassis has been breached (i.e. the Hull value of the vehicle has reached zero), further damage goes to the Structure. When all Structure Points have been lost, the vehicle has been smashed to pieces. On the Space Combat scale, every vehicle has 0 Hull Points and 1 Structure Point. On the Personal Combat scale, a vehicle has one Hull Point per 5 tons of displacement (rounded down) and one Structure Point per 5 tons of displacement (rounded up). This is summarized in the Vehicle Hull and Structure, Personal Combat Scale table.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicle Hull and Structure, Personal Combat Scale</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Tons</th>
+					<th>Hull</th>
+					<th>Structure</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>0.1-4</th>
+				<td>0</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>6-9</th>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>10</th>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>11-14</th>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>15</th>
+				<td>3</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>16-19</th>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>20</th>
+				<td>4</td>
+				<td>4</td>
+			</tr>
+		</table>
+
+		<h2 id="vehicle-drives">Vehicle Drives</h2>
+		<p>
+			All vehicles are generally built with at least one source of power (commonly referred to as the engine or power plant) and one source of propulsion or locomotion to provide movement for the vehicle. Propulsion is defined as either contact-based (requiring contact with the ground to provide motion) or thrust-based. Within the Cepheus Engine VDS, all engines, power plants and propulsion systems are categorized as drives.
+		</p>
+		<dl>
+			<dt>Power Plants</dt>
+			<dd>Within this design system, the values of the <a href="#vehicle-drive-costs">Vehicle Drive Costs</a> tables make certain assumptions. Power plant values represent the fusion engine. The <a href="#vehicle-power-plant-types">Vehicle Power Plant Types</a> table offer adjustments to represent the impact of alternate power sources.</dd>
+			<dt>Propulsion Systems</dt>
+			<dd>The contact-based propulsion system values represent the transmission and suspension of wheeled vehicles. The thrust-based propulsion system values represent the suspension of grav vehicles. The Vehicle Propulsion Types table offers adjustments to represent alternate propulsion systems.</dd>
+			<dt>Base Speed</dt>
+			<dd>
+				<p>
+					The base speed of a vehicle is determined by its propulsion drive performance and its propulsion type, as outlined in the <a href="#vehicle-base-speed-by-drive-performance">Vehicle Base Speed by Drive Performance</a> table. Base speed is measured in kilometers per hour (kph), unless otherwise specified.
+				</p>
+				<p>
+					A vehicle with a propulsion system must have a power source with a drive code equal to or greater than that of the vehicle’s propulsion. When determining the drive performance of a power plant or a contact-based propulsion system using the <a href="#drive-performance-by-chassis-volume">Drive Performance by Chassis Volume</a> tables, treat a zero (0) entry as a ‘&mdash;’ entry. For a thrust-based propulsion system, a zero (0) means that the thrust from the propulsion system is capable of supporting the vehicle itself in position, hovering in place, but cannot perform any actual propulsion. This allows vehicle designers to create vehicles that only move down or remain stationary, but can’t move up or forward at any significant speed. This is primarily used for robots and drones that need to remain stationary in turbulent circumstances.
+				</p>
+			</dd>
+			<dt>Animal-Powered or Wind-Powered Vehicles</dt>
+			<dd>Vehicles that possess no internal power plant or engine, such as those propelled by wind or pulled by living creatures, do not require a power plant as defined in this section, since their power comes from an external source. In this case, the vehicle must possess a drive capable of achieving a drive performance of at least 1. For more details on wind-powered or animal-powered vehicles, see <a href="#non-powered-vehicles">Non-Powered Vehicles</a> in the <a href="#special-rules">Special Rules</a> section of this chapter.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-power-plant-types">
+			<caption>Table: Vehicle Power Plant Types</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Power Plant Type</th>
+					<th>TL</th>
+					<th>Space Mod</th>
+					<th>Price Mod</th>
+					<th>Fuel</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>External Combustion</th>
+				<td>3</td>
+				<td>x15</td>
+				<td>x0.20</td>
+				<td>Coal or Wood</td>
+			</tr>
+			<tr>
+				<th>Internal Combustion</th>
+				<td>5</td>
+				<td>x6</td>
+				<td>x0.05</td>
+				<td>Hydrocarbons</td>
+			</tr>
+			<tr>
+				<th>Fission</th>
+				<td>6</td>
+				<td>x2</td>
+				<td>x2</td>
+				<td>Radioactives</td>
+			</tr>
+			<tr>
+				<th>Fuel Cell (Closed)</th>
+				<td>7</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Hydrogen</td>
+			</tr>
+			<tr>
+				<th>Fuel Cell (Open)</th>
+				<td>7</td>
+				<td>x2</td>
+				<td>x0.25</td>
+				<td>Hydrogen</td>
+			</tr>
+			<tr>
+				<th>Gas Turbine</th>
+				<td>7</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Hydrocarbons</td>
+			</tr>
+			<tr>
+				<th>Early Fusion</th>
+				<td>9</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Hydrogen</td>
+			</tr>
+			<tr>
+				<th>Fusion</th>
+				<td>12</td>
+				<td>x0.75</td>
+				<td>x1</td>
+				<td>Hydrogen</td>
+			</tr>
+			<tr>
+				<th>Advanced Fusion</th>
+				<td>15</td>
+				<td>x0.5</td>
+				<td>x2</td>
+				<td>Hydrogen</td>
+			</tr>
+			<tr>
+				<th>Antimatter</th>
+				<td>17</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Hydrogen</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-propulsion-types">
+			<caption>Table: Vehicle Propulsion Types</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Propulsion Type</th>
+					<th>TL</th>
+					<th>Type</th>
+					<th>Space Mod</th>
+					<th>Price Mod</th>
+					<th>Examples</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Sails, Non-Powered</th>
+				<td>1</td>
+				<td>Thrust</td>
+				<td>x1</td>
+				<td>x0.2</td>
+				<td>Sailing Ship</td>
+			</tr>
+			<tr>
+				<th>Wheels, Non-Powered</th>
+				<td>1</td>
+				<td>Contact</td>
+				<td>x1</td>
+				<td>x0.5</td>
+				<td>Stagecoach</td>
+			</tr>
+			<tr>
+				<th>Rails</th>
+				<td>3</td>
+				<td>Contact</td>
+				<td>x2</td>
+				<td>x1</td>
+				<td>Train</td>
+			</tr>
+			<tr>
+				<th>Screw Propeller</th>
+				<td>3</td>
+				<td>Thrust</td>
+				<td>x1</td>
+				<td>x0.1</td>
+				<td>Motor Boat, Steamship</td>
+			</tr>
+			<tr>
+				<th>Airship</th>
+				<td>4</td>
+				<td>Thrust</td>
+				<td>x1</td>
+				<td>x0.5</td>
+				<td>Dirigible</td>
+			</tr>
+			<tr>
+				<th>Rotor</th>
+				<td>4</td>
+				<td>Thrust</td>
+				<td>x2</td>
+				<td>x0.5</td>
+				<td>Biplane, Helicopter</td>
+			</tr>
+			<tr>
+				<th>Tracks</th>
+				<td>4</td>
+				<td>Contact</td>
+				<td>x1</td>
+				<td>x2</td>
+				<td>Tank</td>
+			</tr>
+			<tr>
+				<th>Wheels</th>
+				<td>4</td>
+				<td>Contact</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Ground Car</td>
+			</tr>
+			<tr>
+				<th>Jet</th>
+				<td>5</td>
+				<td>Thrust</td>
+				<td>x2</td>
+				<td>x2</td>
+				<td>Twin-Engine Jet</td>
+			</tr>
+			<tr>
+				<th>Mole</th>
+				<td>5</td>
+				<td>Contact</td>
+				<td>x2</td>
+				<td>x8</td>
+				<td>Mole</td>
+			</tr>
+			<tr>
+				<th>Air Cushion</th>
+				<td>7</td>
+				<td>Thrust</td>
+				<td>x1</td>
+				<td>x0.5</td>
+				<td>Hovercraft</td>
+			</tr>
+			<tr>
+				<th>Hypersonic</th>
+				<td>8</td>
+				<td>Thrust</td>
+				<td>x1.5</td>
+				<td>x4</td>
+				<td>Passenger Air Liner</td>
+			</tr>
+			<tr>
+				<th>Legs</th>
+				<td>8</td>
+				<td>Contact</td>
+				<td>x2</td>
+				<td>x4</td>
+				<td>Walker</td>
+			</tr>
+			<tr>
+				<th>Grav</th>
+				<td>9</td>
+				<td>Thrust</td>
+				<td>x1</td>
+				<td>x1</td>
+				<td>Air/Raft, Speeder</td>
+			</tr>
+			<tr>
+				<th>Advanced Grav</th>
+				<td>12</td>
+				<td>Thrust</td>
+				<td>x0.75</td>
+				<td>x2</td>
+				<td>Grav Bike</td>
+			</tr>
+			<tr>
+				<th>Extreme Grav</th>
+				<td>15</td>
+				<td>Thrust</td>
+				<td>x0.5</td>
+				<td>x4</td>
+				<td>G/Carrier</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-drive-costs">
+			<caption>Table: Vehicle Drive Costs</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>Drive Code</th>
+					<th colspan="2">Power Plant</th>
+					<th colspan="2">Contact-Based</th>
+					<th colspan="2">Thrust-Based</th>
+				</tr>
+				<tr>
+					<th></th>
+					<th>Spaces</th>
+					<th>Price (Cr)</th>
+					<th>Contact-Based</th>
+					<th>Price (Cr)</th>
+					<th>Thrust-Based</th>
+					<th>Price (Cr)</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>0.11</td>
+				<td>125</td>
+				<td>0.15</td>
+				<td>150</td>
+				<td>0.12</td>
+				<td>6,000</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>0.26</td>
+				<td>300</td>
+				<td>0.4</td>
+				<td>400</td>
+				<td>0.3</td>
+				<td>15,000</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>0.4</td>
+				<td>450</td>
+				<td>0.55</td>
+				<td>550</td>
+				<td>0.5</td>
+				<td>25,000</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>0.4</td>
+				<td>450</td>
+				<td>0.55</td>
+				<td>550</td>
+				<td>0.5</td>
+				<td>25,000</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>1.25</td>
+				<td>1,425</td>
+				<td>1.6</td>
+				<td>1,575</td>
+				<td>1.4</td>
+				<td>70,000</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>1.75</td>
+				<td>1,975</td>
+				<td>2.3</td>
+				<td>2,250</td>
+				<td>2</td>
+				<td>100,000</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>2.25</td>
+				<td>2,550</td>
+				<td>3</td>
+				<td>2,925</td>
+				<td>2.5</td>
+				<td>125,000</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>2.75</td>
+				<td>3,100</td>
+				<td>3.5</td>
+				<td>3,425</td>
+				<td>3</td>
+				<td>150,000</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>3.5</td>
+				<td>3,950</td>
+				<td>4.5</td>
+				<td>4,400</td>
+				<td>4</td>
+				<td>200,000</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>4</td>
+				<td>4,500</td>
+				<td>5.25</td>
+				<td>5,125</td>
+				<td>4.5</td>
+				<td>225,000</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>4.5</td>
+				<td>5,075</td>
+				<td>6</td>
+				<td>5,850</td>
+				<td>5.25</td>
+				<td>262,500</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>5.25</td>
+				<td>5,925</td>
+				<td>7</td>
+				<td>6,825</td>
+				<td>6.25</td>
+				<td>312,500</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>6.75</td>
+				<td>7,600</td>
+				<td>9</td>
+				<td>8,775</td>
+				<td>8</td>
+				<td>400,000</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>7.5</td>
+				<td>8,450</td>
+				<td>10</td>
+				<td>9,750</td>
+				<td>8.5</td>
+				<td>425,000</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>8.5</td>
+				<td>9,575</td>
+				<td>11</td>
+				<td>10,725</td>
+				<td>10</td>
+				<td>500,000</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>9.5</td>
+				<td>10,700</td>
+				<td>13</td>
+				<td>12,675</td>
+				<td>11.5</td>
+				<td>575,000</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>10.5</td>
+				<td>11,825</td>
+				<td>14</td>
+				<td>13,650</td>
+				<td>12</td>
+				<td>600,000</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>12</td>
+				<td>13,500</td>
+				<td>16</td>
+				<td>15,600</td>
+				<td>13.5</td>
+				<td>675,000</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>13.5</td>
+				<td>15,200</td>
+				<td>18</td>
+				<td>17,550</td>
+				<td>16</td>
+				<td>800,000</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>15.5</td>
+				<td>17,450</td>
+				<td>21</td>
+				<td>20,475</td>
+				<td>18</td>
+				<td>900,000</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>18.5</td>
+				<td>20,825</td>
+				<td>25</td>
+				<td>24,375</td>
+				<td>22</td>
+				<td>1,100,000</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>21.5</td>
+				<td>24,200</td>
+				<td>29</td>
+				<td>28,275</td>
+				<td>26</td>
+				<td>1,300,000</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>25.5</td>
+				<td>28,700</td>
+				<td>34</td>
+				<td>33,150</td>
+				<td>30</td>
+				<td>1,500,000</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>31</td>
+				<td>34,875</td>
+				<td>41</td>
+				<td>39,975</td>
+				<td>36</td>
+				<td>1,800,000</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Drive Performance by Chassis Code, Smaller Chassis</caption>
+			<thead class="thead-light">
+				<th>Drive/Chassis</th>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+				<th>7</th>
+				<th>8</th>
+				<th>9</th>
+				<th>A</th>
+				<th>B</th>
+				<th>C</th>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>4</td>
+				<td>1</td>
+				<td>0</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>&mdash;</td>
+				<td>4</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>3</td>
+				<td>2</td>
+				<td>1</td>
+				<td>0</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>5</td>
+				<td>3</td>
+				<td>2</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>4</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>3</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>4</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>5</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>5</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Drive Performance by Chassis Code, Larger Chassis</caption>
+			<thead class="thead-light">
+				<th>Drive/Chassis</th>
+				<th>D</th>
+				<th>E</th>
+				<th>F</th>
+				<th>G</th>
+				<th>H</th>
+				<th>J</th>
+				<th>K</th>
+				<th>L</th>
+				<th>M</th>
+				<th>N</th>
+				<th>P</th>
+				<th>Q</th>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+				<td>3</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>6</td>
+				<td>6</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-base-speed-by-drive-performance">
+			<caption>Table: Vehicle Base Speed by Drive Performance</caption>
+			<thead class="thead-light">
+				<th>Propulsion Type</th>
+				<th>TL</th>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+			</thead>
+			<tr>
+				<th>Rails</th>
+				<td>3</td>
+				<td>40</td>
+				<td>80</td>
+				<td>120</td>
+				<td>160</td>
+				<td>200</td>
+				<td>240</td>
+			</tr>
+			<tr>
+				<th>Screw Propeller</th>
+				<td>3</td>
+				<td>20</td>
+				<td>40</td>
+				<td>60</td>
+				<td>80</td>
+				<td>100</td>
+				<td>120</td>
+			</tr>
+			<tr>
+				<th>Airship</th>
+				<td>4</td>
+				<td>30</td>
+				<td>60</td>
+				<td>90</td>
+				<td>120</td>
+				<td>150</td>
+				<td>180</td>
+			</tr>
+			<tr>
+				<th>Rotor (Horizontally Mounted)</th>
+				<td>4</td>
+				<td>100</td>
+				<td>200</td>
+				<td>300</td>
+				<td>400</td>
+				<td>500</td>
+				<td>600</td>
+			</tr>
+			<tr>
+				<th>Rotor (Vertically Mounted)</th>
+				<td>4</td>
+				<td>50</td>
+				<td>100</td>
+				<td>150</td>
+				<td>200</td>
+				<td>250</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<th>Tracks</th>
+				<td>4</td>
+				<td>25</td>
+				<td>50</td>
+				<td>75</td>
+				<td>100</td>
+				<td>125</td>
+				<td>150</td>
+			</tr>
+			<tr>
+				<th>Wheels</th>
+				<td>4</td>
+				<td>50</td>
+				<td>100</td>
+				<td>150</td>
+				<td>200</td>
+				<td>250</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<th>Jet</th>
+				<td>5</td>
+				<td>150</td>
+				<td>300</td>
+				<td>450</td>
+				<td>600</td>
+				<td>750</td>
+				<td>900</td>
+			</tr>
+			<tr>
+				<th>Mole (*measured in meters/hour)</th>
+				<td>5</td>
+				<td>50*</td>
+				<td>100*</td>
+				<td>150*</td>
+				<td>200*</td>
+				<td>250*</td>
+				<td>300*</td>
+			</tr>
+			<tr>
+				<th>Air Cushion</th>
+				<td>7</td>
+				<td>50</td>
+				<td>100</td>
+				<td>150</td>
+				<td>200</td>
+				<td>250</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<th>Hypersonic</th>
+				<td>8</td>
+				<td>300</td>
+				<td>600</td>
+				<td>900</td>
+				<td>1200</td>
+				<td>1500</td>
+				<td>1800</td>
+			</tr>
+			<tr>
+				<th>Legs</th>
+				<td>8</td>
+				<td>50</td>
+				<td>100</td>
+				<td>150</td>
+				<td>200</td>
+				<td>250</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<th>Grav</th>
+				<td>9</td>
+				<td>100</td>
+				<td>200</td>
+				<td>300</td>
+				<td>400</td>
+				<td>500</td>
+				<td>600</td>
+			</tr>
+			<tr>
+				<th>Advanced Grav</th>
+				<td>12</td>
+				<td>200</td>
+				<td>400</td>
+				<td>600</td>
+				<td>800</td>
+				<td>1000</td>
+				<td>1200</td>
+			</tr>
+			<tr>
+				<th>Extreme Grav</th>
+				<td>15</td>
+				<td>400</td>
+				<td>800</td>
+				<td>1200</td>
+				<td>1600</td>
+				<td>2000</td>
+				<td>2400</td>
+			</tr>
+		</table>
+
+		<h2 id="vehicle-fuel">Vehicle Fuel</h2>
+		<p>
+			Every vehicle carries fuel, unless it derives its power from an external source. All fuel calculations are calculated based on the power plant’s Drive Code and Power Plant Type, as well as the expected period of operation without refueling. The power plant fuel requirements for early fusion engines are outlined in the <a href="#power-plant-fuel-requirements">Vehicle Power Plant Fuel Requirements</a> table. Fuel consumption for other power plant types is detailed in the <a href="#vehicle-fuel-consumption-by-power-plant">Vehicle Fuel Consumption by Power Plant Type</a> table.
+		</p>
+		<p>
+			The amount of fuel required by the power plant depends on the volume of the power plant itself, and is calculated as one-third of the power plant tonnage per week. Vehicles are designed to operate for a variety of durations, ranging from a few hours to days or even weeks. For your convenience, the <a href="#power-plant-fuel-requirements">Vehicle Power Plant Fuel Requirements</a> table provides calculated values for the fuel per week, per day and per hour, by Drive Code. For purposes of describing fuel volume in a vehicle’s description, assume that the number of spaces of fuel is equivalent to the kiloliters of volume it occupies. Divide calculated fuel space by 12 to determine fuel volume in tons.
+		</p>
+		<p>
+			<b>Range and Cruising Speed:</b> The amount of fuel a vehicle carries determines its Range at its maximum speed. The cruising speed of a vehicle is assumed to be 75% of the vehicle’s maximum speed and if the vehicle maintains this rate of movement, its Range will increase by 50% due to fuel efficiency.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="power-plant-fuel-requirements">
+			<caption>Table: Power Plant Fuel Requirements</caption>
+			<thead class="thead-light">
+				<th>Drive Code</th>
+				<th>Spaces</th>
+				<th>Fuel/Wk (Spaces)</th>
+				<th>Fuel/Dy (Spaces)</th>
+				<th>Fuel/Hr (Spaces)</th>
+			</thead>
+			<tr>
+				<th>A</th>
+				<td>0.11</td>
+				<td>0.03</td>
+				<td>0.0043</td>
+				<td>0.00018</td>
+			</tr>
+			<tr>
+				<th>B</th>
+				<td>0.26</td>
+				<td>0.09</td>
+				<td>0.012</td>
+				<td>0.00052</td>
+			</tr>
+			<tr>
+				<th>C</th>
+				<td>0.4</td>
+				<td>0.13</td>
+				<td>0.019</td>
+				<td>0.00077</td>
+			</tr>
+			<tr>
+				<th>D</th>
+				<td>0.75</td>
+				<td>0.25</td>
+				<td>0.036</td>
+				<td>0.0015</td>
+			</tr>
+			<tr>
+				<th>E</th>
+				<td>1.25</td>
+				<td>0.41</td>
+				<td>0.059</td>
+				<td>0.0024</td>
+			</tr>
+			<tr>
+				<th>F</th>
+				<td>1.75</td>
+				<td>0.58</td>
+				<td>0.083</td>
+				<td>0.0035</td>
+			</tr>
+			<tr>
+				<th>G</th>
+				<td>2.25</td>
+				<td>0.75</td>
+				<td>0.11</td>
+				<td>0.0047</td>
+			</tr>
+			<tr>
+				<th>H</th>
+				<td>2.75</td>
+				<td>0.91</td>
+				<td>0.13</td>
+				<td>0.0054</td>
+			</tr>
+			<tr>
+				<th>J</th>
+				<td>3.5</td>
+				<td>1.16</td>
+				<td>0.17</td>
+				<td>0.0069</td>
+			</tr>
+			<tr>
+				<th>K</th>
+				<td>4</td>
+				<td>1.33</td>
+				<td>0.19</td>
+				<td>0.0079</td>
+			</tr>
+			<tr>
+				<th>L</th>
+				<td>4.5</td>
+				<td>1.50</td>
+				<td>0.21</td>
+				<td>0.0089</td>
+			</tr>
+			<tr>
+				<th>M</th>
+				<td>5.25</td>
+				<td>1.75</td>
+				<td>0.25</td>
+				<td>0.010</td>
+			</tr>
+			<tr>
+				<th>N</th>
+				<td>6.75</td>
+				<td>2.25</td>
+				<td>0.32</td>
+				<td>0.013</td>
+			</tr>
+			<tr>
+				<th>P</th>
+				<td>7.5</td>
+				<td>2.50</td>
+				<td>0.36</td>
+				<td>0.015</td>
+			</tr>
+			<tr>
+				<th>Q</th>
+				<td>8.5</td>
+				<td>2.83</td>
+				<td>0.40</td>
+				<td>0.017</td>
+			</tr>
+			<tr>
+				<th>R</th>
+				<td>9.5</td>
+				<td>3.16</td>
+				<td>0.45</td>
+				<td>0.019</td>
+			</tr>
+			<tr>
+				<th>S</th>
+				<td>10.5</td>
+				<td>3.50</td>
+				<td>0.50</td>
+				<td>0.021</td>
+			</tr>
+			<tr>
+				<th>T</th>
+				<td>12</td>
+				<td>4.00</td>
+				<td>0.57</td>
+				<td>0.024</td>
+			</tr>
+			<tr>
+				<th>U</th>
+				<td>13.5</td>
+				<td>4.50</td>
+				<td>0.64</td>
+				<td>0.027</td>
+			</tr>
+			<tr>
+				<th>V</th>
+				<td>15.5</td>
+				<td>5.16</td>
+				<td>0.73</td>
+				<td>0.031</td>
+			</tr>
+			<tr>
+				<th>W</th>
+				<td>18.5</td>
+				<td>6.16</td>
+				<td>0.88</td>
+				<td>0.037</td>
+			</tr>
+			<tr>
+				<th>X</th>
+				<td>21.5</td>
+				<td>7.16</td>
+				<td>1.02</td>
+				<td>0.043</td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>25.5</td>
+				<td>8.50</td>
+				<td>1.21</td>
+				<td>0.051</td>
+			</tr>
+			<tr>
+				<th>Z</th>
+				<td>31</td>
+				<td>10.33</td>
+				<td>1.48</td>
+				<td>0.061</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-fuel-consumption-by-power-plant">
+			<caption>Table: Vehicle Fuel Consumption by Power Plant Type</caption>
+			<thead class="thead-light">
+				<th>Power Plant Type</th>
+				<th>TL</th>
+				<th>Fuel Mod</th>
+				<th>Price/Space (Cr)</th>
+				<th>Notes</th>
+			</thead>
+			<tr>
+				<th>External Combustion</th>
+				<td>3</td>
+				<td>x9 (wood) or x5 (coal)</td>
+				<td>540</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Internal Combustion</th>
+				<td>5</td>
+				<td>x3</td>
+				<td>830</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Fission</th>
+				<td>6</td>
+				<td>x0.04</td>
+				<td>8,300</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Fuel Cell (Closed)</th>
+				<td>7</td>
+				<td>x20</td>
+				<td>40</td>
+				<td>Does not require an external source of oxygen</td>
+			</tr>
+			<tr>
+				<th>Fuel Cell (Open)</th>
+				<td>7</td>
+				<td>x2</td>
+				<td>40</td>
+				<td>Requires an external source of oxygen</td>
+			</tr>
+			<tr>
+				<th>Gas Turbine</th>
+				<td>7</td>
+				<td>x3</td>
+				<td>830</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Early Fusion</th>
+				<td>9</td>
+				<td>x1</td>
+				<td>40</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Fusion</th>
+				<td>12</td>
+				<td>x0.75</td>
+				<td>40</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Advanced Fusion</th>
+				<td>15</td>
+				<td>x0.5</td>
+				<td>40</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Antimatter</th>
+				<td>17</td>
+				<td>x0</td>
+				<td>Special</td>
+				<td>Must be refueled once a month, at a cost of Cr40 per Space of Antimatter power plant.</td>
+			</tr>
+		</table>
+
+		<h2 id="vehicle-drive-options">Vehicle Drive Options</h2>
+		<p>
+			The following options are available as modifications on Vehicle Drives.
+		</p>
+		<dl>
+			<dt>Additional Drive Systems</dt>
+			<dd>A secondary drive system can be installed in a vehicle by purchasing a second propulsion drive. The secondary drive system’s performance is limited to one less than that of the primary drive system. The vehicle’s Agility suffers a–1 penalty due to design accommodations required to support the additional drive system.</dd>
+			<dt>Decreased Agility</dt>
+			<dd>Vehicles can be built with lowered Agility, normally done for reasons of cost. Each reduction of –1 Agility reduces the final price of the vehicle by 25% of its chassis price. The maximum decrease to a vehicle’s Agility is -2.</dd>
+			<dt>Decreased Fuel Efficiency</dt>
+			<dd>Vehicles can be built with decreased fuel efficiency, relying on cheaper parts or less efficient engines to cut costs. Fuel inefficient vehicles multiply the Fuel Mod on the Vehicle Fuel Consumption by Power Plant Type by 1.25 (increasing the fuel consumed by 25%). This reduces the final price of the vehicle by 10% of its chassis price.</dd>
+			<dt>Extra Leg(s)</dt>
+			<dd>Walkers are typically assumed to have two legs. Additional legs can also be added to improve mobility in rough and uneven terrain. Each additional legs costs 25% of the vehicle’s Contact-Based Drive Price and takes up an additional 5% of the vehicle’s Contact-Based Drive Space. Every pair of additional legs reduces any terrain-based maneuver penalties by 1. This cannot be used to provide a bonus, only to negate a penalty. In addition, any walker with four or more legs gains a DM+1 on attack rolls made with the vehicle’s weapons.</dd>
+			<dt>Extra Pair of Wheels</dt>
+			<dd>Wheeled vehicles are typically assumed to have four wheels (except for small vehicles of 0.5 tons or less in size, which may have two wheels at the designer’s discretion.) Additional wheels can be added to improve cross-country mobility. Each additional pair of wheels costs 25% of the vehicle’s Contact-Based Drive Price, takes up 25% of the vehicle’s Contact-Based Drive Space, and reduces any terrain-based Agility penalties by 1. This cannot be used to provide a bonus, only to negate a penalty.</dd>
+			<dt>Increased Agility</dt>
+			<dd>Each +1 to Agility costs 50% of the chassis price. The maximum increase to a vehicle’s Agility is +3.</dd>
+			<dt>Increased Fuel Efficiency</dt>
+			<dd>Vehicles can be built with increased fuel efficiency. Fuel efficient vehicles multiply the Fuel Mod on the Vehicle Fuel Consumption by Power Plant Type by 0.9 (reducing the fuel consumed by 10%). This costs 20% of the chassis price.</dd>
+			<dt>Jump Jets</dt>
+			<dd>Any ground vehicle or hovercraft can be built with Jump Jets. These vehicles use jump jets primarily for crossing obstacles, but jump jets can also be used to allow the vehicle to fly, albeit inefficiently and no higher than 100 meters off the surface. To determine the size and cost of the Jump Jets unit, select a Thrust-based Drive that provides a minimum Drive Performance of 1 from the <a href="#vehicle-drive-costs">Vehicle Drive Costs</a> table, and multiply both Spaces and Price by 0.75. When flying through the use of jump jets, the vehicles moves at one-quarter of the Base Speed for the Jump Jets unit, and consumes fuel five times faster than normal</dd>
+			<dt>Off-Road Capability</dt>
+			<dd>Any ground vehicle can be purposefully designed for off-road use. This modification costs 50% of the vehicle’s Contact-Based Drive Price, and the vehicle’s Base Speed is lowered by 10%. A vehicle that is off-road capable does not suffer the –2 DM to Agility for moving off-road, and its Speed is not reduced. In addition, it can cross rough terrain with a –2 DM to Agility.</dd>
+			<dt>Tilt Rotors/Jets</dt>
+			<dd>Aircraft equipped with tilt rotors gain the ability to takeoff vertically and hover like a helicopter. Once the rotors or jets rotate forward, the aircraft flies normally. Adding this component triples the Price of the Thrust-based drive.</dd>
+		</dl>
+
+		<h2 id="vehicle-agility">Vehicle Agility</h2>
+		<p>
+			Some vehicles are easier to drive than others. A vehicle’s Agility rating reflects how easy the vehicle is to drive, and is expressed as a DM to the pilot’s skill check. A vehicle’s base Agility is determined by a number of factors, including the size of the vehicle’s chassis and its primary propulsion type. To determine a vehicle’s Agility rating, consult the Vehicle Agility Modifiers table, and sum up all appropriate modifiers.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-agility-modifiers">
+			<caption>Table: Vehicle Agility Modifiers</caption>
+			<thead class="thead-light">
+				<th>Agility Factor</th>
+				<th>Modifier</th>
+			</thead>
+			<tr>
+				<th>Vehicle Type</th>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Airplane</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Airship</th>
+				<td>-4</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Grav Vehicle</th>
+				<td>+0</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Helicopter</th>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Hovercraft</th>
+				<td>+0</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Hypersonic</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Jet</th>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Mole</th>
+				<td>-4</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Motorboat</th>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Ocean Ship</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Sailing Ship</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Submarine</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Tracked Ground Vehicle</th>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Train</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Walker</th>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Wheeled Ground Vehicle</th>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<th>Size and Power Factors</th>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Animal-Powered</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Wind-Powered</th>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Small (2- tons)</th>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Large (10+ tons)</th>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Huge (20+ tons)</th>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<th>&nbsp;Gargantuan (100+ tons)</th>
+				<td>-3</td>
+			</tr>
+		</table>
+
+		<h2 id="vehicle-controls">Vehicle Controls</h2>
+		<p>
+			Unlike starships, vehicles do not have bridges. Instead, vehicles require a control system to allow crewmembers to control the vehicle. More advanced systems can be installed. Unmanned vehicles use drone controller systems to allow for remote operation of the vehicle.
+		</p>
+		<dl>
+			<dt>Primitive Controls (TL 2)</dt>
+			<dd>Primitive controls reflect the crudest of methods used to direct the motion of a vehicle.</dd>
+			<dt>Basic Controls (TL 4)</dt>
+			<dd>This is the default control set-up, usually some form of basic steering mechanism and a throttle for controlling speed.</dd>
+			<dt>Advanced Controls (TL 8)</dt>
+			<dd>This is usually advanced drive-by-wire systems with heads-up displays.</dd>
+			<dt>Exo-skeleton Linkage (TL 10)</dt>
+			<dd>The exo-link is a system for translating body movements into vehicle actions. No additional special equipment or cybernetic modifications are required.</dd>
+			<dt>Neural Link (TL 12)</dt>
+			<dd>The neural link is a true mind-machine linkage and allows an operator to control the vehicle with their mind alone. No additional special equipment or cybernetic modifications are required.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-control-systems">
+			<caption>Table: Vehicle Control Systems</caption>
+			<thead class="thead-light">
+				<th>Interface </th>
+				<th>TL </th>
+				<th>Spaces </th>
+				<th>Price (Cr)</th>
+				<th>Agility</th>
+				<th>Initiative</th>
+				<th>Notes</th>
+			</thead>
+			<tr>
+				<th>Primitive</th>
+				<td>1</td>
+				<td>0.5</td>
+				<td>-20% Chassis price</td>
+				<td>-1</td>
+				<td>0</td>
+				<td>DM-2 at speeds over 50 kph.</td>
+			</tr>
+			<tr>
+				<th>Basic</th>
+				<td>4</td>
+				<td>1</td>
+				<td>&mdash;</td>
+				<td>0</td>
+				<td>0</td>
+				<td>Included in Chassis price.</td>
+			</tr>
+			<tr>
+				<th>Advanced</th>
+				<td>8</td>
+				<td>2</td>
+				<td>Cr10,000</td>
+				<td>+1</td>
+				<td>0</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Exo-Skeleton Linkage</th>
+				<td>10</td>
+				<td>3</td>
+				<td>Cr100,000</td>
+				<td>+1</td>
+				<td>+1</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Neural-linked</th>
+				<td>12</td>
+				<td>4</td>
+				<td>Cr200,000</td>
+				<td>+2</td>
+				<td>+2</td>
+				<td></td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-drone-controllers-by-interface">
+			<caption>Table: Vehicle Drone Controllers, By Interface</caption>
+			<thead class="thead-light">
+				<th>Interface</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Control DM</th>
+				<th>Range</th>
+			</thead>
+			<tr>
+				<th>Primitive</th>
+				<td>5</td>
+				<td>0.5</td>
+				<td>Cr10,000</td>
+				<td>-3</td>
+				<td>Long</td>
+			</tr>
+			<tr>
+				<th>Basic</th>
+				<td>7</td>
+				<td>1</td>
+				<td>Cr50,000</td>
+				<td>-2</td>
+				<td>Very Long</td>
+			</tr>
+			<tr>
+				<th>Advanced</th>
+				<td>9</td>
+				<td>2</td>
+				<td>Cr100,000</td>
+				<td>-1</td>
+				<td>Distant</td>
+			</tr>
+			<tr>
+				<th>Exo-Skeleton Linkage</th>
+				<td>11</td>
+				<td>3</td>
+				<td>Cr200,000</td>
+				<td>0</td>
+				<td>Very Distant</td>
+			</tr>
+			<tr>
+				<th>Neural-linked</th>
+				<td>13</td>
+				<td>4</td>
+				<td>Cr500,000</td>
+				<td>+1</td>
+				<td>Regional</td>
+			</tr>
+		</table>
+
+		<h3 id="robot-brains">Robot Brains</h3>
+		<p>
+			Robot Brains can be added to any vehicle with Advanced Controls or better.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Robot Brains</caption>
+			<thead class="thead-light">
+				<th>CPU</th>
+				<th>Spaces</th>
+				<th>TL</th>
+				<th>Computer Equivalent</th>
+				<th>Max Skill Level</th>
+				<th>Price</th>
+			</thead>
+			<tr>
+				<th>Linear</th>
+				<td>3</td>
+				<td>8</td>
+				<td>Model 1</td>
+				<td>1</td>
+				<td>Cr22,500</td>
+			</tr>
+			<tr>
+				<th>Parallel</th>
+				<td>2</td>
+				<td>10</td>
+				<td>Model 2</td>
+				<td>2</td>
+				<td>Cr40,000</td>
+			</tr>
+			<tr>
+				<th>Synaptic</th>
+				<td>1</td>
+				<td>12</td>
+				<td>Model 3</td>
+				<td>3</td>
+				<td>Cr90,000</td>
+			</tr>
+		</table>
+
+		<h3 id="cyborg-controls">Cyborg Controls</h3>
+		<p>
+			The use of human (or sometimes animal) brains to control a vehicle is possible at TL12 and higher. The organic brain and its support systems take up one Space in the vehicle, and require Neural-linked Controls. The use of an organic core grants a +1 DM to all skill checks performed by the cyborg vehicle, in addition to the benefits of the neural link. An organic brain costs Cr250,000 and otherwise operates as an independent entity. It includes basic life support for the organic components for a period of one month.
+		</p>
+		<dl>
+			<dt>Organic Core Extended Life Support</dt>
+			<dd>An Organic Core Extended Life Support provides a year’s worth of nutrients and filtration for the organic brain and its biological support systems. It is available at TL 13, takes up 5 Spaces, and costs Cr250,000.</dd>
+		</dl>
+
+		<h3 id="vehicle-control-options">Vehicle Control Options</h3>
+		<p>
+			The following option is available as a modification on Vehicle Controls.
+		</p>
+		<dl>
+			<dt>Autopilot</dt>
+			<dd>Autopilots are available for aircraft and sea vessels starting at TL 5 and ground vehicles at TL 9. Autopilot systems are at skill level 0 at their Tech Level of introduction and increase their skill level by 1 for every two Tech Levels thereafter, to a maximum of 3. Autopilots cost Cr2,000 + Cr5,000 per skill level.</dd>
+		</dl>
+
+		<h2 id="vehicle-communication-systems">Vehicle Communication Systems</h2>
+		<p>
+			Installing a communication system allows the crew to interact with others. The following systems are assumed to use radio for communications. Alternate approaches to communication are covered in the <a href="#alternative-communicator-types">Alternative Communicator Types</a> table. Vehicle communication systems are optional, but often highly recommended, particularly for military vehicles.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicle Communication Systems</caption>
+			<thead class="thead-light">
+				<th>Communication System</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Range</th>
+			</thead>
+			<tr>
+				<th>Class I</th>
+				<td>5</td>
+				<td>0.01</td>
+				<td>Cr500</td>
+				<td>Distant (5 km)</td>
+			</tr>
+			<tr>
+				<th>Class II</th>
+				<td>5</td>
+				<td>0.02</td>
+				<td>Cr1,000</td>
+				<td>Very Distant (50 km)</td>
+			</tr>
+			<tr>
+				<th>Class III</th>
+				<td>6</td>
+				<td>0.05</td>
+				<td>Cr2,000</td>
+				<td>Regional (500 km)</td>
+			</tr>
+			<tr>
+				<th>Class IV</th>
+				<td>8</td>
+				<td>0.10</td>
+				<td>Cr4,000</td>
+				<td>Continental (5000 km)</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="alternative-communicator-types">
+			<caption>Table: Alternative Communicator Types</caption>
+			<thead class="thead-light">
+				<th>Type</th>
+				<th>TL</th>
+				<th>Space</th>
+				<th>Mod Price</th>
+				<th>Mod Notes</th>
+			</thead>
+			<tr>
+				<th>Laser</th>
+				<td>8</td>
+				<td>x2</td>
+				<td>x3</td>
+				<td>Requires clear line of sight between communicators</td>
+			</tr>
+			<tr>
+				<th>Maser</th>
+				<td>10</td>
+				<td>x4</td>
+				<td>x6</td>
+				<td>Works like lasers, but can cut through smoke and aerosols</td>
+			</tr>
+			<tr>
+				<th>Meson</th>
+				<td>11</td>
+				<td>x10</td>
+				<td>x50</td>
+				<td>Cannot be jammed or blocked, but cannot be used while moving</td>
+			</tr>
+		</table>
+
+		<h2 id="vehicle-sensors">Vehicle Sensors</h2>
+		<p>
+			Vehicle sensors allow the crew to identify, track and jam other vehicles. These sensor systems operate similarly to those installed on a starship or small craft. The type of sensor package installed can impose a DM on Comms skill checks when using the system to perform sensor-related tasks. Vehicle sensor systems are optional, but often highly recommended, particularly for military vehicles.
+		</p>
+		<dl>
+			<dt>Underwater Sensors</dt>
+			<dd>Sensor packages intended for use underwater must be purchased separately. Surface sensors cannot be used underwater, and vice versa. Underwater sensors cost the same as standard vehicle sensors, but require an additional 12 Spaces, and the Max Range drops by one category, to a minimum of Very Long (500m).</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="standard-vehicle-sensors">
+			<caption>Table: Standard Vehicle Sensors</caption>
+			<thead class="thead-light">
+				<th>Sensors</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Comms DM</th>
+				<th>Max Range</th>
+				<th>Includes</th>
+			</thead>
+			<tr>
+				<th>Standard</th>
+				<td>8</td>
+				<td>3</td>
+				<td>Cr5,000</td>
+				<td>-4</td>
+				<td>Very Long (500 km)</td>
+				<td>Radar, Lidar</td>
+			</tr>
+			<tr>
+				<th>Basic Civilian</th>
+				<td>9</td>
+				<td>6</td>
+				<td>Cr10,000</td>
+				<td>-2</td>
+				<td>Distant (5 km)</td>
+				<td>Radar, Lidar</td>
+			</tr>
+			<tr>
+				<th>Basic Military</th>
+				<td>10</td>
+				<td>12</td>
+				<td>Cr20,000</td>
+				<td>+0</td>
+				<td>Very Distant (50 km)</td>
+				<td>Radar, Lidar, Jammers</td>
+			</tr>
+			<tr>
+				<th>Advanced</th>
+				<td>11</td>
+				<td>18</td>
+				<td>Cr50,000</td>
+				<td>+1</td>
+				<td>Regional (500 km)</td>
+				<td>Radar, Lidar, Densitometer, Jammers</td>
+			</tr>
+			<tr>
+				<th>Very Advanced</th>
+				<td>12</td>
+				<td>30</td>
+				<td>Cr100,000</td>
+				<td>+2</td>
+				<td>Continental (5000 km)</td>
+				<td>Radar, Lidar, Densitometer, Jammers, Neural Activity Sensor</td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Radar/Lidar</dt>
+			<dd>detects physical objects. It can be active or passive. If a ship is using active sensors, it is easier to detect (+2 DM to Comms checks) but detects more about its surroundings.</dd>
+			<dt>Jammers</dt>
+			<dd>can jam or counter-jam radio communications and sensor locks.</dd>
+			<dt>Densitometers</dt>
+			<dd>can determine the internal structure and makeup of an object.</dd>
+			<dt>Neural Activity Sensor</dt>
+			<dd>detects neural activity and intelligence.</dd>
+		</dl>
+
+		<h2 id="vehicle-computer">Vehicle Computer</h2>
+		<p>
+			The vehicle computer is identified by its model number; the <a href="#vehicle-computer-models">Vehicle Computer Models</a> table indicates details of price, rating, and tech level available. The Model number is the computer rating, which determines the power of a computer. Rating measures the complexity of the programs a computer can run. (Storage space is effectively unlimited at TL 9 and above.) Programs are rated by the computer rating they require. A system can run a number of programs up to its rating, minimum of one (for Model 0 computers). Vehicle computers are optional, but often highly recommended at higher tech levels.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-computer-models">
+			<caption>Table: Vehicle Computer Models</caption>
+			<thead class="thead-light">
+				<th>Computer</th>
+				<th>TL</th>
+				<th>Space</th>
+				<th>Price (Cr)</th>
+			</thead>
+			<tr>
+				<th>Model 0</th>
+				<td>7</td>
+				<td>0.02</td>
+				<td>Cr100</td>
+			</tr>
+			<tr>
+				<th>Model 1</th>
+				<td>8</td>
+				<td>0.01</td>
+				<td>Cr500</td>
+			</tr>
+			<tr>
+				<th>Model 2</th>
+				<td>10</td>
+				<td>0</td>
+				<td>Cr1,000</td>
+			</tr>
+			<tr>
+				<th>Model 3</th>
+				<td>12</td>
+				<td>0</td>
+				<td>Cr2,000</td>
+			</tr>
+			<tr>
+				<th>Model 4</th>
+				<td>13</td>
+				<td>0</td>
+				<td>Cr3,000</td>
+			</tr>
+			<tr>
+				<th>Model 5</th>
+				<td>14</td>
+				<td>0</td>
+				<td>Cr10,000</td>
+			</tr>
+		</table>
+
+		<h3 id="vehicle-computer-options">Vehicle Computer Options</h3>
+		<p>
+			The following option is available for vehicle computers.
+		</p>
+		<dl>
+			<dt>Hardened Systems (fib)</dt>
+			<dd>A computer and its connections can be hardened against attack by electromagnetic pulse weapons. A hardened system is immune to EMP, but costs 50% more.</dd>
+		</dl>
+
+		<h2 id="vehicle-crew-and-passengers">Vehicle Crew and Passengers</h2>
+		<p>
+			All vehicles require a crew to operate and maintain the vehicle. For civilian vehicles, that is typically one operator or driver. Military vehicles also require one gunner per weapon and one commander if three or more crew members are required. Every vehicle requires at least a basic cockpit or a basic control cabin to interface with the vehicle’s control, communication and sensor systems.
+		</p>
+		<p>
+			For vehicles intended for only a few waking hours, short-term accommodations are suggested for crew and passengers. If a vehicle is intended for use over several days or longer, long-term accommodations would be a better design implementation.
+		</p>
+		<dl>
+			<dt>Sailing Vessels</dt>
+			<dd>Sailing vessels calculate vehicle crew differently. Subtract the Tech Level of the sailboat from 10 (minimum 1) to determine the number of crew needed to work the sails for every four tons of sailing vessel or portion thereof. Sailing vessels of two tons or less require half this amount.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="vehicle-accommodations">
+			<caption>Table: Vehicle Accommodations</caption>
+			<thead class="thead-light">
+				<th>Accommodation</th>
+				<th>Duration</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Notes</th>
+			</thead>
+			<tr>
+				<th>Bunk, Military</th>
+				<td>Long</td>
+				<td>24</td>
+				<td>Cr100,000</td>
+				<td>Supports one non-crew cramped (military only)</td>
+			</tr>
+			<tr>
+				<th>Control Cabin, Basic</th>
+				<td>Long</td>
+				<td>36</td>
+				<td>Cr10,000</td>
+				<td>Supports one crew</td>
+			</tr>
+			<tr>
+				<th>Control Cabin, Extended</th>
+				<td>Long</td>
+				<td>18</td>
+				<td>Cr5,000</td>
+				<td>Supports one additional person</td>
+			</tr>
+			<tr>
+				<th>Control Cabin, Standard</th>
+				<td>Long</td>
+				<td>72</td>
+				<td>Cr20,000</td>
+				<td>Supports two crew plus one additional person</td>
+			</tr>
+			<tr>
+				<th>Low Berth</th>
+				<td>Long</td>
+				<td>6</td>
+				<td>Cr50,000</td>
+				<td>Holds one person</td>
+			</tr>
+			<tr>
+				<th>Stateroom, Economy</th>
+				<td>Long</td>
+				<td>24</td>
+				<td>Cr250,000</td>
+				<td>Supports one person cramped</td>
+			</tr>
+			<tr>
+				<th>Stateroom, Elite</th>
+				<td>Long</td>
+				<td>72</td>
+				<td>Cr750,000</td>
+				<td>Supports two people comfortably</td>
+			</tr>
+			<tr>
+				<th>Stateroom, Standard</th>
+				<td>Long</td>
+				<td>48</td>
+				<td>Cr500,000</td>
+				<td>Supports two people cramped, one comfortably</td>
+			</tr>
+			<tr>
+				<th>Cockpit, Basic</th>
+				<td>Short</td>
+				<td>2</td>
+				<td>Cr1,000</td>
+				<td>Supports one crew</td>
+			</tr>
+			<tr>
+				<th>Cockpit, Extended</th>
+				<td>Short</td>
+				<td>4</td>
+				<td>Cr2,000</td>
+				<td>Supports two crew</td>
+			</tr>
+			<tr>
+				<th>Seat, Cramped</th>
+				<td>Short</td>
+				<td>4</td>
+				<td>Cr2,000</td>
+				<td>Supports three people cramped</td>
+			</tr>
+			<tr>
+				<th>Seat, Standard</th>
+				<td>Short</td>
+				<td>2</td>
+				<td>Cr1,000</td>
+				<td>Supports one person</td>
+			</tr>
+		</table>
+
+		<h3 id="life-support">Life Support</h3>
+		<p>
+			Some vehicles provide differing levels of life support. Basic life support is free for submersibles and vehicles with Hostile Environmental Protection.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Life Support</caption>
+			<thead class="thead-light">
+				<th>Life Support Type</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price/Space (Cr) </th>
+				<th>Notes</th>
+			</thead>
+			<tr>
+				<th>Basic</th>
+				<td>4</td>
+				<td>3 per 20 people</td>
+				<td>Cr3,500</td>
+				<td>Good for 10 days</td>
+			</tr>
+			<tr>
+				<th>Extended</th>
+				<td>7</td>
+				<td>3 per 5 people</td>
+				<td>Cr17,500</td>
+				<td>Good for 90 days</td>
+			</tr>
+		</table>
+
+		<h2 id="additional-vehicle-components">Additional Vehicle Components</h2>
+		<p>
+			The following are examples of additional vehicle components that might prove useful for certain vehicle designs.
+		</p>
+		<dl>
+			<dt>Airlock (TL 6)</dt>
+			<dd>Airlocks take up 12 Spaces each and cost Cr200,000. If a craft does not have an airlock, then the crew cannot leave the craft without opening the vehicle up to the outside environment, which can be dangerous in a vacuum or underwater.</dd>
+			<dt>Autodoc (TL 12)</dt>
+			<dd>The Autodoc is a whole-body automated treatment system that is detailed in the <a href="#robots-and-drones">Cepheus Engine core rules</a>. The Autodoc takes up 6 Spaces and costs Cr40,000.</dd>
+			<dt>Cargo Arm (TL 8)</dt>
+			<dd>This is a heavy-duty manipulator arm used for lifting cargo in confined spaces. Cargo Arms have a base Strength score of 30 and a Dexterity of 0, occupy 1 space and cost Cr50,000.</dd>
+			<dt>Cargo Hold (TL 1)</dt>
+			<dd>The design plan must indicate cargo capacity. There is no price but cargo carried may not exceed cargo capacity. Any Spaces left over after all systems have been installed may be allocated to cargo space. Divide the remaining Spaces by 12 to determine the volume of the cargo hold in displacement tons.</dd>
+			<dt>Cargo Trailer (TL 1)</dt>
+			<dd>
+				<p>
+					Ground vehicles can be equipped to tow a cargo trailer. Vehicles pulling a cargo trailer suffer a -1 penalty to Agility; vehicles of two displacement tons or smaller suffer an additional -1 penalty to Agility. The <a href="#cargo-trailer-by-size">Cargo Trailer by Size</a> table describes the price and capacity (in Spaces) for each trailer type. A vehicle’s Towing Speed is equal to their Base Speed without the trailer attached, multiplied by the ratio of the vehicle’s chassis (in Spaces) divided by the sum of the vehicle’s chassis and the cargo trailer’s capacity (both in Spaces). Towing Speeds are rounded down to the nearest multiple of 10kph.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md" id="cargo-trailer-by-size">
+					<caption>Table: Cargo Trailer by Size</caption>
+					<thead class="thead-light">
+						<th>Trailer Size</th>
+						<th>Price (Cr)</th>
+						<th>Capacity (Spaces)</th>
+						<th>Description</th>
+					</thead>
+					<tr>
+						<th>0.25-Ton</th>
+						<td>1,450</td>
+						<td>3</td>
+						<td>Light</td>
+					</tr>
+					<tr>
+						<th>0.5-Ton</th>
+						<td>1,700</td>
+						<td>6</td>
+						<td>Moving, Standard</td>
+					</tr>
+					<tr>
+						<th>1-Ton</th>
+						<td>2,200</td>
+						<td>12</td>
+						<td>Moving, Large</td>
+					</tr>
+					<tr>
+						<th>2-Ton</th>
+						<td>3,200</td>
+						<td>24</td>
+						<td>Light Duty, Standard</td>
+					</tr>
+					<tr>
+						<th>4-Ton</th>
+						<td>5,700</td>
+						<td>48</td>
+						<td>Light Duty, Large</td>
+					</tr>
+					<tr>
+						<th>8-Ton</th>
+						<td>12,000</td>
+						<td>96</td>
+						<td>Commercial, Standard</td>
+					</tr>
+				</table>
+			</dd>
+			<dt>Crane (TL 4)</dt>
+			<dd>
+				<p>
+					Cranes are machines generally equipped with a hoist rope, wire ropes or chains, and sheaves, that can be used both to lift and lower materials and to move them horizontally.
+				</p>
+				<dl>
+					<dt>Light Crane</dt>
+					<dd>Light Cranes can lift up to 400 kg and can be used as rescue equipment. Light cranes cost Cr2,500 and take up 3 Spaces.</dd>
+					<dt>Medium Crane</dt>
+					<dd>Medium Cranes can lift up to 2,000 kg. They cost Cr40,000, and take up 12 Spaces.</dd>
+					<dt>Heavy Crane</dt>
+					<dd>Heavy Cranes can lift up to 10,000 kg. They cost Cr100,000 and take up 24 Spaces.</dd>
+				</dl>
+			</dd>
+			<dt>Cutting Equipment (TL 5)</dt>
+			<dd>Cutting equipment includes external heavy duty saws, water knives or plasma cutters, depending on Tech Level. The equipment costs Cr10,000 and takes up 15 Spaces.</dd>
+			<dt>Detention Cells (TL 3)</dt>
+			<dd>Found primarily on military and government vessels, a detention cell is used to keep prisoners. A detention cell holds one prisoner in extremely cramped conditions, displaces 12 Spaces and costs Cr125,000.</dd>
+			<dt>Digging Equipment (TL 5)</dt>
+			<dd>Digging equipment includes external digging and scooping equipment. This equipment costs Cr25,000 and takes up 30 Spaces.</dd>
+			<dt>Ejection Seat (TL 5)</dt>
+			<dd>The ejection seat takes up 2 Spaces and is designed to blast the occupant clear of the moving vehicle. At lower Tech Level this means a suitable height to open a parachute but at higher Tech Levels it is merely sufficient to get clear of the vehicle until a grav chute can deploy. An ejection seat costs Cr5,000.</dd>
+			<dt>Emergency Low Berth (TL 12)</dt>
+			<dd>A conventional Low Berth takes several minutes to induce hibernation and lower core temperature. The Emergency Low Berth can do a ‘crash’ induction, plunging a person into deep hibernation in a fraction of the time. It can hold people, takes up 12 Spaces, and costs Cr100,000.</dd>
+			<dt>Entertainment System (TL 5)</dt>
+			<dd>Supporting both audio and visual entertainment, this system takes up no Space, and costs at least Cr200. Players intending to impress may want to spend more. Much more.</dd>
+			<dt>Fire Extinguishers (TL 4)</dt>
+			<dd>Fire Extinguishers are designed to put out fires internal to the vehicle. They take up no Space and cost Cr500. Starting at TL8, worlds with a Law Level of 6 or higher may require that these be installed on every civilian vehicle.</dd>
+			<dt>Floats/Pontoons (TL 3)</dt>
+			<dd>This allows the aircraft the ability to land and take-off from water. This is a removable component and can be added at any time. It costs Cr250 and one Space per 12 Spaces (one displacement ton) of the aircraft’s chassis, reduces Base Speed by 10% and reduces Agility by 1.</dd>
+			<dt>Folding Wings/Rotors (TL 3)</dt>
+			<dd>Aircraft can be designed with folding wings and/or rotors to allow them to be stored more efficiently. It costs Cr600 per 12 Spaces (one displacement ton) of the aircraft’s chassis, and reduces the size of the aircraft by 25% when storing the vessel.</dd>
+			<dt>Fresher (TL 7)</dt>
+			<dd>A Fresher, complete with toilet, sink and shower, takes up 6 Spaces and costs Cr1,500. Freshers are automatically included as part of any stateroom.</dd>
+			<dt>Galley (TL 3)</dt>
+			<dd>A Mini-galley takes up 6 Spaces, serves up to five people and costs Cr1,000. A Full Galley take up 18 Spaces, plus 3 Spaces per 10 people served. It costs Cr2,000 plus Cr500 per person served.</dd>
+			<dt>General Purpose Lab (TL 7)</dt>
+			<dd>A General Purpose Lab provides no bonuses but allows tasks to be performed with no penalty for missing tools/equipment. General Purpose Lab units consume 6 Spaces per researcher using the lab and cost Cr10,000 per lab unit.</dd>
+			<dt>Holding Tank (TL 8)</dt>
+			<dd>Holding tanks can be built to any size, at the price of Cr1,500 per Space. Holding tanks can be designed to carry liquids or gases, which is determined at the time of installation.</dd>
+			<dt>Holo-Suite (TL10)</dt>
+			<dd>This is advanced holographic projection suite. Often used on exploration vehicles as a large display unit, it has other, less wholesome, uses. It takes up 3 Spaces and costs Cr15,000.</dd>
+			<dt>Hot Tub/Pool (TL 6)</dt>
+			<dd>This takes up a minimum of one Space per person capacity and costs Cr3,000 per Space.</dd>
+			<dt>Liquid Cannon (TL 4)</dt>
+			<dd>Liquid Cannons are used for fire suppression, riot control and dispersal of chemicals. A liquid cannon costs Cr2,000, takes up 3 Spaces and requires 3 Spaces per minute’s firing duration of liquid carried. A liquid cannon has a maximum range of Medium.</dd>
+			<dt>Manipulator Arms (TL 5)</dt>
+			<dd>
+				<p>
+					Manipulator Arms are remote appendages with claws or hands. Manipulator arms vary in Strength and Dexterity. Arms have a Strength of 2 and a Dexterity of 1, with a price of Cr10,000. Increasing Strength or Dexterity costs Cr5,000 per point, to the maximum indicated in the table below. Manipulator arms do not take up space in the chassis.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Manipulator Arm Maximums, By Tech Level</caption>
+					<thead class="thead-light">
+						<th>TL</th>
+						<th>Max Str</th>
+						<th>Max Dex</th>
+					</thead>
+					<tr>
+						<th>5</th>
+						<td>6</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<th>8</th>
+						<td>12</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<th>11</th>
+						<td>18</td>
+						<td>12</td>
+					</tr>
+					<tr>
+						<th>14</th>
+						<td>24</td>
+						<td>16</td>
+					</tr>
+			</dd>
+			<dt>Nuclear Damper (TL 12)</dt>
+			<dd>The nuclear damper projects a wave that modifies the strong nuclear force and can thus either prevent nuclear weapons from operating or else detonate them prematurely. They cannot detonate weapons stored in damper boxes, however. It takes up 12 Spaces and costs Cr500,000.</dd>
+			<dt>Operating Theater (TL 5)</dt>
+			<dd>An Operating Theater is a room equipped for use as an emergency medical clinic. Until TL 10, the vehicle must remain stationary in order for the Operating Theatre to be used. After that, the theatre can be built on a stabilized bed that allows it to be used while the vehicle is in motion. An operating theater consumes 12 Spaces plus 9 Spaces per patient. It costs Cr1,500 per Space used. An operating theater can serve as a mobile sickbay or hospital for surgery and medical care, as detailed under Medical Treatment in <a href="personal-combat.html">Chapter 5: Personal Combat</a> in the Cepheus Engine SRD.</dd>
+			<dt>Refrigeration (TL 5)</dt>
+			<dd>Refrigeration units take up one Space for every 10 Spaces that are to be refrigerated. This costs Cr250 per Space. This is typically applied to Cargo Holds or Cargo Trailers, when needed.</dd>
+			<dt>Refueling Station (TL 9)</dt>
+			<dd>The refueling station is designed to turn water into hydrogen fuel, using the sun as a power source. It requires a significant amount of space, and access to both water and sun. At TL 9, it requires one hour per 3 Spaces of the vehicle’s chassis to crack sufficient fuel to completely refuel the vehicle (assuming it uses hydrogen). At TL 12 this is reduced to one hour per 12 Spaces of the vehicle’s chassis. Refueling stations require 12 Spaces plus 1 Space per 50 tons of vessel to be refueled. They cost Cr15,000 per space.</dd>
+			<dt>Research Lab Space (TL 9)</dt>
+			<dd>Lab Space includes analytic equipment, computer workstations and equipment appropriate to the discipline it is focused on, defined during construction. Lab Space grants a skill DM equal to +1, +2 or +3 and take up 3 Spaces per bonus per researcher using it. A +3 DM lab, used by 3 researchers, would take up 27 Spaces. Price is Cr10,000 per 3 Spaces used. Types of lab include: Physics, chemistry, biology, psychology, structures and materials. Other types are possible.</dd>
+			<dt>Survey Sampling Equipment (TL 5)</dt>
+			<dd>
+				<p>
+					This covers several different types of equipment that act to sample atmosphere, ground and any water or other fluids.
+				</p>
+				<dl>
+					<dt>Atmosphere Sampler</dt>
+					<dd>A system of collectors, pipes and filters for atmosphere sampling, including any particulates, taints and organic matter. It takes up 9 Spaces and costs Cr10,000.</dd>
+					<dt>Geology Sampler</dt>
+					<dd>An array of scooping devices for shallow ground testing along with a hollow-core drills capable of drilling down one kilometer. It takes up 45 Spaces and costs Cr100,000. Geology Samplers add a +1 DM to all geology-based checks at TL 10 and a +2 DM at TL 14.</dd>
+					<dt>Hydrology Sampler</dt>
+					<dd>This is a set of liquid sampling equipment, holding tanks and testing equipment. It costs Cr10,000, and takes up 15 Spaces. Hydrology Samplers add a +1 DM to all hydology-based checks at TL 10 and a +2 DM at TL 14.</dd>
+				</dl>
+			</dd>
+			<dt>Wet Bar (TL 2)</dt>
+			<dd>A basic wet bar, usually species-specific. It takes up 1.5 Spaces and costs Cr2,000.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="additional-vehicle-components">
+			<caption>Table: Additional Vehicle Components</caption>
+			<thead class="thead-light">
+				<th>Component</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+			</thead>
+			<tr>
+				<th>Cargo Hold</th>
+				<td>1</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Cargo Trailer</th>
+				<td>1</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Wet Bar</th>
+				<td>2</td>
+				<td>1</td>
+				<td>5 Cr2,000</td>
+			</tr>
+			<tr>
+				<th>Detention Cells</th>
+				<td>3</td>
+				<td>12</td>
+				<td>Cr125,000</td>
+			</tr>
+			<tr>
+				<th>Floats/Pontoons</th>
+				<td>3</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Galley</th>
+				<td>3</td>
+				<td>6</td>
+				<td>Cr1,000</td>
+			</tr>
+			<tr>
+				<th>Galley, Full</th>
+				<td>3</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Crane, Heavy</th>
+				<td>4</td>
+				<td>24</td>
+				<td>Cr100,000</td>
+			</tr>
+			<tr>
+				<th>Crane, Light</th>
+				<td>4</td>
+				<td>3</td>
+				<td>Cr2,500</td>
+			</tr>
+			<tr>
+				<th>Crane, Medium</th>
+				<td>4</td>
+				<td>12</td>
+				<td>Cr40,000</td>
+			</tr>
+			<tr>
+				<th>Fire Extinguishers</th>
+				<td>4</td>
+				<td>0</td>
+				<td>Cr500</td>
+			</tr>
+			<tr>
+				<th>Liquid Cannon</th>
+				<td>4</td>
+				<td>3</td>
+				<td>Cr2,000</td>
+			</tr>
+			<tr>
+				<th>Cutting Equipment</th>
+				<td>5</td>
+				<td>15</td>
+				<td>Cr10,000</td>
+			</tr>
+			<tr>
+				<th>Digging Equipment</th>
+				<td>5</td>
+				<td>30</td>
+				<td>Cr25,000</td>
+			</tr>
+			<tr>
+				<th>Ejection Seat</th>
+				<td>5</td>
+				<td>2</td>
+				<td>Cr5,000</td>
+			</tr>
+			<tr>
+				<th>Entertainment System</th>
+				<td>5</td>
+				<td>0</td>
+				<td>Cr200</td>
+			</tr>
+			<tr>
+				<th>Manipulator Arms</th>
+				<td>5</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Operating Theater</th>
+				<td>5</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Refrigeration</th>
+				<td>5</td>
+				<td>1 per 10 Spaces refrigerated</td>
+				<td>Cr250 per Space</td>
+			</tr>
+			<tr>
+				<th>Survey Sampling Equipment, Atmosphere Sampler</th>
+				<td>5</td>
+				<td>9</td>
+				<td>Cr10,000</td>
+			</tr>
+			<tr>
+				<th>Survey Sampling Equipment, Geology Sampler</th>
+				<td>5</td>
+				<td>45</td>
+				<td>Cr100,000</td>
+			</tr>
+			<tr>
+				<th>Survey Sampling Equipment, Hydrology Sampler</th>
+				<td>5</td>
+				<td>15</td>
+				<td>Cr10,000</td>
+			</tr>
+			<tr>
+				<th>Airlock</th>
+				<td>6</td>
+				<td>12</td>
+				<td>Cr200,000</td>
+			</tr>
+			<tr>
+				<th>Hot Tub/Pool</th>
+				<td>6</td>
+				<td>1 per person</td>
+				<td>Cr3,000 per Space</td>
+			</tr>
+			<tr>
+				<th>Fresher</th>
+				<td>7</td>
+				<td>6</td>
+				<td>Cr1,500</td>
+			</tr>
+			<tr>
+				<th>General Purpose Lab</th>
+				<td>7</td>
+				<td>6</td>
+				<td>Cr10,000</td>
+			</tr>
+			<tr>
+				<th>Cargo Arm</th>
+				<td>8</td>
+				<td>1</td>
+				<td>Cr50,000</td>
+			</tr>
+			<tr>
+				<th>Holding Tank</th>
+				<td>8</td>
+				<td>By size</td>
+				<td>Cr1,500 per Space</td>
+			</tr>
+			<tr>
+				<th>Refueling Station</th>
+				<td>9</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Research Lab Space</th>
+				<td>9</td>
+				<td>See description</td>
+				<td>See description</td>
+			</tr>
+			<tr>
+				<th>Holo-Suite</th>
+				<td>10</td>
+				<td>3</td>
+				<td>Cr15,000</td>
+			</tr>
+			<tr>
+				<th>Autodoc</th>
+				<td>12</td>
+				<td>6</td>
+				<td>Cr40,000</td>
+			</tr>
+			<tr>
+				<th>Emergency Low Berth</th>
+				<td>12</td>
+				<td>12</td>
+				<td>Cr100,000</td>
+			</tr>
+			<tr>
+				<th>Nuclear Damper</th>
+				<td>12</td>
+				<td>12</td>
+				<td>Cr500,000</td>
+			</tr>
+		</table>
+
+		<h2 id="vehicle-armaments">Vehicle Armaments</h2>
+		<p>
+			Military vehicles, as well as civilian vehicles in certain star systems, often carry weapons. Vehicles carry weapons in one of four ways: gun ports, weapon mounts, vehicular turrets, and ordinance bays.
+		</p>
+
+		<h3 id="gun-ports">Gun Ports</h3>
+		<p>
+			Gun ports are mounts for small arms. Gun ports cost Cr250 each, and require no Spaces. Gun Ports are used at Personal Weapon Ranges only, and do not benefit from stabilization or fire control. Gun Ports do not require a vehicle weapon point (see Weapon Mount, below). A gun port allows the gunner to benefit from the vehicle's armor, except when the attacker is adjacent to the gun port itself.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md" id="gun-port-weapons">
+			<caption>Table: Gun Port Weapons</caption>
+			<thead class="thead-light">
+				<th>Weapon</th>
+				<th>TL</th>
+				<th>Price (Cr)</th>
+				<th>Spaces</th>
+				<th>RoF</th>
+				<th>Range</th>
+				<th>Dmg</th>
+				<th>Recoil</th>
+				<th>LL</th>
+			</thead>
+			<tr>
+				<th>Revolver</th>
+				<td>4</td>
+				<td>Cr150</td>
+				<td>0.01</td>
+				<td>1</td>
+				<td>ranged (pistol)</td>
+				<td>2D6</td>
+				<td>Yes</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Auto Pistol</th>
+				<td>5</td>
+				<td>Cr200</td>
+				<td>0.01</td>
+				<td>1</td>
+				<td>ranged (pistol)</td>
+				<td>2D6</td>
+				<td>Yes</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Carbine</th>
+				<td>5</td>
+				<td>Cr200</td>
+				<td>0.04</td>
+				<td>1</td>
+				<td>ranged (shotgun)</td>
+				<td>2D6</td>
+				<td>Yes</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Rifle</th>
+				<td>5</td>
+				<td>Cr200</td>
+				<td>0.05</td>
+				<td>1</td>
+				<td>ranged (rifle)</td>
+				<td>3D6</td>
+				<td>Yes</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Shotgun</th>
+				<td>5</td>
+				<td>Cr150</td>
+				<td>0.05</td>
+				<td>1</td>
+				<td>ranged (shotgun)</td>
+				<td>4D6</td>
+				<td>Yes</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<th>Submachinegun</th>
+				<td>5</td>
+				<td>Cr500</td>
+				<td>0.03</td>
+				<td>0/4</td>
+				<td>ranged (assault wpn)</td>
+				<td>2D6</td>
+				<td>Yes</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>Auto Rifle</th>
+				<td>6</td>
+				<td>Cr1,000</td>
+				<td>0.06</td>
+				<td>1/4</td>
+				<td>ranged (rifle)</td>
+				<td>3D6</td>
+				<td>Yes</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Assault Rifle</th>
+				<td>7</td>
+				<td>Cr300</td>
+				<td>0.04</td>
+				<td>1/4</td>
+				<td>ranged (assault wpn)</td>
+				<td>3D6</td>
+				<td>Yes</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>Body Pistol</th>
+				<td>7</td>
+				<td>Cr500</td>
+				<td>0.01</td>
+				<td>1</td>
+				<td>ranged (pistol)</td>
+				<td>2D6</td>
+				<td>Yes</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>Grenade Launcher</th>
+				<td>7</td>
+				<td>Cr400</td>
+				<td>0.07</td>
+				<td>1</td>
+				<td>ranged (shotgun)</td>
+				<td>By grenade</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rocket Launcher</th>
+				<td>7</td>
+				<td>Cr2,000</td>
+				<td>0.07</td>
+				<td>1</td>
+				<td>ranged (rocket)</td>
+				<td>4D6</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Laser Carbine</th>
+				<td>8</td>
+				<td>Cr2,500</td>
+				<td>0.06</td>
+				<td>1</td>
+				<td>ranged (pistol)</td>
+				<td>4D6</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>RAM Grenade Launcher</th>
+				<td>8</td>
+				<td>Cr800</td>
+				<td>0.07</td>
+				<td>1/3</td>
+				<td>ranged (assault wpn)</td>
+				<td>By grenade</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Snub Pistol</th>
+				<td>8</td>
+				<td>Cr150</td>
+				<td>0.01</td>
+				<td>1</td>
+				<td>ranged (pistol)</td>
+				<td>2D6</td>
+				<td>No</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Accelerator Rifle</th>
+				<td>9</td>
+				<td>Cr900</td>
+				<td>0.03</td>
+				<td>1/3</td>
+				<td>ranged (rifle)</td>
+				<td>3D6</td>
+				<td>No</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Laser Rifle</th>
+				<td>9</td>
+				<td>Cr3,500</td>
+				<td>0.07</td>
+				<td>1</td>
+				<td>ranged (rifle)</td>
+				<td>5D6</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Advanced Combat Rifle</th>
+				<td>10</td>
+				<td>Cr1,000</td>
+				<td>0.04</td>
+				<td>1/4</td>
+				<td>ranged (rifle)</td>
+				<td>3D6</td>
+				<td>Yes</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Armor Rifle, Man Portable (ARMP)</th>
+				<td>10</td>
+				<td>Cr10,000</td>
+				<td>0.18</td>
+				<td>1/4</td>
+				<td>ranged (rocket)</td>
+				<td>10D6</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Gauss Rifle</th>
+				<td>12</td>
+				<td>Cr1,500</td>
+				<td>0.04</td>
+				<td>1/4/10</td>
+				<td>ranged (rifle)</td>
+				<td>4D6</td>
+				<td>No</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Laser Pistol</th>
+				<td>12</td>
+				<td>Cr1,000</td>
+				<td>0.02</td>
+				<td>1</td>
+				<td>ranged (pistol)</td>
+				<td>4D6</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Plasma Gun, Man Portable (PGMP)</th>
+				<td>12</td>
+				<td>Cr20,000</td>
+				<td>0.12</td>
+				<td>1/4</td>
+				<td>ranged (rifle)</td>
+				<td>10D6</td>
+				<td>Yes</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Stagger Laser</th>
+				<td>12</td>
+				<td>Cr7,500</td>
+				<td>0.11</td>
+				<td>1/4</td>
+				<td>ranged (assault wpn)</td>
+				<td>5D6</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Magrail Rifle</th>
+				<td>13</td>
+				<td>Cr2,200</td>
+				<td>0.05</td>
+				<td>1/4</td>
+				<td>ranged (rifle)</td>
+				<td>5D6</td>
+				<td>No</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Fusion Gun, Man Portable (FGMP)</th>
+				<td>14</td>
+				<td>Cr100,000</td>
+				<td>0.14</td>
+				<td>1/4</td>
+				<td>ranged (rifle)</td>
+				<td>16D6</td>
+				<td>Yes</td>
+				<td>2</td>
+			</tr>
+		</table>
+
+		<h3 id="weapon-mounts">Weapon Mounts</h3>
+		<p>
+			A <b>weapon point</b> is a location on a vessel or vehicle designed to carry an external or internal load. A vehicle's chassis or a vessel's hull can support one weapon point per 5 tons, with a minimum of one. For example, a twoton vehicle has one weapon point, while a ten-ton vehicle would have two weapon points, and an 800-ton naval destroyer has 160 weapon points.
+		</p>
+		<p>
+			Weapon mounts come in three varieties: fixed, ring and pintle. A fixed mount is permanently affixed to the chassis, and cannot move or be removed. A pintle mount is effectively a post upon which the weapon is affixed, and the weapon pivots on the point of attachment to aim and fire. A ring mount is effectively a ring of metal that serves as the track upon which the weapon traverses as the weapon is aimed and fired.
+		</p>
+		<p>
+			A weapon mount may be attached to an open weapon point on the vehicle, and a weapon point may only support one weapon mount. Weapon mounts do not offer any sort of fire control. Weapon mounts do not take up any Spaces themselves, nor do they add any extra Spaces to a vehicle. Weapons in a weapon mount still count against the available Spaces in a vehicle.
+		</p>
+		<dl>
+			<dt>Fixed Mount</dt>
+			<dd>weapons cannot move, and so are limited to firing in one direction (normally straight ahead). A fixed mount has no price and must simply be noted at time of construction.</dd>
+			<dt>Gun Shields</dt>
+			<dd>Both pintle and ring mounts can be equipped with gun shields, which provide the gunner with Armor equal to half the tech level of the vehicle rounded down, minimum of one, in the direction the weapon is facing.</dd>
+		</dl>
+		<p>
+			The Weapon Mounts table describes the various weapon mounts and modifications available in the Vehicle Design System. Each column is described as follows:
+		</p>
+		<dl>
+			<dt>TL</dt>
+			<dd>The minimum tech level required to manufacture such an item.</dd>
+			<dt>Price</dt>
+			<dd>Price of this weapon mount in Credits (Cr).</dd>
+			<dt>Max Spaces</dt>
+			<dd>The maximum size of a weapon, in Spaces, that this weapon mount can carry.</dd>
+			<dt>Stabilized</dt>
+			<dd>Indicates if the mount is stabilized and so does not suffer a penalty to fire while moving.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Weapon Mounts</caption>
+			<thead class="thead-light">
+				<th>Mount Type</th>
+				<th>TL</th>
+				<th>Price (Cr)</th>
+				<th>Max Spaces</th>
+				<th>Stabilized</th>
+			</thead>
+			<tr>
+				<th>Fixed</th>
+				<td>1</td>
+				<td>0</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<th>Pintle</th>
+				<td>4</td>
+				<td>500</td>
+				<td>1.5</td>
+				<td>N</td>
+			</tr>
+			<tr>
+				<th>Ring</th>
+				<td>4</td>
+				<td>750</td>
+				<td>1.5</td>
+				<td>N</td>
+			</tr>
+			<tr>
+				<th>Pintle, Powered</th>
+				<td>7</td>
+				<td>1,500</td>
+				<td>3</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th>Ring, Powered</th>
+				<td>7</td>
+				<td>2,150</td>
+				<td>3</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th>Gun Shield</th>
+				<td>&mdash;</td>
+				<td>200 per point of Armor granted</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+		</table>
+
+		<h3 id="vehicle-turrets">Vehicle Turrets</h3>
+		<p>
+			Vehicle turrets come in two varieties: small and large. A vehicle turret takes up one weapon point per 60 Spaces in size, or fraction thereof, of the turret itself. A small turret is only big enough to fit the weapon installed, and is remotely controlled from within the vehicle, while a large turret holds both the installed weapon and its operator. Vehicle turrets can also represent gun pods and other housing for larger weapons on vehicles.
+		</p>
+		<dl>
+			<dt>Coaxial (or Paraxial) Mounts</dt>
+			<dd>Multiple weapons can be mounted in the same turret. All weapons mounted in the same turret have the same firing arc. Such turrets consume an additional weapon point per additional weapon beyond the first. This is in addition to the standard allocation of one weapon point per 60 Spaces in size, or fraction thereof, of the turret itself.</dd>
+			<dt>Pop-Up</dt>
+			<dd>is a quality that can be applied to any type of turret - the turret is concealed in a pod or recess on the hull, and is detectable only when deployed. A ship with all its weapons in pop-up turrets looks unarmed to a casual sensor scan.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicle Turrets</caption>
+			<thead class="thead-light">
+				<th>Turret Type</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+			</thead>
+			<tr>
+				<th>Small</th>
+				<td>0.5, plus weapon volume in Spaces</td>
+				<td>Cr8,000 per Space</td>
+			</tr>
+			<tr>
+				<th>Large</th>
+				<td>3, plus weapon volume in Spaces</td>
+				<td>Cr16,000 per Space</td>
+			</tr>
+			<tr>
+				<th>Pop-Up</th>
+				<td>Base x2</td>
+				<td>As base, plus additional Cr4,000 per Space</td>
+			</tr>
+		</table>
+
+		<h3 id="vehicular-weapons">Vehicular Weapons</h3>
+		<p>
+			The following are common vehicular weapons, primarily those used for vehicular turrets. Each column is described as follows:
+		</p>
+		<dl>
+			<dt>TL</dt>
+			<dd>The minimum tech level required to manufacture such an item.</dd>
+			<dt>Price</dt>
+			<dd>Price of this weapon in Credits (Cr).</dd>
+			<dt>Spaces</dt>
+			<dd>Number of Spaces this weapon occupies.</dd>
+			<dt>RoF</dt>
+			<dd>Rate of Fire. The number of rounds that may be fired during a significant action in the format: Single Shot / Burst Shot / Automatic Fire.</dd>
+			<dt>Range</dt>
+			<dd>The range category for this weapon.</dd>
+			<dt>Dmg</dt>
+			<dd>The damage a weapon inflicts.</dd>
+			<dt>Radius</dt>
+			<dd>The distance from the target point that damage is still dealt.</dd>
+			<dt>Recoil</dt>
+			<dd>Lists if the weapon has recoil when fired.</dd>
+			<dt>LL</dt>
+			<dd>The Law Level where the weapon first becomes illegal.</dd>
+		</dl>
+
+		<h3 id="special-weapon-rules">Special Weapon Rules</h3>
+		<p>
+			Several types of weapons have their own rules.
+		</p>
+		<dl>
+			<dt>Disintegrators</dt>
+			<dd>The Effect used with a disintegrator is not determined by the attack roll; instead it is equal to the Armor rating of the target - meaning that the weapon will always inflict damage if it hits.</dd>
+			<dt>Meson Weapons</dt>
+			<dd>Meson weapons are unaffected by armor, as the blast only becomes harmful after it has already passed through the hull. Meson guns also inflict an automatic radiation hit on the crew of
+any target struck.</dd>
+			<dt>Pulse Weapons</dt>
+			<dd>Energy weapons, such as lasers, with the pulse designation fire short, rapid bursts of intense energy. Pulse weapons are notoriously inaccurate and suffer a DM -2 on all attack rolls.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicular Turret Weapons</caption>
+			<thead class="thead-light">
+				<th>Weapon</th>
+				<th>TL</th>
+				<th>Price (Cr)</th>
+				<th>Spaces</th>
+				<th>RoF</th>
+				<th>Range</th>
+				<th>Dmg</th>
+				<th>Radius</th>
+				<th>Recoil</th>
+				<th>LL</th>
+			</thead>
+			<tr>
+				<th>Ballista/Catapult-TL 1</th>
+				<td>1</td>
+				<td>Cr1,500</td>
+				<td>6</td>
+				<td>1</td>
+				<td>ranged (very long)</td>
+				<td>3D6</td>
+				<td>&mdash;</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 2</th>
+				<td>2</td>
+				<td>Cr6,000</td>
+				<td>6</td>
+				<td>1</td>
+				<td>ranged (distant)</td>
+				<td>3D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 2</th>
+				<td>2</td>
+				<td>Cr4,000</td>
+				<td>15</td>
+				<td>1</td>
+				<td>ranged (v long)</td>
+				<td>2D6</td>
+				<td>5m (3 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 3</th>
+				<td>3</td>
+				<td>Cr120,000</td>
+				<td>24</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>7D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 3</th>
+				<td>3</td>
+				<td>Cr60,000</td>
+				<td>12</td>
+				<td>1</td>
+				<td>ranged (distant)</td>
+				<td>5D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 4</th>
+				<td>4</td>
+				<td>Cr160,000</td>
+				<td>24</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>8D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 4</th>
+				<td>4</td>
+				<td>Cr80,000</td>
+				<td>12</td>
+				<td>1</td>
+				<td>ranged (distant)</td>
+				<td>6D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Machine Gun-TL 5</th>
+				<td>5</td>
+				<td>Cr6,000</td>
+				<td>3</td>
+				<td>0/20</td>
+				<td>ranged (rifle)</td>
+				<td>4D6</td>
+				<td>&mdash;</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 5</th>
+				<td>5</td>
+				<td>Cr8,000</td>
+				<td>6</td>
+				<td>1</td>
+				<td>ranged (distant)</td>
+				<td>4D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 5</th>
+				<td>5</td>
+				<td>Cr6,000</td>
+				<td>15</td>
+				<td>1/3</td>
+				<td>ranged (distant)</td>
+				<td>3D6</td>
+				<td>5m (3 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Autocannon-TL 6</th>
+				<td>6</td>
+				<td>Cr200,000</td>
+				<td>24</td>
+				<td>1/4</td>
+				<td>ranged (distant)</td>
+				<td>6D6</td>
+				<td>1.5m (1 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Missile Rack</th>
+				<td>6</td>
+				<td>Cr48,000</td>
+				<td>12</td>
+				<td>1/3</td>
+				<td>By missile</td>
+				<td>Special</td>
+				<td>Special</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 7</th>
+				<td>7</td>
+				<td>Cr240,000</td>
+				<td>24</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>10D6</td>
+				<td>20m (13 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 7</th>
+				<td>7</td>
+				<td>Cr120,000</td>
+				<td>12</td>
+				<td>1</td>
+				<td>ranged (distant)</td>
+				<td>8D6</td>
+				<td>20m (13 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 7</th>
+				<td>7</td>
+				<td>Cr12,000</td>
+				<td>6</td>
+				<td>1/2</td>
+				<td>ranged (distant)</td>
+				<td>6D6</td>
+				<td>20m (13 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Pulse Laser-TL 7</th>
+				<td>7</td>
+				<td>Cr80,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>6D6</td>
+				<td>10m (7 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 7</th>
+				<td>7</td>
+				<td>Cr10,000</td>
+				<td>15</td>
+				<td>1/6</td>
+				<td>ranged (distant)</td>
+				<td>5D6</td>
+				<td>10m (7 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Autocannon-TL 8</th>
+				<td>8</td>
+				<td>Cr300,000</td>
+				<td>24</td>
+				<td>1/6</td>
+				<td>ranged (distant)</td>
+				<td>8D6</td>
+				<td>3m (2 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Machine Gun-TL 8</th>
+				<td>8</td>
+				<td>Cr9,000</td>
+				<td>3</td>
+				<td>0/100</td>
+				<td>ranged (rifle)</td>
+				<td>6D6</td>
+				<td>&mdash;</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mass Driver-TL 8</th>
+				<td>8</td>
+				<td>Cr250,000</td>
+				<td>180</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>10D6</td>
+				<td>3m (2 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Railgun-TL 8</th>
+				<td>8</td>
+				<td>Cr150,000</td>
+				<td>18</td>
+				<td>1/3</td>
+				<td>ranged (v distant)</td>
+				<td>6D6</td>
+				<td>3m (2 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Beam Laser-TL 9</th>
+				<td>9</td>
+				<td>Cr100,000</td>
+				<td>3</td>
+				<td>1/3</td>
+				<td>ranged (v distant)</td>
+				<td>6D6</td>
+				<td>10m (7 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 10</th>
+				<td>10</td>
+				<td>Cr280,000</td>
+				<td>24</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>11D6</td>
+				<td>30m (20 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Autocannon-TL 10</th>
+				<td>10</td>
+				<td>Cr350,000</td>
+				<td>24</td>
+				<td>1/6</td>
+				<td>ranged (distant)</td>
+				<td>9D6</td>
+				<td>4.5m (3 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 10</th>
+				<td>10</td>
+				<td>Cr140,000</td>
+				<td>12</td>
+				<td>1/2</td>
+				<td>ranged (distant)</td>
+				<td>9D6</td>
+				<td>30m (20 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mass Driver-TL 10</th>
+				<td>10</td>
+				<td>Cr275,000</td>
+				<td>180</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>11D6</td>
+				<td>4.5m (3 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 10</th>
+				<td>10</td>
+				<td>Cr14,000</td>
+				<td>6</td>
+				<td>1/3</td>
+				<td>ranged (distant)</td>
+				<td>7D6</td>
+				<td>30m (20 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Plasma Gun-TL 10</th>
+				<td>10</td>
+				<td>Cr70,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>9D6</td>
+				<td>15m (10 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Pulse Laser-TL 10</th>
+				<td>10</td>
+				<td>Cr90,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>7D6</td>
+				<td>15m (10 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Railgun-TL 10</th>
+				<td>10</td>
+				<td>Cr175,000</td>
+				<td>18</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>7D6</td>
+				<td>4.5m (3 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 10</th>
+				<td>10</td>
+				<td>Cr12,000</td>
+				<td>15</td>
+				<td>1/12</td>
+				<td>ranged (distant)</td>
+				<td>6D6</td>
+				<td>15m (10 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Beam Laser-TL 11</th>
+				<td>11</td>
+				<td>Cr120,000</td>
+				<td>3</td>
+				<td>1/3</td>
+				<td>ranged (v distant)</td>
+				<td>7D6</td>
+				<td>15m (10 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Meson Accelerator-TL 11</th>
+				<td>11</td>
+				<td>Cr180,000</td>
+				<td>12</td>
+				<td>1/6</td>
+				<td>ranged (distant)</td>
+				<td>11D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 12</th>
+				<td>12</td>
+				<td>Cr360,000</td>
+				<td>24</td>
+				<td>1</td>
+				<td>ranged (v distant)</td>
+				<td>13D6</td>
+				<td>40m (27 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Fusion Gun-TL 12</th>
+				<td>12</td>
+				<td>Cr180,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>13D6</td>
+				<td>40m (27 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Gauss Cannon-TL 12</th>
+				<td>12</td>
+				<td>Cr450,000</td>
+				<td>24</td>
+				<td>1/10</td>
+				<td>ranged (distant)</td>
+				<td>11D6</td>
+				<td>6m (4 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 12</th>
+				<td>12</td>
+				<td>Cr180,000</td>
+				<td>12</td>
+				<td>1/2</td>
+				<td>ranged (distant)</td>
+				<td>11D6</td>
+				<td>40m (27 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 12</th>
+				<td>12</td>
+				<td>Cr18,000</td>
+				<td>6</td>
+				<td>1/3</td>
+				<td>ranged (distant)</td>
+				<td>9D6</td>
+				<td>40m (27 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Plasma Gun-TL 12</th>
+				<td>12</td>
+				<td>Cr90,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>11D6</td>
+				<td>20m (13 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Plasma Gun-TL 12</th>
+				<td>12</td>
+				<td>Cr90,000</td>
+				<td>3</td>
+				<td>1/12</td>
+				<td>ranged (v distant)</td>
+				<td>11D6</td>
+				<td>20m (13 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 12</th>
+				<td>12</td>
+				<td>Cr16,000</td>
+				<td>15</td>
+				<td>1/12</td>
+				<td>ranged (distant)</td>
+				<td>8D6</td>
+				<td>20m (13 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Beam Laser-TL 13</th>
+				<td>13</td>
+				<td>Cr160,000</td>
+				<td>3</td>
+				<td>1/3</td>
+				<td>ranged (extreme)</td>
+				<td>9D6</td>
+				<td>20m (13 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Mass Driver-TL 13</th>
+				<td>13</td>
+				<td>Cr325,000</td>
+				<td>180</td>
+				<td>1</td>
+				<td>ranged (extreme)</td>
+				<td>13D6</td>
+				<td>6m (4 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Meson Accelerator-TL 13</th>
+				<td>13</td>
+				<td>Cr180,000</td>
+				<td>12</td>
+				<td>1/6</td>
+				<td>ranged (distant)</td>
+				<td>13D6</td>
+				<td>10m (7 sq.)</td>
+				<td>Yes</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Pulse Laser-TL 13</th>
+				<td>13</td>
+				<td>Cr110,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (extreme)</td>
+				<td>9D6</td>
+				<td>20m (13 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Railgun-TL 13</th>
+				<td>13</td>
+				<td>Cr225,000</td>
+				<td>18</td>
+				<td>1/8</td>
+				<td>ranged (extreme)</td>
+				<td>9D6</td>
+				<td>6m (4 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Fusion Gun-TL 14</th>
+				<td>14</td>
+				<td>Cr360,000</td>
+				<td>3</td>
+				<td>1/12</td>
+				<td>ranged (v distant)</td>
+				<td>13D6</td>
+				<td>40m (27 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 15</th>
+				<td>15</td>
+				<td>Cr400,000</td>
+				<td>24</td>
+				<td>1/2</td>
+				<td>ranged (v distant)</td>
+				<td>14D6</td>
+				<td>50m (33 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Fusion Gun-TL 15</th>
+				<td>15</td>
+				<td>Cr200,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>14D6</td>
+				<td>50m (33 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Gauss Cannon-TL 15</th>
+				<td>15</td>
+				<td>Cr500,000</td>
+				<td>24</td>
+				<td>1/15</td>
+				<td>ranged (distant)</td>
+				<td>12D6</td>
+				<td>7.5m (5 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 15</th>
+				<td>15</td>
+				<td>Cr200,000</td>
+				<td>12</td>
+				<td>1/3</td>
+				<td>ranged (distant)</td>
+				<td>12D6</td>
+				<td>50m (33 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Meson Accelerator-TL 15</th>
+				<td>15</td>
+				<td>Cr200,000</td>
+				<td>12</td>
+				<td>1/12</td>
+				<td>ranged (distant)</td>
+				<td>14D6</td>
+				<td>15m (10 sq.)</td>
+				<td>Yes</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 15</th>
+				<td>15</td>
+				<td>Cr20,000</td>
+				<td>6</td>
+				<td>1/4</td>
+				<td>ranged (distant)</td>
+				<td>10D6</td>
+				<td>50m (33 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Plasma Gun-TL 15</th>
+				<td>15</td>
+				<td>Cr100,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>12D6</td>
+				<td>25m (17 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Pulse Laser-TL 15</th>
+				<td>15</td>
+				<td>Cr120,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (extreme)</td>
+				<td>10D6</td>
+				<td>25m (17 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Plasma Gun-TL 15</th>
+				<td>15</td>
+				<td>Cr100,000</td>
+				<td>3</td>
+				<td>1/15</td>
+				<td>ranged (v distant)</td>
+				<td>12D6</td>
+				<td>25m (17 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 15</th>
+				<td>15</td>
+				<td>Cr18,000</td>
+				<td>15</td>
+				<td>1/12</td>
+				<td>ranged (distant)</td>
+				<td>9D6</td>
+				<td>25m (17 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Beam Laser-TL 16</th>
+				<td>16</td>
+				<td>Cr180,000</td>
+				<td>3</td>
+				<td>1/3</td>
+				<td>ranged (extreme)</td>
+				<td>10D6</td>
+				<td>25m (17 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Mass Driver-TL 16</th>
+				<td>16</td>
+				<td>Cr350,000</td>
+				<td>180</td>
+				<td>1</td>
+				<td>ranged (extreme)</td>
+				<td>14D6</td>
+				<td>7.5m (5 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Railgun-TL 16</th>
+				<td>16</td>
+				<td>Cr250,000</td>
+				<td>18</td>
+				<td>1/12</td>
+				<td>ranged (extreme)</td>
+				<td>10D6</td>
+				<td>7.5m (5 sq.)</td>
+				<td>Yes</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Fusion Gun-TL 16</th>
+				<td>16</td>
+				<td>Cr400,000</td>
+				<td>3</td>
+				<td>1/15</td>
+				<td>ranged (v distant)</td>
+				<td>14D6</td>
+				<td>50m (33 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Artillery Gun-TL 17</th>
+				<td>17</td>
+				<td>Cr800,000</td>
+				<td>24</td>
+				<td>1/2</td>
+				<td>ranged (extreme)</td>
+				<td>17D6</td>
+				<td>60m (40 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Fusion Gun-TL 17</th>
+				<td>17</td>
+				<td>Cr260,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>17D6</td>
+				<td>60m (40 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Gauss Cannon-TL 17</th>
+				<td>17</td>
+				<td>Cr1,000,000</td>
+				<td>24</td>
+				<td>1/15</td>
+				<td>ranged (v distant)</td>
+				<td>15D6</td>
+				<td>9m (6 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Howitzer-TL 17</th>
+				<td>17</td>
+				<td>Cr400,000</td>
+				<td>12</td>
+				<td>1/3</td>
+				<td>ranged (v distant)</td>
+				<td>15D6</td>
+				<td>60m (40 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Mortar-TL 17</th>
+				<td>17</td>
+				<td>Cr40,000</td>
+				<td>6</td>
+				<td>1/4</td>
+				<td>ranged (distant)</td>
+				<td>13D6</td>
+				<td>60m (40 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Plasma Gun-TL 17</th>
+				<td>17</td>
+				<td>Cr130,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (v distant)</td>
+				<td>15D6</td>
+				<td>30m (20 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Pulse Laser-TL 17</th>
+				<td>17</td>
+				<td>Cr150,000</td>
+				<td>3</td>
+				<td>1/6</td>
+				<td>ranged (extreme)</td>
+				<td>13D6</td>
+				<td>30m (20 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Plasma Gun-TL 17</th>
+				<td>17</td>
+				<td>Cr130,000</td>
+				<td>3</td>
+				<td>1/24</td>
+				<td>ranged (v distant)</td>
+				<td>15D6</td>
+				<td>30m (20 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery-TL 17</th>
+				<td>17</td>
+				<td>Cr24,000</td>
+				<td>15</td>
+				<td>1/12</td>
+				<td>ranged (v distant)</td>
+				<td>12D6</td>
+				<td>30m (20 squares)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Beam Laser-TL 18</th>
+				<td>18</td>
+				<td>Cr240,000</td>
+				<td>3</td>
+				<td>1/3</td>
+				<td>ranged (extreme)</td>
+				<td>13D6</td>
+				<td>30m (20 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Disintegrator-TL 18</th>
+				<td>18</td>
+				<td>Cr5,000,000</td>
+				<td>24</td>
+				<td>1/3</td>
+				<td>ranged (v distant)</td>
+				<td>17D6</td>
+				<td>9m (6 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Mass Driver-TL 18</th>
+				<td>18</td>
+				<td>Cr600,000</td>
+				<td>180</td>
+				<td>1</td>
+				<td>ranged (extreme)</td>
+				<td>17D6</td>
+				<td>9m (6 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Meson Accelerator-TL 18</th>
+				<td>18</td>
+				<td>Cr250,000</td>
+				<td>12</td>
+				<td>1/12</td>
+				<td>ranged (v distant)</td>
+				<td>17D6</td>
+				<td>15m (10 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Railgun-TL 18</th>
+				<td>18</td>
+				<td>Cr500,000</td>
+				<td>18</td>
+				<td>1/15</td>
+				<td>ranged (extreme)</td>
+				<td>13D6</td>
+				<td>9m (6 sq.)</td>
+				<td>No</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Rapid Pulse Fusion Gun-TL 18</th>
+				<td>18</td>
+				<td>Cr520,000</td>
+				<td>3</td>
+				<td>1/24</td>
+				<td>ranged (v distant)</td>
+				<td>17D6</td>
+				<td>60m (40 sq.)</td>
+				<td>No</td>
+				<td>2</td>
+			</tr>
+		</table>
+
+		<h3 id="vehicular-weapon-ammunition">Vehicular Weapon Ammunition</h3>
+		<p>
+			The Vehicular Weapon Ammunition table describes the price of ammunitions for certain vehicular weapons.  (Weapons not included in the table are self-contained munitions that are larger than one Space, or are powered from the energy generated by the vehicle's power plant.) Each column is described as follows:
+		</p>
+		<dl>
+			<dt>Price/Space</dt>
+			<dd>The price of a full Space (or kiloliter) of standard ammunition for the weapon.</dd>
+			<dt>Rounds/Space</dt>
+			<dd>The number of rounds in a full Space (or kiloliter) of standard ammunition for the weapon.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicular Weapon Ammunition</caption>
+			<thead class="thead-light">
+				<th>Weapon</th>
+				<th>Price/Space (Cr)</th>
+				<th>Rounds/Space</th>
+			</thead>
+			<tr>
+				<th>Artillery Gun</th>
+				<td>4,000</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th>Autocannon</th>
+				<td>4,000</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th>Ballista/Catapult</th>
+				<td>100</td>
+				<td>50</td>
+			</tr>
+			<tr>
+				<th>Gauss Cannon</th>
+				<td>25,000</td>
+				<td>18,000</td>
+			</tr>
+			<tr>
+				<th>Howitzer</th>
+				<td>2,000</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th>Machine Gun</th>
+				<td>5,000</td>
+				<td>10,000</td>
+			</tr>
+			<tr>
+				<th>Mass Driver</th>
+				<td>9,000</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Missile Rack</th>
+				<td>By Missile</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>Mortar</th>
+				<td>900</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Railgun</th>
+				<td>900</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Rocket Artillery</th>
+				<td>5,000</td>
+				<td>3</td>
+			</tr>
+		</table>
+
+		<h3 id="ordinance-bays">Ordinance Bays</h3>
+		<p>
+			Dedicated ordinance bays that carry just one type of weapon cost Cr5,000 per Space of weapon that they are designed to hold. Rate-of-fire is equal to the number of weapons in the bay, and bays can be reloaded.  General purpose ordinance bays able to hold different types of weapons cost Cr10,000 per Space of weapon they are designed to hold. They can launch one missile or torpedo per round, or drop up to half their Space capacity in bombs.
+		</p>
+		<p>
+			Note that an ordinance bay takes up one weapon point per 60 Spaces in size, or fraction thereof, of the bay itself, minimum of one. For example, a Heavy Nuclear Bomb ordinance bay housing four such bombs occupies 24 Spaces, which takes up one weapon point. An ordinance bay housing 15 Heavy High Explosive Bombs occupies 90 spaces, and takes up two weapon points
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Ordinance Bay Weapons</caption>
+			<thead class="thead-light">
+				<th>Ordinance Type</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Range</th>
+				<th>Damage</th>
+				<th>Notes</th>
+			</thead>
+			<tr>
+				<th>Bomb, High Explosive, Standard</th>
+				<td>4</td>
+				<td>3</td>
+				<td>Cr1,200</td>
+				<td>ranged (v distant) </td>
+				<td>12D6</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Torpedo, High Explosive, Standard</th>
+				<td>4</td>
+				<td>12</td>
+				<td>Cr2,400</td>
+				<td>ranged (v distant) </td>
+				<td>12D6</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+			<tr>
+				<th>Bomb, High Explosive, Heavy</th>
+				<td>5</td>
+				<td>6</td>
+				<td>Cr4,000</td>
+				<td>ranged (v distant) </td>
+				<td>14D6</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Torpedo, High Explosive, Heavy</th>
+				<td>5</td>
+				<td>24</td>
+				<td>Cr8,000</td>
+				<td>ranged (v distant) </td>
+				<td>14D6</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+			<tr>
+				<th>Bomb, Nuclear, Heavy</th>
+				<td>6</td>
+				<td>6</td>
+				<td>Cr8,000</td>
+				<td>ranged (v distant) </td>
+				<td>28D6 + 2D6x10 rads</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Bomb, Nuclear, Standard</th>
+				<td>6</td>
+				<td>3</td>
+				<td>Cr2,400</td>
+				<td>ranged (v distant)</td>
+				<td>24D6 + 2D6x10 rads</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Torpedo, Nuclear, Heavy</th>
+				<td>6</td>
+				<td>24</td>
+				<td>Cr16,000</td>
+				<td>ranged (v </td>
+				<td>28D6 + 2D6x10</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+			<tr>
+				<th>Torpedo, Nuclear, Standard</th>
+				<td>6</td>
+				<td>12</td>
+				<td>Cr4,800</td>
+				<td>ranged (v distant) </td>
+				<td>24D6 + 2D6x10 rads</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+			<tr>
+				<th>Bomb, Antimatter, Heavy</th>
+				<td>17</td>
+				<td>6</td>
+				<td>Cr24,000</td>
+				<td>ranged (extreme) </td>
+				<td>42D6 + 4D6x10 rads</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Bomb, Antimatter, Standard</th>
+				<td>17</td>
+				<td>3</td>
+				<td>Cr7,200</td>
+				<td>ranged (extreme) </td>
+				<td>36D6 + 4D6x10 rads</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Torpedo, Antimatter, Heavy</th>
+				<td>17</td>
+				<td>24</td>
+				<td>Cr48,000</td>
+				<td>ranged (extreme) </td>
+				<td>42D6 + 4D6x10 rads</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+			<tr>
+				<th>Torpedo, Antimatter, Standard</th>
+				<td>17</td>
+				<td>12</td>
+				<td>Cr14,400</td>
+				<td>ranged (extreme) </td>
+				<td>36D6 + 4D6x10 rads</td>
+				<td>Treat as aquatic missiles</td>
+			</tr>
+		</table>
+
+		<h3 id="missiles">Missiles</h3>
+		<p>
+			A number of vehicular weapons determine range and damage by the type of tactical missiles they fire. Common missiles are listed in the Vehicular Missiles table. Standard HE refers to Standard High Explosive warheads.
+		</p>
+		<dl>
+			<dt>Smart</dt>
+			<dd>The attack roll for smart missiles is always 8+, and they may attack every combat round if they miss until they are destroyed, jammed or run out of fuel.</dd>
+			<dt>Radiation Hit</dt>
+			<dd>In addition to standard damage, both nuclear and antimatter missiles automatically inflict one radiation hit, rolling on the Radiation Damage column of the Crew Hit location.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Vehicular Missiles</caption>
+			<thead class="thead-light">
+				<th>Missile Type</th>
+				<th>TL</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Range</th>
+				<th>Dmg</th>
+			</thead>
+			<tr>
+				<th>Standard HE, Unguided</th>
+				<td>3</td>
+				<td>1</td>
+				<td>Cr750</td>
+				<td>ranged (very long)</td>
+				<td>5D6</td>
+			</tr>
+			<tr>
+				<th>Standard HE, Remote-Guided</th>
+				<td>3</td>
+				<td>1</td>
+				<td>Cr750</td>
+				<td>ranged (very long)</td>
+				<td>5D6</td>
+			</tr>
+			<tr>
+				<th>Standard HE, Heat-Seeking</th>
+				<td>4</td>
+				<td>1</td>
+				<td>Cr1,000</td>
+				<td>ranged (very long)</td>
+				<td>6D6</td>
+			</tr>
+			<tr>
+				<th>Nuclear, Radar-Guided</th>
+				<td>6</td>
+				<td>1</td>
+				<td>Cr3,750</td>
+				<td>ranged (very long)</td>
+				<td>12D6 + 1 radiation hit</td>
+			</tr>
+			<tr>
+				<th>Standard HE, Radar-Guided</th>
+				<td>6</td>
+				<td>1</td>
+				<td>Cr1,250</td>
+				<td>ranged (distant)</td>
+				<td>6D6</td>
+			</tr>
+			<tr>
+				<th>Nuclear, Smart (Computer-Guided)</th>
+				<td>7</td>
+				<td>1</td>
+				<td>Cr5,000</td>
+				<td>ranged (distant)</td>
+				<td>16D6 + 1 radiation hit</td>
+			</tr>
+			<tr>
+				<th>Standard HE, Smart (ComputerGuided)</th>
+				<td>7</td>
+				<td>1</td>
+				<td>Cr2,500</td>
+				<td>ranged (very distant)</td>
+				<td>8D6</td>
+			</tr>
+			<tr>
+				<th>Nuclear, NAS-Guided</th>
+				<td>12</td>
+				<td>1</td>
+				<td>Cr2,500</td>
+				<td>ranged (very long)</td>
+				<td>13D6</td>
+			</tr>
+			<tr>
+				<th>Standard HE, NAS-Guided</th>
+				<td>12</td>
+				<td>1</td>
+				<td>Cr2,500</td>
+				<td>ranged (distant)</td>
+				<td>11D6</td>
+			</tr>
+			<tr>
+				<th>Antimatter, Smart (AI-Guided)</th>
+				<td>17</td>
+				<td>1</td>
+				<td>Cr10,000</td>
+				<td>ranged (extreme)</td>
+				<td>20D6 + 1 radiation hit</td>
+			</tr>
+		</table>
+
+		<h3 id="anti-missile-systems">Anti-Missile Systems</h3>
+		<p>
+			Systems of this type will typically negate an incoming missile, rocket, launched grenade or mortar round on the roll of 8+. Some systems have Target DMs that modify this, and every system will suffer a -1 DM for every additional target it is forced to engage in each round. The Anti-Missile System Details table describes each system.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Anti-Missile System Details</caption>
+			<thead class="thead-light">
+				<th>Type</th>
+				<th>TL</th>
+				<th>Effect</th>
+				<th>Spaces</th>
+				<th>Price (Cr)</th>
+				<th>Minimum Effective Range</th>
+				<th>Uses</th>
+				<th>Reload Price (Cr)</th>
+			</thead>
+			<tr>
+				<th>Smoke Dischargers</th>
+				<td>3</td>
+				<td>DM+2 vs visual attacks (remote-guided missiles)</td>
+				<td>1.5</td>
+				<td>Cr1,000</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>Cr100
+			</tr>
+			<tr>
+				<th>Chaff Dispensers</th>
+				<td>4</td>
+				<td>DM+2 vs thermal-guided attacks (heat-seeking missiles)</td>
+				<td>1.5</td>
+				<td>Cr1,200</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>Cr150
+			</tr>
+			<tr>
+				<th>Flares</th>
+				<td>6</td>
+				<td>DM+2 vs radar-guided attacks (homing missiles)</td>
+				<td>1.5</td>
+				<td>Cr2,000</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>Cr200
+			</tr>
+			<tr>
+				<th>Decoys</th>
+				<td>7</td>
+				<td>DM+2 vs smart missile attacks (radar-guided missiles)</td>
+				<td>1.5</td>
+				<td>Cr8,000</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>Cr1,000
+			</tr>
+			<tr>
+				<th>Explosive Belt</th>
+				<td>8</td>
+				<td>Target DM +0</td>
+				<td>&mdash;</td>
+				<td>Cr15,000</td>
+				<td>Short</td>
+				<td>10</td>
+				<td>Cr800
+			</tr>
+			<tr>
+				<th>Minigun</th>
+				<td>8</td>
+				<td>Target DM +0</td>
+				<td>9</td>
+				<td>Cr200,000</td>
+				<td>Medium</td>
+				<td>10</td>
+				<td>Cr7,000
+			</tr>
+			<tr>
+				<th>Prismatic Aerosols</th>
+				<td>9</td>
+				<td>DM+2 vs laser-guided attacks; Lasers -2D6 damage</td>
+				<td>1.5</td>
+				<td>Cr4,000</td>
+				<td>&mdash;</td>
+				<td>6</td>
+				<td>Cr500
+			</tr>
+			<tr>
+				<th>Laser</th>
+				<td>10</td>
+				<td>Target DM +1</td>
+				<td>12</td>
+				<td>Cr250,000</td>
+				<td>Medium</td>
+				<td>&mdash;</td>
+				<td>&mdash;
+			</tr>
+			<tr>
+				<th>VRF Gauss</th>
+				<td>11</td>
+				<td>Target DM +0</td>
+				<td>9</td>
+				<td>Cr200,000</td>
+				<td>Medium</td>
+				<td>15</td>
+				<td>Cr20,000
+			</tr>
+		</table>
+
+		<h3 id="vehicle-armament-options">Vehicle Armament Options</h3>
+		<p>
+			The following options are available as modifications on Vehicle Armaments.
+		</p>
+		<dl>
+			<dt>Heavy Turret Weapon (TL3)</dt>
+			<dd>Any vehicular armament that can be mounted in a turret can be purchased in a heavier version. Multiply the weapon's price by 1.5, multiply the weapon's ROF by 0.5, and increase the weapon's damage by 1D6. This cannot be stacked with Light Turret Weapon.</dd>
+			<dt>Laser Guidance (TL8)</dt>
+			<dd>All vehicles with mortars, howitzers, artillery guns, and autocannons can be equipped with laser guidance. This costs Cr1,000, takes up 1 space, and grants a DM +1 on these weapon's attack rolls against a stationary target.</dd>
+			<dt>Light Turret Weapon (TL3)</dt>
+			<dd>Any vehicular armament that can be mounted in a turret can be purchased in a lighter version. Multiply the weapon's price by 0.75, increase the weapon's range by one range band, and decrease the weapon's damage by 1D6. This cannot be stacked with Heavy Turret Weapon.</dd>
+			<dt>Missile Guidance System (TL5)</dt>
+			<dd>All vehicles equipped with missiles can use an installed missile guidance system to better aim missile strikes. This costs Cr10,000, takes up 6 spaces, and grants a DM +1 on missile-based attack rolls against a moving target.</dd>
+			<dt>Rotary Turret Weapon (TL5)</dt>
+			<dd>Any machine gun mounted on a vehicle can be purchased in a rotary version.  Double the weapon's price and ROF, and decrease the weapon's damage by 1D6.</dd>
+		</dl>
+
+		<h2 id="special-rules-for-vehicles">Special Rules for Vehicles</h2>
+		<p>
+			The following are special rules related to vehicles and the Cepheus Engine VDS.
+		</p>
+		<h3 id="alien-vehicles">Alien Vehicles</h3>
+		<p>
+			The Cepheus Engine VDS assumes that the vehicle designs are based on humans or humanoid creatures with similar physiological constraints as humans. Alien vehicles typically follow the same design process as humans, but exceptions, particularly in accommodations, may exist based on differences in physiology. The Referee is the final arbiter on those differences.
+		</p>
+
+		<h3 id="airship-balloon-lift-envelope">Airship/Balloon Lift Envelope</h3>
+		<p>
+			Airships and balloons require a lift envelope to hold the lower-density gasses that allow the vessels to fly. Hydrogen and helium balloons can stay aloft almost indefinitely. Hot-air balloons have a duration equal to their Tech Level x 2 hours.
+		</p>
+		<p>
+			The inflated size of an envelope in Spaces can be calculated as per the formula found in the Lift Envelope Size by Atmosphere Density table. The envelope is not considered part of the chassis itself, but can be stored away in a space with a displacement volume equal to one percent (1%) of its inflated size.
+		</p>
+		<p>
+			All non-explosive weapons inflict only 1 point of damage to the envelope for each hit. Automatic weapons inflict damage equal to their Auto Rating. Once the lift envelope has taken an amount of Structure damage equal to one point per 60 Spaces of lift envelope size, it loses integrity.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Lift Envelope Size by Atmosphere Density</caption>
+			<thead class="thead-light">
+				<th>Atmosphere Density</th>
+				<th>Envelope Size, Hydrogen or Helium</th>
+				<th>Envelope Size, Hot-Air</th>
+			</thead>
+			<tr>
+				<th>Very Thin </th>
+				<td>UWP Size Code x Chassis (spaces) x 100</td>
+				<td>UWP Size Code x Chassis (spaces) x 200</td>
+			</tr>
+			<tr>
+				<th>Thin </th>
+				<td>UWP Size Code x Chassis (spaces) x 25</td>
+				<td>UWP Size Code x Chassis (spaces) x 50</td>
+			</tr>
+			<tr>
+				<th>Standard </th>
+				<td>UWP Size Code x Chassis (spaces) x 10</td>
+				<td>UWP Size Code x Chassis (spaces) x 20</td>
+			</tr>
+			<tr>
+				<th>Dense </th>
+				<td>UWP Size Code x Chassis (spaces) x 5</td>
+				<td>UWP Size Code x Chassis (spaces) x 10</td>
+			</tr>
+		</table>
+
+		<h3 id="atmospheres-and-aircraft">Atmospheres and Aircraft</h3>
+		<p>
+			All aircraft can only work properly for world size and atmosphere type UWP codes within 1 of their homeworld.  Aircraft operating outside of their design codes suffer a -1 to Agility if they are within 1 of their home UWP codes for atmosphere and/or size, and cannot fly at all if they are operating beyond this, unless they are designed with a wider operation range. In any case, all aircraft require a minimum atmosphere code of 1 in order to function. Aircraft descriptions should include the world size and atmosphere codes.
+		</p>
+		<dl>
+			<dt>Extended Operational Environment Range</dt>
+			<dd>Aircraft can be designed with a wider operational environment range. This costs 100% of the Base Price of the aircraft but allows it to be used within two digits of the UPP size and atmosphere values instead of just one. These aircraft also suffer a -1 to Agility in all environments.</dd>
+		</dl>
+
+		<h3 id="missile-and-torpedo-attacks">Missile and Torpedo Attacks</h3>
+		<p>
+			Unlike beam weapons, which travel at the speed of light and so hit the enemy vessel almost instantly, missile and torpedo weapons take time to travel to their target. For the sake of simplicity, they can be assumed to strike after a number of turns dependent on launch range, as shown in the Missile/Torpedo Time to Impact table.  Missiles and Torpedoes cannot be used at Personal or Close range.
+		</p>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Missile/Torpedo Time to Impact</caption>
+			<thead class="thead-light">
+				<th>Range</th>
+				<th>Time to Impact</th>
+			</thead>
+			<tr>
+				<th>Personal</th>
+				<td>-</td>
+			</tr>
+			<th>Close</th>
+			<td>-</td>
+			</tr>
+			<th>Short</th>
+			<td>0</td>
+			</tr>
+			<th>Medium</th>
+			<td>0</td>
+			</tr>
+			<th>Long</th>
+			<td>0</td>
+			</tr>
+			<th>Very Long</th>
+			<td>0</td>
+			</tr>
+			<th>Distant</th>
+			<td>1</td>
+			</tr>
+			<th>Very Distant</th>
+			<td>4</td>
+			</tr>
+			<th>Extreme</th>
+			<td>8</td>
+			</tr>
+		</table>
+		<p>
+			When the missile or torpedo is launched, the gunner must make a Turret Weapons or Bay Weapons skill check to determine the accuracy of the launch. The effect of the skill check determines the chance that the missile or torpedo will strike its target when it hits. A target may react to incoming missiles or torpedoes by dodging or point defense. This reaction does not take place until the turn the missiles arrive at their destination, so any target response must wait until then.
+		</p>
+		<dl>
+			<dt>Smart Missiles</dt>
+			<dd> The missile to-hit roll for smart missiles is always 8+ and if they miss they make another attack every turn until they are destroyed with point defense, jammed with ECM, run out of fuel or otherwise dissuaded.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Missile To-Hit By Skill Check Effect</caption>
+			<thead class="thead-light">
+				<th>Turret Weapons/Bay Weapons check</th>
+				<th>Missile to-hit roll</th>
+			</thead>
+			<tr>
+				<th>Failed With Effect -6 or less</th>
+				<td>11+</td>
+			</tr>
+			<tr>
+				<th>Failed With Effect -1 to -5</th>
+				<td>10+</td>
+			</tr>
+			<tr>
+				<th>Succeeded With Effect 0</th>
+				<td>8+</td>
+			</tr>
+			<tr>
+				<th>Succeeded With Effect 1-5</th>
+				<td>7+</td>
+			</tr>
+			<tr>
+				<th>Succeeded With Effect 6+</th>
+				<td>6+</td>
+			</tr>
+		</table>
+
+		<h3 id="non-powered-vehicles">Non-Powered Vehicles</h3>
+		<p>
+			Some vehicles do not have a power plant or a powered propulsion system. These rely on two forms of external force to provide movement: animals or the wind.
+		</p>
+		<dl>
+			<dt>Animal-Powered Vehicles</dt>
+			<dd>Some vehicles, particularly at very low Tech Levels, are powered by living creatures.  An animal-powered vehicle requires one point of Strength (Str) per Space of chassis to move at the animal's base walking speed. (Ground vehicles that run on rails halve the required Strength for movement.) For every five points of Strength less than what is required, Speed and Range decrease by 10%. There is no lower limit and Speed can be reduced to 0 so the vehicle cannot move at all.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Speed and Range Modifiers by Animal Gait</caption>
+			<thead class="thead-light">
+				<th>Gait</th>
+				<th>Speed Modifier</th>
+				<th>Range</th>
+			</thead>
+			<tr>
+				<th>Walk</th>
+				<td>Walk x 1</td>
+				<td>Endurance x 30 minutes</td>
+			</tr>
+			<tr>
+				<th>Trot</th>
+				<td>Walk x 2</td>
+				<td>Endurance x 15 minutes</td>
+			</tr>
+			<tr>
+				<th>Canter</th>
+				<td>Walk x 3</td>
+				<td>Endurance x 2 minutes</td>
+			</tr>
+			<tr>
+				<th>Run</th>
+				<td>Walk x 4</td>
+				<td>Endurance x 1 minutes</td>
+			</tr>
+		</table>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Sample Terran Animals Used to Power Vessels</caption>
+			<thead class="thead-light">
+				<th>Animal</th>
+				<th>Str</th>
+				<th>Speed Walk/Run (km/h)</th>
+				<th>End</th>
+			</thead>
+			<tr>
+				<th>Elephant</th>
+				<td>24</td>
+				<td>6/24</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Horse</th>
+				<td>10</td>
+				<td>7/28</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<th>Human</th>
+				<td>7</td>
+				<td>6/24</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<th>Mule</th>
+				<td>11</td>
+				<td>6/24</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<th>Ox</th>
+				<td>18</td>
+				<td>5/20</td>
+				<td>18</td>
+			</tr>
+		</table>
+		<dl>
+			<dt>Wind-Powered Vehicles</dt>
+			<dd>Often called sailing vessels, wind-powered vehicles depend on the wind and weather to provide the force necessary to move. The Sailing Speeds table captures the base speeds of different types of vehicles, as a percentage of wind speed. In the table, water-based also refers to water or similar fluids, depending on the world for which the vessel is designed.</dd>
+		</dl>
+		<table class="table table-bordered table-striped table-hover table-responsive-md">
+			<caption>Table: Sailing Speeds</caption>
+			<thead class="thead-light">
+				<th>Vehicle Type</th>
+				<th>Speed (Vehicles under 10 tons)</th>
+				<th>Speed (Vehicles 10+ tons)</th>
+			</thead>
+			<tr>
+				<th>Air-based</th>
+				<td>35% of wind</td>
+				<td>40% of wind</td>
+			</tr>
+			<tr>
+				<th>Ground-based</th>
+				<td>20% of wind</td>
+				<td>15% of wind</td>
+			</tr>
+			<tr>
+				<th>Water-based</th>
+				<td>20% of wind</td>
+				<td>30% of wind</td>
+			</tr>
+		</table>
+
+		<h3 id="off-road-movement-for-ground-vehicles">Off-Road Movement for Ground Vehicles</h3>
+		<p>
+			The listed movement rate for any ground vehicle is its on-road movement. If a ground vehicle goes off-road, it suffers a -2 DM to Agility, Movement rate is reduced to 25% of normal and rough terrain cannot be crossed. A vehicle that is off-road capable does not suffer the -2 DM to Agility, and the Movement rate is not reduced. It can cross rough terrain with a -2 DM to Agility.
+		</p>
+
+		<h2 id="vehicles-over-20-tons">Vehicles Over 20 Tons</h2>
+		<p>
+			Some vehicles, such as ocean liners and other large watercraft, exceed the usual 20 tons limit defined by the Vehicle Design System. When designing vehicles of such size, the process remains much the same, with the following exceptions:
+		</p>
+		<ol>
+			<li><b>Chassis:</b> Select a hull of the appropriate size, based on tonnage, from the <a href="ship-design-and-construction.html">Smallcraft or Ship Design systems in the Cepheus Engine Core Rules</a>. Because the hull does not have to be spaceworthy, divide the hull price by 25 to get an appropriate price for the chassis. Multiply the tonnage of the chassis by 12 to get the number of Spaces available. Construction time remains the same as the original hull.</li>
+			<li>
+				<p>
+					<b>Power Plant:</b> Select an appropriate power plant and maneuver drive from the Smallcraft or Ship Design system to represent the vehicle’s power plant. The differences in power plant construction for vehicles as opposed to space ships lead to a few changes in volume and price. Modify these values as needed based on Power Plant Type.
+				</p>
+				<ul class="list-unstyled pl-5">
+					<li>Vehicle Power Plant Spaces = Ship/Smallcraft Power Plant Drive tonnage x 0.90 x 12</li>
+					<li>Vehicle Power Plant Price = Power Plant Drive price x 0.006</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+					<b>Propulsion:</b> Select an appropriate maneuver drive from the Smallcraft or Ship Design system to represent the vehicle’s propulsion system. The differences in propulsion systems for vehicles as opposed to space ships lead to a few changes in volume and price. Use the Performance number given in the <a href="ship-design-and-construction.html">Smallcraft or Ship Design system</a> to determine the craft’s base speed. Modify these values as needed based on Propulsion Type.
+				</p>
+				<ul class="list-unstyled pl-5">
+					<li>Vehicle Contact-Based Propulsion System Spaces = Ship/Smallcraft Maneuver Drive tonnage x 12</li>
+					<li>Vehicle Contact-Based Propulsion System Price = Ship/Smallcraft Maneuver Drive price x 0.0055</li>
+					<li>Vehicle Thrust-Based Propulsion System Spaces = Ship/Smallcraft Maneuver Drive tonnage x 0.90 x 12</li>
+					<li>Vehicle Thrust-Based Propulsion System Price = Ship/Smallcraft Maneuver Drive price x 0.25</li>
+				</ul>
+			</li>
+			<li><b>Crew:</b> Determine crew using the standard Ship Design rules in <a href="ship-design-and-construction.html">Chapter 8: Ship Design and Construction</a> of the core rules. Commercial and private vehicles tend to use the Minimum column of the Ship Crew Requirements table, while military vehicles tend to use the Full Complement column.</li>
+			<li><b>Additional Vehicle Components:</b> In addition to Vehicle Components, large vehicles can purchase an airlock or other ship design components. Multiply the tonnage of the component by 12 to get the number of Spaces it takes up.</li>
+			<li><b>Armaments:</b> Large vehicles have one hardpoint per 100 tons of displacement, minimum of one hardpoint, and can install ship weapons as per the ship design process, in addition to vehicle weapons.</li>
+		</ol>
+
+		<h2 id="universal-vehicle-description-format">Universal Vehicle Description Format</h2>
+		<p>
+			After a vehicle design has been created, it must be presented in a format that allows players to use the information within the game. The Cepheus Engine VDS describes vehicle designs using a universal vehicle description format, which is essentially a paragraph of text laid out in the following manner. Examples can be found in <a href="common-aircraft.html">Chapter 2: Common Aircraft</a> through <a href="uncommon-vehicles.html">Chapter 6: Uncommon Vehicles</a>.
+		</p>
+		<p>
+			<span class="text-info">[Vehicle's Tech Level]</span> <span class="text-info">[Vehicle Descriptive Name]</span><br>
+			Using a/an <span class="text-info">[Vehicle Configuration]</span> <span class="text-info">[Vehicle Chassis Displacement]</span>-ton chassis (<span class="text-info">[Chassis Damage Value]</span> Hull, <span class="text-info">[Structure Damage Value]</span> Structure,), the <span class="text-info">[Vehicle Descriptive Name]</span> is <span class="text-info">[General Description of Vehicle's Function]</span>. <span class="text-info">[List any vehicle configuration options, if any.]</span>. It carries a <span class="text-info">[Vehicle Power Plant Type]</span>, power plant/engine, Code <span class="text-info">[Power Plant Drive Code]</span>, and a/an <span class="text-info">[Vehicle Propulsion Type]</span> propulsion system, Code <span class="text-info">[Propulsion System Drive Code]</span> giving a top speed of <span class="text-info">[Vehicle Base Speed]</span>, a cruising speed of <span class="text-info">[Cruising Speed]</span> and an Agility DM of <span class="text-info">[Agility DM]</span>. <span class="text-info">[List any vehicle drive options, if any.]</span> <span class="text-info">[Fuel Volume]</span> kiloliters of <span class="text-info">[Fuel Type]</span> support the power plant for <span class="text-info">[Duration of Vehicle Use]</span>. <span class="text-info">[Any additional fuel usage notes.]</span> This vehicle is equipped with <span class="text-info">[Vehicle Control System Interface]</span> controls, <span class="text-info">[Vehicle Communication System]</span> communication (<span class="text-info">[Communication System Range]</span>), <span class="text-info">[Sensors Type]</span> sensors (<span class="text-info">[Sensors Comms DM]</span>), and a Model <span class="text-info">[Computer Model]</span>computer. <span class="text-info">[Include any additional notes on the vehicles Control Systems, Communications Systems, Sensors or Computer.]</span> There are <span class="text-info">[list accommodations individually by type and number]</span>. The vehicle has <span class="text-info">[Number of Weapon Points]</span> weapon points. <span class="text-info">[Describe any vehicle armaments that have been installed, if any. Also note any ammunition carried.]</span> tons allocated for fire control. Installed on the hardpoints are <span class="text-info">[Describe number and type of turrets, and any weapon systems that have been installed, if any. Also note any ammunition carried for missiles and sandcasters.]</span> This ship has <span class="text-info">[Number of Screens Installed]</span> screens: <span class="text-info">[Describe number and type of screens]</span>. There are <span class="text-info">[Number of Small Craft Hangers]</span> small craft hangars, <span class="text-info">[Describe number and contents of each hangar]</span>. <span class="text-info">[List any additional vehicle components here]</span>. Cargo capacity is <span class="text-info">[Cargo Tonnage]</span> tons (or <span class="text-info">[Cargo Spaces]</span> kiloliters). The chassis is additionally armored with <span class="text-info">[Armor Type]</span> (x<span class="text-info">[Level of Additional Armor]</span>.) <span class="text-info">[Note any Vehicle's Armor options that have been installed.]</span> The vehicle requires a crew of <span class="text-info">[Crew Total]</span>: <span class="text-info">[List crew positions]</span>. The vehicle can carry up to <span class="text-info">[list additional passenger count individually by number and type of accommodation]</span>. The vehicle costs KCr<span class="text-info">[Price of Vehicle]</span> (including discounts and fees) and takes <span class="text-info">[Construction Time]</span> hours to build.
+		</p>
+	</main>
+
+	<footer class="footer fixed-bottom">
+		<div class="container">
+			<span class="text-muted">Cepheus Engine System Reference Document, Copyright © 2016 Samardan Press; Author Jason "Flynn" Kemp</span>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
