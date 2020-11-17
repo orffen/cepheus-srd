@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cepheus Engine SRD - Common Aircraft</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
 	<link href="cepheus-engine-srd.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
 	<header>
 		<nav class="navbar navbar-expand-custom bg-dark navbar-dark fixed-top">
 			<a class="navbar-brand" href="index.html">Cepheus Engine SRD</a>
@@ -79,285 +80,292 @@
 	</header>
 
 	<main class="container w-75">
-		<h1>Chapter 2: Common Aircraft</h1>
-		<p class="lead">
-			This section describes some of the common types of aircraft that can be encountered in Cepheus Engine campaigns. These are not the only types of vessels that exist, and creative Referees are encouraged to integrate aircraft of their own creation or from other sources into their universes as they see fit.
-		</p>
+		<div class="row">
+			<div class="col-sm-3">
+				<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+			</div>
+			<div class="col-sm-9">
+				<h1>Chapter 2: Common Aircraft</h1>
+				<p class="lead">
+					This section describes some of the common types of aircraft that can be encountered in Cepheus Engine campaigns. These are not the only types of vessels that exist, and creative Referees are encouraged to integrate aircraft of their own creation or from other sources into their universes as they see fit.
+				</p>
 
-		<h2>TL5 Biplane</h2>
-		<p>
-			Using an open one-ton chassis (0 Hull, 1 Structure, Armor 2), the Biplane is a primitive form of aircraft with two pairs of wings, one above the other. It carries an internal combustion engine, Code D, and a horizontally-mounted rotor propulsion system, Code D, giving a top speed of 200 kph, a cruising speed of 150 kph, and an Agility DM of -1. 14 liters of hydrocarbons support the power plant for three hours. This vehicle is equipped with basic controls. There is one basic cockpit and one standard seat. Cargo capacity is slightly less than one kiloliter. The vehicle requires a crew of one, the pilot. The vehicle can carry up to one additional passenger comfortably in a standard seat. The vehicle costs KCr20.670 (including discounts and fees) and takes 9 hours to build.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: TL5 Biplane Design Specifications</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Category</th>
-					<th>Component</th>
-					<th>Spaces</th>
-					<th>Price(Cr)</th>
-					<th>Notes</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Chassis</th>
-				<td>Base</td>
-				<td>12</td>
-				<td>2400</td>
-				<td>Code 4</td>
-			</tr>
-			<tr>
-				<th></th>
-				<td>Configuration</td>
-				<td></td>
-				<td>-240</td>
-				<td>Open</td>
-			</tr>
-			<tr>
-				<th>Power Plant</th>
-				<td>Internal Combustion</td>
-				<td>-4.5</td>
-				<td>42.5</td>
-				<td>Code D</td>
-			</tr>
-			<tr>
-				<th>Propulsion</th>
-				<td>Rotor (horizontal mount)</td>
-				<td>-1.5</td>
-				<td>18750</td>
-				<td>Code D</td>
-			</tr>
-			<tr>
-				<th>Fuel</th>
-				<td>Hydrocarbons</td>
-				<td>-0.014</td>
-				<td>11.2</td>
-				<td>Fuel capacity = 3 hours</td>
-			</tr>
-			<tr>
-				<th>Controls</th>
-				<td>Basic</td>
-				<td>-1</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>Accommodations</th>
-				<td>Basic Cockpit</td>
-				<td>-2</td>
-				<td>1000</td>
-				<td>One crew</td>
-			</tr>
-			<tr>
-				<th></th>
-				<td>Standard Seat</td>
-				<td>-2</td>
-				<td>1000</td>
-				<td>One passenger</td>
-			</tr>
-			<tr>
-				<th>Cargo</th>
-				<td></td>
-				<td>-0.99</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>TOTALS</th>
-				<td></td>
-				<td>0</td>
-				<td>22963.71</td>
-				<td>Cr20,670 with Std Design Discount</td>
-			</tr>
-		</table>
+				<h2>TL5 Biplane</h2>
+				<p>
+					Using an open one-ton chassis (0 Hull, 1 Structure, Armor 2), the Biplane is a primitive form of aircraft with two pairs of wings, one above the other. It carries an internal combustion engine, Code D, and a horizontally-mounted rotor propulsion system, Code D, giving a top speed of 200 kph, a cruising speed of 150 kph, and an Agility DM of -1. 14 liters of hydrocarbons support the power plant for three hours. This vehicle is equipped with basic controls. There is one basic cockpit and one standard seat. Cargo capacity is slightly less than one kiloliter. The vehicle requires a crew of one, the pilot. The vehicle can carry up to one additional passenger comfortably in a standard seat. The vehicle costs KCr20.670 (including discounts and fees) and takes 9 hours to build.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: TL5 Biplane Design Specifications</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Category</th>
+							<th>Component</th>
+							<th>Spaces</th>
+							<th>Price(Cr)</th>
+							<th>Notes</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Chassis</th>
+						<td>Base</td>
+						<td>12</td>
+						<td>2400</td>
+						<td>Code 4</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Configuration</td>
+						<td></td>
+						<td>-240</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<th>Power Plant</th>
+						<td>Internal Combustion</td>
+						<td>-4.5</td>
+						<td>42.5</td>
+						<td>Code D</td>
+					</tr>
+					<tr>
+						<th>Propulsion</th>
+						<td>Rotor (horizontal mount)</td>
+						<td>-1.5</td>
+						<td>18750</td>
+						<td>Code D</td>
+					</tr>
+					<tr>
+						<th>Fuel</th>
+						<td>Hydrocarbons</td>
+						<td>-0.014</td>
+						<td>11.2</td>
+						<td>Fuel capacity = 3 hours</td>
+					</tr>
+					<tr>
+						<th>Controls</th>
+						<td>Basic</td>
+						<td>-1</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Accommodations</th>
+						<td>Basic Cockpit</td>
+						<td>-2</td>
+						<td>1000</td>
+						<td>One crew</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Standard Seat</td>
+						<td>-2</td>
+						<td>1000</td>
+						<td>One passenger</td>
+					</tr>
+					<tr>
+						<th>Cargo</th>
+						<td></td>
+						<td>-0.99</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>TOTALS</th>
+						<td></td>
+						<td>0</td>
+						<td>22963.71</td>
+						<td>Cr20,670 with Std Design Discount</td>
+					</tr>
+				</table>
 
-		<h2>TL7 Helicopter</h2>
-		<p>
-			Using a closed four-ton chassis (0 Hull, 1 Structure, Armor 3), the Helicopter is an aircraft that derives both lift and propulsion from one or more sets of revolving overhead rotors. It is capable of moving vertically and horizontally, the direction of motion being controlled by the pitch of the rotor blades. It carries a Gas Turbine engine, Code M, and a vertically mounted rotor propulsion system, Code M, giving a top speed of 250 kph, a cruising speed of 187.5 kph, and an Agility DM of -2. 90 liters of hydrocarbons support the power plant for three hours. This vehicle is equipped with basic controls and a Class III communication system (Regional). There is an extended cockpit and six cramped seats. Cargo capacity is 11.86 kiloliters. The vehicle requires a crew of one, the pilot. The vehicle can carry one passenger in the cockpit and up to six passengers in cramped seats. The vehicle costs KCr154.810 (including discounts and fees) and takes 36 hours to build.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: TL7 Helicopter Design Specifications</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Category</th>
-					<th>Component</th>
-					<th>Spaces</th>
-					<th>Price(Cr)</th>
-					<th>Notes</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Chassis</th>
-				<td>Base</td>
-				<td>48</td>
-				<td>6250</td>
-				<td>Code 8</td>
-			</tr>
-			<tr>
-				<th></th>
-				<td>Configuration</td>
-				<td></td>
-				<td></td>
-				<td>Closed</td>
-			</tr>
-			<tr>
-				<th>Power Plant</th>
-				<td>Gas Turbine</td>
-				<td>-10.5</td>
-				<td>1481.25</td>
-				<td>Code M</td>
-			</tr>
-			<tr>
-				<th>Propulsion</th>
-				<td>Rotor (vertical mount)</td>
-				<td>-12.5</td>
-				<td>156250</td>
-				<td>Code M</td>
-			</tr>
-			<tr>
-				<th>Fuel</th>
-				<td>Hydrocarbons</td>
-				<td>-0.09</td>
-				<td>74.7</td>
-				<td>Fuel capacity = 3 hours</td>
-			</tr>
-			<tr>
-				<th>Controls</th>
-				<td>Basic</td>
-				<td>-1</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>Communications</th>
-				<td>Class III</td>
-				<td>-0.05</td>
-				<td>2000</td>
-				<td>Regional (500 km)</td>
-			</tr>
-			<tr>
-				<th>Accommodations</th>
-				<td>Extended Cockpit</td>
-				<td>-4</td>
-				<td>2000</td>
-				<td>Two crew</td>
-			</tr>
-			<tr>
-				<th></th>
-				<td>Cramped Seat</td>
-				<td>-8</td>
-				<td>4000</td>
-				<td>Six people, cramped</td>
-			</tr>
-			<tr>
-				<th>Cargo</th>
-				<td></td>
-				<td>-11.86</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>TOTALS</th>
-				<td></td>
-				<td>0</td>
-				<td>172055.95</td>
-				<td>Cr154,810 with Std Design Discount</td>
-			</tr>
-		</table>
+				<h2>TL7 Helicopter</h2>
+				<p>
+					Using a closed four-ton chassis (0 Hull, 1 Structure, Armor 3), the Helicopter is an aircraft that derives both lift and propulsion from one or more sets of revolving overhead rotors. It is capable of moving vertically and horizontally, the direction of motion being controlled by the pitch of the rotor blades. It carries a Gas Turbine engine, Code M, and a vertically mounted rotor propulsion system, Code M, giving a top speed of 250 kph, a cruising speed of 187.5 kph, and an Agility DM of -2. 90 liters of hydrocarbons support the power plant for three hours. This vehicle is equipped with basic controls and a Class III communication system (Regional). There is an extended cockpit and six cramped seats. Cargo capacity is 11.86 kiloliters. The vehicle requires a crew of one, the pilot. The vehicle can carry one passenger in the cockpit and up to six passengers in cramped seats. The vehicle costs KCr154.810 (including discounts and fees) and takes 36 hours to build.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: TL7 Helicopter Design Specifications</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Category</th>
+							<th>Component</th>
+							<th>Spaces</th>
+							<th>Price(Cr)</th>
+							<th>Notes</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Chassis</th>
+						<td>Base</td>
+						<td>48</td>
+						<td>6250</td>
+						<td>Code 8</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Configuration</td>
+						<td></td>
+						<td></td>
+						<td>Closed</td>
+					</tr>
+					<tr>
+						<th>Power Plant</th>
+						<td>Gas Turbine</td>
+						<td>-10.5</td>
+						<td>1481.25</td>
+						<td>Code M</td>
+					</tr>
+					<tr>
+						<th>Propulsion</th>
+						<td>Rotor (vertical mount)</td>
+						<td>-12.5</td>
+						<td>156250</td>
+						<td>Code M</td>
+					</tr>
+					<tr>
+						<th>Fuel</th>
+						<td>Hydrocarbons</td>
+						<td>-0.09</td>
+						<td>74.7</td>
+						<td>Fuel capacity = 3 hours</td>
+					</tr>
+					<tr>
+						<th>Controls</th>
+						<td>Basic</td>
+						<td>-1</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Communications</th>
+						<td>Class III</td>
+						<td>-0.05</td>
+						<td>2000</td>
+						<td>Regional (500 km)</td>
+					</tr>
+					<tr>
+						<th>Accommodations</th>
+						<td>Extended Cockpit</td>
+						<td>-4</td>
+						<td>2000</td>
+						<td>Two crew</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Cramped Seat</td>
+						<td>-8</td>
+						<td>4000</td>
+						<td>Six people, cramped</td>
+					</tr>
+					<tr>
+						<th>Cargo</th>
+						<td></td>
+						<td>-11.86</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>TOTALS</th>
+						<td></td>
+						<td>0</td>
+						<td>172055.95</td>
+						<td>Cr154,810 with Std Design Discount</td>
+					</tr>
+				</table>
 
-		<h2>TL7 Twin Engine Jet</h2>
-		<p>
-			Using a closed five-ton chassis (1 Hull, 1 Structure, Armor 3), the Twin Engine Jet is a fixed-wing aircraft propelled by jet engines, often for rapid transportation of small groups. It carries a Gas Turbine engine, Code N, and a jet propulsion system, Code N, giving a top speed of 750 kph, a cruising speed of 562.5 kph, and an Agility DM of -1. 230 liters of hydrocarbons support the power plant for six hours. This vehicle is equipped with basic controls and a Class III communication system (Regional). There is an extended cockpit and six cramped seats. Cargo capacity is 17.22 kiloliters. The vehicle requires a crew of one, the pilot. The vehicle can carry one passenger in the cockpit and up to six passengers in cramped seats. The vehicle costs KCr736.110 (including discounts and fees) and takes 45 hours to build.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: TL7 Twin Engine Jet Design Specifications</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Category</th>
-					<th>Component</th>
-					<th>Spaces</th>
-					<th>Price(Cr)</th>
-					<th>Notes</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Chassis</th>
-				<td>Base</td>
-				<td>60</td>
-				<td>7800</td>
-				<td>Code 9</td>
-			</tr>
-			<tr>
-				<th></th>
-				<td>Configuration</td>
-				<td></td>
-				<td></td>
-				<td>Closed</td>
-			</tr>
-			<tr>
-				<th>Power Plant</th>
-				<td>Gas Turbine</td>
-				<td>-13.5</td>
-				<td>1900</td>
-				<td>Code N</td>
-			</tr>
-			<tr>
-				<th>Propulsion</th>
-				<td>Jet</td>
-				<td>-16</td>
-				<td>800000</td>
-				<td>Code N</td>
-			</tr>
-			<tr>
-				<th>Fuel</th>
-				<td>Hydrocarbons</td>
-				<td>-0.23</td>
-				<td>194.22</td>
-				<td>Fuel capacity = 6 hours</td>
-			</tr>
-			<tr>
-				<th>Controls</th>
-				<td>Basic</td>
-				<td>-1</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>Communications</th>
-				<td>Class III</td>
-				<td>-0.05</td>
-				<td>2000</td>
-				<td>Regional (500 km)</td>
-			</tr>
-			<tr>
-				<th>Accommodations</th>
-				<td>Extended Cockpit</td>
-				<td>-4</td>
-				<td>2000</td>
-				<td>Two crew</td>
-			</tr>
-			<tr>
-				<th></th>
-				<td>Cramped Seat</td>
-				<td>-8</td>
-				<td>4000</td>
-				<td>Six people, cramped</td>
-			</tr>
-			<tr>
-				<th>Cargo</th>
-				<td></td>
-				<td>-17.22</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>TOTALS</th>
-				<td></td>
-				<td>0</td>
-				<td>817894.22</td>
-				<td>Cr736,110 with Std Design Discount</td>
-			</tr>
-		</table>
+				<h2>TL7 Twin Engine Jet</h2>
+				<p>
+					Using a closed five-ton chassis (1 Hull, 1 Structure, Armor 3), the Twin Engine Jet is a fixed-wing aircraft propelled by jet engines, often for rapid transportation of small groups. It carries a Gas Turbine engine, Code N, and a jet propulsion system, Code N, giving a top speed of 750 kph, a cruising speed of 562.5 kph, and an Agility DM of -1. 230 liters of hydrocarbons support the power plant for six hours. This vehicle is equipped with basic controls and a Class III communication system (Regional). There is an extended cockpit and six cramped seats. Cargo capacity is 17.22 kiloliters. The vehicle requires a crew of one, the pilot. The vehicle can carry one passenger in the cockpit and up to six passengers in cramped seats. The vehicle costs KCr736.110 (including discounts and fees) and takes 45 hours to build.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: TL7 Twin Engine Jet Design Specifications</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Category</th>
+							<th>Component</th>
+							<th>Spaces</th>
+							<th>Price(Cr)</th>
+							<th>Notes</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Chassis</th>
+						<td>Base</td>
+						<td>60</td>
+						<td>7800</td>
+						<td>Code 9</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Configuration</td>
+						<td></td>
+						<td></td>
+						<td>Closed</td>
+					</tr>
+					<tr>
+						<th>Power Plant</th>
+						<td>Gas Turbine</td>
+						<td>-13.5</td>
+						<td>1900</td>
+						<td>Code N</td>
+					</tr>
+					<tr>
+						<th>Propulsion</th>
+						<td>Jet</td>
+						<td>-16</td>
+						<td>800000</td>
+						<td>Code N</td>
+					</tr>
+					<tr>
+						<th>Fuel</th>
+						<td>Hydrocarbons</td>
+						<td>-0.23</td>
+						<td>194.22</td>
+						<td>Fuel capacity = 6 hours</td>
+					</tr>
+					<tr>
+						<th>Controls</th>
+						<td>Basic</td>
+						<td>-1</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Communications</th>
+						<td>Class III</td>
+						<td>-0.05</td>
+						<td>2000</td>
+						<td>Regional (500 km)</td>
+					</tr>
+					<tr>
+						<th>Accommodations</th>
+						<td>Extended Cockpit</td>
+						<td>-4</td>
+						<td>2000</td>
+						<td>Two crew</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Cramped Seat</td>
+						<td>-8</td>
+						<td>4000</td>
+						<td>Six people, cramped</td>
+					</tr>
+					<tr>
+						<th>Cargo</th>
+						<td></td>
+						<td>-17.22</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>TOTALS</th>
+						<td></td>
+						<td>0</td>
+						<td>817894.22</td>
+						<td>Cr736,110 with Std Design Discount</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</main>
 
 	<footer class="footer fixed-bottom">
@@ -366,8 +374,8 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 </body>
 </html>

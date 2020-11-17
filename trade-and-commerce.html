@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cepheus Engine SRD - Trade and Commerce</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
 	<link href="cepheus-engine-srd.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
 	<header>
 		<nav class="navbar navbar-expand-custom bg-dark navbar-dark fixed-top">
 			<a class="navbar-brand" href="index.html">Cepheus Engine SRD</a>
@@ -79,539 +80,546 @@
 	</header>
 
 	<main class="container w-75">
-		<h1>Chapter 7: Trade and Commerce</h1>
-		<p class="lead">
-			As outlined under <a href="off-world-travel.html#starship-revenues">Starship Revenues</a> in <a href="off-world-travel.html">Chapter 6: Off-World Travel</a>, a vessel can easily haul cargo for a flat rate, without having to engage in speculative trading. However, for those merchants willing to take the risk, speculative trading can prove to be a very profitable enterprise. This chapter provides a simple speculative trade system for use in Cepheus Engine campaigns, for those interested in such pursuits.
-		</p>
+		<div class="row">
+			<div class="col-sm-3">
+				<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+			</div>
+			<div class="col-sm-9">
+				<h1>Chapter 7: Trade and Commerce</h1>
+				<p class="lead">
+					As outlined under <a href="off-world-travel.html#starship-revenues">Starship Revenues</a> in <a href="off-world-travel.html">Chapter 6: Off-World Travel</a>, a vessel can easily haul cargo for a flat rate, without having to engage in speculative trading. However, for those merchants willing to take the risk, speculative trading can prove to be a very profitable enterprise. This chapter provides a simple speculative trade system for use in Cepheus Engine campaigns, for those interested in such pursuits.
+				</p>
 
-		<h2 id="speculative-trade-checklist">Speculative Trade Checklist</h2>
-		<p>
-			Speculative trading follows a basic procedure. The following checklist outlines the various steps in the speculative trade procedure.
-		</p>
-		<ol>
-			<li>Find a supplier</li>
-			<li>Determine goods available</li>
-			<li>Determine purchase price</li>
-			<li>Take goods to new world or market</li>
-			<li>Find a buyer</li>
-			<li>Determine sales price</li>
-		</ol>
+				<h2 id="speculative-trade-checklist">Speculative Trade Checklist</h2>
+				<p>
+					Speculative trading follows a basic procedure. The following checklist outlines the various steps in the speculative trade procedure.
+				</p>
+				<ol>
+					<li>Find a supplier</li>
+					<li>Determine goods available</li>
+					<li>Determine purchase price</li>
+					<li>Take goods to new world or market</li>
+					<li>Find a buyer</li>
+					<li>Determine sales price</li>
+				</ol>
 
-		<h2 id="find-a-supplier">Find a Supplier</h2>
-		<p>
-			The first step in the process is simple: find a supplier with something to sell. Characters can search for multiple suppliers, but there is a –1 DM per previous attempt on a planet in a given month.
-		</p>
-		<dl>
-			<dt>Finding a supplier:</dt>
-			<dd><a href="skills.html#broker">Broker</a>, Education or Social Standing, 1D6 days, Average (+0).</dd>
-			<dt>Finding a black market supplier:</dt>
-			<dd>(Illegal goods only) <a href="skills.html#streetwise">Streetwise</a>, Education or Social Standing, 1D6 days, Average (+0).</dd>
-			<dt>Finding an online supplier: </dt>
-			<dd>(Worlds with TL 8+ only) <a href="skills.html#computer">Computers</a>, Education, 1D6 hours, Average (+0).</dd>
-		</dl>
-		<p>
-			The size of the <a href="worlds.html#primary-starport">Starport</a> provides a bonus to finding a supplier. Class A starports give a +6 DM, class B starports give a +4 DM and class C starports give a +2 DM.
-		</p>
+				<h2 id="find-a-supplier">Find a Supplier</h2>
+				<p>
+					The first step in the process is simple: find a supplier with something to sell. Characters can search for multiple suppliers, but there is a –1 DM per previous attempt on a planet in a given month.
+				</p>
+				<dl>
+					<dt>Finding a supplier:</dt>
+					<dd><a href="skills.html#broker">Broker</a>, Education or Social Standing, 1D6 days, Average (+0).</dd>
+					<dt>Finding a black market supplier:</dt>
+					<dd>(Illegal goods only) <a href="skills.html#streetwise">Streetwise</a>, Education or Social Standing, 1D6 days, Average (+0).</dd>
+					<dt>Finding an online supplier: </dt>
+					<dd>(Worlds with TL 8+ only) <a href="skills.html#computer">Computers</a>, Education, 1D6 hours, Average (+0).</dd>
+				</dl>
+				<p>
+					The size of the <a href="worlds.html#primary-starport">Starport</a> provides a bonus to finding a supplier. Class A starports give a +6 DM, class B starports give a +4 DM and class C starports give a +2 DM.
+				</p>
 
-		<h2 id="determine-goods-available">Determine Goods Available</h2>
-		<p>
-			Goods are divided into two categories of goods – Common and Trade Goods. Common Goods can be purchased on any world. Trade Goods can usually only be found on a world with a matching trade code. The amount of each type of goods available is limited – the tons column on the Trade Goods table determines how many tons of a given type of goods is available for purchase.
-		</p>
-		<p>
-			A given supplier has all Common Goods available and 1D6 randomly determined goods. Roll D66 on the table to determine the goods available, ignoring results 61–65 unless dealing with a black market supplier. If you roll the same type of goods multiple times, then the supplier has extra amounts of those goods available.
-		</p>
-		<p>
-			Some goods are illegal, and can be purchased only through a black market supplier. A black market supplier has whatever illegal goods match his world's trade code, as well as any randomly rolled illegal goods. Other goods may be legal on some worlds, but not legal on others (such as personal weapons and armor, which might be restricted on a world with a high law level). The Referee should adjudicate such situations as they occur.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: Common Goods</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Item</th>
-					<th>Cost (Cr)</th>
-					<th>Tons</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Basic Consumable Goods</th>
-				<td>1,000</td>
-				<td>2D6x5</td>
-			</tr>
-			<tr>
-				<th>Basic Electronics</th>
-				<td>25,000</td>
-				<td>2D6x5</td>
-			</tr>
-			<tr>
-				<th>Basic Machine Parts</th>
-				<td>10,000</td>
-				<td>2D6x5</td>
-			</tr>
-			<tr>
-				<th>Basic Manufactured Goods</th>
-				<td>20,000</td>
-				<td>2D6x5</td>
-			</tr>
-			<tr>
-				<th>Basic Raw Materials</th>
-				<td>5,000</td>
-				<td>2D6x5</td>
-			</tr>
-			<tr>
-				<th>Basic Unrefined Ore</th>
-				<td>2,000</td>
-				<td>2D6x5</td>
-			</tr>
-		</table>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: Trade Goods</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>D66</th>
-					<th>Trade Goods</th>
-					<th>Base Price (Cr)</th>
-					<th>Tons</th>
-					<th>Purchase DMs</th>
-					<th>Sale DMs</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>11</th>
-				<td>Advanced Electronics</td>
-				<td>100,000</td>
-				<td>1D6x5</td>
-				<td>Ht +2, In +3</td>
-				<td>Ni +2, Po +1</td>
-			</tr>
-			<tr>
-				<th>12</th>
-				<td>Advanced Manufactured Goods</td>
-				<td>200,000</td>
-				<td>1D6x5</td>
-				<td>In +3, Ri +2</td>
-				<td>Ag +1, Ni +2</td>
-			</tr>
-			<tr>
-				<th>13</th>
-				<td>Agricultural Equipment</td>
-				<td>150,000</td>
-				<td>1D6</td>
-				<td>In +3, Ri +2</td>
-				<td>Ag +2, Ga +1</td>
-			</tr>
-			<tr>
-				<th>14</th>
-				<td>Animal Products</td>
-				<td>1,500</td>
-				<td>4D6x5</td>
-				<td>Ag +2, Ga +3</td>
-				<td>Hi +2, Ri +1</td>
-			</tr>
-			<tr>
-				<th>15</th>
-				<td>Collectibles</td>
-				<td>50,000</td>
-				<td>1D6</td>
-				<td>In +2, Ri +3</td>
-				<td>Hi +2, Ni +1</td>
-			</tr>
-			<tr>
-				<th>16</th>
-				<td>Computers & Computer Parts</td>
-				<td>150,000</td>
-				<td>2D6</td>
-				<td>Ht +3, In +2</td>
-				<td>Na +1, Ni +2</td>
-			</tr>
-			<tr>
-				<th>21</th>
-				<td>Crystals & Gems</td>
-				<td>20,000</td>
-				<td>1D6x5</td>
-				<td>Ni +3, Na +2</td>
-				<td>In +1, Ri +2</td>
-			</tr>
-			<tr>
-				<th>22</th>
-				<td>Cybernetic Parts</td>
-				<td>250,000</td>
-				<td>1D6x5</td>
-				<td>Ht +3, Ri +2</td>
-				<td>Na +1, Ni +2</td>
-			</tr>
-			<tr>
-				<th>23</th>
-				<td>Food Service Equipment</td>
-				<td>4,000</td>
-				<td>2D6</td>
-				<td>In +3, Na +2</td>
-				<td>Ag +1, Ni +2</td>
-			</tr>
-			<tr>
-				<th>24</th>
-				<td>Furniture</td>
-				<td>5,000</td>
-				<td>4D6</td>
-				<td>Ag +2, Ga +3</td>
-				<td>Hi +1, Ri +2</td>
-			</tr>
-			<tr>
-				<th>25</th>
-				<td>Gambling Devices & Equipment</td>
-				<td>4,000</td>
-				<td>1D6</td>
-				<td>Hi +2, Ri +3</td>
-				<td>Na +2, Ni +1</td>
-			</tr>
-			<tr>
-				<th>26</th>
-				<td>Grav Vehicles</td>
-				<td>160,000</td>
-				<td>1D6</td>
-				<td>Ht +3, Ri +2</td>
-				<td>Ni +2, Po +1</td>
-			</tr>
-			<tr>
-				<th>31</th>
-				<td>Grocery Products</td>
-				<td>6,000</td>
-				<td>1D6x5</td>
-				<td>Ag +3, Ga +2</td>
-				<td>Hi +1, Ri +2</td>
-			</tr>
-			<tr>
-				<th>32</th>
-				<td>Household Appliances</td>
-				<td>12,000</td>
-				<td>4D6</td>
-				<td>Hi +2, In +3</td>
-				<td>Na +1, Ni +2</td>
-			</tr>
-			<tr>
-				<th>33</th>
-				<td>Industrial Supplies</td>
-				<td>75,000</td>
-				<td>2D6</td>
-				<td>In +3, Ri +2</td>
-				<td>Na +1, Ni +2</td>
-			</tr>
-			<tr>
-				<th>34</th>
-				<td>Liquor & Other Intoxicants</td>
-				<td>15,000</td>
-				<td>1D6x5</td>
-				<td>Ag +3, Ga +2</td>
-				<td>In +1, Ri +2</td>
-			</tr>
-			<tr>
-				<th>35</th>
-				<td>Luxury Goods</td>
-				<td>150,000</td>
-				<td>1D6</td>
-				<td>Ag +2, Ga +3</td>
-				<td>In +1, Ri +2</td>
-			</tr>
-			<tr>
-				<th>36</th>
-				<td>Manufacturing Equipment</td>
-				<td>750,000</td>
-				<td>1D6x5</td>
-				<td>In +3, Ri +2</td>
-				<td>Na +1, Ni +2</td>
-			</tr>
-			<tr>
-				<th>41</th>
-				<td>Medical Equipment</td>
-				<td>50,000</td>
-				<td>1D6x5</td>
-				<td>Ht +2, Ri +3</td>
-				<td>Hi +1, In +2</td>
-			</tr>
-			<tr>
-				<th>42</th>
-				<td>Petrochemicals</td>
-				<td>10,000</td>
-				<td>2D6x5</td>
-				<td>Na +2, Ni +3</td>
-				<td>Ag +1, In +2</td>
-			</tr>
-			<tr>
-				<th>43</th>
-				<td>Pharmaceuticals</td>
-				<td>100,000</td>
-				<td>1D6</td>
-				<td>Ht +3, Wa +2</td>
-				<td>In +2, Ri +1</td>
-			</tr>
-			<tr>
-				<th>44</th>
-				<td>Polymers</td>
-				<td>7,000</td>
-				<td>4D6x5</td>
-				<td>In +2, Ri +3</td>
-				<td>Ni +2, Va +1</td>
-			</tr>
-			<tr>
-				<th>45</th>
-				<td>Precious Metals</td>
-				<td>50,000</td>
-				<td>1D6</td>
-				<td>As +3, Ic +2</td>
-				<td>In +1, Ri +2</td>
-			</tr>
-			<tr>
-				<th>46</th>
-				<td>Radioactives</td>
-				<td>1,000,000</td>
-				<td>1D6</td>
-				<td>As +2, Ni +3</td>
-				<td>In +2, Ht +1</td>
-			</tr>
-			<tr>
-				<th>51</th>
-				<td>Robots & Drones</td>
-				<td>500,000</td>
-				<td>1D6x5</td>
-				<td>Ht +3, In +2</td>
-				<td>Ni +1, Ri +2</td>
-			</tr>
-			<tr>
-				<th>52</th>
-				<td>Scientific Equipment</td>
-				<td>50,000</td>
-				<td>1D6x5</td>
-				<td>Ht +3, Ri +2</td>
-				<td>Hi +2, Ni +1</td>
-			</tr>
-			<tr>
-				<th>53</th>
-				<td>Survival Gear</td>
-				<td>4,000</td>
-				<td>2D6</td>
-				<td>Ga +3, Ri +2</td>
-				<td>Fl +2, Va +1</td>
-			</tr>
-			<tr>
-				<th>54</th>
-				<td>Textiles</td>
-				<td>3,000</td>
-				<td>3D6x5</td>
-				<td>Ag +3, Ni +2</td>
-				<td>Na +1, Ri +2</td>
-			</tr>
-			<tr>
-				<th>55</th>
-				<td>Uncommon Raw Materials</td>
-				<td>50,000</td>
-				<td>2D6x5</td>
-				<td>Ag +3, Ni +2</td>
-				<td>In +2, Na +1</td>
-			</tr>
-			<tr>
-				<th>56</th>
-				<td>Uncommon Unrefined Ores</td>
-				<td>20,000</td>
-				<td>2D6x5</td>
-				<td>As +2, Va +1</td>
-				<td>In +2, Na +1</td>
-			</tr>
-			<tr>
-				<th>61</th>
-				<td>Illicit Luxury Goods</td>
-				<td>150,000</td>
-				<td>1D6</td>
-				<td>Ag +2, Ga +3</td>
-				<td>In +4, Ri +6</td>
-			</tr>
-			<tr>
-				<th>62</th>
-				<td>Illicit Pharmaceuticals</td>
-				<td>100,000</td>
-				<td>1D6</td>
-				<td>Ht +3, Wa +2</td>
-				<td>In +6, Ri +4</td>
-			</tr>
-			<tr>
-				<th>63</th>
-				<td>Medical Research Material</td>
-				<td>50,000</td>
-				<td>1D6x5</td>
-				<td>Ht +2, Ri +3</td>
-				<td>In +6, Na +4</td>
-			</tr>
-			<tr>
-				<th>64</th>
-				<td>Military Equipment</td>
-				<td>150,000</td>
-				<td>2D6</td>
-				<td>Ht +3, In +2</td>
-				<td>Hi +6, Ni +4</td>
-			</tr>
-			<tr>
-				<th>65</th>
-				<td>Personal Weapons & Armor</td>
-				<td>30,000</td>
-				<td>2D6</td>
-				<td>In +3, Ri +2</td>
-				<td>Ni +6, Po +4</td>
-			</tr>
-			<tr>
-				<th>66</th>
-				<td>Unusual Cargo</td>
-				<td>*</td>
-				<td>*</td>
-				<td>*</td>
-				<td>*</td>
-			</tr>
-		</table>
-		<p>
-			<b>*Note:</b> Unusual cargo covers unique or highly unusual items, such as alien artifacts, high tech prototypes, stolen artwork of antiquity, or unique lifeforms. Such items often form the seed for an adventure.
-		</p>
+				<h2 id="determine-goods-available">Determine Goods Available</h2>
+				<p>
+					Goods are divided into two categories of goods – Common and Trade Goods. Common Goods can be purchased on any world. Trade Goods can usually only be found on a world with a matching trade code. The amount of each type of goods available is limited – the tons column on the Trade Goods table determines how many tons of a given type of goods is available for purchase.
+				</p>
+				<p>
+					A given supplier has all Common Goods available and 1D6 randomly determined goods. Roll D66 on the table to determine the goods available, ignoring results 61–65 unless dealing with a black market supplier. If you roll the same type of goods multiple times, then the supplier has extra amounts of those goods available.
+				</p>
+				<p>
+					Some goods are illegal, and can be purchased only through a black market supplier. A black market supplier has whatever illegal goods match his world's trade code, as well as any randomly rolled illegal goods. Other goods may be legal on some worlds, but not legal on others (such as personal weapons and armor, which might be restricted on a world with a high law level). The Referee should adjudicate such situations as they occur.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Common Goods</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Item</th>
+							<th>Cost (Cr)</th>
+							<th>Tons</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Basic Consumable Goods</th>
+						<td>1,000</td>
+						<td>2D6x5</td>
+					</tr>
+					<tr>
+						<th>Basic Electronics</th>
+						<td>25,000</td>
+						<td>2D6x5</td>
+					</tr>
+					<tr>
+						<th>Basic Machine Parts</th>
+						<td>10,000</td>
+						<td>2D6x5</td>
+					</tr>
+					<tr>
+						<th>Basic Manufactured Goods</th>
+						<td>20,000</td>
+						<td>2D6x5</td>
+					</tr>
+					<tr>
+						<th>Basic Raw Materials</th>
+						<td>5,000</td>
+						<td>2D6x5</td>
+					</tr>
+					<tr>
+						<th>Basic Unrefined Ore</th>
+						<td>2,000</td>
+						<td>2D6x5</td>
+					</tr>
+				</table>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Trade Goods</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>D66</th>
+							<th>Trade Goods</th>
+							<th>Base Price (Cr)</th>
+							<th>Tons</th>
+							<th>Purchase DMs</th>
+							<th>Sale DMs</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>11</th>
+						<td>Advanced Electronics</td>
+						<td>100,000</td>
+						<td>1D6x5</td>
+						<td>Ht +2, In +3</td>
+						<td>Ni +2, Po +1</td>
+					</tr>
+					<tr>
+						<th>12</th>
+						<td>Advanced Manufactured Goods</td>
+						<td>200,000</td>
+						<td>1D6x5</td>
+						<td>In +3, Ri +2</td>
+						<td>Ag +1, Ni +2</td>
+					</tr>
+					<tr>
+						<th>13</th>
+						<td>Agricultural Equipment</td>
+						<td>150,000</td>
+						<td>1D6</td>
+						<td>In +3, Ri +2</td>
+						<td>Ag +2, Ga +1</td>
+					</tr>
+					<tr>
+						<th>14</th>
+						<td>Animal Products</td>
+						<td>1,500</td>
+						<td>4D6x5</td>
+						<td>Ag +2, Ga +3</td>
+						<td>Hi +2, Ri +1</td>
+					</tr>
+					<tr>
+						<th>15</th>
+						<td>Collectibles</td>
+						<td>50,000</td>
+						<td>1D6</td>
+						<td>In +2, Ri +3</td>
+						<td>Hi +2, Ni +1</td>
+					</tr>
+					<tr>
+						<th>16</th>
+						<td>Computers & Computer Parts</td>
+						<td>150,000</td>
+						<td>2D6</td>
+						<td>Ht +3, In +2</td>
+						<td>Na +1, Ni +2</td>
+					</tr>
+					<tr>
+						<th>21</th>
+						<td>Crystals & Gems</td>
+						<td>20,000</td>
+						<td>1D6x5</td>
+						<td>Ni +3, Na +2</td>
+						<td>In +1, Ri +2</td>
+					</tr>
+					<tr>
+						<th>22</th>
+						<td>Cybernetic Parts</td>
+						<td>250,000</td>
+						<td>1D6x5</td>
+						<td>Ht +3, Ri +2</td>
+						<td>Na +1, Ni +2</td>
+					</tr>
+					<tr>
+						<th>23</th>
+						<td>Food Service Equipment</td>
+						<td>4,000</td>
+						<td>2D6</td>
+						<td>In +3, Na +2</td>
+						<td>Ag +1, Ni +2</td>
+					</tr>
+					<tr>
+						<th>24</th>
+						<td>Furniture</td>
+						<td>5,000</td>
+						<td>4D6</td>
+						<td>Ag +2, Ga +3</td>
+						<td>Hi +1, Ri +2</td>
+					</tr>
+					<tr>
+						<th>25</th>
+						<td>Gambling Devices & Equipment</td>
+						<td>4,000</td>
+						<td>1D6</td>
+						<td>Hi +2, Ri +3</td>
+						<td>Na +2, Ni +1</td>
+					</tr>
+					<tr>
+						<th>26</th>
+						<td>Grav Vehicles</td>
+						<td>160,000</td>
+						<td>1D6</td>
+						<td>Ht +3, Ri +2</td>
+						<td>Ni +2, Po +1</td>
+					</tr>
+					<tr>
+						<th>31</th>
+						<td>Grocery Products</td>
+						<td>6,000</td>
+						<td>1D6x5</td>
+						<td>Ag +3, Ga +2</td>
+						<td>Hi +1, Ri +2</td>
+					</tr>
+					<tr>
+						<th>32</th>
+						<td>Household Appliances</td>
+						<td>12,000</td>
+						<td>4D6</td>
+						<td>Hi +2, In +3</td>
+						<td>Na +1, Ni +2</td>
+					</tr>
+					<tr>
+						<th>33</th>
+						<td>Industrial Supplies</td>
+						<td>75,000</td>
+						<td>2D6</td>
+						<td>In +3, Ri +2</td>
+						<td>Na +1, Ni +2</td>
+					</tr>
+					<tr>
+						<th>34</th>
+						<td>Liquor & Other Intoxicants</td>
+						<td>15,000</td>
+						<td>1D6x5</td>
+						<td>Ag +3, Ga +2</td>
+						<td>In +1, Ri +2</td>
+					</tr>
+					<tr>
+						<th>35</th>
+						<td>Luxury Goods</td>
+						<td>150,000</td>
+						<td>1D6</td>
+						<td>Ag +2, Ga +3</td>
+						<td>In +1, Ri +2</td>
+					</tr>
+					<tr>
+						<th>36</th>
+						<td>Manufacturing Equipment</td>
+						<td>750,000</td>
+						<td>1D6x5</td>
+						<td>In +3, Ri +2</td>
+						<td>Na +1, Ni +2</td>
+					</tr>
+					<tr>
+						<th>41</th>
+						<td>Medical Equipment</td>
+						<td>50,000</td>
+						<td>1D6x5</td>
+						<td>Ht +2, Ri +3</td>
+						<td>Hi +1, In +2</td>
+					</tr>
+					<tr>
+						<th>42</th>
+						<td>Petrochemicals</td>
+						<td>10,000</td>
+						<td>2D6x5</td>
+						<td>Na +2, Ni +3</td>
+						<td>Ag +1, In +2</td>
+					</tr>
+					<tr>
+						<th>43</th>
+						<td>Pharmaceuticals</td>
+						<td>100,000</td>
+						<td>1D6</td>
+						<td>Ht +3, Wa +2</td>
+						<td>In +2, Ri +1</td>
+					</tr>
+					<tr>
+						<th>44</th>
+						<td>Polymers</td>
+						<td>7,000</td>
+						<td>4D6x5</td>
+						<td>In +2, Ri +3</td>
+						<td>Ni +2, Va +1</td>
+					</tr>
+					<tr>
+						<th>45</th>
+						<td>Precious Metals</td>
+						<td>50,000</td>
+						<td>1D6</td>
+						<td>As +3, Ic +2</td>
+						<td>In +1, Ri +2</td>
+					</tr>
+					<tr>
+						<th>46</th>
+						<td>Radioactives</td>
+						<td>1,000,000</td>
+						<td>1D6</td>
+						<td>As +2, Ni +3</td>
+						<td>In +2, Ht +1</td>
+					</tr>
+					<tr>
+						<th>51</th>
+						<td>Robots & Drones</td>
+						<td>500,000</td>
+						<td>1D6x5</td>
+						<td>Ht +3, In +2</td>
+						<td>Ni +1, Ri +2</td>
+					</tr>
+					<tr>
+						<th>52</th>
+						<td>Scientific Equipment</td>
+						<td>50,000</td>
+						<td>1D6x5</td>
+						<td>Ht +3, Ri +2</td>
+						<td>Hi +2, Ni +1</td>
+					</tr>
+					<tr>
+						<th>53</th>
+						<td>Survival Gear</td>
+						<td>4,000</td>
+						<td>2D6</td>
+						<td>Ga +3, Ri +2</td>
+						<td>Fl +2, Va +1</td>
+					</tr>
+					<tr>
+						<th>54</th>
+						<td>Textiles</td>
+						<td>3,000</td>
+						<td>3D6x5</td>
+						<td>Ag +3, Ni +2</td>
+						<td>Na +1, Ri +2</td>
+					</tr>
+					<tr>
+						<th>55</th>
+						<td>Uncommon Raw Materials</td>
+						<td>50,000</td>
+						<td>2D6x5</td>
+						<td>Ag +3, Ni +2</td>
+						<td>In +2, Na +1</td>
+					</tr>
+					<tr>
+						<th>56</th>
+						<td>Uncommon Unrefined Ores</td>
+						<td>20,000</td>
+						<td>2D6x5</td>
+						<td>As +2, Va +1</td>
+						<td>In +2, Na +1</td>
+					</tr>
+					<tr>
+						<th>61</th>
+						<td>Illicit Luxury Goods</td>
+						<td>150,000</td>
+						<td>1D6</td>
+						<td>Ag +2, Ga +3</td>
+						<td>In +4, Ri +6</td>
+					</tr>
+					<tr>
+						<th>62</th>
+						<td>Illicit Pharmaceuticals</td>
+						<td>100,000</td>
+						<td>1D6</td>
+						<td>Ht +3, Wa +2</td>
+						<td>In +6, Ri +4</td>
+					</tr>
+					<tr>
+						<th>63</th>
+						<td>Medical Research Material</td>
+						<td>50,000</td>
+						<td>1D6x5</td>
+						<td>Ht +2, Ri +3</td>
+						<td>In +6, Na +4</td>
+					</tr>
+					<tr>
+						<th>64</th>
+						<td>Military Equipment</td>
+						<td>150,000</td>
+						<td>2D6</td>
+						<td>Ht +3, In +2</td>
+						<td>Hi +6, Ni +4</td>
+					</tr>
+					<tr>
+						<th>65</th>
+						<td>Personal Weapons & Armor</td>
+						<td>30,000</td>
+						<td>2D6</td>
+						<td>In +3, Ri +2</td>
+						<td>Ni +6, Po +4</td>
+					</tr>
+					<tr>
+						<th>66</th>
+						<td>Unusual Cargo</td>
+						<td>*</td>
+						<td>*</td>
+						<td>*</td>
+						<td>*</td>
+					</tr>
+				</table>
+				<p>
+					<b>*Note:</b> Unusual cargo covers unique or highly unusual items, such as alien artifacts, high tech prototypes, stolen artwork of antiquity, or unique lifeforms. Such items often form the seed for an adventure.
+				</p>
 
-		<h2 id="determine-purchase-price">Determine Purchase Price</h2>
-		<p>
-			Determining the purchase price for speculative cargo is based on the results of a skill check. The results of this skill check represents the best possible offer the parties can reach under the current conditions.
-		</p>
-		<dl>
-			<dt>Determining the purchase price:</dt>
-			<dd><a href="skills.html#broker">Broker</a>, Intelligence or Social Standing, 1D6 kiloseconds, Average (+0).</dd>
-		</dl>
-		<p>
-			The skill check is further modified by adding the largest Dice Modifier that applies from the Purchase DM column, subtracting the largest Dice Modifier that applies from the Sale DM column, and subtracting any Dice Modifiers from the supplier (such as their <a href="skills.html#broker">Broker</a> skill). Some especially rich or powerful suppliers can demand high prices. In cases where multiple Purchase or Sale DMs apply, use only the largest ones from each column.
-		</p>
-		<p>
-			The Referee should then consult the Purchase column of the Modified Price table, using the skill check result to determine the Purchase Price percentage. The final price of the speculative cargo is the Base Price multiplied by the Purchase Price percentage. The trader does not have to accept this price, but if he rejects the deal, then he cannot deal with that supplier again for at least one week. After that week, he may attempt a new skill check to determine the purchase price for those goods.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: Modified Price Table</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Result</th>
-					<th>Purchase</th>
-					<th>Sale</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>2-</th>
-				<td>200%</td>
-				<td>40%</td>
-			</tr>
-			<tr>
-				<th>3</th>
-				<td>180%</td>
-				<td>50%</td>
-			</tr>
-			<tr>
-				<th>4</th>
-				<td>160%</td>
-				<td>60%</td>
-			</tr>
-			<tr>
-				<th>5</th>
-				<td>140%</td>
-				<td>70%</td>
-			</tr>
-			<tr>
-				<th>6</th>
-				<td>120%</td>
-				<td>80%</td>
-			</tr>
-			<tr>
-				<th>7</th>
-				<td>110%</td>
-				<td>90%</td>
-			</tr>
-			<tr>
-				<th>8</th>
-				<td>100%</td>
-				<td>100%</td>
-			</tr>
-			<tr>
-				<th>9</th>
-				<td>90%</td>
-				<td>110%</td>
-			</tr>
-			<tr>
-				<th>10</th>
-				<td>80%</td>
-				<td>120%</td>
-			</tr>
-			<tr>
-				<th>11</th>
-				<td>70%</td>
-				<td>140%</td>
-			</tr>
-			<tr>
-				<th>12</th>
-				<td>60%</td>
-				<td>160%</td>
-			</tr>
-			<tr>
-				<th>13</th>
-				<td>50%</td>
-				<td>180%</td>
-			</tr>
-			<tr>
-				<th>14</th>
-				<td>40%</td>
-				<td>200%</td>
-			</tr>
-			<tr>
-				<th>15</th>
-				<td>30%</td>
-				<td>300%</td>
-			</tr>
-			<tr>
-				<th>16+</th>
-				<td>20%</td>
-				<td>400%</td>
-			</tr>
-		</table>
+				<h2 id="determine-purchase-price">Determine Purchase Price</h2>
+				<p>
+					Determining the purchase price for speculative cargo is based on the results of a skill check. The results of this skill check represents the best possible offer the parties can reach under the current conditions.
+				</p>
+				<dl>
+					<dt>Determining the purchase price:</dt>
+					<dd><a href="skills.html#broker">Broker</a>, Intelligence or Social Standing, 1D6 kiloseconds, Average (+0).</dd>
+				</dl>
+				<p>
+					The skill check is further modified by adding the largest Dice Modifier that applies from the Purchase DM column, subtracting the largest Dice Modifier that applies from the Sale DM column, and subtracting any Dice Modifiers from the supplier (such as their <a href="skills.html#broker">Broker</a> skill). Some especially rich or powerful suppliers can demand high prices. In cases where multiple Purchase or Sale DMs apply, use only the largest ones from each column.
+				</p>
+				<p>
+					The Referee should then consult the Purchase column of the Modified Price table, using the skill check result to determine the Purchase Price percentage. The final price of the speculative cargo is the Base Price multiplied by the Purchase Price percentage. The trader does not have to accept this price, but if he rejects the deal, then he cannot deal with that supplier again for at least one week. After that week, he may attempt a new skill check to determine the purchase price for those goods.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Modified Price Table</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Result</th>
+							<th>Purchase</th>
+							<th>Sale</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>2-</th>
+						<td>200%</td>
+						<td>40%</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>180%</td>
+						<td>50%</td>
+					</tr>
+					<tr>
+						<th>4</th>
+						<td>160%</td>
+						<td>60%</td>
+					</tr>
+					<tr>
+						<th>5</th>
+						<td>140%</td>
+						<td>70%</td>
+					</tr>
+					<tr>
+						<th>6</th>
+						<td>120%</td>
+						<td>80%</td>
+					</tr>
+					<tr>
+						<th>7</th>
+						<td>110%</td>
+						<td>90%</td>
+					</tr>
+					<tr>
+						<th>8</th>
+						<td>100%</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<th>9</th>
+						<td>90%</td>
+						<td>110%</td>
+					</tr>
+					<tr>
+						<th>10</th>
+						<td>80%</td>
+						<td>120%</td>
+					</tr>
+					<tr>
+						<th>11</th>
+						<td>70%</td>
+						<td>140%</td>
+					</tr>
+					<tr>
+						<th>12</th>
+						<td>60%</td>
+						<td>160%</td>
+					</tr>
+					<tr>
+						<th>13</th>
+						<td>50%</td>
+						<td>180%</td>
+					</tr>
+					<tr>
+						<th>14</th>
+						<td>40%</td>
+						<td>200%</td>
+					</tr>
+					<tr>
+						<th>15</th>
+						<td>30%</td>
+						<td>300%</td>
+					</tr>
+					<tr>
+						<th>16+</th>
+						<td>20%</td>
+						<td>400%</td>
+					</tr>
+				</table>
 
-		<h3 id="local-brokers">Local Brokers</h3>
-		<p>
-			A speculative trader can hire a local broker to represent him in trade negotiations. This allows the merchant to use the broker's skill levels instead of their own, although that comes at a price in the form of a percentage of the final negotiated price, which must be paid even if the merchant decides not to sell his goods. The Local Broker table indicates the commission charged for a given skill level, as well as indicating what maximum skill levels are commonly available for a given class of starport.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: Local Brokers</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Skill Level</th>
-					<th>Commission</th>
-					<th>Notes</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>1</th>
-				<td>5%</td>
-				<td>Max for Class D or E Starport</td>
-			</tr>
-			<tr>
-				<th>2</th>
-				<td>10%</td>
-				<td>Max for Class C Starport</td>
-			</tr>
-			<tr>
-				<th>3</th>
-				<td>15%</td>
-				<td>Max for Class B Starport</td>
-			</tr>
-			<tr>
-				<th>4</th>
-				<td>20%</td>
-				<td>Max for Class A Starport</td>
-			</tr>
-		</table>
+				<h3 id="local-brokers">Local Brokers</h3>
+				<p>
+					A speculative trader can hire a local broker to represent him in trade negotiations. This allows the merchant to use the broker's skill levels instead of their own, although that comes at a price in the form of a percentage of the final negotiated price, which must be paid even if the merchant decides not to sell his goods. The Local Broker table indicates the commission charged for a given skill level, as well as indicating what maximum skill levels are commonly available for a given class of starport.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Local Brokers</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Skill Level</th>
+							<th>Commission</th>
+							<th>Notes</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>1</th>
+						<td>5%</td>
+						<td>Max for Class D or E Starport</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>10%</td>
+						<td>Max for Class C Starport</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>15%</td>
+						<td>Max for Class B Starport</td>
+					</tr>
+					<tr>
+						<th>4</th>
+						<td>20%</td>
+						<td>Max for Class A Starport</td>
+					</tr>
+				</table>
 
-		<h2 id="selling-goods">Selling Goods</h2>
-		<p>
-			Selling goods works just like purchasing goods, with the following changes:
-		</p>
-		<ul>
-			<li>A character must find a buyer, instead of a supplier. The same rules apply.</li>
-			<li>When selling goods, add the largest Sale DMs for the world trade code and subtract the largest Purchase DMs.</li>
-			<li>If a character does not accept the price offered for his goods, he must find another buyer or wait a week, in which case he may attempt a new skill check to determine the selling price.</li>
-		</ul>
+				<h2 id="selling-goods">Selling Goods</h2>
+				<p>
+					Selling goods works just like purchasing goods, with the following changes:
+				</p>
+				<ul>
+					<li>A character must find a buyer, instead of a supplier. The same rules apply.</li>
+					<li>When selling goods, add the largest Sale DMs for the world trade code and subtract the largest Purchase DMs.</li>
+					<li>If a character does not accept the price offered for his goods, he must find another buyer or wait a week, in which case he may attempt a new skill check to determine the selling price.</li>
+				</ul>
+			</div>
+		</div>
 	</main>
 
 	<footer class="footer fixed-bottom">
@@ -620,8 +628,8 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 </body>
 </html>

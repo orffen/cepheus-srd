@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cepheus Engine SRD - Environments and Hazards</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
 	<link href="cepheus-engine-srd.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
 	<header>
 		<nav class="navbar navbar-expand-custom bg-dark navbar-dark fixed-top">
 			<a class="navbar-brand" href="index.html">Cepheus Engine SRD</a>
@@ -79,345 +80,352 @@
 	</header>
 
 	<main class="container w-75">
-		<h1>Chapter 11: Environments and Hazards</h1>
-		<p class="lead">
-			The following are common environmental hazards that are can be encountered in a Cepheus Engine game.
-		</p>
+		<div class="row">
+			<div class="col-sm-3">
+				<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+			</div>
+			<div class="col-sm-9">
+				<h1>Chapter 11: Environments and Hazards</h1>
+				<p class="lead">
+					The following are common environmental hazards that are can be encountered in a Cepheus Engine game.
+				</p>
 
-		<h2 id="acid">Acid</h2>
-		<p>
-			Corrosive acids deal 1D6 damage per round of exposure, except in the case of total immersion (such as into a vat of acid), which deals 10D6 damage per round. An attack with acid, such as from a hurled vial or an animal's acidic spittle, counts as a round of exposure.
-		</p>
-		<p>
-			The fumes from most acids are poisonous. Those who come close enough to a large body of acid to dunk a creature in it must make an Average (+0) Endurance check or take 1D6 point of damage. All such characters must make a second Average (+0) Endurance check one minute later or take another 1D6 point of damage.
-		</p>
-		<p>
-			Creatures that are immune to acid's caustic properties might still drown in it if they are totally immersed and need to breathe. For more details, see <a href="#suffocation">Suffocation</a>.
-		</p>
+				<h2 id="acid">Acid</h2>
+				<p>
+					Corrosive acids deal 1D6 damage per round of exposure, except in the case of total immersion (such as into a vat of acid), which deals 10D6 damage per round. An attack with acid, such as from a hurled vial or an animal's acidic spittle, counts as a round of exposure.
+				</p>
+				<p>
+					The fumes from most acids are poisonous. Those who come close enough to a large body of acid to dunk a creature in it must make an Average (+0) Endurance check or take 1D6 point of damage. All such characters must make a second Average (+0) Endurance check one minute later or take another 1D6 point of damage.
+				</p>
+				<p>
+					Creatures that are immune to acid's caustic properties might still drown in it if they are totally immersed and need to breathe. For more details, see <a href="#suffocation">Suffocation</a>.
+				</p>
 
-		<h2 id="carrying-capacity">Carrying Capacity</h2>
-		<p>
-			Strength determines how much weight characters can lift and how much any additional encumbrance slows them down. Characters carrying more than their Light Load suffer penalties.
-		</p>
-		<dl>
-			<dt>Light Load</dt>
-			<dd>As a light load, a character can life and carry up to twice their Strength characteristic score in kilograms without any penalties or difficulties. For example, an average character with a Strength score of 7 can carry up to 14 kilograms as a light load.</dd>
-			<dt>Medium Load</dt>
-			<dd>A medium load is considered to be twice a character's light load, or four times their Strength characteristic score in kilograms. Characters carrying a medium load suffer a DM-1 to all physically based checks, including skill checks. In addition, they move at 75% of their base speed. For example, an average character with a Strength score of 7 can carry up to 28 kilograms as a medium load. Such a character would suffer a DM-1 on all physical checks, and move at 4.5 meters, or 3 squares, per round.</dd>
-			<dt>Heavy Load</dt>
-			<dd>A heavy load is three times the character's light load, or six times their Strength characteristic score in kilograms. Characters can lift up to a heavy load overhead. Characters carrying a heavy load suffer a DM-2 to all physically based checks, including skill checks. In addition, they move at 75% of their base speed. For example, an average character with a Strength score of 7 can lift up to 42 kilograms as a heavy load. Such a character would suffer a DM-2 on all physical checks, and move at 4.5 meters, or 3 squares, per round.</dd>
-			<dt>Maximum Load</dt>
-			<dd>A character's maximum load is six times that of their light load, or twelve times their Strength score in kilograms. Characters can lift up to the maximum load off the ground, but can only stagger around with it. While overloaded in this way, characters cannot undertake any other actions, and can only move 1.5 meters, or 1 square, per round. For example, an average character with a Strength score of 7 can barely lift up to 94 kilograms as a maximum load. Such a character could perform no other actions while struggling with the load, except to move 1.5 meters per round.</dd>
-			<dt>Push/Drag</dt>
-			<dd>Characters can push or drag up to five times their heavy load weight, moving at half their normal speed. Favorable conditions (smooth ground, dragging a slick object) double these numbers, and bad circumstances (broken ground, pushing an object that snags) can reduce them to one-half or less.</dd>
-		</dl>
+				<h2 id="carrying-capacity">Carrying Capacity</h2>
+				<p>
+					Strength determines how much weight characters can lift and how much any additional encumbrance slows them down. Characters carrying more than their Light Load suffer penalties.
+				</p>
+				<dl>
+					<dt>Light Load</dt>
+					<dd>As a light load, a character can life and carry up to twice their Strength characteristic score in kilograms without any penalties or difficulties. For example, an average character with a Strength score of 7 can carry up to 14 kilograms as a light load.</dd>
+					<dt>Medium Load</dt>
+					<dd>A medium load is considered to be twice a character's light load, or four times their Strength characteristic score in kilograms. Characters carrying a medium load suffer a DM-1 to all physically based checks, including skill checks. In addition, they move at 75% of their base speed. For example, an average character with a Strength score of 7 can carry up to 28 kilograms as a medium load. Such a character would suffer a DM-1 on all physical checks, and move at 4.5 meters, or 3 squares, per round.</dd>
+					<dt>Heavy Load</dt>
+					<dd>A heavy load is three times the character's light load, or six times their Strength characteristic score in kilograms. Characters can lift up to a heavy load overhead. Characters carrying a heavy load suffer a DM-2 to all physically based checks, including skill checks. In addition, they move at 75% of their base speed. For example, an average character with a Strength score of 7 can lift up to 42 kilograms as a heavy load. Such a character would suffer a DM-2 on all physical checks, and move at 4.5 meters, or 3 squares, per round.</dd>
+					<dt>Maximum Load</dt>
+					<dd>A character's maximum load is six times that of their light load, or twelve times their Strength score in kilograms. Characters can lift up to the maximum load off the ground, but can only stagger around with it. While overloaded in this way, characters cannot undertake any other actions, and can only move 1.5 meters, or 1 square, per round. For example, an average character with a Strength score of 7 can barely lift up to 94 kilograms as a maximum load. Such a character could perform no other actions while struggling with the load, except to move 1.5 meters per round.</dd>
+					<dt>Push/Drag</dt>
+					<dd>Characters can push or drag up to five times their heavy load weight, moving at half their normal speed. Favorable conditions (smooth ground, dragging a slick object) double these numbers, and bad circumstances (broken ground, pushing an object that snags) can reduce them to one-half or less.</dd>
+				</dl>
 
-		<h3 id="gravity-and-carrying-capacity">Gravity and Carrying Capacity</h3>
-		<p>
-			The above assumes the character is operating at a standard 1.0 gravity. When operating under a different gravitational pull (or within an artificial gravity set to a non-standard value), simply divide a character's load weight by the gravitational pull to determine the new load weight value under those conditions.
-		</p>
+				<h3 id="gravity-and-carrying-capacity">Gravity and Carrying Capacity</h3>
+				<p>
+					The above assumes the character is operating at a standard 1.0 gravity. When operating under a different gravitational pull (or within an artificial gravity set to a non-standard value), simply divide a character's load weight by the gravitational pull to determine the new load weight value under those conditions.
+				</p>
 
-		<h2 id="diseases">Diseases</h2>
-		<p>
-			Diseases reduce a character's Characteristics, usually Endurance. The character must make an Endurance check with the listed DM to resist the effects of the disease. If the character fails the Endurance check then he takes the listed damage and must make another Endurance check a few hours or days later, depending on the interval of the disease. Once an Endurance check has been passed, the character has fought off the disease.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: Sample Diseases</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Disease</th>
-					<th>DM</th>
-					<th>Damage</th>
-					<th>Interval</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Pneumonia</th>
-				<td>+0</td>
-				<td>1D6+4</td>
-				<td>1D6 weeks</td>
-			</tr>
-			<tr>
-				<th>Anthrax</th>
-				<td>–3</td>
-				<td>1D6+2</td>
-				<td>1D6 days</td>
-			</tr>
-			<tr>
-				<th>Regina Flu</th>
-				<td>+1</td>
-				<td>1D6–2</td>
-				<td>1D6 days</td>
-			</tr>
-			<tr>
-				<th>Biological Weapon</th>
-				<td>–6</td>
-				<td>1D6+8</td>
-				<td>1D6 hours</td>
-			</tr>
-		</table>
+				<h2 id="diseases">Diseases</h2>
+				<p>
+					Diseases reduce a character's Characteristics, usually Endurance. The character must make an Endurance check with the listed DM to resist the effects of the disease. If the character fails the Endurance check then he takes the listed damage and must make another Endurance check a few hours or days later, depending on the interval of the disease. Once an Endurance check has been passed, the character has fought off the disease.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Sample Diseases</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Disease</th>
+							<th>DM</th>
+							<th>Damage</th>
+							<th>Interval</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Pneumonia</th>
+						<td>+0</td>
+						<td>1D6+4</td>
+						<td>1D6 weeks</td>
+					</tr>
+					<tr>
+						<th>Anthrax</th>
+						<td>–3</td>
+						<td>1D6+2</td>
+						<td>1D6 days</td>
+					</tr>
+					<tr>
+						<th>Regina Flu</th>
+						<td>+1</td>
+						<td>1D6–2</td>
+						<td>1D6 days</td>
+					</tr>
+					<tr>
+						<th>Biological Weapon</th>
+						<td>–6</td>
+						<td>1D6+8</td>
+						<td>1D6 hours</td>
+					</tr>
+				</table>
 
-		<h2 id="extremes-of-temperature">Extremes of Temperature</h2>
-		<p>
-			Unusually hot or cold worlds can cause damage unless the characters are suitably protected. Temperatures are in Celsius.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: Extreme Temperatures</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Temperature</th>
-					<th>Damage</th>
-					<th>Example</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Below -200°</th>
-				<td>3D6/round</td>
-				<td>Absolute Zero, Pluto</td>
-			</tr>
-			<tr>
-				<th>-200°</th>
-				<td>2D6/round</td>
-				<td>Liquid nitrogen, Neptune</td>
-			</tr>
-			<tr>
-				<th>-100°</th>
-				<td>1D6/round</td>
-				<td>Ceres</td>
-			</tr>
-			<tr>
-				<th>-50°</th>
-				<td>2D6/hour</td>
-				<td>Mars</td>
-			</tr>
-			<tr>
-				<th>-25°</th>
-				<td>1D6/hour</td>
-				<td>Arctic</td>
-			</tr>
-			<tr>
-				<th>0°</th>
-				<td>None</td>
-				<td>Water melting point</td>
-			</tr>
-			<tr>
-				<th>50°</th>
-				<td>1D6/hour</td>
-				<td>Very hot desert</td>
-			</tr>
-			<tr>
-				<th>100°</th>
-				<td>2D6/hour</td>
-				<td>Water boiling point</td>
-			</tr>
-			<tr>
-				<th>200°</th>
-				<td>1D6/round</td>
-				<td>Mercury</td>
-			</tr>
-			<tr>
-				<th>500°</th>
-				<td>2D6/round</td>
-				<td>Venus</td>
-			</tr>
-			<tr>
-				<th>Above 500°</th>
-				<td>3D6/round</td>
-				<td>Surface of the sun</td>
-			</tr>
-		</table>
+				<h2 id="extremes-of-temperature">Extremes of Temperature</h2>
+				<p>
+					Unusually hot or cold worlds can cause damage unless the characters are suitably protected. Temperatures are in Celsius.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Extreme Temperatures</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Temperature</th>
+							<th>Damage</th>
+							<th>Example</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Below -200°</th>
+						<td>3D6/round</td>
+						<td>Absolute Zero, Pluto</td>
+					</tr>
+					<tr>
+						<th>-200°</th>
+						<td>2D6/round</td>
+						<td>Liquid nitrogen, Neptune</td>
+					</tr>
+					<tr>
+						<th>-100°</th>
+						<td>1D6/round</td>
+						<td>Ceres</td>
+					</tr>
+					<tr>
+						<th>-50°</th>
+						<td>2D6/hour</td>
+						<td>Mars</td>
+					</tr>
+					<tr>
+						<th>-25°</th>
+						<td>1D6/hour</td>
+						<td>Arctic</td>
+					</tr>
+					<tr>
+						<th>0°</th>
+						<td>None</td>
+						<td>Water melting point</td>
+					</tr>
+					<tr>
+						<th>50°</th>
+						<td>1D6/hour</td>
+						<td>Very hot desert</td>
+					</tr>
+					<tr>
+						<th>100°</th>
+						<td>2D6/hour</td>
+						<td>Water boiling point</td>
+					</tr>
+					<tr>
+						<th>200°</th>
+						<td>1D6/round</td>
+						<td>Mercury</td>
+					</tr>
+					<tr>
+						<th>500°</th>
+						<td>2D6/round</td>
+						<td>Venus</td>
+					</tr>
+					<tr>
+						<th>Above 500°</th>
+						<td>3D6/round</td>
+						<td>Surface of the sun</td>
+					</tr>
+				</table>
 
-		<h3 id="catching-on-fire">Catching on Fire</h3>
-		<p>
-			Characters touching a fire source might find their clothes, hair, or equipment on fire. Those at risk of catching fire are allowed a Difficult (-2) Dexterity check to avoid this fate. If a character's clothes or hair catch fire, he takes 2D6 damage immediately. In each subsequent round, the burning character must make another Difficult (-2) Dexterity check. Failure means he takes another 2D6 damage that round. Success means the fire has gone out.
-		</p>
-		<p>
-			A character on fire may automatically extinguish the flames by jumping into enough water to douse himself, spraying himself down with a fire extinguisher, vent all atmosphere or otherwise smother the flames. If the character has no such means, rolling on the ground or smothering the fire with cloaks or the like permits the character a DM+2 on his next Dexterity check.
-		</p>
+				<h3 id="catching-on-fire">Catching on Fire</h3>
+				<p>
+					Characters touching a fire source might find their clothes, hair, or equipment on fire. Those at risk of catching fire are allowed a Difficult (-2) Dexterity check to avoid this fate. If a character's clothes or hair catch fire, he takes 2D6 damage immediately. In each subsequent round, the burning character must make another Difficult (-2) Dexterity check. Failure means he takes another 2D6 damage that round. Success means the fire has gone out.
+				</p>
+				<p>
+					A character on fire may automatically extinguish the flames by jumping into enough water to douse himself, spraying himself down with a fire extinguisher, vent all atmosphere or otherwise smother the flames. If the character has no such means, rolling on the ground or smothering the fire with cloaks or the like permits the character a DM+2 on his next Dexterity check.
+				</p>
 
-		<h2 id="falling-and-gravity">Falling and Gravity</h2>
-		<p>
-			A character who falls on a 1-gravity world suffers 1D6 damage per two meters fallen. High- or low-gravity worlds will increase or decrease the damage. Look up the size code for the world and the gravity level associated with it and multiply the falling damage by the gravity number.
-		</p>
+				<h2 id="falling-and-gravity">Falling and Gravity</h2>
+				<p>
+					A character who falls on a 1-gravity world suffers 1D6 damage per two meters fallen. High- or low-gravity worlds will increase or decrease the damage. Look up the size code for the world and the gravity level associated with it and multiply the falling damage by the gravity number.
+				</p>
 
-		<h2 id="poisons">Poisons</h2>
-		<p>
-			Poisons operate in the same way as <a href="#diseases">diseases</a>, but generally work much faster and often have a wider range of effects. Most poisons do not have an interval but apply their damage immediately.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: Sample Poisons</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Poison</th>
-					<th>DM</th>
-					<th>Damage</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Arsenic</th>
-				<td>–2</td>
-				<td>2D6</td>
-			</tr>
-			<tr>
-				<th>Tranq Gas</th>
-				<td>–1D6</td>
-				<td>Unconsciousness if Endurance check is failed</td>
-			</tr>
-			<tr>
-				<th>Neurotoxin</th>
-				<td>–4</td>
-				<td>1D6 Intelligence</td>
-			</tr>
-		</table>
+				<h2 id="poisons">Poisons</h2>
+				<p>
+					Poisons operate in the same way as <a href="#diseases">diseases</a>, but generally work much faster and often have a wider range of effects. Most poisons do not have an interval but apply their damage immediately.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Sample Poisons</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Poison</th>
+							<th>DM</th>
+							<th>Damage</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Arsenic</th>
+						<td>–2</td>
+						<td>2D6</td>
+					</tr>
+					<tr>
+						<th>Tranq Gas</th>
+						<td>–1D6</td>
+						<td>Unconsciousness if Endurance check is failed</td>
+					</tr>
+					<tr>
+						<th>Neurotoxin</th>
+						<td>–4</td>
+						<td>1D6 Intelligence</td>
+					</tr>
+				</table>
 
-		<h2 id="radiation-exposure">Radiation Exposure</h2>
-		<p>
-			Radiation exposure is measured in rads. Once a character has absorbed a certain number of rads, he will suffer certain effects. One problem with radiation exposure is that while physical symptoms can be treated and may heal, the radiation never goes away. The character's rads must be tracked. Further exposure adds to what the character is already carrying around until a deadly level is reached. Accumulated rads can be removed using anti-radiation drugs. Characters exposed to a radiation weapon will receive a one-time dose of radiation. Entering a radioactive area or being exposed to a leak or solar flare will cause exposure each round or hour. Every time a character experiences exposure to radiation, they must check to see if they've come down with radiation sickness, as outlined on the Radiation Effects table. The character must make an Endurance check at the listed DM, and if he fails, he takes the damage listed and must make another Endurance check after the listed interval has passed. This cycle continues until the character succeeds at an Endurance check.
-		</p>
-		<p>
-			At any Radiation Level below Mild, the character is treated as having a lower Endurance characteristic score. If a character should accumulate enough rads to move to a higher Radiation Level, the new Endurance characteristic score immediately goes into effect. On the other hand, if a character moves to a lower Radiation Level, such as through anti-radiation drugs, the character heals the difference between the former level and the current level over time, as if it were physical damage. If a character's Effective endurance falls below zero, the character goes unconscious and cannot recover until their Radiation Level drops enough to allow healing to take place.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: Common Radiation Exposure Sources</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Situation</th>
-					<th>Instant (rads)</th>
-					<th>Extended (rads)</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Irradiated area, low level</th>
-				<td>&mdash;</td>
-				<td>1D6/hour</td>
-			</tr>
-			<tr>
-				<th>Irradiated area, medium level</th>
-				<td>&mdash;</td>
-				<td>2D6/hour</td>
-			</tr>
-			<tr>
-				<th>Irradiated area, high level</th>
-				<td>&mdash;</td>
-				<td>6D6/hour</td>
-			</tr>
-			<tr>
-				<th>Irradiated area, severe level</th>
-				<td>&mdash;</td>
-				<td>12D6/hour</td>
-			</tr>
-			<tr>
-				<th>Active exposure, low level</th>
-				<td>3D6</td>
-				<td>3D6x10/hour</td>
-			</tr>
-			<tr>
-				<th>Active exposure, medium level</th>
-				<td>1D6x10</td>
-				<td>1D6x100/hour</td>
-			</tr>
-			<tr>
-				<th>Active exposure, high level</th>
-				<td>2D6x10</td>
-				<td>2D6x100/hour</td>
-			</tr>
-			<tr>
-				<th>Active exposure, severe level</th>
-				<td>4D6x10</td>
-				<td>3D6x100/hour</td>
-			</tr>
-		</table>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: Radiation Effects</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Radiation Level</th>
-					<th>Rads</th>
-					<th>Effective Endurance</th>
-					<th>DM</th>
-					<th>Damage</th>
-					<th>Interval</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Mild</th>
-				<td>&lt;100</td>
-				<td>&mdash;</td>
-				<td>None</td>
-				<td>None</td>
-				<td>None</td>
-			</tr>
-			<tr>
-				<th>Low</th>
-				<td>100-199</td>
-				<td>Endurance-1</td>
-				<td>+1</td>
-				<td>1D6</td>
-				<td>1D6 weeks</td>
-			</tr>
-			<tr>
-				<th>Moderate</th>
-				<td>200-599</td>
-				<td>Endurance-3</td>
-				<td>+0</td>
-				<td>1D6+2</td>
-				<td>2D6 days</td>
-			</tr>
-			<tr>
-				<th>High</th>
-				<td>600-999</td>
-				<td>Endurance-6</td>
-				<td>-1</td>
-				<td>1D6+4</td>
-				<td>1D6 days</td>
-			</tr>
-			<tr>
-				<th>Severe</th>
-				<td>1000+</td>
-				<td>Endurance-10</td>
-				<td>-2</td>
-				<td>1D6+6</td>
-				<td>1D6 hours</td>
-			</tr>
-		</table>
+				<h2 id="radiation-exposure">Radiation Exposure</h2>
+				<p>
+					Radiation exposure is measured in rads. Once a character has absorbed a certain number of rads, he will suffer certain effects. One problem with radiation exposure is that while physical symptoms can be treated and may heal, the radiation never goes away. The character's rads must be tracked. Further exposure adds to what the character is already carrying around until a deadly level is reached. Accumulated rads can be removed using anti-radiation drugs. Characters exposed to a radiation weapon will receive a one-time dose of radiation. Entering a radioactive area or being exposed to a leak or solar flare will cause exposure each round or hour. Every time a character experiences exposure to radiation, they must check to see if they've come down with radiation sickness, as outlined on the Radiation Effects table. The character must make an Endurance check at the listed DM, and if he fails, he takes the damage listed and must make another Endurance check after the listed interval has passed. This cycle continues until the character succeeds at an Endurance check.
+				</p>
+				<p>
+					At any Radiation Level below Mild, the character is treated as having a lower Endurance characteristic score. If a character should accumulate enough rads to move to a higher Radiation Level, the new Endurance characteristic score immediately goes into effect. On the other hand, if a character moves to a lower Radiation Level, such as through anti-radiation drugs, the character heals the difference between the former level and the current level over time, as if it were physical damage. If a character's Effective endurance falls below zero, the character goes unconscious and cannot recover until their Radiation Level drops enough to allow healing to take place.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Common Radiation Exposure Sources</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Situation</th>
+							<th>Instant (rads)</th>
+							<th>Extended (rads)</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Irradiated area, low level</th>
+						<td>&mdash;</td>
+						<td>1D6/hour</td>
+					</tr>
+					<tr>
+						<th>Irradiated area, medium level</th>
+						<td>&mdash;</td>
+						<td>2D6/hour</td>
+					</tr>
+					<tr>
+						<th>Irradiated area, high level</th>
+						<td>&mdash;</td>
+						<td>6D6/hour</td>
+					</tr>
+					<tr>
+						<th>Irradiated area, severe level</th>
+						<td>&mdash;</td>
+						<td>12D6/hour</td>
+					</tr>
+					<tr>
+						<th>Active exposure, low level</th>
+						<td>3D6</td>
+						<td>3D6x10/hour</td>
+					</tr>
+					<tr>
+						<th>Active exposure, medium level</th>
+						<td>1D6x10</td>
+						<td>1D6x100/hour</td>
+					</tr>
+					<tr>
+						<th>Active exposure, high level</th>
+						<td>2D6x10</td>
+						<td>2D6x100/hour</td>
+					</tr>
+					<tr>
+						<th>Active exposure, severe level</th>
+						<td>4D6x10</td>
+						<td>3D6x100/hour</td>
+					</tr>
+				</table>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: Radiation Effects</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Radiation Level</th>
+							<th>Rads</th>
+							<th>Effective Endurance</th>
+							<th>DM</th>
+							<th>Damage</th>
+							<th>Interval</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Mild</th>
+						<td>&lt;100</td>
+						<td>&mdash;</td>
+						<td>None</td>
+						<td>None</td>
+						<td>None</td>
+					</tr>
+					<tr>
+						<th>Low</th>
+						<td>100-199</td>
+						<td>Endurance-1</td>
+						<td>+1</td>
+						<td>1D6</td>
+						<td>1D6 weeks</td>
+					</tr>
+					<tr>
+						<th>Moderate</th>
+						<td>200-599</td>
+						<td>Endurance-3</td>
+						<td>+0</td>
+						<td>1D6+2</td>
+						<td>2D6 days</td>
+					</tr>
+					<tr>
+						<th>High</th>
+						<td>600-999</td>
+						<td>Endurance-6</td>
+						<td>-1</td>
+						<td>1D6+4</td>
+						<td>1D6 days</td>
+					</tr>
+					<tr>
+						<th>Severe</th>
+						<td>1000+</td>
+						<td>Endurance-10</td>
+						<td>-2</td>
+						<td>1D6+6</td>
+						<td>1D6 hours</td>
+					</tr>
+				</table>
 
-		<h2 id="starvation-and-dehydration">Starvation and Dehydration</h2>
-		<p>
-			Characters might find themselves without food or water and with no means to obtain them. In normal climates, a character needs at least a gallon of fluids and about a pound of food per day to avoid starvation. In very hot climates, characters need two or three times as much water to avoid dehydration.
-		</p>
-		<p>
-			A character can go without water for a number of hours equal to 20 plus twice his Endurance score. After this time, the character must make a Routine (+2) Endurance check each hour (DM-1 for each previous check) or take 1D6 damage.
-		</p>
-		<p>
-			A character can go without food for 3 days, in growing discomfort. After this time, the character must make a Routine (+2) Endurance check each day (DM-1 for each previous check) or take 1D6 damage.
-		</p>
-		<p>
-			Damage from thirst or starvation cannot be recovered until the character gets food or water.
-		</p>
+				<h2 id="starvation-and-dehydration">Starvation and Dehydration</h2>
+				<p>
+					Characters might find themselves without food or water and with no means to obtain them. In normal climates, a character needs at least a gallon of fluids and about a pound of food per day to avoid starvation. In very hot climates, characters need two or three times as much water to avoid dehydration.
+				</p>
+				<p>
+					A character can go without water for a number of hours equal to 20 plus twice his Endurance score. After this time, the character must make a Routine (+2) Endurance check each hour (DM-1 for each previous check) or take 1D6 damage.
+				</p>
+				<p>
+					A character can go without food for 3 days, in growing discomfort. After this time, the character must make a Routine (+2) Endurance check each day (DM-1 for each previous check) or take 1D6 damage.
+				</p>
+				<p>
+					Damage from thirst or starvation cannot be recovered until the character gets food or water.
+				</p>
 
-		<h2 id="suffocation">Suffocation</h2>
-		<p>
-			In an area where sufficient oxygen is not long available, such as on board a starship without life support, a character begins to suffocate, suffering 1D6 damage each minute. A character who is utterly without air (such as one who is being smothered or strangled, or who has been dumped out an airlock) suffers 1D6 damage each round instead.
-		</p>
+				<h2 id="suffocation">Suffocation</h2>
+				<p>
+					In an area where sufficient oxygen is not long available, such as on board a starship without life support, a character begins to suffocate, suffering 1D6 damage each minute. A character who is utterly without air (such as one who is being smothered or strangled, or who has been dumped out an airlock) suffers 1D6 damage each round instead.
+				</p>
 
-		<h2 id="vacuum-exposure">Vacuum Exposure</h2>
-		<p>
-			Beings exposed to the airless cold of space are not immediately doomed. Contrary to popular belief, characters exposed to vacuum do not immediately freeze or explode, and their blood does not boil in their veins. While space is very cold, heat does not transfer away from a body that quickly. The real danger comes from suffocation and ionizing radiation.
-		</p>
-		<p>
-			On the third round of exposure to vacuum, a character must succeed on a Very Difficult (-4) Endurance check each round or suffer from aeroembolism ("the bends"). A character that fails the check experiences excruciating pain as small air bubbles form in its bloodstream; such a character is considered stunned and generally unable to move, and remains so until returned to normal atmospheric pressure. A character that fails the check with an Exceptional Failure (Effect -6 or lower) falls unconscious.
-		</p>
-		<p>
-			The real danger of vacuum comes from suffocation, though holding one's breath in vacuum damages the lungs. Treat anyone trapped in a hard vacuum as being utterly without air under the <a href="#suffocation">Suffocation</a> rules.
-		</p>
-		<p>
-			Unfiltered radiation bombards any character trapped in the vacuum of space without protective gear. A character exposed to this ionizing radiation suffers from severe sunburn as well as the effects equivalent to a high level irradiated area. See <a href="#radiation-exposure">Radiation Exposure</a> for specific details.
-		</p>
+				<h2 id="vacuum-exposure">Vacuum Exposure</h2>
+				<p>
+					Beings exposed to the airless cold of space are not immediately doomed. Contrary to popular belief, characters exposed to vacuum do not immediately freeze or explode, and their blood does not boil in their veins. While space is very cold, heat does not transfer away from a body that quickly. The real danger comes from suffocation and ionizing radiation.
+				</p>
+				<p>
+					On the third round of exposure to vacuum, a character must succeed on a Very Difficult (-4) Endurance check each round or suffer from aeroembolism ("the bends"). A character that fails the check experiences excruciating pain as small air bubbles form in its bloodstream; such a character is considered stunned and generally unable to move, and remains so until returned to normal atmospheric pressure. A character that fails the check with an Exceptional Failure (Effect -6 or lower) falls unconscious.
+				</p>
+				<p>
+					The real danger of vacuum comes from suffocation, though holding one's breath in vacuum damages the lungs. Treat anyone trapped in a hard vacuum as being utterly without air under the <a href="#suffocation">Suffocation</a> rules.
+				</p>
+				<p>
+					Unfiltered radiation bombards any character trapped in the vacuum of space without protective gear. A character exposed to this ionizing radiation suffers from severe sunburn as well as the effects equivalent to a high level irradiated area. See <a href="#radiation-exposure">Radiation Exposure</a> for specific details.
+				</p>
 
-		<h2 id="weather">Weather</h2>
-		<p>
-			Driving wind, rain, snowstorms and so forth give a –1 DM to ranged attacks from poor visibility and a –1 DM to ranged attacks from environmental interference. <a href="equipment.html#sensory-aids">Sensors</a> can be used to avoid the visibility penalty. Extremely high winds and torrential rain can inflict a negative Dice Modifier of –1 to –4 to all skill checks.
-		</p>
+				<h2 id="weather">Weather</h2>
+				<p>
+					Driving wind, rain, snowstorms and so forth give a –1 DM to ranged attacks from poor visibility and a –1 DM to ranged attacks from environmental interference. <a href="equipment.html#sensory-aids">Sensors</a> can be used to avoid the visibility penalty. Extremely high winds and torrential rain can inflict a negative Dice Modifier of –1 to –4 to all skill checks.
+				</p>
+			</div>
+		</div>
 	</main>
 
 	<footer class="footer fixed-bottom">
@@ -426,8 +434,8 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 </body>
 </html>

@@ -15,6 +15,10 @@ body {
   background-color: #f5f5f5;
 }
 
+nav[data-toggle="toc"] {
+  top: 75px;
+}
+
 @media screen and (min-width: 1350px) {
   .navbar-nav .dropdown-menu {
     position: absolute;
@@ -43,6 +47,14 @@ body {
 @media screen and (max-width: 500px) {
   .footer {
     display: none;
+  }
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+  }
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
   }
 }
 
@@ -75,8 +87,8 @@ body > .container {
 h2::before {
   display: block;
   content: " ";
-  margin-top: -60px;
-  height: 60px;
+  margin-top: -75px;
+  height: 75px;
   visibility: hidden;
   pointer-events: none;
 }
@@ -84,8 +96,9 @@ h2::before {
 h3::before {
   display: block;
   content: " ";
-  margin-top: -60px;
-  height: 60px;
+  margin-top: -75px;
+  height: 75px;
   visibility: hidden;
   pointer-events: none;
 }
+
