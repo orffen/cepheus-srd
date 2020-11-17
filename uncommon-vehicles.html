@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cepheus Engine SRD - Uncommon Vehicles</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
 	<link href="cepheus-engine-srd.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
 	<header>
 		<nav class="navbar navbar-expand-custom bg-dark navbar-dark fixed-top">
 			<a class="navbar-brand" href="index.html">Cepheus Engine SRD</a>
@@ -79,111 +80,118 @@
 	</header>
 
 	<main class="container w-75">
-		<h1>Chapter 6: Uncommon Vehicles</h1>
-		<p class="lead">
-			This section describes some of the uncommon vehicles that might be encountered in Cepheus Engine campaigns. These are not the only types of vessels that exist, and creative Referees are encouraged to integrate ships of their own creation or from other sources as they see fit.
-		</p>
+		<div class="row">
+			<div class="col-sm-3">
+				<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+			</div>
+			<div class="col-sm-9">
+				<h1>Chapter 6: Uncommon Vehicles</h1>
+				<p class="lead">
+					This section describes some of the uncommon vehicles that might be encountered in Cepheus Engine campaigns. These are not the only types of vessels that exist, and creative Referees are encouraged to integrate ships of their own creation or from other sources as they see fit.
+				</p>
 
-		<h2>TL8 Tunnel Boring Machine</h2>
-		<p>
-			Using a closed four-ton chassis (0 Hull, 1 Structure, Armor 3), the Tunnel Boring Machine is a machine used to excavate tunnels with a circular cross section through a variety of soil and rock strata. It carries a Gas Turbine engine, Code G, and a Mole propulsion system, Code G, giving a top speed of 100 meters/hour, a cruising speed of 75 meters/hour and an Agility DM of -4. 0.68 kiloliters of hydrocarbons support the power plant for 2 days. This vehicle is equipped with Basic controls, a Class II communication system (Very Distant), Standard sensors (DM -2), and a Model 1 computer. There is one extended cockpit. The tunnel boring machine is equipped with hostile environmental protection and 10 days of basic life support. Cargo capacity is 14.79 kiloliters. The vehicle requires a crew of one: the pilot. The vehicle can carry up to one other passenger in the extended cockpit. The vehicle costs KCr282.650 (including discounts and fees) and takes 36 hours to build.
-		</p>
-		<table class="table table-bordered table-striped table-hover table-responsive-md">
-			<caption>Table: TL8 Tunnel Boring Machine Design Specifications</caption>
-			<thead class="thead-light">
-				<tr>
-					<th>Category</th>
-					<th>Component</th>
-					<th>Spaces</th>
-					<th>Price(Cr)</th>
-					<th>Notes</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Chassis</th>
-				<td>Base</td>
-				<td>48</td>
-				<td>6250</td>
-				<td>Code 8</td>
-			</tr>
-			<tr>
-				<th></th>
-				<td>Configuration</td>
-				<td></td>
-				<td></td>
-				<td>Closed</td>
-			</tr>
-			<tr>
-				<th></th>
-				<td>Environmental Protection (Hostile)</td>
-				<td>-3</td>
-				<td>240000</td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>Power Plant</th>
-				<td>Gas Turbine</td>
-				<td>-4.5</td>
-				<td>637.5</td>
-				<td>Code G</td>
-			</tr>
-			<tr>
-				<th>Propulsion</th>
-				<td>Mole</td>
-				<td>-14</td>
-				<td>54600</td>
-				<td>Code G</td>
-			</tr>
-			<tr>
-				<th>Fuel</th>
-				<td>Hydrocarbons</td>
-				<td>-0.68</td>
-				<td>561.744</td>
-				<td>Fuel capacity = 48 hours</td>
-			</tr>
-			<tr>
-				<th>Controls</th>
-				<td>Basic</td>
-				<td>-1</td>
-				<td>0</td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>Communications</th>
-				<td>Class II</td>
-				<td>-0.02</td>
-				<td>1000</td>
-				<td>Very Distant (50 km)</td>
-			</tr>
-			<tr>
-				<th>Accommodations</th>
-				<td>Extended Cockpit</td>
-				<td>-4</td>
-				<td>2000</td>
-				<td>Two crew (pilot, passenger)</td>
-			</tr>
-			<tr>
-				<th></th>
-				<td>Basic Life Support</td>
-				<td>-3</td>
-				<td>3500</td>
-				<td>Last 10 days</td>
-			</tr>
-			<tr>
-				<th>Cargo</th>
-				<td></td>
-				<td>-14.79</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>TOTALS</th>
-				<td></td>
-				<td>0</td>
-				<td>314049.244</td>
-				<td>Cr282,650 with Std Design Discount</td>
-			</tr>
-		</table>
+				<h2>TL8 Tunnel Boring Machine</h2>
+				<p>
+					Using a closed four-ton chassis (0 Hull, 1 Structure, Armor 3), the Tunnel Boring Machine is a machine used to excavate tunnels with a circular cross section through a variety of soil and rock strata. It carries a Gas Turbine engine, Code G, and a Mole propulsion system, Code G, giving a top speed of 100 meters/hour, a cruising speed of 75 meters/hour and an Agility DM of -4. 0.68 kiloliters of hydrocarbons support the power plant for 2 days. This vehicle is equipped with Basic controls, a Class II communication system (Very Distant), Standard sensors (DM -2), and a Model 1 computer. There is one extended cockpit. The tunnel boring machine is equipped with hostile environmental protection and 10 days of basic life support. Cargo capacity is 14.79 kiloliters. The vehicle requires a crew of one: the pilot. The vehicle can carry up to one other passenger in the extended cockpit. The vehicle costs KCr282.650 (including discounts and fees) and takes 36 hours to build.
+				</p>
+				<table class="table table-bordered table-striped table-hover table-responsive-md">
+					<caption>Table: TL8 Tunnel Boring Machine Design Specifications</caption>
+					<thead class="thead-light">
+						<tr>
+							<th>Category</th>
+							<th>Component</th>
+							<th>Spaces</th>
+							<th>Price(Cr)</th>
+							<th>Notes</th>
+						</tr>
+					</thead>
+					<tr>
+						<th>Chassis</th>
+						<td>Base</td>
+						<td>48</td>
+						<td>6250</td>
+						<td>Code 8</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Configuration</td>
+						<td></td>
+						<td></td>
+						<td>Closed</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Environmental Protection (Hostile)</td>
+						<td>-3</td>
+						<td>240000</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Power Plant</th>
+						<td>Gas Turbine</td>
+						<td>-4.5</td>
+						<td>637.5</td>
+						<td>Code G</td>
+					</tr>
+					<tr>
+						<th>Propulsion</th>
+						<td>Mole</td>
+						<td>-14</td>
+						<td>54600</td>
+						<td>Code G</td>
+					</tr>
+					<tr>
+						<th>Fuel</th>
+						<td>Hydrocarbons</td>
+						<td>-0.68</td>
+						<td>561.744</td>
+						<td>Fuel capacity = 48 hours</td>
+					</tr>
+					<tr>
+						<th>Controls</th>
+						<td>Basic</td>
+						<td>-1</td>
+						<td>0</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Communications</th>
+						<td>Class II</td>
+						<td>-0.02</td>
+						<td>1000</td>
+						<td>Very Distant (50 km)</td>
+					</tr>
+					<tr>
+						<th>Accommodations</th>
+						<td>Extended Cockpit</td>
+						<td>-4</td>
+						<td>2000</td>
+						<td>Two crew (pilot, passenger)</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Basic Life Support</td>
+						<td>-3</td>
+						<td>3500</td>
+						<td>Last 10 days</td>
+					</tr>
+					<tr>
+						<th>Cargo</th>
+						<td></td>
+						<td>-14.79</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>TOTALS</th>
+						<td></td>
+						<td>0</td>
+						<td>314049.244</td>
+						<td>Cr282,650 with Std Design Discount</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</main>
 
 	<footer class="footer fixed-bottom">
