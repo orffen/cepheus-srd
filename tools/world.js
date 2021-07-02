@@ -110,7 +110,7 @@ function generateUwp() {
         lawLevel = Math.max(0, roll() - 7 + government);
 
     // Technology Level
-    let technologyLevel = 0;
+    let technologyLevel = roll(1);
     switch (starport) {
         case 'A':
             technologyLevel += 6;
