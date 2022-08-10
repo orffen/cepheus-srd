@@ -19,7 +19,7 @@ nav[data-toggle='toc'] {
   top: 75px;
 }
 
-@media screen and (min-width: 1660px) {
+@media screen and (min-width: 1600px) {
   .navbar-nav .dropdown-menu {
     position: absolute;
   }
@@ -44,7 +44,7 @@ nav[data-toggle='toc'] {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
   .footer {
     display: none;
   }
