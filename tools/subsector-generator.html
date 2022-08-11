@@ -67,7 +67,7 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown active">
-							<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="">Tools</a>
+							<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
 							<div class="dropdown-menu">
 								<a class="dropdown-item active" href="subsector-generator.html">Subsector Generator</a>
 							</div>
@@ -83,52 +83,52 @@
 						</div>
 					</form>
 				</div>
-			</nav>
-		</header>
-		
-		<main class="container w-75">
-			<h1>Cepheus Engine Subsector Generator</h1>
-			<p class="lead">
-				This tool will generate a Cepheus Engine subsector according to the rules found in <a href="../worlds.html">Chapter 12: Worlds</a>. The output is in <a href="https://travellermap.com/doc/fileformats#legacy-sec-format" target="_blank">SEC format</a> and can be copy/pasted into the <a href="https://travellermap.com/doc/custom" target="_blank">Traveller Map custom data tools</a>.
-			</p>
-			
-			<div class="btn-group btn-group-toggle btn-block w-100" data-toggle="buttons">
-				<label class="btn btn-outline-dark active">
-					<input type="radio" class="btn-check" name="sectorType" value="4" checked onclick="init()">Standard Subsector
-				</label>
-				<label class="btn btn-outline-dark">
-					<input type="radio" class="btn-check" name="sectorType" value="6" onclick="init()">Rift Subsector
-				</label>
-				<label class="btn btn-outline-dark">
-					<input type="radio" class="btn-check" name="sectorType" value="5" onclick="init()">Sparse Subsector
-				</label>
-				<label class="btn btn-outline-dark">
-					<input type="radio" class="btn-check" name="sectorType" value="3" onclick="init()">Dense Subsector
-				</label>
 			</div>
-			<textarea class="form-control" id="output" rows="12"></textarea>
-			<div id="sectorPopulation"></div>
-			
-			<script src="pseudohex.js"></script>
-			<script src="roll.js"></script>
-			<script src="sector.js"></script>
-			<script src="world.js"></script>
-			<script>
-				function init() {
-					document.getElementById("output").textContent = generateSector(document.querySelector('input[name="sectorType"]:checked').value);
-					document.getElementById("sectorPopulation").textContent = calculatePopulation(document.getElementById("output").value);
-				}
-				init();
-				//TODO: Would be nice to get a map image using the API (https://travellermap.com/doc/api#poster-render-a-sector-quadrant-or-subsector) and display it under the textarea
-			</script>
-		</main>
-		
-		<footer class="footer fixed-bottom">
-			<div class="container text-muted text-center">Cepheus Engine System Reference Document, Copyright © 2016 Samardan Press; Author Jason "Flynn" Kemp</div>
-		</footer>
-		
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-	</body>
-	</html>
-	
+		</nav>
+	</header>
+
+	<main class="container w-75">
+		<h1>Cepheus Engine Subsector Generator</h1>
+		<p class="lead">
+			This tool will generate a Cepheus Engine subsector according to the rules found in <a href="../worlds.html">Chapter 12: Worlds</a>. The output is in <a href="https://travellermap.com/doc/fileformats#legacy-sec-format" target="_blank">SEC format</a> and can be copy/pasted into the <a href="https://travellermap.com/doc/custom" target="_blank">Traveller Map custom data tools</a>.
+		</p>
+
+		<div class="btn-group btn-group-toggle btn-block w-100" data-toggle="buttons">
+			<label class="btn btn-outline-dark active">
+				<input type="radio" class="btn-check" name="sectorType" value="4" checked onclick="init()">Standard Subsector
+			</label>
+			<label class="btn btn-outline-dark">
+				<input type="radio" class="btn-check" name="sectorType" value="6" onclick="init()">Rift Subsector
+			</label>
+			<label class="btn btn-outline-dark">
+				<input type="radio" class="btn-check" name="sectorType" value="5" onclick="init()">Sparse Subsector
+			</label>
+			<label class="btn btn-outline-dark">
+				<input type="radio" class="btn-check" name="sectorType" value="3" onclick="init()">Dense Subsector
+			</label>
+		</div>
+		<textarea class="form-control" id="output" rows="12"></textarea>
+		<div id="sectorPopulation"></div>
+
+		<script src="pseudohex.js"></script>
+		<script src="roll.js"></script>
+		<script src="sector.js"></script>
+		<script src="world.js"></script>
+		<script>
+			function init() {
+				document.getElementById("output").textContent = generateSector(document.querySelector('input[name="sectorType"]:checked').value);
+				document.getElementById("sectorPopulation").textContent = calculatePopulation(document.getElementById("output").value);
+			}
+			init();
+			//TODO: Would be nice to get a map image using the API (https://travellermap.com/doc/api#poster-render-a-sector-quadrant-or-subsector) and display it under the textarea
+		</script>
+	</main>
+
+	<footer class="footer fixed-bottom">
+		<div class="container text-muted text-center">Cepheus Engine System Reference Document, Copyright © 2016 Samardan Press; Author Jason "Flynn" Kemp</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
