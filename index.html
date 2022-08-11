@@ -1,87 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cepheus Engine SRD</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
 	<link href="cepheus-engine-srd.css" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-custom bg-dark navbar-dark fixed-top">
-			<a class="navbar-brand" href="index.html">Cepheus Engine SRD</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-link nav-item">
-						<a class="nav-link" href="introduction.html">Introduction</a>
-					</li>
-					<li class="nav-link nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Book 1: Characters</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="character-creation.html">Chapter 1: Character Creation</a>
-							<a class="dropdown-item" href="skills.html">Chapter 2: Skills</a>
-							<a class="dropdown-item" href="psionics.html">Chapter 3: Psionics</a>
-							<a class="dropdown-item" href="equipment.html">Chapter 4: Equipment</a>
-							<a class="dropdown-item" href="personal-combat.html">Chapter 5: Personal Combat</a>
-						</div>
-					</li>
-					<li class="nav-link nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Book 2: Starships and Interstellar Travel</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="off-world-travel.html">Chapter 6: Off-World Travel</a>
-							<a class="dropdown-item" href="trade-and-commerce.html">Chapter 7: Trade and Commerce</a>
-							<a class="dropdown-item" href="ship-design-and-construction.html">Chapter 8: Ship Design and Construction</a>
-							<a class="dropdown-item" href="common-vessels.html">Chapter 9: Common Vessels</a>
-							<a class="dropdown-item" href="space-combat.html">Chapter 10: Space Combat</a>
-						</div>
-					</li>
-					<li class="nav-link nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Book 3: Referees</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="environments-and-hazards.html">Chapter 11: Environments and Hazards</a>
-							<a class="dropdown-item" href="worlds.html">Chapter 12: Worlds</a>
-							<a class="dropdown-item" href="planetary-wilderness-encounters.html">Chapter 13: Planetary Wilderness Encounters</a>
-							<a class="dropdown-item" href="social-encounters.html">Chapter 14: Social Encounters</a>
-							<a class="dropdown-item" href="starship-encounters.html">Chapter 15: Starship Encounters</a>
-							<a class="dropdown-item" href="refereeing-the-game.html">Chapter 16: Refereeing the Game</a>
-							<a class="dropdown-item" href="adventures.html">Chapter 17: Adventures</a>
-						</div>
-					</li>
-					<li class="nav-link nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Vehicle Design System</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="vds-introduction.html">Introduction</a>
-							<a class="dropdown-item" href="vehicle-design.html">Chapter 1: Vehicle Design</a>
-							<a class="dropdown-item" href="common-aircraft.html">Chapter 2: Common Aircraft</a>
-							<a class="dropdown-item" href="common-grav-vehicles.html">Chapter 3: Common Grav Vehicles</a>
-							<a class="dropdown-item" href="common-ground-vehicles.html">Chapter 4: Common Ground Vehicles</a>
-							<a class="dropdown-item" href="common-watercraft.html">Chapter 5: Common Watercraft</a>
-							<a class="dropdown-item" href="uncommon-vehicles.html">Chapter 6: Uncommon Vehicles</a>
-							<a class="dropdown-item" href="updated-common-vehicles-table.html">Appendix A: Updated Common Vehicles Table</a>
-						</div>
-					</li>
-					<li class="nav-link nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Tools</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="tools/subsector-generator.html">Subsector Generator</a>
-						</div>
-					</li>
-					<li class="nav-link nav-item">
-						<a class="nav-link" href="legal.html">Legal</a>
-					</li>
-					<form class="form-inline float-right" action="search.html">
+		<nav class="navbar navbar-expand-xxl navbar-dark bg-dark fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">Cepheus Engine SRD</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="introduction.html">Introduction</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Book 1: Characters</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="character-creation.html">Chapter 1: Character Creation</a>
+								<a class="dropdown-item" href="skills.html">Chapter 2: Skills</a>
+								<a class="dropdown-item" href="psionics.html">Chapter 3: Psionics</a>
+								<a class="dropdown-item" href="equipment.html">Chapter 4: Equipment</a>
+								<a class="dropdown-item" href="personal-combat.html">Chapter 5: Personal Combat</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Book 2: Starships and Interstellar Travel</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="off-world-travel.html">Chapter 6: Off-World Travel</a>
+								<a class="dropdown-item" href="trade-and-commerce.html">Chapter 7: Trade and Commerce</a>
+								<a class="dropdown-item" href="ship-design-and-construction.html">Chapter 8: Ship Design and Construction</a>
+								<a class="dropdown-item" href="common-vessels.html">Chapter 9: Common Vessels</a>
+								<a class="dropdown-item" href="space-combat.html">Chapter 10: Space Combat</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Book 3: Referees</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="environments-and-hazards.html">Chapter 11: Environments and Hazards</a>
+								<a class="dropdown-item" href="worlds.html">Chapter 12: Worlds</a>
+								<a class="dropdown-item" href="planetary-wilderness-encounters.html">Chapter 13: Planetary Wilderness Encounters</a>
+								<a class="dropdown-item" href="social-encounters.html">Chapter 14: Social Encounters</a>
+								<a class="dropdown-item" href="starship-encounters.html">Chapter 15: Starship Encounters</a>
+								<a class="dropdown-item" href="refereeing-the-game.html">Chapter 16: Refereeing the Game</a>
+								<a class="dropdown-item" href="adventures.html">Chapter 17: Adventures</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vehicle Design System</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="vds-introduction.html">Introduction</a>
+								<a class="dropdown-item" href="vehicle-design.html">Chapter 1: Vehicle Design</a>
+								<a class="dropdown-item" href="common-aircraft.html">Chapter 2: Common Aircraft</a>
+								<a class="dropdown-item" href="common-grav-vehicles.html">Chapter 3: Common Grav Vehicles</a>
+								<a class="dropdown-item" href="common-ground-vehicles.html">Chapter 4: Common Ground Vehicles</a>
+								<a class="dropdown-item" href="common-watercraft.html">Chapter 5: Common Watercraft</a>
+								<a class="dropdown-item" href="uncommon-vehicles.html">Chapter 6: Uncommon Vehicles</a>
+								<a class="dropdown-item" href="updated-common-vehicles-table.html">Appendix A: Updated Common Vehicles Table</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="tools/subsector-generator.html">Subsector Generator</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="legal.html">Legal</a>
+						</li>
+					</ul>
+					<form class="d-flex" action="search.html">
 						<div class="input-group ml-sm-2">
 							<input class="form-control" type="search" placeholder="Search" aria-label="Search" name="q">
-							<div class="input-group-append">
-								<button class="btn btn-outline-light" type="submit">Search</button>
-							</div>
+							<button class="btn btn-outline-light" type="submit">Search</button>
 						</div>
 					</form>
-				</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
@@ -126,13 +127,11 @@
 	</main>
 
 	<footer class="footer fixed-bottom">
-		<div class="container">
-			<span class="text-muted">Cepheus Engine System Reference Document, Copyright © 2016 Samardan Press; Author Jason "Flynn" Kemp</span>
-		</div>
+		<div class="container text-muted text-center">Cepheus Engine System Reference Document, Copyright © 2016 Samardan Press; Author Jason "Flynn" Kemp</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 </body>
 </html>
