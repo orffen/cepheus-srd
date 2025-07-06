@@ -32,26 +32,26 @@ The Terrain DM Chart details modifiers for animal subtypes and sizes, In additio
 
 | Terrain | Subtype DM | Size DM | 1 | 2 | 3 | 4 | 5 | 6 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Clear | +3 | — | W | W | W | W | W +2 | F –6 |
-| Plain or Prairie | +4 | — | W | W | W | W +2 | W +4 | F –6 |
-| Desert (hot or cold) | +3 | –3 | W | W | W | W | F –4 | F –6 |
-| Hills, Foothills | — | — | W | W | W | W +2 | F –4 | F –6 |
-| Mountain | — | — | W | W | W | F –2 | F –4 | F –6 |
-| Forest | –4 | –4 | W | W | W | W | F –4 | F –6 |
-| Woods | –2 | –1 | W | W | W | W | W | F –6 |
-| Jungle | –4 | –3 | W | W | W | W | W +2 | F –6 |
-| Rainforest | –2 | –2 | W | W | W | W +2 | W +4 | F –6 |
-| Rough, Broken | –3 | –3 | W | W | W | W +2 | F –4 | F –6 |
-| Swamp, Marsh | –2 | +4 | S –6 | A +2 | W | W | F –4 | F –6 |
-| Beach, Shore | +3 | +2 | S +1 | A +2 | W | W | F –4 | F –6 |
-| Riverbank | +1 | +1 | S –4 | A | W | W | W | F –6 |
-| Ocean shallows | +4 | +1 | S +4 | S +2 | S | S | F –4 | F –6 |
-| Open ocean | +4 | –4 | S +6 | S +4 | S +2 | S | F –4 | F –6 |
-| Deep ocean | +4 | +2 | S +8 | S +6 | S +4 | S +2 | S | S –2 |
+| Clear | +3 | — | W | W | W | W | W +2 | F -6 |
+| Plain or Prairie | +4 | — | W | W | W | W +2 | W +4 | F -6 |
+| Desert (hot or cold) | +3 | -3 | W | W | W | W | F -4 | F -6 |
+| Hills, Foothills | — | — | W | W | W | W +2 | F -4 | F -6 |
+| Mountain | — | — | W | W | W | F -2 | F -4 | F -6 |
+| Forest | -4 | -4 | W | W | W | W | F -4 | F -6 |
+| Woods | -2 | -1 | W | W | W | W | W | F -6 |
+| Jungle | -4 | -3 | W | W | W | W | W +2 | F -6 |
+| Rainforest | -2 | -2 | W | W | W | W +2 | W +4 | F -6 |
+| Rough, Broken | -3 | -3 | W | W | W | W +2 | F -4 | F -6 |
+| Swamp, Marsh | -2 | +4 | S -6 | A +2 | W | W | F -4 | F -6 |
+| Beach, Shore | +3 | +2 | S +1 | A +2 | W | W | F -4 | F -6 |
+| Riverbank | +1 | +1 | S -4 | A | W | W | W | F -6 |
+| Ocean shallows | +4 | +1 | S +4 | S +2 | S | S | F -4 | F -6 |
+| Open ocean | +4 | -4 | S +6 | S +4 | S +2 | S | F -4 | F -6 |
+| Deep ocean | +4 | +2 | S +8 | S +6 | S +4 | S +2 | S | S -2 |
 
 ### Step Two: Determine the Animal’s Type and Subtype
 
-The Referee should then determine the animal’s type and subtype. If the Referee is building up an encounter table, the animal’s type is obvious: the type necessary to fill in this entry on the encounter table. Otherwise, the Referee must choose an appropriate type: Carnivore, Herbivore, Omnivore or Scavenger. The Referee might also roll on the 1D6 Animal Encounter Table Template to randomly choose an animal type.
+The Referee should then determine the animal’s type and subtype. If the Referee is building up an encounter table, the animal’s type is obvious: the type necessary to fill in this entry on the encounter table. Otherwise, the Referee must choose an appropriate type: Carnivore, Herbivore, Omnivore or Scavenger. The Referee might also roll on the [1D6 Animal Encounter Table Template](#1d6-animal-encounter-table-template) to randomly choose an animal type.
 
 Once the animal type has been determined, the Referee rolls 2D6, and add in the terrain’s Subtype DM. After that, the Referee consults the Subtype by Animal Type table under the column of the animal’s type to determine the animal’s subtype.
 
@@ -95,15 +95,15 @@ Terran creatures that exemplify these specific subtypes are noted in brackets af
 
 **Intimidator (coyote):** Scavengers which establish their claim to food by frightening or intimidating other creatures.
 
-**Killer (shark):** Carnivores that possess a raw killing instinct, attacking in a frenzied manner. Killers have Natural Weapons and either Strength or Dexterity +4, Instinct +4, Pack –2.
+**Killer (shark):** Carnivores that possess a raw killing instinct, attacking in a frenzied manner. Killers have Natural Weapons and either Strength or Dexterity +4, Instinct +4, Pack -2.
 
 **Pouncer (cat):** Pouncers kill by stalking and ambushing their prey. Pouncers have Recon and Athletics. Dexterity +4, Instinct +4.
 
 **Reducer (vermin):** Reducers are scavengers that act constantly on all available food, devouring even the remains left by other scavengers. Pack +4
 
-**Siren (venus fly-trap):** Sirens create a lure to attract prey. Usually, this lure will be specific to the species the siren preys on, but some rare lures are universal. Pack –4.
+**Siren (venus fly-trap):** Sirens create a lure to attract prey. Usually, this lure will be specific to the species the siren preys on, but some rare lures are universal. Pack -4.
 
-**Trapper (spider):** An animal which allows its prey to enter a trap. Generally, any creature surprised by a trapper is caught in its trap. Pack –2.
+**Trapper (spider):** An animal which allows its prey to enter a trap. Generally, any creature surprised by a trapper is caught in its trap. Pack -2.
 
 ### Step Four: Determine Animal Size and Characteristics
 
@@ -154,9 +154,9 @@ All animals have at least [Athletics](../book1/skills.md#athletics) 0, [Recon](.
 
 Roll 2D6 separately for the animal’s Weapons and Armor.
 
-**Weapons:** When generating weapons, roll 2D6 and consult the Animal Weapons table. Add a +8 DM if the animal is a Carnivore, and a +4 if it is an Omnivore; subtract a –6 DM if the animal is a Herbivore. Scavengers automatically have Teeth in addition to any other weapons. If a number is present after the Weapons type, then add that number to the number of damage dice the creature rolls. Damage from attacks depends on the creature’s Strength score, as shown in the Damage by Strength table.
+**Weapons:** When generating weapons, roll 2D6 and consult the Animal Weapons table. Add a +8 DM if the animal is a Carnivore, and a +4 if it is an Omnivore; subtract a -6 DM if the animal is a Herbivore. Scavengers automatically have Teeth in addition to any other weapons. If a number is present after the Weapons type, then add that number to the number of damage dice the creature rolls. Damage from attacks depends on the creature’s Strength score, as shown in the Damage by Strength table.
 
-**Armor:** When generating an animal’s armor, roll 2D6-7, and add the animal’s Size result (the die roll result that determined the animal’s size, not the actual weight of the animal.) Add a +4 DM when rolling for armor if the animal is a Herbivore, and a +2 if it is an Scavenger; apply a –2 DM if the animal is a Carnivore. Also, Flyers suffer a –2 DM when determining armor. Consult the Animal Armor table for the animal’s armor rating.
+**Armor:** When generating an animal’s armor, roll 2D6-7, and add the animal’s Size result (the die roll result that determined the animal’s size, not the actual weight of the animal.) Add a +4 DM when rolling for armor if the animal is a Herbivore, and a +2 if it is an Scavenger; apply a -2 DM if the animal is a Carnivore. Also, Flyers suffer a -2 DM when determining armor. Consult the Animal Armor table for the animal’s armor rating.
 
 **Base Speed:** An animal’s base speed is determined by generating a Speed Multiplier, as per the Animal Speed Multiplier by Subtype table, and multiplying that by 6, which is the average speed of a human in meters per minor action. If an Animal Speed Multiplier value falls below the value found in the Minimum Speed column, round it up to the Minimum Speed value.
 
@@ -341,22 +341,22 @@ When characters disturb an animal or otherwise draw attention to themselves whil
 
 | Type | Attack | Flee |
 | --- | --- | --- |
-| Carnivore |
-| Chaser | If the chasers outnumber the characters, they attack. | 5- |
-| Killer | 6+ | 3- |
-| Pouncer | If the pouncer has surprise, it attacks. | If the pouncer is surprised, it flees. |
-| Siren | If the siren has surprise, it attacks. | 4- |
-| Trapper | If the trapper has surprise, it attacks. | 5- |
-| Herbivore |
-| Filter | 10+ if possible | 5- |
-| Grazer | 8+ | 6- |
-| Intermittent | 10+ | 4- |
-| Omnivore |
-| Eater | 5+ | 4- |
-| Gatherer | 9+ | 7- |
-| Hunter | If the hunter is bigger than at least one character, then it attacks on a 6+. Otherwise, it attacks on a 10+ | 5- |
-| Scavenger |
-| Carrion-eater | 11+ | 7- |
-| Hijacker | 7+ | 6- |
-| Intimidator | 8+ | 7- |
-| Reducer | 10+ | 7- |
+| **Carnivore** |
+| &emsp;Chaser | If the chasers outnumber the characters, they attack. | 5- |
+| &emsp;Killer | 6+ | 3- |
+| &emsp;Pouncer | If the pouncer has surprise, it attacks. | If the pouncer is surprised, it flees. |
+| &emsp;Siren | If the siren has surprise, it attacks. | 4- |
+| &emsp;Trapper | If the trapper has surprise, it attacks. | 5- |
+| **Herbivore** |
+| &emsp;Filter | 10+ if possible | 5- |
+| &emsp;Grazer | 8+ | 6- |
+| &emsp;Intermittent | 10+ | 4- |
+| **Omnivore** |
+| &emsp;Eater | 5+ | 4- |
+| &emsp;Gatherer | 9+ | 7- |
+| &emsp;Hunter | If the hunter is bigger than at least one character, then it attacks on a 6+. Otherwise, it attacks on a 10+ | 5- |
+| **Scavenger** |
+| &emsp;Carrion-eater | 11+ | 7- |
+| &emsp;Hijacker | 7+ | 6- |
+| &emsp;Intimidator | 8+ | 7- |
+| &emsp;Reducer | 10+ | 7- |
