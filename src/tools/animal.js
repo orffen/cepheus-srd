@@ -1,27 +1,26 @@
 /**
  * Represents a Cepheus Engine animal.
  * @typedef {Object} Animal
+ * @property {string} [upp] - The animal's Universal Personality Profile. Automatically generated if not supplied.
  * @property {string} [terrain] - The terrain where the animal is found. Randomly selected if not supplied.
  * @property {string} [type] - The type of animal. Randomly selected if not supplied.
  * @property {string} [subtype] - The animal's subtype. Automatically generated if not supplied.
- * @property {string} [upp] - The animal's Universal Personality Profile. Automatically generated if not supplied.
  */
 class Animal {
-    constructor(terrain, type, subtype, upp) {
-        this.terrain = terrain ? terrain : generateTerrain();
-        this.type = type ? type : generateType();
-        this.subtype = subtype ? subtype : generateSubtype(this.type, this.terrain);
+    constructor(upp, terrain, type, subtype) {
         this.upp = upp ? upp : generateUpp();
+        this.terrain = terrain ? terrain : chooseRandom(["Clear", "Plain or Prarie", "Desert (hot or cold)", "Hills, Foothills", "Mountain", "Forest", "Woods", "Jungle", "Rainforest", "Rough, Broken", "Swamp, Marsh", "Beach, Shore", "Riverbank", "Ocean shallows", "Open ocean", "Deep ocean"]);
+        this.type = type ? type : chooseRandom(["Scavenger", "Herbivore", "Herbivore", "Herbivore", "Omnivore", "Carnivore"]);
+        this.subtype = subtype ? subtype : generateSubtype(this.type, this.terrain);
     }
 }
 
-function generateTerrain() {
-    const TERRAINS = ["Clear", "Plain or Prarie", "Desert (hot or cold)", "Hills, Foothills", "Mountain", "Forest", "Woods", "Jungle", "Rainforest", "Rough, Broken", "Swamp, Marsh", "Beach, Shore", "Riverbank", "Ocean shallows", "Open ocean", "Deep ocean"];
-}
-
-function generateType() {
-    const TYPES = ["Scavenger", "Herbivore", "Herbivore", "Herbivore", "Omnivore", "Carnivore"];
-    return TYPES[Math.floor(Math.random() * TYPES.length)];
+// generate a Universal Personality Profile string
+function generateUpp() {
+    let characteristics = [];
+    for (let i = 0; i < 6; i++)
+        characteristics.push(pseudoHex(roll()));
+    return characteristics.join();
 }
 
 function generateSubtype(type, terrain) {
@@ -60,8 +59,5 @@ function generateSubtype(type, terrain) {
             dm = 1;
             break;
     }
-    return SUBTYPES[Math.max(1, Math.min(roll() + dm, 13)) - 1];
-}
-
-function generateUpp() {
+    return SUBTYPES[type][Math.max(1, Math.min(roll() + dm, 13)) - 1];
 }
