@@ -3,13 +3,25 @@
  * @typedef {Object} Animal
  * @property {string} [upp] - The animal's Universal Personality Profile. Automatically generated if not supplied.
  * @property {string} [terrain] - The terrain where the animal is found. Randomly selected if not supplied.
+ * @property {string} [movement] - The animal's movement. Automatically generated if not supplied.
  * @property {string} [type] - The type of animal. Randomly selected if not supplied.
  * @property {string} [subtype] - The animal's subtype. Automatically generated if not supplied.
  */
 class Animal {
     constructor(upp, terrain, type, subtype) {
         this.upp = upp ? upp : generateUpp();
-        this.terrain = terrain ? terrain : chooseRandom(["Clear", "Plain or Prarie", "Desert (hot or cold)", "Hills, Foothills", "Mountain", "Forest", "Woods", "Jungle", "Rainforest", "Rough, Broken", "Swamp, Marsh", "Beach, Shore", "Riverbank", "Ocean shallows", "Open ocean", "Deep ocean"]);
+        if (!terrain) {
+            this.terrain = chooseRandom(["Clear", "Plain or Prarie", "Desert (hot or cold)", "Hills, Foothills", "Mountain", "Forest", "Woods", "Jungle", "Rainforest", "Rough, Broken", "Swamp, Marsh", "Beach, Shore", "Riverbank", "Ocean shallows", "Open ocean", "Deep ocean"]);
+            this.upp = modifySize(this.upp, this.terrain);
+        } else {
+            this.terrain = terrain;
+        }
+        if (!movement) {
+            const ROLL = roll(1);
+            this.movement = generateMovement(terrain, ROLL);
+        } else {
+            this.movement = movement;
+        }
         this.type = type ? type : chooseRandom(["Scavenger", "Herbivore", "Herbivore", "Herbivore", "Omnivore", "Carnivore"]);
         this.subtype = subtype ? subtype : generateSubtype(this.type, this.terrain);
     }
@@ -23,6 +35,46 @@ function generateUpp() {
     return characteristics.join();
 }
 
+// modify UPP size based on terrain
+function modifySize(upp, terrain) {
+    let size = upp[0];
+    switch (terrain) {
+        case "Desert (hot or cold)":
+        case "Jungle":
+        case "Rough, Broken":
+            size -= 3;
+            break;
+        case "Forest":
+        case "Open ocean":
+            size -= 4;
+            break;
+        case "Woods":
+            --size;
+            break;
+        case "Rainforest":
+            size -= 2;
+            break;
+        case "Swamp, Marsh":
+            size += 4;
+            break;
+        case "Beach, Shore":
+        case "Deep ocean":
+            size += 2;
+        case "Riverbank":
+        case "Ocean shallows":
+            ++size;
+            break;
+    }
+    upp[0] = size;
+    return upp;
+}
+
+// generate movement given an animal's terrain and a die roll
+function generateMovement(terrain, roll) {
+    // TODO: finish
+}
+
+// generate a subtype given an animal type and terrain
 function generateSubtype(type, terrain) {
     const SUBTYPES = {
         "Herbivore": ["Filter", "Filter", "Intermittent", "Intermittent", "Intermittent", "Intermittent", "Grazer", "Grazer", "Grazer", "Grazer", "Grazer", "Grazer", "Grazer"],
