@@ -21,9 +21,23 @@ function pseudoHex(value) {
 
 // rolls number of dice specified by parameter (defaults to 2)
 function roll(number = 2) {
-    let r = 0;
+    number = parseInt(number);
+    if (isNaN(number) || number < 1)
+        number = 2;
+    let total = 0;
     for (let i = 0; i < number; i++) {
-        r += Math.floor(Math.random() * 6) + 1;
+        total += Math.floor(Math.random() * 6) + 1;
     }
-    return r;
+    return total;
+}
+
+// rolls number of dice specified by parameter (defaults to 2) and modified by dm, bound between min and max
+function rollBetween(min, max, number = 2, dm = 0) {
+    min = parseInt(min);
+    max = parseInt(max);
+    number = parseInt(number) ? parseInt(number) : 2;
+    dm = parseInt(dm) ? parseInt(dm) : 0;
+    if (isNaN(min) || isNaN(max))
+        return roll(number) + dm;
+    return Math.max(min, Math.min(roll(number) + dm, max));
 }
