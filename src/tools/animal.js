@@ -1,25 +1,42 @@
 /**
  * Represents a Cepheus Engine animal.
- * @typedef {Object} Animal
- * @property {string} [upp] - The animal's Universal Personality Profile. Automatically generated if not supplied.
- * @property {string} [terrain] - The terrain where the animal is found. Randomly selected if not supplied.
- * @property {string} [movement] - The animal's movement. Automatically generated if not supplied.
- * @property {string} [type] - The type of animal. Randomly selected if not supplied.
- * @property {string} [subtype] - The animal's subtype. Automatically generated if not supplied.
+ *
+ * @class
+ * @extends Creature
+ * @param {string} [upp] - The animal's Universal Personality Profile. Automatically generated if not supplied.
+ * @param {string} [terrain] - The terrain where the animal is found. Randomly selected if not supplied.
+ * @param {string} [movement] - The animal's movement. Automatically generated if not supplied.
+ * @param {string} [type] - The type of animal. Randomly selected if not supplied.
+ * @param {string} [subtype] - The animal's subtype. Automatically generated if not supplied.
+ *
+ * @property {string} upp - The animal's Universal Personality Profile.
+ * @property {string} terrain - The terrain where the animal is found.
+ * @property {string} movement - The animal's movement.
+ * @property {string} type - The type of animal.
+ * @property {string} subtype - The animal's subtype.
+ *
+ * @method instinct - Gets the instinct value derived from the UPP.
+ * @returns {number} The instinct value.
+ *
+ * @method pack - Gets the pack value derived from the UPP.
+ * @returns {number} The pack value.
  */
 class Animal extends Creature {
-    constructor(upp, terrain, type, subtype) {
+    constructor(upp, terrain, movement, type, subtype) {
         super(upp);
         this.terrain ? terrain : this.generateTerrain();
         if (!movement) {
             const ROLL = roll(1);
-            this.movement = generateMovement(this.terrain, ROLL);
+            this.movement = this.generateMovement(this.terrain, ROLL);
         } else {
             this.movement = movement;
         }
         this.type = type ? type : chooseRandom(["Scavenger", "Herbivore", "Herbivore", "Herbivore", "Omnivore", "Carnivore"]);
         this.subtype = subtype ? subtype : generateSubtype();
     }
+
+    instinct = () => this.education;
+    pack = () => this.socialStanding;
 
     generateTerrain() {
         this.terrain = chooseRandom(["Clear", "Plain or Prarie", "Desert (hot or cold)", "Hills, Foothills", "Mountain", "Forest", "Woods", "Jungle", "Rainforest", "Rough, Broken", "Swamp, Marsh", "Beach, Shore", "Riverbank", "Ocean shallows", "Open ocean", "Deep ocean"]);
@@ -54,7 +71,7 @@ class Animal extends Creature {
         this.upp[0] = pseudoHex(size);
     }
 
-    generateMovement() {
+    generateMovement() { // TODO: complete
     }
 
     generateSubtype() {
@@ -94,5 +111,8 @@ class Animal extends Creature {
                 break;
         }
         this.subtype = SUBTYPES[type][Math.max(1, Math.min(roll() + dm, 13)) - 1];
+    }
+
+    print() { //TODO: complete
     }
 }
