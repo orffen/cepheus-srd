@@ -36,8 +36,7 @@ This tool will generate a Cepheus Engine subsector according to the rules found 
 
 <div id="sectorMap" style="display:flex; justify-content: center"></div>
 
-<script src="pseudohex.js"></script>
-<script src="roll.js"></script>
+<script src="util.js"></script>
 <script src="sector.js"></script>
 <script src="world.js"></script>
 <script src="https://unpkg.com/js-markov/dist/markov.js"></script> <!-- using https://www.npmjs.com/package/js-markov/v/2.0.3 -->
