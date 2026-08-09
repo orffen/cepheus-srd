@@ -76,7 +76,7 @@ The following is a list of the available skills used in the core Cepheus Engine 
 | [Farming](#farming) | [Energy Rifle](#energy-rifle) | [Grav Vehicle](#grav-vehicle) |
 | [Riding](#riding) | [Shotgun](#shotgun) | [Rotor Aircraft](#rotor-aircraft) |
 | [Survival](#survival) | [Slug Pistol](#slug-pistol) | [Winged Aircraft](#winged-aircraft) |
-| [Veterinary Medicine](#veterinary-medicine) | [Slug Pistol](#slug-pistol) | [Mole](#mole) |
+| [Veterinary Medicine](#veterinary-medicine) | [Slug Rifle](#slug-rifle) | [Mole](#mole) |
 | [Athletics](#athletics) | [Gunnery (Cascade Skill)](#gunnery-cascade-skill) | [Tracked Vehicle](#tracked-vehicle) |
 | [Battle Dress](#battle-dress) | [Bay Weapons](#bay-weapons) | [Watercraft (Cascade Skill)](#watercraft-cascade-skill) |
 | [Bribery](#bribery) | [Heavy Weapons](#heavy-weapons) | [Motorboats](#motorboats) |
