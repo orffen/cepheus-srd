@@ -338,7 +338,7 @@ This skill grants the ability to properly maneuver and perform basic, routine ma
 
 ### Sciences (Cascade Skill)
 
-The various specialties of this skill cover different types of planetary transportation. When this skill is received, the character must immediately select one of the following: [Life Sciences](#life-sciences), [Physical Sciences](#physical-sciences), [Social Sciences](#social-sciences), or [Space Sciences](#space-sciences).
+The various specialties of this skill cover different fields of scientific study. When this skill is received, the character must immediately select one of the following: [Life Sciences](#life-sciences), [Physical Sciences](#physical-sciences), [Social Sciences](#social-sciences), or [Space Sciences](#space-sciences).
 
 ### Sailing Ships
 
