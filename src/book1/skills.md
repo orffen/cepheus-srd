@@ -89,7 +89,7 @@ The following is a list of the available skills used in the core Cepheus Engine 
 | [Engineering](#engineering) | [Piercing Weapons](#piercing-weapons) |
 | [Gambling](#gambling) | [Slashing Weapons](#slashing-weapons) |
 | [Gravitics](#gravitics) |
-| [Jack-of-all-Trades (Jack o' Trades)](#jack-of-all-trades) |
+| [Jack-of-all-Trades (Jack o' Trades)](#jack-of-all-trades-jack-o-trades-or-jot) |
 | [Leadership](#leadership) |
 | [Linguistics](#linguistics) |
 | [Liaison](#liaison) |
@@ -406,7 +406,7 @@ The character is skilled at operating turret-mounted weapons on board a ship.
 
 ### Vehicle (Cascade Skill)
 
-The various specialties of this skill cover different types of planetary transportation. When this skill is received, the character must immediately select one of the following: [Aircraft](#aircraft), [Mole](#mole), [Tracked Vehicle](#tracked-vehicle), [Watercraft](#watercraft), or [Wheeled Vehicle](#wheeled-vehicle).
+The various specialties of this skill cover different types of planetary transportation. When this skill is received, the character must immediately select one of the following: [Aircraft](#aircraft-cascade-skill), [Mole](#mole), [Tracked Vehicle](#tracked-vehicle), [Watercraft](#watercraft-cascade-skill), or [Wheeled Vehicle](#wheeled-vehicle).
 
 ### Veterinary Medicine
 
