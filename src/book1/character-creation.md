@@ -541,7 +541,7 @@ Material benefits may be characteristics alterations, passages or ship shares. M
 | 5 | Mid Passage | +1 Soc | Mid Passage | Explorers' Society | 1D6 Ship Shares | +1 Soc |
 | 6 | High Passage | High Passage | Mid Passage | High Passage | High Passage | High Passage |
 | 7 | +1 Soc | Explorers' Society | — | — | — | Explorers' Society |
-| Cost Benefits | Colonist | Diplomat | Drifter | Entertainer | Hunter | Marine |
+| Cash Benefits | Colonist | Diplomat | Drifter | Entertainer | Hunter | Marine |
 | 1 | 1000 | 1000 | 0 | 2000 | 1000 | 1000 |
 | 2 | 5000 | 5000 | 1000 | 10000 | 5000 | 5000 |
 | 3 | 5000 | 10000 | 2000 | 20000 | 10000 | 10000 |
