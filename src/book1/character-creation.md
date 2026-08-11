@@ -193,28 +193,28 @@ Growing up on your homeworld gave you skills that depend on the planet's nature.
 
 | Descriptor | Skill |
 | --- | --- |
-| No Law | [Gun Combat-0](skills.md#gun-combat) |
-| Low Law | [Gun Combat-0](skills.md#gun-combat) |
-| Medium Law | [Gun Combat-0](skills.md#gun-combat) |
-| High Law | [Melee Combat-0](skills.md#melee-combat) |
+| No Law | [Gun Combat-0](skills.md#gun-combat-cascade-skill) |
+| Low Law | [Gun Combat-0](skills.md#gun-combat-cascade-skill) |
+| Medium Law | [Gun Combat-0](skills.md#gun-combat-cascade-skill) |
+| High Law | [Melee Combat-0](skills.md#melee-combat-cascade-skill) |
 
 <br>
 
 | Trade Code | Skill |
 | --- | --- |
-| Agricultural | [Animals-0](skills.md#animals) |
+| Agricultural | [Animals-0](skills.md#animals-cascade-skill) |
 | Asteroid | [Zero-G-0](skills.md#zero-g) |
 | Desert | [Survival-0](skills.md#survival) |
-| Fluid Oceans | [Watercraft-0](skills.md#watercraft) |
-| Garden | [Animals-0](skills.md#animals) |
+| Fluid Oceans | [Watercraft-0](skills.md#watercraft-cascade-skill) |
+| Garden | [Animals-0](skills.md#animals-cascade-skill) |
 | High Technology | [Computer-0](skills.md#computer) |
 | High Population | [Streetwise-0](skills.md#streetwise) |
 | Ice-Capped | [Zero-G-0](skills.md#zero-g) |
 | Industrial | [Broker-0](skills.md#broker) |
 | Low Technology | [Survival-0](skills.md#survival) |
-| Poor | [Animals-0](skills.md#animals) |
+| Poor | [Animals-0](skills.md#animals-cascade-skill) |
 | Rich | [Carousing-0](skills.md#carousing) |
-| Water World | [Watercraft-0](skills.md#watercraft) |
+| Water World | [Watercraft-0](skills.md#watercraft-cascade-skill) |
 | Vacuum | [Zero-G-0](skills.md#zero-g) |
 
 ### Primary Education Skills
@@ -223,7 +223,7 @@ A formal education gives you a basic level of competence in various sciences and
 
 -   [Admin-0](skills.md#admin)
 -   [Advocate-0](skills.md#advocate)
--   [Animals-0](skills.md#animals)
+-   [Animals-0](skills.md#animals-cascade-skill)
 -   [Carousing-0](skills.md#carousing)
 -   [Comms-0](skills.md#comms)
 -   [Computer-0](skills.md#computer)
@@ -541,7 +541,7 @@ Material benefits may be characteristics alterations, passages or ship shares. M
 | 5 | Mid Passage | +1 Soc | Mid Passage | Explorers' Society | 1D6 Ship Shares | +1 Soc |
 | 6 | High Passage | High Passage | Mid Passage | High Passage | High Passage | High Passage |
 | 7 | +1 Soc | Explorers' Society | — | — | — | Explorers' Society |
-| Cost Benefits | Colonist | Diplomat | Drifter | Entertainer | Hunter | Marine |
+| Cash Benefits | Colonist | Diplomat | Drifter | Entertainer | Hunter | Marine |
 | 1 | 1000 | 1000 | 0 | 2000 | 1000 | 1000 |
 | 2 | 5000 | 5000 | 1000 | 10000 | 5000 | 5000 |
 | 3 | 5000 | 10000 | 2000 | 20000 | 10000 | 10000 |

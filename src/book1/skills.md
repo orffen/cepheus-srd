@@ -76,7 +76,7 @@ The following is a list of the available skills used in the core Cepheus Engine 
 | [Farming](#farming) | [Energy Rifle](#energy-rifle) | [Grav Vehicle](#grav-vehicle) |
 | [Riding](#riding) | [Shotgun](#shotgun) | [Rotor Aircraft](#rotor-aircraft) |
 | [Survival](#survival) | [Slug Pistol](#slug-pistol) | [Winged Aircraft](#winged-aircraft) |
-| [Veterinary Medicine](#veterinary-medicine) | [Slug Pistol](#slug-pistol) | [Mole](#mole) |
+| [Veterinary Medicine](#veterinary-medicine) | [Slug Rifle](#slug-rifle) | [Mole](#mole) |
 | [Athletics](#athletics) | [Gunnery (Cascade Skill)](#gunnery-cascade-skill) | [Tracked Vehicle](#tracked-vehicle) |
 | [Battle Dress](#battle-dress) | [Bay Weapons](#bay-weapons) | [Watercraft (Cascade Skill)](#watercraft-cascade-skill) |
 | [Bribery](#bribery) | [Heavy Weapons](#heavy-weapons) | [Motorboats](#motorboats) |
@@ -89,7 +89,7 @@ The following is a list of the available skills used in the core Cepheus Engine 
 | [Engineering](#engineering) | [Piercing Weapons](#piercing-weapons) |
 | [Gambling](#gambling) | [Slashing Weapons](#slashing-weapons) |
 | [Gravitics](#gravitics) |
-| [Jack-of-all-Trades (Jack o' Trades)](#jack-of-all-trades) |
+| [Jack-of-all-Trades (Jack o' Trades)](#jack-of-all-trades-jack-o-trades-or-jot) |
 | [Leadership](#leadership) |
 | [Linguistics](#linguistics) |
 | [Liaison](#liaison) |
@@ -338,7 +338,7 @@ This skill grants the ability to properly maneuver and perform basic, routine ma
 
 ### Sciences (Cascade Skill)
 
-The various specialties of this skill cover different types of planetary transportation. When this skill is received, the character must immediately select one of the following: [Life Sciences](#life-sciences), [Physical Sciences](#physical-sciences), [Social Sciences](#social-sciences), or [Space Sciences](#space-sciences).
+The various specialties of this skill cover different fields of scientific study. When this skill is received, the character must immediately select one of the following: [Life Sciences](#life-sciences), [Physical Sciences](#physical-sciences), [Social Sciences](#social-sciences), or [Space Sciences](#space-sciences).
 
 ### Sailing Ships
 
@@ -406,7 +406,7 @@ The character is skilled at operating turret-mounted weapons on board a ship.
 
 ### Vehicle (Cascade Skill)
 
-The various specialties of this skill cover different types of planetary transportation. When this skill is received, the character must immediately select one of the following: [Aircraft](#aircraft), [Mole](#mole), [Tracked Vehicle](#tracked-vehicle), [Watercraft](#watercraft), or [Wheeled Vehicle](#wheeled-vehicle).
+The various specialties of this skill cover different types of planetary transportation. When this skill is received, the character must immediately select one of the following: [Aircraft](#aircraft-cascade-skill), [Mole](#mole), [Tracked Vehicle](#tracked-vehicle), [Watercraft](#watercraft-cascade-skill), or [Wheeled Vehicle](#wheeled-vehicle).
 
 ### Veterinary Medicine
 
